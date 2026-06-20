@@ -31,6 +31,7 @@
 
 ## 🔥 News
 
+- **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated, animated data videos.
 - **[2026.06.18]** 📄 Our paper is now available on arXiv: [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388).
 - **[2026.06.01]** 🎉 Our paper **"DataMagic: Transforming Tabular Data into Data Insight Video"** has been accepted to **VLDB 2026 Demo Track**!
 - **[2026.05]** 🚀 DataMagic is now live! The hosted app is open for public use — upload your data and generate a narrated data video in minutes.
@@ -109,6 +110,25 @@ Two things set DataMagic apart: **data-grounded scenes** bind every visual eleme
 - Data-grounded scenes — visual elements bound to underlying data fields for full traceability.
 - Narration-aware timing — animation and voiceover assembled into a coherent story rhythm.
 
+## 🧩 Data-Video Skill
+
+We also publish **[`datamagic-video`](./datamagic-video/)** — a skill that teaches AI coding
+agents (Claude Code, Cursor, Codex, …) the *methodology* behind data videos: narrative
+patterns, chart selection, DVSpec authoring, narration writing, and animation timing. The
+videos it produces render with open tooling, so anyone can generate and watch them — no
+account needed.
+
+The hosted product adds premium templates and the full pipeline; the skill gives any agent
+strong standalone results and shares the same DVSpec format.
+
+```bash
+git clone https://github.com/HKUSTDial/DataMagic
+cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
+```
+
+Then ask your agent: *"Make a narrated data video from this CSV …"*. See the
+[skill README](./datamagic-video/README.md) for details.
+
 ## 🤝 Community
 
 The source code is being progressively open-sourced — ⭐ star this repo to follow updates.
@@ -150,7 +170,7 @@ Follow either official account below and reply **DataMagic** to receive a one-ti
 - [x] Core generation modes — Full Pipeline, Fast Generation, and Single Chart.
 - [x] Template gallery and runtime editing — preview styles, edit generated text, and refine with natural language.
 - [x] Bilingual public documentation — English and Chinese release docs.
-- [ ] Data-video skill package — reusable guidance for data-video planning, chart selection, DVSpec authoring, and animation design.
+- [x] Data-video skill package — reusable guidance for data-video planning, chart selection, DVSpec authoring, and animation design. ([datamagic-video/](./datamagic-video/))
 - [ ] More diverse visual styles — richer narrative cards, report themes, domain-specific templates, and presentation-ready layouts.
 - [ ] Recommendation and feedback learning — improve template ranking from user preferences and real generation outcomes.
 - [ ] Public implementation materials — clearer notes for the pipeline, DVSpec, template adapters, example datasets, and deployment.
@@ -175,6 +195,7 @@ If you find DataMagic useful in your research or work, please cite:
 
 ## 📚 Documentation
 
+- [Data-Video Skill](./datamagic-video/README.md)
 - [Pipeline Overview](./docs/pipeline-overview.md)
 - [DVSpec Overview](./docs/dvspec-overview.md)
 - [Input and Output Examples](./docs/input-output-examples.md)
