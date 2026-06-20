@@ -23,9 +23,9 @@
 
 ## 链接
 
-**项目主页：** [https://datamagic-home.github.io](https://datamagic-home.github.io)
-
 **在线试用：** [https://datamagic.chat/](https://datamagic.chat/)
+
+**项目主页：** [https://datamagic-home.github.io](https://datamagic-home.github.io)
 
 **论文：** [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
 

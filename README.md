@@ -23,9 +23,9 @@
 
 ## Links
 
-**Project homepage:** [https://datamagic-home.github.io](https://datamagic-home.github.io)
-
 **Try it:** [https://datamagic.chat/](https://datamagic.chat/)
+
+**Project homepage:** [https://datamagic-home.github.io](https://datamagic-home.github.io)
 
 **Paper:** [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
 
