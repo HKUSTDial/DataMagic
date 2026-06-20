@@ -31,9 +31,9 @@
 
 ## 🔥 动态
 
-- **[2026.06.18]** 📄 我们的论文 **"DataMagic: Transforming Tabular Data into Data Insight Video"** 被 **VLDB 2026 Demo Track** 录用，现已上线 [arXiv](https://arxiv.org/abs/2606.20388)。
 - **[2026.06.20]** 🚀 DataMagic 正式上线！前往 [datamagic.chat](https://datamagic.chat/) 试用——上传数据即可在几分钟内生成带旁白的数据视频。
 - **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./datamagic-video/)** —— 可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
+- **[2026.06.18]** 📄 我们的论文 **"DataMagic: Transforming Tabular Data into Data Insight Video"** 被 **VLDB 2026 Demo Track** 录用，现已上线 [arXiv](https://arxiv.org/abs/2606.20388)。
 
 ## ⚡ 快速上手
 
