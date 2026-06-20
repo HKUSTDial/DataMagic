@@ -79,6 +79,12 @@ Python with `edge-tts` (free voiceover) — the skill explains the steps.
 The DVSpec format is the bridge: the same plan this skill authors is what DataMagic renders at
 full fidelity.
 
+## Status
+
+This is an **early release**. The skill works end-to-end; we're actively refining the rules from
+real generations. Issues and suggestions are very welcome — open one on the
+[main repository](https://github.com/HKUSTDial/DataMagic).
+
 ## License & citation
 
 If you use this in research or work, please cite DataMagic — see the
