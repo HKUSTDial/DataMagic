@@ -20,9 +20,10 @@ These are non-negotiable. They prevent mistakes, not expression.
 **Color**
 - One global theme per video. Every scene shares the same background family, accent, and neutrals. Never let a scene invent an unrelated color.
 - Max **6** data hues in one chart. Beyond that, aggregate as "Other."
-- Reserve **one warm attention color** (coral/red, e.g. `#ff6b6b` / `#ef4444`) used *only* for the highlighted mark. It is not a data-series color. Highlight = warm color + glow; the data palette stays cooler so the highlight always pops.
+- Reserve **one attention color** (a warm or contrasting hue, e.g. `#ff6b6b` / `#ef4444` / an electric accent) used *only* for the highlighted mark — never a data-series color. The highlight pops through **color contrast** against a cooler/neutral data palette; a glow is optional and pack-dependent.
 - When emphasizing, dim non-highlighted marks to **~0.45 opacity, not lower** — they must stay readable as context. Killing them to ~0.1 looks like a bug, not a focus. (This is the single most common amateur mistake.)
 - Text must clear **4.5:1** contrast against its background. Light text on light fills is a bug.
+- **No "AI-default" aesthetic.** Avoid the generated-UI clichés: purple/blue hero gradients, neon palettes, glassmorphism, rainbow series, glow-on-everything. Prefer **real, restrained palettes** — one accent over a neutral ramp, **solid backgrounds over gradients**. Energy comes from contrast, scale, and motion, not from a purple gradient. When in doubt, borrow a palette from a real, well-designed source rather than inventing one.
 
 **Type**
 - One type scale per video (defaults below). Never more than **3** sizes visible in a single frame.
@@ -32,12 +33,17 @@ These are non-negotiable. They prevent mistakes, not expression.
 **Space**
 - One spacing unit (8px grid). Pad scene edges to at least **64px**. Content never touches the frame edge.
 - One chart per `chart` scene. Never two charts side by side competing for attention.
+- **Chart surface.** Set the chart on a **soft surface card** (rounded ~20–24, generous padding, a near-background neutral fill) instead of letting bare marks float on the full frame — the card gives the chart breathing room and a finished frame. The card is a *surface*, not a decorative border (no heavy outline).
+- **Background.** Prefer a **restrained same-family vertical gradient** (e.g. charcoal `#15171C` → near-black `#0B0D10` for dark; white → faint warm grey for light) over a flat fill — subtle depth, never an "AI" purple/blue gradient (see the invariant above).
 
 **Subtitle safe zone (critical, and easy to forget)**
 - The bottom **~22%** of the frame is reserved for the narration subtitle. On a 1080p (1920×1080) canvas, keep **all** readable content above **y ≈ 840**; on 720p keep it above **y ≈ 520**.
 - "All readable content" means everything: axis ticks, category labels, legends, value labels, callouts, the lowest bar/row, glows. Not just the chart box — the *labels* are what collide.
 - If content would drop into the zone, **shrink the chart** (reduce height, font, row gap, or move legend to the top-right) — never push the chart down, and never rely on an empty spacer.
-- Show **one** subtitle segment at a time, in a dark glass box (≈ `rgba(0,0,0,0.86)` + `backdrop-blur`, radius 10, padding 18×36, white 24px/600). Keep it identical across every scene.
+- Show **one** subtitle segment at a time, in a glass caption that **matches the background brightness** — never a black box on a light video:
+  - **Dark background** → dark glass `rgba(0,0,0,0.82)`, **white** text.
+  - **Light background** → light glass `rgba(255,255,255,0.92)` + a hairline border (`rgba(0,0,0,0.08)`), **dark** text.
+  - Both: `backdrop-blur`, radius ~10–12, padding ~18×36, weight 600, one consistent treatment per video.
 
 **Content discipline (the anti-clutter rules — this is what separates polished from amateur)**
 - **Chart-first.** A chart scene = a title + (optional) one compact KPI/legend + one chart. Nothing else.
@@ -123,13 +129,20 @@ Don't make every video look the same. Pick a **mood** from the same audience sig
 |---|---|---|---|---|
 | **executive** | **Corporate** | dark, restrained — one accent + lots of neutral; deep navy/slate bg | tighter scale, more weight-700 | calm, slower springs (`damping 18`), minimal flourish |
 | **research** | **Editorial** | light, neutral, data-first — near-monochrome with a single accent; generous whitespace | smaller titles, large data values, lots of `textMuted` | precise, quick draw-ons, no bounce; emphasis via annotation not glow |
-| **casual** | **Vibrant** | high saturation, gradient backgrounds, bold accent + secondary | large `display`/`value`, fewer words on screen | punchy, springy (`damping 10`), bigger scale-ups, glow allowed |
+| **casual** | **Vibrant** | solid bold background, one electric accent + neutral greys (no gradients/neon) | large `display`/`value`, fewer words on screen | punchy, springy (`damping 10`), big scale; energy from contrast, not glow |
 
 **How to apply:** choose the preset once, up front, then it overrides the relevant default tokens (palette saturation, type emphasis, spring damping, whether glow is used). Everything else inherits Layer-2 defaults. This is how you get variety *with* quality instead of *instead of* it.
 
 > Topic can nudge the palette **hue** within a preset: finance → cooler blues/greens; health → teal/coral; energy/climate → amber/green. Keep the *structure* (one accent + neutrals + semantic colors); change only the hue family.
 
 ---
+
+> **Style library.** Each register maps to a full **style pack** — concrete tokens, a *banned*
+> list, and (uniquely for data video) motion-energy and narration-tone rules. See
+> [`rules/styles/`](./styles/README.md): `editorial`, `corporate`, `vibrant`, `newsroom`. Pick
+> **one** pack per video; it overrides these defaults where it says so and inherits the rest.
+> The Layer 1–3 defaults alone already give a clean result; reach for a pack for a distinct,
+> repeatable look.
 
 ## Layer 4 — Deviating coherently
 

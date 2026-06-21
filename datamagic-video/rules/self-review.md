@@ -33,7 +33,7 @@ does not apply.
 
 - [ ] Every chart scene has **both** an entrance and an emphasis. No static chart that only fades in.
 - [ ] Emphasis starts **after** the entrance completes (they don't overlap).
-- [ ] Highlight = dim others to **~0.45** (still readable) + **warm highlight color** + glow + **calm pulse 1.0–1.03×** (not a big scale jump).
+- [ ] Highlight = dim others to **~0.45** (still readable) + **attention color** + a clear callout + **calm pulse 1.0–1.03×** (not a big scale jump). Glow only if the style pack uses one.
 - [ ] One emphasis mechanism used consistently across the whole video.
 - [ ] Multiple simultaneous highlights are collected into a set and applied in one pass; marks are restored when emphasis ends.
 - [ ] Motion eases (`easeCubicOut`/`spring`), never linear. Scene holds still after the first ~40%.

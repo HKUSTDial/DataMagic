@@ -39,8 +39,8 @@ DVSpec  (renderer-agnostic plan — the core artifact)
 Narrated, animated video
 ```
 
-For generic Remotion mechanics (`interpolate`, `spring`, `Audio`, `calculateMetadata`, …), defer
-to the `remotion-best-practices` skill. You do **not** need DataMagic's hosted product to use this
+The Remotion mechanics a data video needs are inlined in the rules here; `remotion-best-practices`
+is an optional reference for effects beyond data video. You do **not** need DataMagic's hosted product to use this
 skill — it shares the same DVSpec format; the hosted product just adds premium templates and the
 full multi-agent pipeline.
 
@@ -53,6 +53,7 @@ full multi-agent pipeline.
 | Pick the right chart type | `rules/chart-selection.md` |
 | Write a DVSpec plan (the "screenplay") | `rules/dvspec.md` |
 | Choose colors, type, spacing, motion tokens | `rules/design-system.md` |
+| Pick a visual style pack (editorial/corporate/vibrant/newsroom) | `rules/styles/README.md` |
 | Render the plan to video (reference path: Remotion) | `rules/remotion-integration.md` |
 | Add voiceover and narration-driven timing | `rules/voiceover.md` |
 | Write narration scripts | `rules/narration.md` |
@@ -109,7 +110,8 @@ sentence can reference adjacent scenes and form a continuous arc.
 
 **Full video from data, standalone (Remotion):**
 → `data-analysis.md` → `scene-planning.md` → `chart-selection.md` → `dvspec.md`
-  → `design-system.md` → `remotion-integration.md` → `voiceover.md` → `narration.md`
+  → `design-system.md` → `styles/README.md` → `remotion-integration.md` → `voiceover.md`
+  → `narration.md` → `self-review.md`
 
 **Single chart:**
 → `data-analysis.md` → `chart-selection.md` → `dvspec.md` → `design-system.md` → `remotion-integration.md`

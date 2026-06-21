@@ -2,7 +2,7 @@
 
 A data video is narrated. This file covers generating the voiceover audio from the DVSpec `narration` segments and letting the **audio drive scene duration** — so you never hand-count frames.
 
-For the Remotion mechanics of playing audio (`<Audio>`, `staticFile`, delaying start) and measuring duration (`getAudioDuration`, `calculateMetadata`), defer to the `remotion-best-practices` skill (`rules/voiceover.md`, `rules/audio.md`, `rules/get-audio-duration.md`, `rules/calculate-metadata.md`). This file covers the data-video-specific wiring and the TTS options.
+This file **inlines** the audio wiring a data video needs — delaying each narration segment, measuring it, and driving scene duration from the audio — so you don't need another skill to ship sound. (For audio features beyond narration — waveform visualizers, SFX, music ducking — the `remotion-best-practices` skill is an optional reference.)
 
 ## Core principle: audio drives duration
 
@@ -64,7 +64,7 @@ Match the voice to `meta.language`. Examples: `en-US-AriaNeural`, `zh-CN-Xiaoxia
 
 ## Narration-driven duration with calculateMetadata
 
-Measure each scene's total audio (sum of its segment MP3s), add padding, and set scene/composition duration. See `remotion-best-practices` → `calculate-metadata.md` for the API; the data-video-specific part is summing per-segment durations per scene and exposing per-segment start frames so animation triggers can resolve (see `remotion-integration.md`).
+Measure each scene's total audio (sum of its segment MP3s), add padding, and set scene/composition duration. The data-video-specific part is summing per-segment durations per scene and exposing per-segment start frames so animation triggers can resolve (see `remotion-integration.md`). The `calculateMetadata` code is below.
 
 ```tsx
 const FPS = 30;
@@ -93,7 +93,7 @@ const segmentStartFrames = segDurations.reduce<number[]>((acc, d, i) => {
 
 ## Playing audio in a scene
 
-Render each narration segment's `<Audio>` at its segment start frame within the scene, so subtitles, audio, and animation stay aligned. Pull the exact `<Audio>` placement/offset pattern from `remotion-best-practices`.
+Render each narration segment's `<Audio>` at its segment start frame within the scene — delay it with `<Sequence from={…}>`, **never** `<Audio startFrom={…}>` (that trims the file instead of delaying it) — so subtitles, audio, and animation stay aligned.
 
 ## Subtitles
 

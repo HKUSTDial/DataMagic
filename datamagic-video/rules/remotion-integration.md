@@ -7,9 +7,11 @@ narration-indexed triggers, audio-driven duration) carry over to other stacks: c
 D3 / Vega-Lite / ECharts, animation via GSAP / Anime.js. Only the rendering API changes; the
 DVSpec and the planning rules do not.
 
-For generic Remotion mechanics — `interpolate`, `spring`, `Sequence`, `Series`, `Audio`,
-`calculateMetadata`, fonts, easing — defer to the `remotion-best-practices` skill. This file
-covers only the **data-video-specific** structure.
+This file **inlines** the Remotion mechanics a data video actually needs — scene structure, data
+binding, animation, fonts, transitions, and audio-driven timing — so the skill is self-contained.
+For advanced effects *outside* data video (3D, maps, Lottie, GIFs, light leaks, transparent
+video), the `remotion-best-practices` skill is a useful **optional** reference; you do not need it
+to ship a standard data video.
 
 ## Project shape
 
@@ -66,7 +68,14 @@ Render scenes back-to-back, each occupying frames sized to its narration audio (
 
 ### `content.chart_type` → chart component
 
-Generate one data-bound chart component per type you use. Each reads `content.data`, `content.data_binding`, and the scene palette. Keep them **data-driven** — never hardcode values.
+**You are free to implement charts however you like** — hand-written SVG, [Visx](https://airbnb.io/visx/) (low-level D3 primitives; best for full creative control), Recharts or Nivo (faster, polished defaults), or raw D3. The skill does **not** prescribe how a chart looks; it prescribes the *data-video* constraints below. Let the **style pack** (`rules/styles/`) and the data drive the look — a newsroom lower-third bar, a vibrant solid-block bar, and an editorial hairline bar should look genuinely different, not one template recolored.
+
+Two hard rules, whatever you use:
+
+1. **Data-driven, never hardcoded.** Read every value from `content.data` via `content.data_binding`; derive number format from the data (no hardcoded `$`, `%`, `K`, units).
+2. **Frame-driven animation (Remotion).** Turn **off** any charting library's built-in animation — it flickers under Remotion. Drive *all* motion from `useCurrentFrame()`.
+
+A minimal hand-rolled router:
 
 ```tsx
 // ChartScene.tsx
@@ -92,17 +101,27 @@ export const ChartScene: React.FC<{ scene: Scene }> = ({ scene }) => {
 };
 ```
 
-> For the mechanics of animating bars/lines (entrance staggers, value count-ups, axis draw-on), read `remotion-best-practices` → `rules/charts.md` and `rules/animations.md`. This skill tells you *which* chart and *what* to emphasize; that skill tells you *how* to animate it in Remotion.
+> The concrete entrance/emphasis timing for bars and lines is inlined below (see *Animation*) and in `design-system.md`. For animation patterns *beyond* data charts, `remotion-best-practices` (`rules/animations.md`, `rules/charts.md`) is an optional deeper reference.
 
-#### Chart-craft defaults (what makes a chart look finished)
+#### Chart-craft defaults (sensible starting points — not mandates)
 
-- **Headroom:** set the value axis max to `dataMax × 1.2` so value labels and the highlight callout have room above the tallest mark.
-- **Rounded marks:** bars get `borderRadius`/`rx` of **6–8px**. Full-width bars (band padding ~0.2) — never thin bars.
-- **Soft depth:** one subtle drop shadow on marks (`drop-shadow(0 4px 6px rgba(0,0,0,0.3))`). Use a real drop-shadow, not a blurry glow on everything.
-- **Highlight fill:** the highlighted bar/slice can use a subtle vertical gradient (`highlight → accent`); all others use one flat series color.
+These give a clean result when you have no stronger idea. **A style pack overrides any of them, and you should adapt to the data and the pack** — don't apply them mechanically to every chart.
+
+- **Headroom:** leave room above the tallest mark for value labels / the highlight callout (≈ `dataMax × 1.2`).
+- **Marks:** a small corner radius and full-width bars read as modern by default — but a hairline editorial bar or a bold solid vibrant block are equally valid; follow the pack.
+- **Depth:** if you use shadow, make it a real, subtle drop-shadow — not a blurry glow on everything. Many packs (editorial, corporate, vibrant) use **no** shadow at all.
+- **Highlight fill:** the highlighted mark uses the attention color (flat — or a subtle gradient only if the pack allows it); all others use one flat series color or a neutral grey ramp.
 - **Gridlines:** thin, **behind** the marks, low opacity (`surfaceBorder`). Never draw gridlines over bars.
-- **Numbers:** format compactly (`1.2K`, `3.4M`) with tabular figures; value labels sit ≥18px above the bar, weight 700.
+- **Numbers:** format compactly and **adaptively** by magnitude (`1.2K`, `3.4M`, `2.1B`) with tabular figures; value labels sit ≥18px above the bar, weight 700. **Never hardcode a currency symbol, unit, or growth figure** (`$`, `↑25%`) inside a chart component — derive everything from the data, or the same component breaks the moment the next video uses counts or percentages instead of dollars.
 - **Selective labels:** with 5+ marks, label only the highlighted one(s); axes carry the rest (see `design-system.md` content discipline).
+
+#### Chart style patterns (optional — pick per data + style pack)
+
+Beyond a plain vertical bar or line, these read as far more *designed*. A palette of options, not requirements:
+
+- **Horizontal ranking bars** — for 4–7 categories: rows of horizontal bars on **soft neutral tracks** inside the surface card, value at the row end. Cleaner than vertical bars for rankings, and avoids tall thin columns.
+- **Editorial trend line** — for time series: a **hero metric** (the latest or peak value, 64–80px, bold) in a top corner; **one** vivid accent line as the brightest thing on screen (3–4px, rounded caps); a low-opacity **area fill** under it (0.08–0.14, fading to transparent); the latest point marked with a dot; a **sparse axis** (4–6 x-ticks, no vertical gridlines; 2–3 faint horizontal gridlines).
+- **One callout maximum.** Whatever the chart, annotate **only** the single value the narration is on right now; everything else stays unlabeled. This restraint is the biggest difference between a designed chart and a busy one.
 
 ## Data binding discipline
 
@@ -130,8 +149,8 @@ Resolve `target_data` (e.g. `{ "Category": "Software" }`) by matching records in
 A `highlight` does **three things together** when `frame >= triggerFrame`:
 
 1. **Dim non-highlighted marks to ~0.45** (not lower) over ~12 frames — they stay readable as context.
-2. **Emphasize the highlighted mark** with the **warm highlight color** (`#ff6b6b` / `#ef4444`, never a series color) + a **glow** + a **calm pulse** (1.0–1.03×). Pulse, do not scale big.
-3. **Show a callout annotation** — a floating badge with the called-out value (e.g. `"$182K · +25% YoY"`) that springs in.
+2. **Emphasize the highlighted mark** with the **attention color** (a warm or contrasting hue reserved for highlights, never a series color) + a **calm pulse** (1.0–1.03×). Add a **glow only if the style pack calls for one** — `editorial`, `corporate`, and `vibrant` rely on color contrast instead. Pulse, never scale big.
+3. **Show a callout annotation** — a floating badge with the called-out value (format derived from the data, e.g. `"283M"` or `"2 months"`) that springs in.
 
 ```tsx
 const { fps } = useVideoConfig();
@@ -177,11 +196,71 @@ Do **not** grow all bars at once from frame 0 (reads static). For line charts, d
 
 `meta.mode` (`light` | `dark` | `balanced`) sets the global palette. Define a theme object once and thread it to every scene; do not let individual scenes invent unrelated colors. Keep a single visual identity across the whole video (one background family, one type scale).
 
+## Fonts — load the style pack's typeface
+
+Style packs call for specific type — `editorial` wants a serif, `newsroom` a condensed
+grotesque. Load it properly so Remotion blocks rendering until the font is ready; otherwise the
+first frames flash a fallback font.
+
+**Google Fonts** (simplest):
+
+```bash
+npx remotion add @remotion/google-fonts
+```
+
+```tsx
+import { loadFont } from "@remotion/google-fonts/Newsreader";
+const { fontFamily } = loadFont("normal", { weights: ["400", "700"], subsets: ["latin"] });
+// thread `fontFamily` into your theme object (design-system.md → Theme)
+```
+
+**Local / brand fonts** — place the files in `public/`, then:
+
+```tsx
+import { loadFont } from "@remotion/fonts";
+import { staticFile } from "remotion";
+
+await loadFont({ family: "Inter", url: staticFile("Inter-Bold.woff2"), weight: "700" });
+```
+
+Load each weight separately with the same `family`. Then set the font once on the theme and let
+every scene inherit it — match the pack (serif/condensed display for editorial/newsroom, clean
+grotesque for corporate/vibrant).
+
+## Scene transitions — optional, smoother than hard cuts
+
+By default scenes hard-cut. A short crossfade or slide reads more polished. Swap `<Series>` for
+`<TransitionSeries>`:
+
+```bash
+npx remotion add @remotion/transitions
+```
+
+```tsx
+import { TransitionSeries, linearTiming } from "@remotion/transitions";
+import { fade } from "@remotion/transitions/fade";
+
+<TransitionSeries>
+  <TransitionSeries.Sequence durationInFrames={sceneFrames[0]}><SceneRouter scene={a} /></TransitionSeries.Sequence>
+  <TransitionSeries.Transition presentation={fade()} timing={linearTiming({ durationInFrames: 12 })} />
+  <TransitionSeries.Sequence durationInFrames={sceneFrames[1]}><SceneRouter scene={b} /></TransitionSeries.Sequence>
+</TransitionSeries>
+```
+
+Match the transition to the pack: a quick `fade()` (12–15 frames) for editorial/corporate/newsroom;
+a `slide()` can suit vibrant's higher energy. Keep them short.
+
+> **Audio caveat (data-video-specific).** A `<TransitionSeries.Transition>` **overlaps** the two
+> scenes, so it *shortens the total timeline* by its duration — and the two scenes' voiceover
+> briefly plays at once. Keep transitions ≤ ~12 frames so narration doesn't collide, and remember
+> total duration = Σ scene frames − Σ transition frames when you compute the composition length in
+> `calculateMetadata` (see `voiceover.md`).
+
 ## Build order (recommended)
 
 1. Scaffold `Root.tsx` + `DataVideo.tsx` with hardcoded placeholder durations — get scenes rendering in order.
 2. Build each scene component to its **hero frame** (most-visible static layout) before adding motion.
-3. Add entrance/emphasis animation per scene (`remotion-best-practices`).
+3. Add entrance/emphasis animation per scene (see *Animation* above + `design-system.md`).
 4. Generate voiceover and switch to `calculateMetadata` so durations come from audio (`voiceover.md`).
 5. Wire animation triggers to narration segment frames.
 6. Render to MP4.
