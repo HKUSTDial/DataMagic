@@ -123,6 +123,33 @@ Beyond a plain vertical bar or line, these read as far more *designed*. A palett
 - **Editorial trend line** — for time series: a **hero metric** (the latest or peak value, 64–80px, bold) in a top corner; **one** vivid accent line as the brightest thing on screen (3–4px, rounded caps); a low-opacity **area fill** under it (0.08–0.14, fading to transparent); the latest point marked with a dot; a **sparse axis** (4–6 x-ticks, no vertical gridlines; 2–3 faint horizontal gridlines).
 - **One callout maximum.** Whatever the chart, annotate **only** the single value the narration is on right now; everything else stays unlabeled. This restraint is the biggest difference between a designed chart and a busy one.
 
+#### Putting a chart on a surface card
+
+Wrap the title + chart in one flex card so the chart never floats on the bare frame:
+
+```tsx
+<div style={{
+  flex: 1, minHeight: 0, display: "flex", flexDirection: "column",
+  background: theme.color.surface,                       // near-background neutral, not a bright fill
+  border: `1px solid ${theme.color.surfaceBorder}`,
+  borderRadius: 24, padding: "40px 48px",
+}}>
+  <h2 style={{ ...theme.type.title, fontFamily: theme.fontDisplay }}>{title}</h2>
+  <div style={{ flex: 1, minHeight: 0 }}><Chart … /></div>
+</div>
+```
+
+The card reads as a raised *panel*, not a decorative box — keep the fill subtle and the border a hairline.
+
+#### Horizontal ranking bar — row structure
+
+For 4–7 ranked categories, each row is `[ label (right-aligned, fixed width) | track (flex) | value (fixed width) ]`:
+
+- **Track:** a full-width rounded bar in `surfaceBorder` (the soft neutral track).
+- **Fill:** width = `value / max × grow`, colored with the series color — or the **attention color** when that row is highlighted (others dim to ~0.45).
+- **Sort:** ascending keeps the smallest/fastest on top (a "ChatGPT did it in 2 months" story); descending for normal "who's biggest" rankings.
+- Stagger the rows' grow springs; right-align labels so the tracks start on a clean vertical line.
+
 ## Data binding discipline
 
 The whole point of a *data* video is provenance: every visual mark traces to a data record.
