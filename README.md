@@ -3,7 +3,7 @@
 
 **将结构化数据转化为带旁白的动态数据故事。**
 
-*为数据分析师、研究人员，以及所有希望让数据开口说话的人打造。*
+*面向数据分析师、研究人员，以及所有想把数据变成故事的人。*
 
 [![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://vldb.org/2026/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
@@ -18,7 +18,7 @@
 <!-- 将 demo GIF 放到 ./images/demo-hero.gif，这里会自动显示。 -->
 <!-- 制作说明见文件底部注释。 -->
 <div align="center">
-<img src="./images/demo-hero.gif" width="760" alt="DataMagic — 从上传数据到输出带旁白动态视频">
+<img src="./images/demo-hero.gif" width="760" alt="DataMagic 从上传数据到输出带旁白动态视频">
 </div>
 
 ## 链接
@@ -31,23 +31,23 @@
 
 ## 🔥 动态
 
-- **[2026.06.20]** 🚀 DataMagic 正式上线！前往 [datamagic.chat](https://datamagic.chat/) 试用——上传数据即可在几分钟内生成带旁白的数据视频。
-- **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./datamagic-video/)** —— 可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
+- **[2026.06.20]** 🚀 DataMagic 正式上线！前往 [datamagic.chat](https://datamagic.chat/) 试用，上传数据即可在几分钟内生成带旁白的数据视频。
+- **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./datamagic-video/)**，可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
 - **[2026.06.18]** 📄 我们的论文 **"DataMagic: Transforming Tabular Data into Data Insight Video"** 被 **VLDB 2026 Demo Track** 录用，现已上线 [arXiv](https://arxiv.org/abs/2606.20388)。
 
 ## ⚡ 快速上手
 
-1. **上传数据** — CSV 或 Excel 表格
-2. **查看 AI 推荐** — 图表类型、旁白脚本、视觉风格
-3. **导出视频** — 下载生成好的数据故事视频
+1. **上传数据**：CSV 或 Excel 表格
+2. **查看 AI 推荐**：图表类型、旁白脚本、视觉风格
+3. **导出视频**：下载生成好的数据故事视频
 
 ## 🎯 使用模式
 
-**完整流程** — 适合需要完整叙事的数据演示：业务汇报、研究总结、向团队或领导展示分析结论。上传数据后，AI 自动规划场景结构、推荐图表、生成旁白，你只需审阅调整，即可导出完整的数据故事视频。
+**完整流程**：适合需要完整叙事的数据演示，如业务汇报、研究总结、向团队或领导展示分析结论。上传数据后，AI 自动规划场景结构、推荐图表、生成旁白，你只需审阅调整，即可导出完整的数据故事视频。
 
-**快速生成** — 适合需要完整视频但对速度有要求的场景：周期性报告、快速出草稿、赶时间的演示准备。AI 仍会完成规划和旁白，但渲染速度更快，更快拿到可用的视频。
+**快速生成**：适合需要完整视频但对速度有要求的场景，如周期性报告、快速出草稿、赶时间的演示准备。AI 仍会完成规划和旁白，但渲染速度更快，能更快拿到可用的视频。
 
-**Single Chart（单图表模式）** — 适合只需要表达一个核心数据洞察的场景：插入 PPT、发布社交媒体、会议中快速分享一个趋势图。粘贴数据后几秒内得到一张带动效的图表，简洁直接。
+**Single Chart（单图表模式）**：适合只需要表达一个核心数据洞察的场景，如插入 PPT、发布社交媒体、会议中快速分享一个趋势图。粘贴数据后几秒内得到一张带动效的图表，简洁直接。
 
 > [!NOTE]
 > **快速生成** 与 **Single Chart** 目前处于测试阶段（Beta）。常见用例下运行正常，但在一些边缘情况下可能出现非预期结果。欢迎通过 Issues 反馈问题。
@@ -58,7 +58,7 @@
 <video src="https://github.com/user-attachments/assets/60bf21f9-1b04-4025-9f58-38b73818b068" width="760" controls></video>
 </div>
 
-**系统流程展示** — 从上传数据到输出带旁白的动态视频。
+**系统流程展示**：从上传数据到输出带旁白的动态视频。
 
 ## 🌟 生成示例
 
@@ -99,19 +99,19 @@
 
 ## ✨ 功能概览
 
-DataMagic 有两个核心差异点：**数据绑定场景**——每个视觉元素直接绑定到数据字段，故事全程可追溯、可编辑；**旁白感知时序**——动画节奏与解说词自动对齐，输出的视频是有叙事感的完整作品，而不是拼凑的图表集合。
+DataMagic 有两个核心差异点：**数据绑定场景**（每个视觉元素直接绑定到数据字段，故事全程可追溯、可编辑）和**旁白感知时序**（动画节奏与解说词自动对齐，输出的视频是有叙事感的完整作品，而不是拼凑的图表集合）。
 
 - 上传表格数据后自动生成完整数据视频。
 - 快速生成模式：保留 AI 规划与旁白，通过运行时模板更快生成完整视频。
 - Single Chart 模式：通过粘贴或上传数据快速生成单个动态图表。
 - AI 辅助推荐图表类型和视觉模板。
 - 支持运行时预览、直接视觉编辑和自然语言修改。
-- 数据绑定场景——视觉元素与底层数据字段一一对应，强调可追溯性。
-- 旁白感知时序——动画节奏与解说词对齐，生成有叙事结构的数据视频。
+- 数据绑定场景：视觉元素与底层数据字段一一对应，强调可追溯性。
+- 旁白感知时序：动画节奏与解说词对齐，生成有叙事结构的数据视频。
 
 ## 🧩 数据视频 Skill
 
-我们同时公开 **[`datamagic-video`](./datamagic-video/)** —— 一个把数据视频*方法论*教给 AI 编程智能体（Claude Code、Cursor、Codex 等）的 skill：叙事模式、图表选择、DVSpec 编写、旁白写作、动画时序。它产出的视频用开源工具链即可渲染，任何人都能生成、能观看，无需账号。
+我们同时公开 **[`datamagic-video`](./datamagic-video/)**，一个把数据视频方法论教给 AI 编程智能体（Claude Code、Cursor、Codex 等）的 skill，涵盖叙事模式、图表选择、DVSpec 编写、旁白写作、动画时序。它产出的视频用开源工具链即可渲染，任何人都能生成、能观看，无需账号。
 
 托管产品提供精修模板和完整 pipeline；skill 让任何智能体都能独立产出优秀的数据视频，并共享同一套 DVSpec 格式。
 
@@ -120,11 +120,11 @@ git clone https://github.com/HKUSTDial/DataMagic
 cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
 ```
 
-然后对智能体说：*“帮我用这个 CSV 生成一个带旁白的数据视频……”*。详见 [skill 说明](./datamagic-video/README.md)。
+然后对智能体说：「帮我用这个 CSV 生成一个带旁白的数据视频……」。详见 [skill 说明](./datamagic-video/README.md)。
 
 ## 🤝 交流社区
 
-源码将逐步开源——欢迎 ⭐ Star 本仓库关注进展。
+源码将逐步开源，欢迎 ⭐ Star 本仓库关注进展。
 
 <table>
   <tr>
@@ -160,13 +160,13 @@ cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
 
 ## 📍 当前状态
 
-- [x] 核心生成模式 — 完整流程、快速生成和 Single Chart。
-- [x] 模板库和运行时编辑 — 预览视觉风格、编辑生成文本，并通过自然语言继续优化。
-- [x] 中英文公开文档 — 面向英文和中文用户的发布说明。
-- [x] 数据视频 skill 包 — 沉淀数据视频规划、图表选择、DVSpec 编写和动画设计的可复用指导。（[datamagic-video/](./datamagic-video/)）
-- [ ] 更多样的视觉风格 — 扩展叙事卡片、报告主题、领域化模板和适合演示的版式。
-- [ ] 推荐与反馈学习 — 基于用户偏好和真实生成结果改进模板排序。
-- [ ] 公开实现资料 — 完善 pipeline、DVSpec、模板适配器、示例数据集和部署说明。
+- [x] 核心生成模式：完整流程、快速生成和 Single Chart。
+- [x] 模板库和运行时编辑：预览视觉风格、编辑生成文本，并通过自然语言继续优化。
+- [x] 中英文公开文档：面向英文和中文用户的发布说明。
+- [x] 数据视频 skill 包：沉淀数据视频规划、图表选择、DVSpec 编写和动画设计的可复用指导。（[datamagic-video/](./datamagic-video/)）
+- [ ] 更多样的视觉风格：扩展叙事卡片、报告主题、领域化模板和适合演示的版式。
+- [ ] 推荐与反馈学习：基于用户偏好和真实生成结果改进模板排序。
+- [ ] 公开实现资料：完善 pipeline、DVSpec、模板适配器、示例数据集和部署说明。
 - [ ] 扩展导出格式与分享流程。
 - [ ] 面向部署场景的团队和后台监控能力。
 
@@ -203,9 +203,9 @@ cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
 如何制作动图（Hero GIF）
 ─────────────────────────────────────────────────────────
 录制内容（目标时长 20–40 秒）：
-  1. 数据上传界面 — 拖入 CSV/Excel 文件
-  2. AI 推荐面板 — 图表类型和旁白建议出现的过程
-  3. 预览界面 — 动态视频播放
+  1. 数据上传界面：拖入 CSV/Excel 文件
+  2. AI 推荐面板：图表类型和旁白建议出现的过程
+  3. 预览界面：动态视频播放
   4. （可选）一键导出
 
 录制工具：
@@ -213,11 +213,11 @@ cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
   • Windows：Xbox Game Bar（Win+G）或 ShareX
 
 转换为 GIF：
-  • Gifski（https://gif.ski）— 质量最好，Mac 上可拖拽使用
+  • Gifski（https://gif.ski）：质量最好，Mac 上可拖拽使用
   • ffmpeg：ffmpeg -i recording.mp4 -vf "fps=15,scale=1280:-1" -loop 0 demo-hero.gif
   • 文件大小控制在 8 MB 以内，建议 15 fps
 
 保存路径：
-  ./images/demo-hero.gif  ← README 已经指向这里
+  ./images/demo-hero.gif
 ─────────────────────────────────────────────────────────
 -->
