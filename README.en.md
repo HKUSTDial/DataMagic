@@ -43,11 +43,11 @@
 
 ## 🎯 Workflows
 
-**Full Pipeline** — Best for a complete, presentation-ready data story. Upload your dataset and DataMagic handles the structure: scene planning, chart selection, narration script, and visual pacing. You review and refine, then export a finished video. Ideal for business reports, research summaries, and stakeholder presentations.
+**Full Pipeline** — Starting from a data table, AI automatically analyzes the data, plans the narrative structure, and generates narration and animations for each scene, with animations synchronized to the narration automatically. The result is a complete multi-scene data video. Best for high-quality presentations such as business reports, research showcases, and sharing analytical conclusions with your team or leadership.
 
-**Fast Generation** — Best when you want a complete narrated video but need it done quickly. DataMagic still handles AI planning and narration, but uses optimized rendering for faster output. A good choice for recurring reports, drafts, or when turnaround time matters.
+**Fast Generation** — Follows the same process as Full Pipeline — AI still handles content planning and narration — but scene rendering uses pre-built visual templates instead of per-scene AI generation, making it significantly faster with less visual customization. Best for users who prioritize speed, such as recurring report production or when visual style is not a primary concern.
 
-**Single Chart** — Best for one focused insight. Paste or upload your data and get a single animated chart in seconds — no narration, no multi-scene structure. Perfect for embedding in a slide deck, sharing on social media, or quickly illustrating a data point.
+**Single Chart** — No full video needed, just one animated chart to illustrate a data insight. Paste your data and quickly generate a single animated chart, ready to embed in a presentation, report, or social media post. Best for users who want to communicate a single data point without a full narrative structure.
 
 > [!NOTE]
 > **Fast Generation** and **Single Chart** are experimental features currently in beta. They work well for typical inputs but may produce unexpected results in edge cases. Feedback and bug reports via Issues are very welcome.
