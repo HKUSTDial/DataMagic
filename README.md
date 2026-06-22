@@ -7,6 +7,7 @@
 
 [![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://vldb.org/2026/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
+[![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
 ![Status](https://img.shields.io/badge/状态-上线中-brightgreen)
 
 [中文](./README.md) | [English](./README.en.md)

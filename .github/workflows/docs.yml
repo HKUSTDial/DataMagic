@@ -1,0 +1,90 @@
+name: docs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - ".github/workflows/docs.yml"
+      - ".markdownlint.json"
+      - ".markdown-link-check.json"
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".github/workflows/docs.yml"
+      - ".markdownlint.json"
+      - ".markdown-link-check.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdownlint:
+    name: markdownlint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli@0.41.0
+
+      - name: Run markdownlint
+        run: markdownlint "**/*.md" --ignore node_modules
+
+  link-check:
+    name: link check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect changed Markdown files
+        id: changed
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            files=$(git diff --name-only --diff-filter=AM "$BASE_SHA" "$HEAD_SHA" -- '*.md')
+          elif [ "$EVENT_NAME" = "push" ] && [ -n "${BEFORE_SHA:-}" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
+            files=$(git diff --name-only --diff-filter=AM "$BEFORE_SHA" "$AFTER_SHA" -- '*.md')
+          else
+            files=""
+          fi
+          {
+            echo "files<<EOF"
+            echo "$files"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Install markdown-link-check
+        if: steps.changed.outputs.files != ''
+        run: npm install -g markdown-link-check@3.12.2
+
+      - name: Run markdown-link-check
+        if: steps.changed.outputs.files != ''
+        env:
+          FILES: ${{ steps.changed.outputs.files }}
+        run: |
+          set -uo pipefail
+          fail=0
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            [ -f "$f" ] || continue
+            echo "::group::$f"
+            markdown-link-check -q -c .markdown-link-check.json "$f" || fail=1
+            echo "::endgroup::"
+          done <<< "$FILES"
+          exit $fail

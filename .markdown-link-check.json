@@ -1,0 +1,14 @@
+{
+  "timeout": "10s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206, 301, 302, 303, 307, 308],
+  "ignorePatterns": [
+    { "pattern": "^https://github.com/user-attachments/assets" },
+    { "pattern": "^https://arxiv.org/" },
+    { "pattern": "^http://localhost" },
+    { "pattern": "^#.*" },
+    { "pattern": "^\\./images/demo-hero\\.gif$" }
+  ]
+}
