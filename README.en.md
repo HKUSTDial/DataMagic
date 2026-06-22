@@ -15,13 +15,6 @@
 [🔥 News](#-news) • [⚡ Quick Start](#-quick-start) • [🌟 Examples](#-examples) • [🎯 Workflows](#-workflows) • [📖 Citation](#-citation) • [🤝 Community](#-community)
 </div>
 
-<!-- HERO GIF PLACEHOLDER -->
-<!-- Drop your demo GIF at ./images/demo-hero.gif and it will appear here automatically. -->
-<!-- See the bottom of this file for recording instructions. -->
-<div align="center">
-<img src="./images/demo-hero.gif" width="760" alt="DataMagic — from data upload to animated narrated video">
-</div>
-
 ## Links
 
 **Try it:** [https://datamagic.chat/](https://datamagic.chat/)
@@ -100,15 +93,10 @@ Over 100 ready-made visual styles across bar, line, pie, scatter, Sankey, waterf
 
 ## ✨ Features
 
-Two things set DataMagic apart: **data-grounded scenes** bind every visual element directly to a data field so the story stays traceable and editable; **narration-aware timing** aligns animation pacing with the voiceover so the result feels authored, not assembled.
+DataMagic is built around two core principles: **data-grounded scenes** (every visual element bound directly to a data field, keeping the story fully traceable and editable) and **narration-aware timing** (animations auto-synced with the voiceover, producing a coherent narrative rather than a collection of disconnected charts).
 
-- Full data-to-video generation from uploaded tabular data.
-- Fast runtime video generation with AI planning plus template-based rendering.
-- Single Chart mode for quickly creating one animated visualization from pasted or uploaded data.
-- AI-assisted chart and style-template recommendation.
+- AI-assisted chart type and visual template recommendation.
 - Runtime preview, direct visual editing, and natural-language refinement.
-- Data-grounded scenes — visual elements bound to underlying data fields for full traceability.
-- Narration-aware timing — animation and voiceover assembled into a coherent story rhythm.
 
 ## 🧩 Data-Video Skill
 
@@ -206,25 +194,3 @@ If you find DataMagic useful in your research or work, please cite:
 <img src="./assets/framework-1.png" width="760" alt="DataMagic system framework">
 </div>
 
-<!--
-HOW TO CREATE THE HERO GIF
-─────────────────────────────────────────────────────────
-What to record (aim for 20–40 seconds total):
-  1. Data upload screen — drag in a CSV/Excel file
-  2. AI recommendation panel — chart type and narration suggestions appearing
-  3. Preview screen — the animated video playing back
-  4. (Optional) One-click export
-
-Recording tools:
-  • Mac: QuickTime Player → File → New Screen Recording, then crop to the app window
-  • Windows: Xbox Game Bar (Win+G) or ShareX
-
-Converting to GIF:
-  • Gifski (https://gif.ski) — best quality, drag-and-drop on Mac
-  • ffmpeg: ffmpeg -i recording.mp4 -vf "fps=15,scale=1280:-1" -loop 0 demo-hero.gif
-  • Keep file size under 8 MB; target 15 fps
-
-Where to save:
-  ./images/demo-hero.gif  ← the README already points here
-─────────────────────────────────────────────────────────
--->
