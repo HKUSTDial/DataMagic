@@ -21,7 +21,7 @@
 <img src="./images/demo-hero.gif" width="760" alt="DataMagic 从上传数据到输出带旁白动态视频">
 </div>
 
-## 链接
+## 论文与项目相关链接
 
 **在线试用：** [https://datamagic.chat/](https://datamagic.chat/)
 
