@@ -29,6 +29,38 @@
 - **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.
 - **[2026.06.18]** 📄 Our paper **"DataMagic: Transforming Tabular Data into Data Insight Video"** has been accepted to **VLDB 2026 Demo Track** and is now available on [arXiv](https://arxiv.org/abs/2606.20388).
 
+## Why DataMagic?
+
+Most teams already have tables. The hard part is turning those tables into something other people can quickly understand: finding what is worth saying, choosing the right charts, arranging the story, writing narration, timing animations, and producing a video people can actually watch.
+
+DataMagic is built to remove that repetitive work. It helps analyze the data, surface useful insights, and turn them into an editable narrated video you can preview, refine, export, and share.
+
+Today's tools usually cover only one part of the job:
+
+- **Static visualization tools** can generate charts, but not a coherent narrated story.
+- **BI dashboards** support exploration, but audiences still need someone to explain the narrative.
+- **Traditional video editors** can produce polished results, but you still need to prepare charts, scripts, and animations yourself.
+- **Pixel-level video generators** such as Seedance, Sora, and Veo can synthesize attractive videos, but they primarily generate pixels rather than data-bound visual elements, making it hard to trust the numbers, labels, and charts.
+- **Manual coding with D3, Remotion, or video editors** gives control, but it is slow and hard to scale.
+
+DataMagic is built for this missing middle: **turn raw structured data into an editable, traceable, narrated data video**.
+
+## What Is DataMagic?
+
+DataMagic is an AI-assisted system for authoring data videos from tabular data. Upload a CSV or Excel table, provide an analysis goal or business question, and DataMagic helps analyze the data, surface insights, plan the story, choose charts, draft narration, synchronize animation, preview the result, and export an MP4 video.
+
+The goal is not just to "generate a video." The numbers, labels, and charts in a DataMagic video should remain connected to the original table. Under the hood, **DVSpec** connects visual elements, narration, and animation timing so the result is easier to inspect, edit, and extend.
+
+## What Makes It Different?
+
+| What you want to do | Where common tools fall short | How DataMagic helps |
+|---|---|---|
+| Turn a table into a video | Analysis, charting, scripting, and editing usually happen in separate tools | One workflow from uploaded data to narrated video |
+| Let AI find what matters | Many tools draw charts but do not decide what is worth saying | Analyze the data and organize useful findings into scenes |
+| Avoid wrong numbers in AI video | Seedance, Sora, Veo, and other pixel-level models may hallucinate values or labels | Bind chart elements to source data through DVSpec |
+| Edit after generation | Regeneration or manual video editing is often required | Preview, edit text, refine with natural language, and keep changes local where possible |
+| Share the result quickly | Static charts still need someone to explain them | Export a playable animated data story |
+
 ## ⚡ Quick Start
 
 1. **Upload your data** — CSV or Excel table
@@ -41,7 +73,7 @@
 
 **Fast Generation** — Follows the same process as Full Pipeline — AI still handles content planning and narration — but scene rendering uses pre-built visual templates instead of per-scene AI generation, making it significantly faster with less visual customization. Best for users who prioritize speed, such as recurring report production or when visual style is not a primary concern.
 
-**Single Chart** — No full video needed, just one animated chart to illustrate a data insight. Paste your data and quickly generate a single animated chart, ready to embed in a presentation, report, or social media post. Best for users who want to communicate a single data point without a full narrative structure.
+**Single Chart** — No full video needed, just one animated chart to discover or explain a focused data point. Paste your data and quickly generate a single animated chart, ready to embed in a presentation, report, or social media post. Best for quick exploration or communicating a local insight without a full narrative structure.
 
 > [!NOTE]
 > **Fast Generation** and **Single Chart** are experimental features currently in beta. They work well for typical inputs but may produce unexpected results in edge cases. Feedback and bug reports via Issues are very welcome.
@@ -193,4 +225,3 @@ If you find DataMagic useful in your research or work, please cite:
 <div align="center">
 <img src="./assets/framework-1.png" width="760" alt="DataMagic system framework">
 </div>
-
