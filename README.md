@@ -29,7 +29,7 @@
 - **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./datamagic-video/)**，可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
 - **[2026.06.18]** 📄 我们的论文 **"DataMagic: Transforming Tabular Data into Data Insight Video"** 被 **VLDB 2026 Demo Track** 录用，现已上线 [arXiv](https://arxiv.org/abs/2606.20388)。
 
-## 为什么需要 DataMagic？
+## 💡 为什么需要 DataMagic？
 
 很多时候，我们手里已经有了一份表格，却还要花大量时间回答这些问题：数据里到底有什么值得讲？应该画什么图？怎么把图串成一个清楚的故事？如果要给团队、客户或课堂展示，还要写旁白、配动画、录屏或剪视频。
 
@@ -45,13 +45,13 @@ DataMagic 想解决的就是这个过程中的重复劳动：让 AI 先帮你分
 
 DataMagic 面向的正是这个缺口：**把原始结构化数据转化为可编辑、可追溯、带旁白的数据视频**。
 
-## DataMagic 是什么？
+## 🪄 DataMagic 是什么？
 
 DataMagic 是一个 AI 辅助的数据视频生成系统。你可以上传 CSV 或 Excel 表格，给出一个分析目标或业务问题，DataMagic 会帮助分析数据、挖掘洞察、规划故事结构、选择图表、生成旁白、同步动画、预览结果，并导出 MP4 视频。
 
 它的核心不是简单地“生成一个视频”，而是让视频里的数字、标签和图表都能对应回原始数据。技术上，DataMagic 使用 **DVSpec** 把视觉元素、旁白和动画时序连接起来，让结果更容易检查、修改和继续生成。
 
-## DataMagic 有什么不同？
+## 🔍 DataMagic 有什么不同？
 
 | 用户想做的事 | 常见工具的问题 | DataMagic 的做法 |
 |---|---|---|

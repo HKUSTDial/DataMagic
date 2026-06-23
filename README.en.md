@@ -29,7 +29,7 @@
 - **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.
 - **[2026.06.18]** 📄 Our paper **"DataMagic: Transforming Tabular Data into Data Insight Video"** has been accepted to **VLDB 2026 Demo Track** and is now available on [arXiv](https://arxiv.org/abs/2606.20388).
 
-## Why DataMagic?
+## 💡 Why DataMagic?
 
 Most teams already have tables. The hard part is turning those tables into something other people can quickly understand: finding what is worth saying, choosing the right charts, arranging the story, writing narration, timing animations, and producing a video people can actually watch.
 
@@ -45,13 +45,13 @@ Today's tools are strong in their own domains, but they usually cover only one p
 
 DataMagic is built for this missing middle: **turn raw structured data into an editable, traceable, narrated data video**.
 
-## What Is DataMagic?
+## 🪄 What Is DataMagic?
 
 DataMagic is an AI-assisted system for authoring data videos from tabular data. Upload a CSV or Excel table, provide an analysis goal or business question, and DataMagic helps analyze the data, surface insights, plan the story, choose charts, draft narration, synchronize animation, preview the result, and export an MP4 video.
 
 The goal is not just to "generate a video." The numbers, labels, and charts in a DataMagic video should remain connected to the original table. Under the hood, **DVSpec** connects visual elements, narration, and animation timing so the result is easier to inspect, edit, and extend.
 
-## What Makes It Different?
+## 🔍 What Makes It Different?
 
 | What you want to do | Where common tools fall short | How DataMagic helps |
 |---|---|---|
