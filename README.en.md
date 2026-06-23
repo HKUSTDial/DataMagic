@@ -35,13 +35,13 @@ Most teams already have tables. The hard part is turning those tables into somet
 
 DataMagic is built to remove that repetitive work. It helps analyze the data, surface useful insights, and turn them into an editable narrated video you can preview, refine, export, and share.
 
-Today's tools usually cover only one part of the job:
+Today's tools are strong in their own domains, but they usually cover only one part of the job:
 
-- **Static visualization tools** can generate charts, but not a coherent narrated story.
-- **BI dashboards** support exploration, but audiences still need someone to explain the narrative.
-- **Traditional video editors** can produce polished results, but you still need to prepare charts, scripts, and animations yourself.
-- **Pixel-level video generators** such as Seedance, Sora, and Veo can synthesize attractive videos, but they primarily generate pixels rather than data-bound visual elements, making it hard to trust the numbers, labels, and charts.
-- **Manual coding with D3, Remotion, or video editors** gives control, but it is slow and hard to scale.
+- **Excel, Vega-Lite, Matplotlib, and other static visualization tools** are great for making charts, but they do not turn charts into a narrated animated story.
+- **Tableau, Power BI, Looker, and other BI dashboards** are strong for exploration and monitoring, but audiences still need someone to extract the message and explain the narrative.
+- **After Effects, Premiere, CapCut, and other video editors** can produce polished videos, but you still need to prepare charts, scripts, narration, and animations yourself.
+- **Seedance, Sora, Veo, and other pixel-level video generators** can synthesize attractive videos, but they primarily generate pixels rather than data-bound visual elements; numerical precision, label consistency, and data provenance require extra verification.
+- **D3, Remotion, Manim, and other code-first tools** give developers strong control, but the development cost is high for everyday reporting.
 
 DataMagic is built for this missing middle: **turn raw structured data into an editable, traceable, narrated data video**.
 
@@ -57,7 +57,7 @@ The goal is not just to "generate a video." The numbers, labels, and charts in a
 |---|---|---|
 | Turn a table into a video | Analysis, charting, scripting, and editing usually happen in separate tools | One workflow from uploaded data to narrated video |
 | Let AI find what matters | Many tools draw charts but do not decide what is worth saying | Analyze the data and organize useful findings into scenes |
-| Avoid wrong numbers in AI video | Seedance, Sora, Veo, and other pixel-level models may hallucinate values or labels | Bind chart elements to source data through DVSpec |
+| Keep numbers and charts verifiable | Pixel-level video models primarily generate frames; data binding and provenance require extra verification | Bind chart elements to source data through DVSpec |
 | Edit after generation | Regeneration or manual video editing is often required | Preview, edit text, refine with natural language, and keep changes local where possible |
 | Share the result quickly | Static charts still need someone to explain them | Export a playable animated data story |
 
