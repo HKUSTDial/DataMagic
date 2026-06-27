@@ -33,7 +33,7 @@
 ## 🔥 动态
 
 - **[2026.06.20]** 🚀 DataMagic 正式上线！前往 [datamagic.chat](https://datamagic.chat/) 试用，上传数据即可在几分钟内生成带旁白的数据视频。
-- **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./datamagic-video/)**，可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
+- **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./skills/datamagic-video/)**，可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
 - **[2026.06.18]** 📄 我们的论文 **"DataMagic: Transforming Tabular Data into Data Insight Video"** 被 **VLDB 2026 Demo Track** 录用，现已上线 [arXiv](https://arxiv.org/abs/2606.20388)。
 
 ## ⚡ 快速上手
@@ -112,16 +112,29 @@ DataMagic 有两个核心差异点：**数据绑定场景**（每个视觉元素
 
 ## 🧩 数据视频 Skill
 
-我们同时公开 **[`datamagic-video`](./datamagic-video/)**，一个把数据视频方法论教给 AI 编程智能体（Claude Code、Cursor、Codex 等）的 skill，涵盖叙事模式、图表选择、DVSpec 编写、旁白写作、动画时序。它产出的视频用开源工具链即可渲染，任何人都能生成、能观看，无需账号。
+我们同时公开 **[`datamagic-video`](./skills/datamagic-video/)**，一个把数据视频方法论教给 AI 编程智能体（Claude Code、Cursor、Codex 等）的 skill，涵盖叙事模式、图表选择、DVSpec 编写、旁白写作、动画时序。它产出的视频用开源工具链即可渲染，任何人都能生成、能观看，无需账号。
 
 托管产品提供精修模板和完整 pipeline；skill 让任何智能体都能独立产出优秀的数据视频，并共享同一套 DVSpec 格式。
 
 ```bash
-git clone https://github.com/HKUSTDial/DataMagic
-cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
+/plugin marketplace add HKUSTDial/DataMagic
+/plugin install datamagic-video@datamagic
 ```
 
-然后对智能体说：「帮我用这个 CSV 生成一个带旁白的数据视频……」。详见 [skill 说明](./datamagic-video/README.md)。
+Codex：
+
+```bash
+codex plugin marketplace add HKUSTDial/DataMagic
+codex plugin add datamagic-video@datamagic
+```
+
+也可用 shell 一行安装：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash
+```
+
+然后对智能体说：「帮我用这个 CSV 生成一个带旁白的数据视频……」。详见 [skill 说明](./skills/datamagic-video/README.md)。
 
 ## 🤝 交流社区
 
@@ -164,7 +177,7 @@ cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
 - [x] 核心生成模式：完整流程、快速生成和 Single Chart。
 - [x] 模板库和运行时编辑：预览视觉风格、编辑生成文本，并通过自然语言继续优化。
 - [x] 中英文公开文档：面向英文和中文用户的发布说明。
-- [x] 数据视频 skill 包：沉淀数据视频规划、图表选择、DVSpec 编写和动画设计的可复用指导。（[datamagic-video/](./datamagic-video/)）
+- [x] 数据视频 skill 包：沉淀数据视频规划、图表选择、DVSpec 编写和动画设计的可复用指导。（[skills/datamagic-video/](./skills/datamagic-video/)）
 - [ ] 更多样的视觉风格：扩展叙事卡片、报告主题、领域化模板和适合演示的版式。
 - [ ] 推荐与反馈学习：基于用户偏好和真实生成结果改进模板排序。
 - [ ] 公开实现资料：完善 pipeline、DVSpec、模板适配器、示例数据集和部署说明。
@@ -189,7 +202,7 @@ cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
 
 ## 📚 文档
 
-- [数据视频 Skill](./datamagic-video/README.md)
+- [数据视频 Skill](./skills/datamagic-video/README.md)
 - [核心 Pipeline 说明](./docs/pipeline-overview.zh-CN.md)
 - [DVSpec 设计说明](./docs/dvspec-overview.zh-CN.md)
 - [输入输出示例](./docs/input-output-examples.zh-CN.md)

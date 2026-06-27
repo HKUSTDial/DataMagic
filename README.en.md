@@ -33,7 +33,7 @@
 ## 🔥 News
 
 - **[2026.06.20]** 🚀 DataMagic is now live! Try it at [datamagic.chat](https://datamagic.chat/) — upload your data and generate a narrated data video in minutes.
-- **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.
+- **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./skills/datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.
 - **[2026.06.18]** 📄 Our paper **"DataMagic: Transforming Tabular Data into Data Insight Video"** has been accepted to **VLDB 2026 Demo Track** and is now available on [arXiv](https://arxiv.org/abs/2606.20388).
 
 ## ⚡ Quick Start
@@ -112,7 +112,7 @@ Two things set DataMagic apart: **data-grounded scenes** bind every visual eleme
 
 ## 🧩 Data-Video Skill
 
-We also publish **[`datamagic-video`](./datamagic-video/)** — a skill that teaches AI coding
+We also publish **[`datamagic-video`](./skills/datamagic-video/)** — a skill that teaches AI coding
 agents (Claude Code, Cursor, Codex, …) the *methodology* behind data videos: narrative
 patterns, chart selection, DVSpec authoring, narration writing, and animation timing. The
 videos it produces render with open tooling, so anyone can generate and watch them — no
@@ -122,12 +122,25 @@ The hosted product adds premium templates and the full pipeline; the skill gives
 strong standalone results and shares the same DVSpec format.
 
 ```bash
-git clone https://github.com/HKUSTDial/DataMagic
-cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video   # Claude Code
+/plugin marketplace add HKUSTDial/DataMagic
+/plugin install datamagic-video@datamagic
+```
+
+Codex:
+
+```bash
+codex plugin marketplace add HKUSTDial/DataMagic
+codex plugin add datamagic-video@datamagic
+```
+
+Or install from shell:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash
 ```
 
 Then ask your agent: *"Make a narrated data video from this CSV …"*. See the
-[skill README](./datamagic-video/README.md) for details.
+[skill README](./skills/datamagic-video/README.md) for details.
 
 ## 🤝 Community
 
@@ -170,7 +183,7 @@ Follow either official account below and reply **DataMagic** to receive a one-ti
 - [x] Core generation modes — Full Pipeline, Fast Generation, and Single Chart.
 - [x] Template gallery and runtime editing — preview styles, edit generated text, and refine with natural language.
 - [x] Bilingual public documentation — English and Chinese release docs.
-- [x] Data-video skill package — reusable guidance for data-video planning, chart selection, DVSpec authoring, and animation design. ([datamagic-video/](./datamagic-video/))
+- [x] Data-video skill package — reusable guidance for data-video planning, chart selection, DVSpec authoring, and animation design. ([skills/datamagic-video/](./skills/datamagic-video/))
 - [ ] More diverse visual styles — richer narrative cards, report themes, domain-specific templates, and presentation-ready layouts.
 - [ ] Recommendation and feedback learning — improve template ranking from user preferences and real generation outcomes.
 - [ ] Public implementation materials — clearer notes for the pipeline, DVSpec, template adapters, example datasets, and deployment.
@@ -195,7 +208,7 @@ If you find DataMagic useful in your research or work, please cite:
 
 ## 📚 Documentation
 
-- [Data-Video Skill](./datamagic-video/README.md)
+- [Data-Video Skill](./skills/datamagic-video/README.md)
 - [Pipeline Overview](./docs/pipeline-overview.md)
 - [DVSpec Overview](./docs/dvspec-overview.md)
 - [Input and Output Examples](./docs/input-output-examples.md)

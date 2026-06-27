@@ -28,20 +28,34 @@ Given a CSV/Excel table and a goal, the skill guides the agent through:
 
 ## Install
 
-The skill is a single folder (`SKILL.md` + `rules/`). Drop it where your agent looks for skills.
+Source repo: <https://github.com/HKUSTDial/DataMagic>
 
-**Claude Code** — copy into your skills directory:
+### Claude Code plugin
 
-```bash
-git clone https://github.com/HKUSTDial/DataMagic
-cp -r DataMagic/datamagic-video ~/.claude/skills/datamagic-video
+```text
+/plugin marketplace add HKUSTDial/DataMagic
+/plugin install datamagic-video@datamagic
 ```
 
-(or place it in a project-local `.claude/skills/` folder)
+### Codex plugin
 
-**Cursor / Codex / other agents** — point the agent at this folder, or copy `SKILL.md` and
-`rules/` into the location your tool reads instructions from. The content is plain Markdown
-and tool-agnostic.
+```bash
+codex plugin marketplace add HKUSTDial/DataMagic
+codex plugin add datamagic-video@datamagic
+```
+
+### One-line shell install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash
+```
+
+Install only one agent:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash -s -- --only claude
+curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash -s -- --only codex
+```
 
 ## Use
 

@@ -1,0 +1,44 @@
+{
+  "name": "datamagic-video",
+  "version": "0.1.0",
+  "description": "Data-video skill for Codex: turn tabular data into narrated animated videos with DVSpec planning, chart selection, narration, and rendering guidance.",
+  "author": {
+    "name": "HKUSTDial",
+    "url": "https://github.com/HKUSTDial"
+  },
+  "homepage": "https://github.com/HKUSTDial/DataMagic",
+  "repository": "https://github.com/HKUSTDial/DataMagic",
+  "license": "MIT",
+  "keywords": [
+    "data-video",
+    "datamagic",
+    "dvspec",
+    "data-visualization",
+    "remotion",
+    "narration",
+    "animation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DataMagic Video",
+    "shortDescription": "Turn tables into narrated animated data videos",
+    "longDescription": "Use DataMagic Video to profile tabular data, choose a narrative pattern, author a DVSpec plan, write narration, and render or refine narrated animated data videos with open tooling.",
+    "developerName": "HKUSTDial",
+    "category": "Data & Analytics",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/HKUSTDial/DataMagic",
+    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "defaultPrompt": [
+      "Make a narrated data video from this CSV",
+      "Create a DVSpec plan for this table",
+      "Refine this data-video storyboard"
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}
