@@ -33,8 +33,8 @@ Source repo: <https://github.com/HKUSTDial/DataMagic>
 ### Claude Code plugin
 
 ```text
-/plugin marketplace add HKUSTDial/DataMagic
-/plugin install datamagic-video@datamagic
+claude plugin marketplace add HKUSTDial/DataMagic
+claude plugin install datamagic-video@datamagic
 ```
 
 ### Codex plugin

@@ -117,8 +117,8 @@ DataMagic 有两个核心差异点：**数据绑定场景**（每个视觉元素
 托管产品提供精修模板和完整 pipeline；skill 让任何智能体都能独立产出优秀的数据视频，并共享同一套 DVSpec 格式。
 
 ```bash
-/plugin marketplace add HKUSTDial/DataMagic
-/plugin install datamagic-video@datamagic
+claude plugin marketplace add HKUSTDial/DataMagic
+claude plugin install datamagic-video@datamagic
 ```
 
 Codex：

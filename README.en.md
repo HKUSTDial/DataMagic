@@ -122,8 +122,8 @@ The hosted product adds premium templates and the full pipeline; the skill gives
 strong standalone results and shares the same DVSpec format.
 
 ```bash
-/plugin marketplace add HKUSTDial/DataMagic
-/plugin install datamagic-video@datamagic
+claude plugin marketplace add HKUSTDial/DataMagic
+claude plugin install datamagic-video@datamagic
 ```
 
 Codex:
