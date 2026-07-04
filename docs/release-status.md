@@ -17,6 +17,7 @@ DataMagic is being prepared as a hosted product release.
 - High-level architecture and pipeline explanation.
 - Simplified DVSpec example.
 - Example input and output descriptions.
+- Customizable generation workflow notes, covering review and adjustment of DataMagic recommendations during scene planning, visual design, narrative arrangement, and animation highlighting.
 
 ## What Is Not Yet Public
 
@@ -33,4 +34,3 @@ DataMagic is being prepared as a hosted product release.
 - Add user guide and best-practice prompt examples.
 - Add public release notes as the product stabilizes.
 - Publish selected source modules when they are ready for public use.
-

@@ -25,6 +25,7 @@
 
 ## 🔥 News
 
+- **[2026.07.05]** ✨ Added a **Customizable Generation Workflow**: DataMagic now surfaces recommended scene plans, visual designs, narrative ordering, and animation highlights before final rendering, so users can review and adjust key decisions instead of editing only after generation.
 - **[2026.06.20]** 🚀 DataMagic is now live! Try it at [datamagic.chat](https://datamagic.chat/) — upload your data and generate a narrated data video in minutes.
 - **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./skills/datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.
 - **[2026.06.18]** 📄 Our paper **"DataMagic: Transforming Tabular Data into Data Insight Video"** has been accepted to **VLDB 2026 Demo Track** and is now available on [arXiv](https://arxiv.org/abs/2606.20388).
@@ -58,7 +59,7 @@ The goal is not just to "generate a video." The numbers, labels, and charts in a
 ## ⚡ Quick Start
 
 1. **Upload your data** — CSV or Excel table
-2. **Review AI suggestions** — chart types, narration script, visual style
+2. **Review and adjust DataMagic recommendations** — scene plans, chart designs, story order, templates, and animation highlights
 3. **Export your video** — download the finished data story
 
 ## 🎯 Workflows
@@ -71,6 +72,10 @@ The goal is not just to "generate a video." The numbers, labels, and charts in a
 
 > [!NOTE]
 > **Fast Generation** and **Single Chart** are experimental features currently in beta. They work well for typical inputs but may produce unexpected results in edge cases. Feedback and bug reports via Issues are very welcome.
+
+### Customizable Generation Workflow
+
+Both Full Pipeline and Fast Generation support a customizable mode. DataMagic surfaces its recommendations at key stages, including scene planning, visual candidates, narrative ordering, visual templates, and animation highlights. Users can accept the recommendations or adjust scenes, charts, templates, and story order before final rendering. Fully automatic generation remains available for users who want the fastest end-to-end result.
 
 ## 🎬 Demo Video
 
@@ -122,6 +127,7 @@ Over 100 ready-made visual styles across bar, line, pie, scatter, Sankey, waterf
 DataMagic is built around two core principles: **data-grounded scenes** (every visual element bound directly to a data field, keeping the story fully traceable and editable) and **narration-aware timing** (animations auto-synced with the voiceover, producing a coherent narrative rather than a collection of disconnected charts).
 
 - AI-assisted chart type and visual template recommendation.
+- Customizable generation workflow for reviewing and adjusting DataMagic recommendations during scene planning, visual design, narrative arrangement, and animation highlighting.
 - Runtime preview, direct visual editing, and natural-language refinement.
 
 ## 🧩 Data-Video Skill
