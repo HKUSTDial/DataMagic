@@ -90,6 +90,18 @@ Both Full Pipeline and Fast Generation support a customizable mode. DataMagic su
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/bbf35141-b561-4551-bdb9-724ee811ae60" width="100%" controls></video>
+      <br><strong>China consumption recovery</strong><br>
+      Analyzes China's retail sales and catering revenue from 2019 to 2025, showing consumption resilience and service-sector recovery after the pandemic shock.
+    </td>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/5987d793-5da3-42a1-ada5-a653873fe26b" width="100%" controls></video>
+      <br><strong>China EV market competition</strong><br>
+      Compares 2024 monthly sales, annual pacing, and year-over-year growth across major EV brands, highlighting market leaders and growth inflection points.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/4600c2ca-72fe-4690-9ad4-3a611ef2ba7e" width="100%" controls></video>
       <br><strong>Q4 sales analysis</strong><br>
       Animated bar and trend visualization for business performance insights.

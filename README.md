@@ -90,6 +90,18 @@ DataMagic 是一个 AI 辅助的数据视频生成系统。你可以上传 CSV �
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/bbf35141-b561-4551-bdb9-724ee811ae60" width="100%" controls></video>
+      <br><strong>中国消费复苏趋势</strong><br>
+      分析 2019-2025 年社会消费品零售总额与餐饮收入变化，展示疫情冲击后的消费韧性与服务型消费复苏。
+    </td>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/5987d793-5da3-42a1-ada5-a653873fe26b" width="100%" controls></video>
+      <br><strong>中国新能源汽车竞争格局</strong><br>
+      对比 2024 年主要新能源汽车品牌月度销量、全年节奏与同比增长，呈现头部品牌的规模优势和增长拐点。
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/4600c2ca-72fe-4690-9ad4-3a611ef2ba7e" width="100%" controls></video>
       <br><strong>Q4 销售分析</strong><br>
       基于销售数据的动态柱状图和趋势可视化。
