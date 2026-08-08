@@ -6,6 +6,7 @@
 *For analysts, researchers, and anyone who wants their data to tell a story.*
 
 [![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://vldb.org/2026/)
+[![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://ieeevis.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
 [![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
 ![Status](https://img.shields.io/badge/status-live-brightgreen)
@@ -25,6 +26,7 @@
 
 ## 🔥 News
 
+- **[2026.08.09]** 📄 Our long paper **"DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration"** has been accepted to **IEEE VIS 2026**.
 - **[2026.07.05]** ✨ Added a **Customizable Generation Workflow**: DataMagic now surfaces recommended scene plans, visual designs, narrative ordering, and animation highlights before final rendering, so users can review and adjust key decisions instead of editing only after generation.
 - **[2026.06.20]** 🚀 DataMagic is now live! Try it at [datamagic.chat](https://datamagic.chat/) — upload your data and generate a narrated data video in minutes.
 - **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./skills/datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.

@@ -6,6 +6,7 @@
 *无需写脚本，无需做动画，上传数据即可生成专业的数据故事视频。*
 
 [![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://vldb.org/2026/)
+[![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://ieeevis.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
 [![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
 ![Status](https://img.shields.io/badge/状态-上线中-brightgreen)
@@ -25,6 +26,7 @@
 
 ## 🔥 动态
 
+- **[2026.08.09]** 📄 我们的长文 **"DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration"** 被 **IEEE VIS 2026** 录用。
 - **[2026.07.05]** ✨ 新增 **定制化生成流程**：DataMagic 会先展示推荐的场景计划、可视化方案、叙事编排和动画高亮方式，用户可以在生成前逐步确认和调整，而不是等视频生成后再修改。
 - **[2026.06.20]** 🚀 DataMagic 正式上线！前往 [datamagic.chat](https://datamagic.chat/) 试用，上传数据即可在几分钟内生成带旁白的数据视频。
 - **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./skills/datamagic-video/)**，可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
