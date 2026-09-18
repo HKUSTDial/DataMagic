@@ -9,6 +9,7 @@
 [![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://ieeevis.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
 [![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
+[![plugin-scanner](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml)
 ![Status](https://img.shields.io/badge/状态-上线中-brightgreen)
 
 [中文](./README.md) | [English](./README.en.md)
@@ -233,6 +234,10 @@ curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh
   url={https://arxiv.org/abs/2606.20388},
 }
 ```
+
+## 📄 许可证
+
+本仓库以 MIT License 开源，详见 [LICENSE](./LICENSE)。安全问题请按 [SECURITY.md](./SECURITY.md) 私下报告。
 
 ## 📚 文档
 
