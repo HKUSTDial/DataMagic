@@ -31,14 +31,19 @@
       "Write"
     ],
     "websiteURL": "https://github.com/HKUSTDial/DataMagic",
-    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
-    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "privacyPolicyURL": "https://github.com/HKUSTDial/DataMagic/blob/main/SECURITY.md",
+    "termsOfServiceURL": "https://github.com/HKUSTDial/DataMagic/blob/main/LICENSE",
     "defaultPrompt": [
       "Make a narrated data video from this CSV",
       "Create a DVSpec plan for this table",
       "Refine this data-video storyboard"
     ],
     "brandColor": "#2563EB",
-    "screenshots": []
+    "composerIcon": "./assets/datamagic_logo.png",
+    "logo": "./assets/datamagic_logo.png",
+    "screenshots": [
+      "./assets/framework-1.png",
+      "./images/template-gallery.png"
+    ]
   }
 }

@@ -9,6 +9,7 @@
 [![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://ieeevis.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
 [![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
+[![plugin-scanner](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml)
 ![Status](https://img.shields.io/badge/status-live-brightgreen)
 
 [中文](./README.md) | [English](./README.en.md)
@@ -239,6 +240,10 @@ If you find DataMagic useful in your research or work, please cite:
   url={https://arxiv.org/abs/2606.20388},
 }
 ```
+
+## 📄 License
+
+This repository is released under the MIT License. See [LICENSE](./LICENSE). Report security issues privately using [SECURITY.md](./SECURITY.md).
 
 ## 📚 Documentation
 
