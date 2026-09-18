@@ -3,7 +3,7 @@
 Thanks for your interest in DataMagic. The repo is currently **docs-first** —
 the production product lives at [datamagic.chat](https://datamagic.chat/), while this
 repository holds the public documentation, the published paper artifacts, and the
-[`datamagic-video`](./datamagic-video/) skill for AI coding agents.
+[`datamagic-video`](./skills/datamagic-video/) skill for AI coding agents.
 
 So contributions today land in one of four buckets:
 
@@ -40,19 +40,21 @@ npx --yes markdown-link-check@3.12.2 -c .markdown-link-check.json README.md
   shared sections (links, badges, examples, roadmap).
 - For per-doc Chinese / English pairs under `docs/`, edit both files in the same PR.
 - Don't add new top-level files unless necessary — prefer extending an existing doc.
-- The `datamagic-video` skill has its own conventions; read `datamagic-video/SKILL.md`
+- The `datamagic-video` skill has its own conventions; read `skills/datamagic-video/SKILL.md`
   before adding or restructuring rules there.
 
 ## CI
 
-Every push and PR runs the `docs` workflow ([.github/workflows/docs.yml](./.github/workflows/docs.yml)):
+Every push and PR runs:
 
-- **markdownlint** — across the whole repo, using `.markdownlint.json`
-- **link check** — only the Markdown files changed in the PR, using
-  `.markdown-link-check.json`
+- `docs` ([.github/workflows/docs.yml](./.github/workflows/docs.yml)): markdownlint and link check
+- `Plugin Security Scan` ([.github/workflows/plugin-scanner.yml](./.github/workflows/plugin-scanner.yml)): HOL plugin scanner, score ≥ 80
 
-Both jobs run on Node 20 and finish in well under a minute. Please make sure they
-pass locally before opening a PR.
+Please make sure they pass locally before opening a PR. For a local scanner preflight:
+
+```bash
+pipx run plugin-scanner scan .
+```
 
 ## Reporting issues
 
