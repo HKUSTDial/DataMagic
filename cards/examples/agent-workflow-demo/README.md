@@ -2,6 +2,8 @@
 
 内部预览：`assets/walkthrough-v2/index.html`。旧版教程保留在 `assets/walkthrough/`。
 
+页面录屏使用中文搜索“动态柱状图竞赛”来选择配方；`BarChartRace` 保留为代码里的稳定配方标识，不需要用户用英文搜索。网站支持部分关键词、同义词和空格分隔的多关键词匹配，例如“柱状”“条形图竞赛”“国家 排名”。
+
 本次重新生成了六种饮品、六个月的虚构销量示例。`sales.csv` 是输入，`request-v1.txt` 与 `request-v2.txt` 是请求，`v1.json`、`v2.json` 是实际渲染参数。`verification.json` 校验两版的 36 个数值与 CSV 一致。
 
 每种饮品配有独立绘制的 SVG 图标，位于 `cards/public/icons/coffee/`。修改版以 `highlightId: "drink-1"` 突出拿铁，其余饮品保留原来的颜色并略微淡化。通用模板中的 `entities[].iconSrc` 可替换为自己的 Logo、旗帜、头像等图片；图标依对象 ID 跟随排名，不依赖当前位置。

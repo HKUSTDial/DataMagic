@@ -4,5 +4,13 @@
   "intro": "浏览动态图表、数据叙事和场景配方。139 张卡片均提供动态预览、可编辑源码、Schema 和示例数据，支持替换数据后本地渲染。",
   "copy": true,
   "mobileOverflow": false,
-  "workbenchHidden": true
+  "workbenchHidden": true,
+  "chineseSearch": {
+    "动态柱状图竞赛": 1,
+    "条形图竞赛": 4,
+    "柱状": 19,
+    "猫主持": 1,
+    "国家 排名": 3
+  },
+  "chineseSearchCheckedAt": "2026-10-02T12:20:54.778Z"
 }

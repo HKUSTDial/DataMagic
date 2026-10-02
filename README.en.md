@@ -75,7 +75,7 @@ The library also covers bars, lines, shares, scatterplots, flows, openings, conc
 
 ### Watch a real reuse walkthrough
 
-Turn a coffee-sales CSV into a bar chart race with drink icons, then change the title, highlight lattes, and extend the ending. Each drink retains its own color, and icons travel with their labels as ranks change. This 72-second walkthrough follows selection, copying instructions, task input, generation, and revision. Gallery interaction is recorded; the task panel is explicitly labeled as a reconstructed workflow, not a client recording. The revised output plays in full. Narration and embedded captions are in Chinese.
+Turn a coffee-sales CSV into a bar chart race with drink icons, then change the title, highlight lattes, and extend the ending. Each drink retains its own color, and icons travel with their labels as ranks change. This 72-second walkthrough starts with the Chinese search “动态柱状图竞赛”, then follows selection, copying instructions, task input, generation, and revision. Gallery interaction is recorded; the task panel is explicitly labeled as a reconstructed workflow, not a client recording. The revised output plays in full. Narration and embedded captions are in Chinese.
 
 <video src="assets/walkthrough-v2/datamagic-workflow-v2.mp4" poster="assets/walkthrough-v2/v2-final.png" width="960" style="max-width:100%;height:auto" controls playsinline preload="none">
   <a href="assets/walkthrough-v2/datamagic-workflow-v2.mp4">Watch the full walkthrough</a>
@@ -86,6 +86,8 @@ Turn a coffee-sales CSV into a bar chart race with drink icons, then change the 
 ### 1. Pick an effect
 
 Watch the gallery previews and click “Copy implementation instructions.” If you are still choosing an effect, give the agent your data and intended use so it can suggest suitable recipes.
+
+Search with Chinese or English keywords, partial names, and common aliases rather than code identifiers. Try “猫主持”, “柱状”, or “条形图竞赛”; combine terms with spaces, such as “国家 排名”.
 
 ### 2. Give the recipe and data to your agent
 

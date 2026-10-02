@@ -10,6 +10,7 @@ Implementation: templates/bar-chart-race/BarChartRace.tsx
 Shot strategy: data shapes=time_series; reading speeds=explain; narrative roles=compare, evidence; motion styles=cinematic, guided.
 Data schema: templates/bar-chart-race/schema.json
 Sample data: templates/bar-chart-race/sample-data.json
+Resolve local iconSrc assets from public/. Preserve image-to-entity identity and distinct category colors through ranking, motion and reveals; use accurate flags or supplied brand marks.
 Use the resolution, duration and frame rate declared by the selected recipe composition; do not shorten its reveal sequence or stretch a landscape layout into portrait.
 Keep titles, sources, legends, and explanatory UI outside camera-transformed layers.
 Keep every readable label and data-bearing mark inside a 64 px canvas safe area at every frame.
