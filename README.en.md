@@ -79,7 +79,7 @@ The library also covers bars, lines, shares, scatterplots, flows, openings, conc
 Join the DataMagic WeChat community to discuss recipes, share your data videos, and give feedback.
 
 | DataMagic WeChat community | 蟹哥聊科研 · Xiege's research notes |
-|---|---|
+|:---:|:---:|
 | <img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic community administrator's WeChat QR code"> | <img src="./images/wechat-qr-xiege.jpg" width="180" alt="蟹哥聊科研 WeChat public account QR code"> |
 | **Scan to add the administrator, mention “DataMagic”, and receive a group invitation.** | **Scan to follow the public account** for AI tools, research practice, and tutorials in Chinese. |
 

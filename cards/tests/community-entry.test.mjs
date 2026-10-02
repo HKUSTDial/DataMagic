@@ -17,6 +17,7 @@ test('both homepages place the two community entries before getting started', ()
     assert.match(section, /wechat-qr-xiege\.jpg/);
     assert.doesNotMatch(section, /wechat-qr-dial-lab/);
     assert.match(section, /管理员|administrator/);
+    assert.match(section, /\|:---:\|:---:\|/);
   }
 });
 

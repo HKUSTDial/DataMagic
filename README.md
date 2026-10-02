@@ -79,7 +79,7 @@ https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 欢迎加入 DataMagic 交流群，交流配方使用、分享数据视频作品，也欢迎提出建议和反馈。
 
 | DataMagic 交流群 | 蟹哥聊科研 |
-|---|---|
+|:---:|:---:|
 | <img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic 交流群管理员微信二维码"> | <img src="./images/wechat-qr-xiege.jpg" width="180" alt="蟹哥聊科研微信公众号二维码"> |
 | **扫码添加管理员，备注「DataMagic」，由管理员邀请入群。** | **扫码关注公众号**，了解 AI 工具、科研实践与相关教程。 |
 
