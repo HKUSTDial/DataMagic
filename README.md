@@ -36,16 +36,16 @@ https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 
 ## ✨ 看看可以做什么
 
-点击图片观看动画，点击配方查看实现说明与源码位置。
+下方 GIF 自动展示动画效果；点击动图观看高清预览，点击配方查看实现说明与源码位置。
 
 | 角色主持与数据板 | 主持人让位，图表接管 | 倒序揭晓排行榜 |
 |---|---|---|
-| [![角色主持与透视数据板](cards/gallery/media/poster/CharacterPerspectiveBoard.png)](https://datamagic.chat/cards/#CharacterPerspectiveBoard) | [![主持人与数据交接](cards/gallery/media/poster/PresenterDataTakeover.png)](https://datamagic.chat/cards/#PresenterDataTakeover) | [![倒序揭晓排行榜](cards/gallery/media/poster/RankedReveal.png)](https://datamagic.chat/cards/#RankedReveal) |
+| [![角色主持与透视数据板](cards/gallery/media/readme/CharacterPerspectiveBoard.gif)](https://datamagic.chat/cards/#CharacterPerspectiveBoard) | [![主持人与数据交接](cards/gallery/media/readme/PresenterDataTakeover.gif)](https://datamagic.chat/cards/#PresenterDataTakeover) | [![倒序揭晓排行榜](cards/gallery/media/readme/RankedReveal.gif)](https://datamagic.chat/cards/#RankedReveal) |
 | 用角色、透视数据板和分步证据组织讲解。[配方](cards/recipes/CharacterPerspectiveBoard.md) | 随讲解切换人物与数据的主次。[配方](cards/recipes/PresenterDataTakeover.md) | 从悬念到揭晓，逐步建立比较。[配方](cards/recipes/RankedReveal.md) |
 
 | 实景转入数据证据 | 沿时间线讲变化 | 地图与区域比较 |
 |---|---|---|
-| [![实景转入数据证据](cards/gallery/media/poster/FootageEvidenceReveal.png)](https://datamagic.chat/cards/#FootageEvidenceReveal) | [![趋势时间线镜头](cards/gallery/media/poster/ChartTimelineTravel.png)](https://datamagic.chat/cards/#ChartTimelineTravel) | [![区域地图与排名](cards/gallery/media/poster/ChoroplethRankMap.png)](https://datamagic.chat/cards/#ChoroplethRankMap) |
+| [![实景转入数据证据](cards/gallery/media/readme/FootageEvidenceReveal.gif)](https://datamagic.chat/cards/#FootageEvidenceReveal) | [![趋势时间线镜头](cards/gallery/media/readme/ChartTimelineTravel.gif)](https://datamagic.chat/cards/#ChartTimelineTravel) | [![区域地图与排名](cards/gallery/media/readme/ChoroplethRankMap.gif)](https://datamagic.chat/cards/#ChoroplethRankMap) |
 | 先展示场景，再引入关键指标。[配方](cards/recipes/FootageEvidenceReveal.md) | 镜头沿时间推进，停留在关键变化。[配方](cards/recipes/ChartTimelineTravel.md) | 结合地理分布与排名解释差异。[配方](cards/recipes/ChoroplethRankMap.md) |
 
 配方库还包含柱状图、折线图、占比、散点、流程、开场、结尾和转场等效果，以及适合手机内容的 [9:16 竖屏榜单](cards/recipes/PortraitRankedReveal.md)。你可以修改数据、文案、颜色、素材和动画节奏，保存可继续编辑的源码。
