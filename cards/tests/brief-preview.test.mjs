@@ -9,7 +9,7 @@ test('brief preview is read-only, escaped, and describes supported coding agents
   assert.doesNotMatch(html, /<script>/);
   for (const agent of ['Codex', 'Claude Code', 'Cursor']) assert(html.includes(agent));
   assert.match(html, /DataMagic 仓库/);
-  assert.match(briefPreview('example', 'en'), /Open the DataMagic repository/);
+  assert.match(briefPreview('example', 'en'), /repository and Skill setup guidance for first use/);
 });
 test('both entry points preview exactly the prompt their copy button uses', () => {
   const app = fs.readFileSync(new URL('../gallery/app.js', import.meta.url), 'utf8');
