@@ -17,7 +17,7 @@ DataMagic offers **139 motion recipe cards**, each with a preview, editable sour
 
 <a id="showcase"></a>
 
-## See data become a story
+## 🎬 See data become a story
 
 Character hosts, perspective boards, bar chart races, footage, timeline moves, and layered map glides: explore six approaches in the complete 30-second showcase below.
 
@@ -33,7 +33,7 @@ The reel uses actual library animations and demonstration data. English titles i
 
 <a id="examples"></a>
 
-## Explore the effects
+## ✨ Explore the effects
 
 Click an image to watch its animation, or open the recipe for implementation details and source locations.
 
@@ -51,7 +51,7 @@ The library also covers bars, lines, shares, scatterplots, flows, openings, conc
 
 **[Explore all recipes →](https://datamagic.chat/cards/)**
 
-## Find an approach for your story
+## 🎯 Find an approach for your story
 
 | What you want to explain | Visual approaches | Example uses |
 |---|---|---|
@@ -71,7 +71,7 @@ The library also covers bars, lines, shares, scatterplots, flows, openings, conc
 
 <a id="create"></a>
 
-## Create with your content
+## 🚀 Create with your content
 
 ### Watch a real reuse walkthrough
 
@@ -126,7 +126,7 @@ Check the values, labels, and conclusion. Ask the agent to adjust the result: �
 
 <a id="stories"></a>
 
-## Build a story from several shots
+## 🎞️ Build a story from several shots
 
 Open with a question, present evidence through charts, then develop the explanation through comparisons, turns, and a conclusion. **8 story blueprints** offer starting structures for the agent to select recipes and compose shots around your content.
 
@@ -134,7 +134,7 @@ Open with a question, present evidence through charts, then develop the explanat
 
 For deeper data analysis, scripts, and narration, follow [Plan a complete video from data](skills/datamagic-video/rules/full-story-workflow.md). The same Skill draws on analysis, narrative planning, and timing guidance as the task requires.
 
-## What's in the repository
+## 📦 What's in the repository
 
 | Resource | Where to start |
 |---|---|
@@ -147,7 +147,7 @@ For deeper data analysis, scripts, and narration, follow [Plan a complete video 
 
 <a id="online"></a>
 
-## Explore further: automatic video generation
+## 🪄 Explore further: automatic video generation
 
 The [DataMagic online system](https://datamagic.chat/) combines table upload, data analysis, scene planning, narration, and video export. Review its recommendations and adjust the content and visuals.
 
@@ -157,7 +157,7 @@ Complete system examples include a story about competition in the Chinese EV mar
 
 <a id="research"></a>
 
-## Research and documentation
+## 📚 Research and documentation
 
 DataMagic research studies data binding, narrative orchestration, and narration timing, informing both recipe reuse and complete video production.
 
@@ -200,7 +200,7 @@ If you find DataMagic useful in your research or work, please cite:
 
 </details>
 
-## What's next
+## 🗺️ What's next
 
 - [ ] More story recipes, domain examples, and portrait layouts.
 - [ ] More reuse examples across different datasets and topics.
@@ -208,7 +208,7 @@ If you find DataMagic useful in your research or work, please cite:
 
 <a id="community"></a>
 
-## Community and contributions
+## 🤝 Community and contributions
 
 Share what you create, contribute a recipe, or report an issue through [GitHub Issues](https://github.com/HKUSTDial/DataMagic/issues). [Contributing guide](CONTRIBUTING.md)
 
