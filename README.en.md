@@ -10,7 +10,7 @@
 
 [中文](README.md) | [English](README.en.md)
 
-[Watch the showcase](#showcase) · [Browse recipes](https://datamagic.chat/cards/) · [Start creating](#create) · [Build a story](#stories) · [Try online](https://datamagic.chat/) · [Research & citation](#research)
+[Watch the showcase](#showcase) · [Browse recipes](https://datamagic.chat/cards/) · [Start creating](#create) · [Build a story](#stories) · [💬 Community](#community) · [Try online](https://datamagic.chat/) · [Research & citation](#research)
 </div>
 
 DataMagic offers **139 motion recipe cards**, each with a preview, editable source, and sample data. Choose an effect and give its implementation instructions and your data to a coding agent. The companion `datamagic` Skill guides the agent through reading the recipe, adapting the template, rendering, and checking the result.
@@ -71,6 +71,17 @@ The library also covers bars, lines, shares, scatterplots, flows, openings, conc
 - **Bring your data and identity**: replace values, labels, units, titles, colors, and media; country flags, brand marks, and category illustrations follow their entities through motion, ranking changes, and reveals.
 - **Build an explanation**: combine people, footage, charts, and conclusions into a sequence.
 - **Keep editable output**: retain the video and source for your next topic.
+
+<a id="community"></a>
+
+## 💬 Community
+
+Join the DataMagic WeChat community to discuss recipes, share your data videos, and give feedback.
+
+| DataMagic WeChat community | 蟹哥聊科研 · Xiege's research notes |
+|---|---|
+| <img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic community administrator's WeChat QR code"> | <img src="./images/wechat-qr-xiege.jpg" width="180" alt="蟹哥聊科研 WeChat public account QR code"> |
+| **Scan to add the administrator, mention “DataMagic”, and receive a group invitation.** | **Scan to follow the public account** for AI tools, research practice, and tutorials in Chinese. |
 
 <a id="create"></a>
 
@@ -192,12 +203,8 @@ If you find DataMagic useful in your research or work, please cite:
 - [ ] More reuse examples across different datasets and topics.
 - [ ] Multitrack workbench and Jianying delivery: simplify the workflow and complete Mac desktop validation; retained as a future TODO.
 
-<a id="community"></a>
-
-## 🤝 Community and contributions
+## 🤝 Contribute
 
 Share what you create, contribute a recipe, or report an issue through [GitHub Issues](https://github.com/HKUSTDial/DataMagic/issues). [Contributing guide](CONTRIBUTING.md)
-
-<img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic WeChat community QR code">
 
 [Online system and trial credits](docs/online-system.md) · [Document history](docs/archive/README.md) · [MIT License](LICENSE) · [Security reports](SECURITY.md)

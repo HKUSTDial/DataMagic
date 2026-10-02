@@ -1,6 +1,6 @@
 # Create with DataMagic recipes
 
-[返回首页](../../README.md) · [Homepage](../../README.en.md) · [Browse effects](https://datamagic.chat/cards/)
+[返回首页](../../README.md) · [Homepage](../../README.en.md) · [Browse effects](https://datamagic.chat/cards/) · [社区交流 / Community](../../README.md#community)
 
 The `datamagic` Skill is the agent guide for the DataMagic recipe library. It helps a coding agent find an effect, read its implementation, adapt your data and media, render a video, and check the result.
 

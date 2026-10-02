@@ -10,7 +10,7 @@
 
 [中文](README.md) | [English](README.en.md)
 
-[观看展示](#showcase) · [浏览配方](https://datamagic.chat/cards/) · [开始制作](#create) · [组合故事](#stories) · [在线体验](https://datamagic.chat/) · [研究与引用](#research)
+[观看展示](#showcase) · [浏览配方](https://datamagic.chat/cards/) · [开始制作](#create) · [组合故事](#stories) · [💬 社区交流](#community) · [在线体验](https://datamagic.chat/) · [研究与引用](#research)
 </div>
 
 DataMagic 提供 **139 张动态配方卡**，每张都有动画预览、可编辑源码和示例数据。选中一个效果，将实现指令和自己的数据交给编程智能体；配套的 `datamagic` Skill 会指导它读取配方、修改模板、渲染视频并检查结果。
@@ -71,6 +71,17 @@ https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 - **用自己的数据与品牌**：替换数值、标签、单位、标题、颜色和素材；国家用国旗，品牌用 Logo，类别用插图，图像随对象移动、换位与揭晓。
 - **从图表扩展到讲解**：将人物、实景、图表和结论组合成连续的叙事镜头。
 - **继续编辑与复用**：保存视频和实现源码，下一次换主题时继续修改。
+
+<a id="community"></a>
+
+## 💬 社区与交流
+
+欢迎加入 DataMagic 交流群，交流配方使用、分享数据视频作品，也欢迎提出建议和反馈。
+
+| DataMagic 交流群 | 蟹哥聊科研 |
+|---|---|
+| <img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic 交流群管理员微信二维码"> | <img src="./images/wechat-qr-xiege.jpg" width="180" alt="蟹哥聊科研微信公众号二维码"> |
+| **扫码添加管理员，备注「DataMagic」，由管理员邀请入群。** | **扫码关注公众号**，了解 AI 工具、科研实践与相关教程。 |
 
 <a id="create"></a>
 
@@ -192,12 +203,8 @@ DataMagic 的研究围绕数据绑定、叙事编排与旁白同步展开，为�
 - [ ] 完善不同数据与主题下的复用示例。
 - [ ] 多轨工作台与剪映交付：后续简化操作并完成 Mac 真机验证，当前保留为 TODO。
 
-<a id="community"></a>
-
-## 🤝 交流与贡献
+## 🤝 参与贡献
 
 欢迎分享用配方做出的作品、贡献新案例，或通过 [Issues](https://github.com/HKUSTDial/DataMagic/issues) 反馈问题。[参与贡献](CONTRIBUTING.md)
-
-<img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic 微信交流群二维码">
 
 [在线系统与体验额度](docs/online-system.zh-CN.md) · [文档历史](docs/archive/README.md) · [MIT License](LICENSE) · [安全反馈](SECURITY.md)

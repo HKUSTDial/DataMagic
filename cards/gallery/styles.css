@@ -119,7 +119,16 @@ button { color: inherit; }
 .brand-mark::before { left: 8px; height: 9px; opacity: .75; }
 .brand-mark i { left: 15px; height: 15px; }
 .brand-mark::after { left: 22px; height: 21px; background: #7de2d2; }
-.header-actions { display: flex; align-items: center; gap: 10px; }
+.header-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+dialog.community-dialog { width: min(680px, calc(100vw - 24px)); padding: 28px; max-height: calc(100dvh - 24px); overflow-y: auto; }
+.community-dialog h2 { margin: 0 48px 12px 0; font-size: 24px; }
+.community-dialog > p, .community-grid p { font-size: 15px; line-height: 1.7; color: var(--muted); }
+.community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 24px 0; }
+.community-grid section { text-align: center; padding: 18px; border: 1px solid var(--line); border-radius: 10px; }
+.community-grid h3 { margin: 0 0 16px; font-size: 18px; }
+.community-grid img { max-width: 100%; height: auto; padding: 8px; background: #fff; border-radius: 8px; }
+.community-dialog > a { font-size: 14px; color: var(--accent-ink); }
+@media (max-width: 520px) { .community-grid { grid-template-columns: 1fr; } dialog.community-dialog { padding: 22px; } }
 .data-saver-button { min-height: 38px; padding: 6px 10px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); color: var(--ink); font-size: 13px; cursor: pointer; white-space: nowrap; }
 .data-saver-button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 .theme-switch {

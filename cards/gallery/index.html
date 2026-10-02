@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Reusable, editable recipes for animated data video and programmatic visualization.">
   <title>DataMagic Cards</title>
-  <link rel="stylesheet" href="styles.css?v=datamagic-20261002">
+  <link rel="stylesheet" href="styles.css?v=community-20261002">
   <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
     <div class="header-inner">
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i></span><strong>DataMagic Cards</strong><span id="brandSuffix">动态图表配方库</span></a>
       <div class="header-actions">
+        <button class="data-saver-button" id="communityOpen" type="button" aria-haspopup="dialog" aria-controls="communityDialog">社区交流</button>
         <button class="data-saver-button" id="dataSaver" type="button" aria-pressed="false">省流模式：关</button>
         <div class="theme-switch" id="themeSwitch" aria-label="页面主题">
           <button id="themeSystem" data-theme="system" type="button">系统</button>
@@ -61,6 +62,25 @@
       </div>
     </section>
   </main>
+
+  <dialog id="communityDialog" class="community-dialog" aria-labelledby="communityTitle">
+    <button class="dialog-close" id="communityClose" type="button" aria-label="关闭">×</button>
+    <h2 id="communityTitle">社区与交流</h2>
+    <p id="communityIntro">交流配方使用、分享数据视频作品，欢迎建议和反馈。</p>
+    <div class="community-grid">
+      <section>
+        <h3 id="communityGroupTitle">DataMagic 交流群</h3>
+        <img src="media/community/wechat-community-qr.jpg" width="180" height="180" loading="lazy" alt="DataMagic 交流群管理员微信二维码">
+        <p id="communityGroupCopy">扫码添加管理员，备注「DataMagic」，由管理员邀请入群。</p>
+      </section>
+      <section>
+        <h3 id="communityAccountTitle">蟹哥聊科研</h3>
+        <img src="media/community/wechat-qr-xiege.jpg" width="180" height="180" loading="lazy" alt="蟹哥聊科研微信公众号二维码">
+        <p id="communityAccountCopy">扫码关注公众号，了解 AI 工具、科研实践与相关教程。</p>
+      </section>
+    </div>
+    <a id="communityIssues" href="https://github.com/HKUSTDial/DataMagic/issues" target="_blank" rel="noopener noreferrer">也可以通过 GitHub Issues 反馈问题 →</a>
+  </dialog>
 
   <dialog id="detail">
     <button class="dialog-close" id="close" type="button" aria-label="关闭">×</button>
@@ -112,6 +132,6 @@
     </div>
   </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="app.js?v=recipe-languages-20261002"></script>
+  <script type="module" src="app.js?v=community-20261002"></script>
 </body>
 </html>

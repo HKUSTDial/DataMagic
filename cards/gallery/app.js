@@ -743,6 +743,25 @@ $('#copySelectedGuides').onclick = async () => {
   await copyText(items.map(recipePrompt).join('\n\n---\n\n'));
   showToast(t(`已复制 ${items.length} 份实现指令`, `Copied ${items.length} implementation briefs`));
 };
+$('#communityOpen').onclick = () => {
+  $('#communityDialog').showModal();
+  syncCardPlayback();
+};
+$('#communityClose').onclick = () => $('#communityDialog').close();
+$('#communityDialog').addEventListener('click', event => {
+  if (event.target !== event.currentTarget) return;
+  const rect = event.currentTarget.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) event.currentTarget.close();
+});
+$('#communityOpen').textContent = t('社区交流', 'Community');
+$('#communityTitle').textContent = t('社区与交流', 'Community');
+$('#communityIntro').textContent = t('交流配方使用、分享数据视频作品，欢迎建议和反馈。', 'Discuss recipes, share your data videos, and give feedback.');
+$('#communityGroupTitle').textContent = t('DataMagic 交流群', 'DataMagic WeChat community');
+$('#communityGroupCopy').textContent = t('扫码添加管理员，备注「DataMagic」，由管理员邀请入群。', 'Scan to add the administrator, mention “DataMagic”, and receive a group invitation.');
+$('#communityAccountTitle').textContent = t('蟹哥聊科研', "蟹哥聊科研 · Xiege's research notes");
+$('#communityAccountCopy').textContent = t('扫码关注公众号，了解 AI 工具、科研实践与相关教程。', 'Scan to follow the public account for AI tools, research practice, and tutorials in Chinese.');
+$('#communityClose').setAttribute('aria-label', t('关闭', 'Close'));
+$('#communityIssues').textContent = t('也可以通过 GitHub Issues 反馈问题 →', 'You can also report a problem on GitHub Issues →');
 $('#language').onclick = () => {
   localStorage.setItem('dvsc-language', state.lang === 'zh' ? 'en' : 'zh');
   location.reload();
