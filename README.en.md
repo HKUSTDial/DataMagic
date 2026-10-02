@@ -38,7 +38,7 @@ The reel uses actual library animations and demonstration data, with Chinese nar
 
 The GIFs below play automatically. Click a GIF for the high-resolution preview, or open the recipe for implementation details and source locations.
 
-Recipes have separate Chinese and English documents. The gallery displays the document in your selected language; [English recipes](cards/recipes/en/) are also available directly.
+Recipes have separate Chinese and English documents. The gallery displays the document in your selected language; [English recipes](cards/recipes/en/) are also available directly. Code identifiers, parameter names and file paths remain unchanged for agent reuse.
 
 | Character host and data board | Presenter-to-chart handoff | Countdown ranking |
 |---|---|---|

@@ -2,8 +2,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {pathToFileURL} = require('node:url');
-const extract = require('markdown-link-extractor');
+const {createRequire} = require('node:module');
 const check = require('markdown-link-check');
+const extract = createRequire(require.resolve('markdown-link-check'))('markdown-link-extractor');
 const config = JSON.parse(fs.readFileSync('.markdown-link-check.json', 'utf8'));
 const files = (process.env.FILES || '').split('\n').filter(f => f && fs.existsSync(f));
 const owners = new Map();
