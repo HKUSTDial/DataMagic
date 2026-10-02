@@ -78,11 +78,9 @@ https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 
 用咖啡店销量 CSV 生成带饮品图标的动态柱状图，再修改标题、突出拿铁、延长结尾。各饮品保留不同配色，图标与名称一起随排名移动。下面的 72 秒演示从中文搜索“动态柱状图竞赛”开始，串起选配方、复制指令、提出任务、生成与修改，配有中文旁白与内嵌字幕。页面操作为真实录屏，任务面板为标注清楚的流程演示；修改后的成片完整播放。
 
-<video src="assets/walkthrough-v2/datamagic-workflow-v2-web.mp4" poster="assets/walkthrough-v2/v2-final.png" width="960" style="max-width:100%;height:auto" controls playsinline preload="none">
-  <a href="assets/walkthrough-v2/datamagic-workflow-v2-web.mp4">播放完整上手演示</a>
-</video>
+https://github.com/user-attachments/assets/3309108f-97f1-4ade-a64c-a00d4d381649
 
-[播放 / 下载轻量版](assets/walkthrough-v2/datamagic-workflow-v2-web.mp4) · [1080p 高清版](assets/walkthrough-v2/datamagic-workflow-v2.mp4) · [数据、指令与复现记录](cards/examples/agent-workflow-demo/README.md) · [新旧版对比页](assets/walkthrough-v2/index.html)
+[查看示例数据、指令与复现记录](cards/examples/agent-workflow-demo/README.md)
 
 ### 1. 选择一个效果
 
