@@ -1,0 +1,59 @@
+# Source to Insight
+
+[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SourceToInsight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+
+- Recipe key：`SourceToInsight`
+
+## Purpose
+
+Connect source rows, transformation, and the visual conclusion in a traceable explanatory shot.
+
+## Getting started
+
+Give the [DataMagic repository](https://github.com/HKUSTDial/DataMagic) to your coding agent and ask it to configure the `datamagic` Skill and use this recipe. Reuse an existing checkout when available. Supply your data, media and requested changes. See the [setup guide](https://github.com/HKUSTDial/DataMagic/blob/main/skills/datamagic/README.md). File paths below are relative to `cards/`.
+
+## Source and data
+
+- Component：`templates/source-to-insight/SourceToInsight.tsx`
+- Schema：`templates/source-to-insight/schema.json`
+- Sample data：`templates/source-to-insight/sample-data.json`
+- Sample media: silent preview; align timing separately when adding narration.
+
+## Use cases
+
+Use when the audience needs to see how source rows become a ranked visual and
+takeaway.
+
+## Data contract
+
+- The table and bars must use the same `rows` array.
+- Any total stated in `takeaway` must be derivable from the supplied rows.
+- Mark synthetic or demo data explicitly.
+
+## Animation contract
+
+- Reveal source rows first, transformation second, result last.
+- Keep each stage in a stable region to preserve reading order.
+- Do not animate the result before the relevant source rows are visible.
+
+## Native implementation
+
+`templates/source-to-insight/SourceToInsight.tsx`
+
+## Entity imagery
+
+- Use a local image path relative to `public/` or a supplied image URL. Flags, supplied brand logos, and original category illustrations stay attached to their entity while text and exact values remain readable.
+- Regional locator illustrations are schematic, not flags, official emblems, or geographical boundaries. Do not add repetitive decorative icons to time points.
+
+## Render
+
+Install dependencies and render from `cards/`. Use the resolution, duration and frame rate declared by the composition and recipe.
+
+```bash
+npm ci
+npx remotion render src/index.ts ShotCraft-SourceToInsight out/SourceToInsight.mp4 --props=templates/source-to-insight/sample-data.json
+```
+
+## Delivery review
+
+Verify input/output values, labels, units, entity identities, icons and colors. Inspect opening, middle, every reveal and ending for overlap, clipping, contrast, continuity and reading holds; check narration/caption synchronization when audio is present. Label demonstration data and generated media. Deliver MP4, editable source, props and a reproducible render command.

@@ -38,17 +38,19 @@ The reel uses actual library animations and demonstration data, with Chinese nar
 
 The GIFs below play automatically. Click a GIF for the high-resolution preview, or open the recipe for implementation details and source locations.
 
+Recipes have separate Chinese and English documents. The gallery displays the document in your selected language; [English recipes](cards/recipes/en/) are also available directly.
+
 | Character host and data board | Presenter-to-chart handoff | Countdown ranking |
 |---|---|---|
 | [![Character perspective board](cards/gallery/media/readme/CharacterPerspectiveBoard.gif)](https://datamagic.chat/cards/#CharacterPerspectiveBoard) | [![Presenter data takeover](cards/gallery/media/readme/PresenterDataTakeover.gif)](https://datamagic.chat/cards/#PresenterDataTakeover) | [![Countdown ranking](cards/gallery/media/readme/RankedReveal.gif)](https://datamagic.chat/cards/#RankedReveal) |
-| Explain with a character, perspective board, and staged evidence. [Recipe](cards/recipes/CharacterPerspectiveBoard.md) | Shift attention between the presenter and the data. [Recipe](cards/recipes/PresenterDataTakeover.md) | Build suspense and comparison through sequential reveals. [Recipe](cards/recipes/RankedReveal.md) |
+| Explain with a character, perspective board, and staged evidence. [Recipe](cards/recipes/en/CharacterPerspectiveBoard.md) | Shift attention between the presenter and the data. [Recipe](cards/recipes/en/PresenterDataTakeover.md) | Build suspense and comparison through sequential reveals. [Recipe](cards/recipes/en/RankedReveal.md) |
 
 | Footage to evidence | Travel through a trend | Maps and regional comparison |
 |---|---|---|
 | [![Footage to evidence](cards/gallery/media/readme/FootageEvidenceReveal.gif)](https://datamagic.chat/cards/#FootageEvidenceReveal) | [![Timeline camera](cards/gallery/media/readme/ChartTimelineTravel.gif)](https://datamagic.chat/cards/#ChartTimelineTravel) | [![Regional map and ranking](cards/gallery/media/readme/ChoroplethRankMap.gif)](https://datamagic.chat/cards/#ChoroplethRankMap) |
-| Establish the scene, then introduce its key metrics. [Recipe](cards/recipes/FootageEvidenceReveal.md) | Move along a timeline and pause at important changes. [Recipe](cards/recipes/ChartTimelineTravel.md) | Explain differences through geography and rankings. [Recipe](cards/recipes/ChoroplethRankMap.md) |
+| Establish the scene, then introduce its key metrics. [Recipe](cards/recipes/en/FootageEvidenceReveal.md) | Move along a timeline and pause at important changes. [Recipe](cards/recipes/en/ChartTimelineTravel.md) | Explain differences through geography and rankings. [Recipe](cards/recipes/en/ChoroplethRankMap.md) |
 
-The library also covers bars, lines, shares, scatterplots, flows, openings, conclusions, and transitions, plus a [9:16 portrait ranking](cards/recipes/PortraitRankedReveal.md) for mobile content. Adapt the data, copy, colors, media, and timing, and keep the editable source.
+The library also covers bars, lines, shares, scatterplots, flows, openings, conclusions, and transitions, plus a [9:16 portrait ranking](cards/recipes/en/PortraitRankedReveal.md) for mobile content. Adapt the data, copy, colors, media, and timing, and keep the editable source.
 
 **[Explore all recipes →](https://datamagic.chat/cards/)**
 

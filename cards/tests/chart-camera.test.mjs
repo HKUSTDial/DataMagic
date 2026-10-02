@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
-import {calculateChartCamera, chartCameraProfiles} from '../src/camera/chartCamera.ts';
+import {loadTypeScript} from './load-typescript.mjs';
+const {calculateChartCamera, chartCameraProfiles} = await loadTypeScript(new URL('../src/camera/chartCamera.ts', import.meta.url));
 
 const sample = JSON.parse(fs.readFileSync(new URL('../templates/chart-focus-push/sample-data.json', import.meta.url)));
 const schema = JSON.parse(fs.readFileSync(new URL('../templates/chart-focus-push/schema.json', import.meta.url)));

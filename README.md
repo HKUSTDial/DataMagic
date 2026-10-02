@@ -38,6 +38,8 @@ https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 
 下方 GIF 自动展示动画效果；点击动图观看高清预览，点击配方查看实现说明与源码位置。
 
+完整配方默认中文，另提供独立英文版；网站切换语言后会显示对应文档。
+
 | 角色主持与数据板 | 主持人让位，图表接管 | 倒序揭晓排行榜 |
 |---|---|---|
 | [![角色主持与透视数据板](cards/gallery/media/readme/CharacterPerspectiveBoard.gif)](https://datamagic.chat/cards/#CharacterPerspectiveBoard) | [![主持人与数据交接](cards/gallery/media/readme/PresenterDataTakeover.gif)](https://datamagic.chat/cards/#PresenterDataTakeover) | [![倒序揭晓排行榜](cards/gallery/media/readme/RankedReveal.gif)](https://datamagic.chat/cards/#RankedReveal) |

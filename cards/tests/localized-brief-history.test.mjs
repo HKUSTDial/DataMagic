@@ -12,7 +12,9 @@ test('briefs use the selected language while preserving executable recipe identi
     assert(zh.startsWith('请使用 datamagic Skill'));
     assert(en.startsWith('Use the datamagic Skill'));
     assert(zh.includes(`cards/recipes/${card.slug}.md`));
-    assert(en.includes(`cards/recipes/${card.slug}.md`));
+    assert(en.includes(`cards/recipes/en/${card.slug}.md`));
+    assert(zh.includes('https://github.com/HKUSTDial/DataMagic'));
+    assert(en.includes('https://github.com/HKUSTDial/DataMagic'));
     assert(zh.includes(card.name.zh));
     assert(en.includes(card.name.en));
     assert(zh.split('\n').length <= 8);

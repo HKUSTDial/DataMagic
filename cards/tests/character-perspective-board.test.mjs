@@ -1,19 +1,9 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
-import {createRequire} from 'node:module';
-import ts from 'typescript';
-const require = createRequire(import.meta.url);
+import {loadTypeScript} from './load-typescript.mjs';
 const root = new URL('../', import.meta.url);
-function compile(file, resolve = require) {
-  const source = fs.readFileSync(new URL(file, root), 'utf8');
-  const code = ts.transpileModule(source, {compilerOptions: {module: ts.ModuleKind.CommonJS}}).outputText;
-  const m = {exports: {}};
-  new Function('require', 'exports', 'module', code)(resolve, m.exports, m);
-  return m.exports;
-}
-const shared = compile('src/sceneTiming.ts');
-const {validateStory, heldMediaFrame} = compile('templates/character-perspective-board/timing.ts', id => id === '../../src/sceneTiming' ? shared : require(id));
+const {validateStory, heldMediaFrame} = await loadTypeScript(new URL('templates/character-perspective-board/timing.ts', root));
 const load = file => JSON.parse(fs.readFileSync(new URL(`templates/character-perspective-board/${file}`, root)));
 const sample = load('sample-data.json');
 const alternate = load('alternate-data.json');
@@ -51,6 +41,9 @@ test('source uses shared-scale editable bars, stable perspective and no CSS anim
   assert.match(src, /OffthreadVideo muted/);
   assert.doesNotMatch(src, /animation:|transition:|Math\.sin/);
   const recipe = fs.readFileSync(new URL('recipes/CharacterPerspectiveBoard.md', root), 'utf8');
-  assert.match(recipe, /silent preview/);
-  assert.match(recipe, /not aligned/);
+  assert.match(recipe, /无声/);
+  assert.match(recipe, /不与当前文案口型同步/);
+  const english = fs.readFileSync(new URL('recipes/en/CharacterPerspectiveBoard.md', root), 'utf8');
+  assert.match(english, /silent preview/);
+  assert.match(english, /not aligned/);
 });

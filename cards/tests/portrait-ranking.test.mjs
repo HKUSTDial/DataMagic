@@ -1,19 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {createRequire} from 'node:module';
 import test from 'node:test';
-import ts from 'typescript';
-
-const require = createRequire(import.meta.url);
-const loadTs = relative => {
-  const source = fs.readFileSync(new URL(relative, import.meta.url), 'utf8');
-  const compiled = ts.transpileModule(source, {compilerOptions: {module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React}}).outputText;
-  const module = {exports: {}};
-  const localRequire = id => id === '../../src/sceneTiming' ? loadTs('../src/sceneTiming.ts') : id === '../../src/entityVisuals' ? loadTs('../src/entityVisuals.tsx') : require(id);
-  new Function('require', 'exports', 'module', compiled)(localRequire, module.exports, module);
-  return module.exports;
-};
-const {validatePortraitRanking} = loadTs('../templates/portrait-ranked-reveal/PortraitRankedReveal.tsx');
+import {loadTypeScript} from './load-typescript.mjs';
+const {validatePortraitRanking} = await loadTypeScript(new URL('../templates/portrait-ranked-reveal/PortraitRankedReveal.tsx', import.meta.url));
 const sample = JSON.parse(fs.readFileSync(new URL('../templates/portrait-ranked-reveal/sample-data.json', import.meta.url), 'utf8'));
 
 test('portrait sample supports a full hook, countdown, and conclusion hold', () => {

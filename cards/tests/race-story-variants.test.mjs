@@ -48,6 +48,7 @@ test('both variants publish story schema, 1080p recipe contract, and editable so
     assert.deepEqual(schema.properties.story.required, ['hook','turningPoint','takeaway','focusEntityId']);
     const recipe = read(`recipes/${variant.recipe}`);
     assert.match(recipe, /1920x1080/);
-    assert.match(recipe, /final static hold at least 1\.5 seconds/);
+    assert.match(recipe, /静止至少 1\.5 秒/);
+    assert.match(read(`recipes/en/${variant.recipe}`), /final static hold at least 1\.5 seconds/);
   }
 });

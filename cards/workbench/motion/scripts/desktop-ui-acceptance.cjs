@@ -1,6 +1,7 @@
 // Browser workflow simulation. This does NOT certify the real Mac application.
 const {chromium}=require('/home/xieyupeng/000LianTong/softcopy_screenshot_tools/node_modules/playwright');
 const assert=require('node:assert/strict');
+const {randomUUID}=require('node:crypto');
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:'/home/xieyupeng/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome',args:['--no-sandbox']});
   try{
@@ -11,7 +12,8 @@ const assert=require('node:assert/strict');
     const capability=await (await page.request.get(`${base}/api/desktop`)).json();assert.equal(capability.canInstall,false);assert.equal(capability.token,undefined);
     let remoteWrites=0;page.on('request',r=>{if(r.method()==='POST')remoteWrites++;});await page.getByRole('button',{name:'发送到剪映',exact:true}).click();await page.locator('.desktop-help').waitFor({state:'visible'});assert.match(await page.locator('.desktop-help').textContent(),/服务器|Mac/);assert.equal(remoteWrites,0);await page.getByRole('button',{name:'知道了',exact:true}).click();
     const denied=await page.request.post(`${base}/api/desktop/install`,{data:{exportId:'00000000-0000-0000-0000-000000000000',confirm:true,token:'invalid'}});assert.ok(!denied.ok());
-    let exports=0,installs=0,fail=false;const token='synthetic-local-test-token';
+    // Disposable mock capability, generated only for this test run.
+    let exports=0,installs=0,fail=false;const token=randomUUID();
     await page.route('**/api/desktop',r=>r.fulfill({json:{platform:'darwin',local:true,canInstall:true,token,reason:'Mock Mac, no actual desktop writes'}}));
     await page.route('**/api/export',r=>{exports++;assert.equal(r.request().postDataJSON().kind,'jianying');return r.fulfill({status:202,json:{id:'00000000-0000-0000-0000-000000000000',status:'ready',video:'/mock.mp4',package:'/mock.zip',project:'/mock.json'}});});
     await page.route('**/api/desktop/install',r=>{installs++;const body=r.request().postDataJSON();assert.equal(body.token,token);assert.equal(body.confirm,true);return r.fulfill({status:202,json:{id:'11111111-1111-1111-1111-111111111111',status:'installing',progress:'模拟本机依赖准备'}});});

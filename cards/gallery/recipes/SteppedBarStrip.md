@@ -1,49 +1,46 @@
-# Stepped Bar Strip
+# 阶梯条形图条带
 
-- ID: `StyleTemplate-SteppedBarStrip`
-- 中文：阶梯条形图条带
-- Category: `bar_chart`
-- Compatible: bar_chart
-- Tags: Dense, Strip, Single-tone
+[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SteppedBarStrip.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
-## Use
+- 配方标识：`SteppedBarStrip`
 
-Single-tone stepped bar strip (no row gaps) for 7-15 entries; alpha grades by rank.
+## 用途
 
-## Runtime animation contract
+适合条形图场景，以“阶梯条形图条带”组织数据并保持可编辑的数据映射。
 
-- Runtime preview: `RuntimeTemplatePreview-SteppedBarStrip`
-- Data contract: `dense ranked items`
-- Entrance: `stepped strip reveal`
-- Emphasis: `strip row highlight`
-- Highlight targets: strip, label, value
-- Trigger phrase: `Aug`
-- Suggested narration: Aug is the top strip in the ranking.
-- Animation intent: Highlight the named strip without changing layout height.
-- Preview status: runtime narrative highlight
+## 开始使用
 
-## Data and review constraints
+首次使用，可把 [DataMagic 仓库](https://github.com/HKUSTDial/DataMagic) 交给编程智能体，请它配置 `datamagic` Skill 并使用本配方；已有仓库则直接复用。附上你的数据、素材和修改要求。[完整使用与安装说明](https://github.com/HKUSTDial/DataMagic/blob/main/skills/datamagic/README.md)。下列文件路径相对于仓库的 `cards/` 目录。
 
-Keep all values, labels, axes, and chart geometry programmatic and editable. Render representative frames and check overlap, clipping, readability, motion continuity, emphasis timing, and final hold time.
+## 源码与数据
 
-## Reference implementation
+- 组件源码：`src/legacy/components/runtime_style_templates/bar_chart/RuntimeSteppedBarStrip.tsx`
+- 数据结构：`templates/runtime-cards/SteppedBarStrip/schema.json`
+- 示例数据：`templates/runtime-cards/SteppedBarStrip/sample-data.json`
+- 渲染入口：`src/runtime/RuntimeCard.tsx`
+- 导出组件：`SteppedBarStripDemo`
 
-DataMagic Remotion composition: `StyleTemplate-SteppedBarStrip`
+## 数据与制作约束
 
-## Editable implementation / 可编辑实现
+替换数据时，同步调整 `sceneContent.data` 与 `sceneContent.template_payload` 的对应字段；文字场景同步修改标题、正文、要点与其参数。改标签后同步调整 `scene.animations` 的高亮对象。按组件和共享函数支持的数据结构修改，不把数值或文字烘焙成图片。
 
-- Source / 源码: `src/legacy/components/runtime_style_templates/bar_chart/RuntimeSteppedBarStrip.tsx` (`SteppedBarStripDemo`)
-- Shared render entry / 渲染入口: `src/runtime/RuntimeCard.tsx`
-- Sample props / 示例数据: `templates/runtime-cards/SteppedBarStrip/sample-data.json`
-- Schema / 参数结构: `templates/runtime-cards/SteppedBarStrip/schema.json`
-- Canvas / 画布: 1280×720, 30 fps, 180 frames (6 seconds)
+- 数据契约标识：`dense ranked items`
+- 入场策略标识：`stepped strip reveal`
+- 高亮策略标识：`strip row highlight`
+- 示例触发词：`Aug`
+- 高亮对象：`strip, label, value`
 
-Run from `cards/` / 在 `cards/` 目录运行：
+标签、高亮触发词和解读必须随数据更新，不能保留与新数据不符的示例旁白。默认渲染规格为 1280×720、30fps、180 帧（6 秒）；网站预览可能来自另一次更高分辨率输出。
+
+## 渲染
+
+在 `cards/` 目录安装依赖后渲染；分辨率、时长和帧率以 Composition 与配方中的声明为准。
 
 ```bash
+npm ci
 npx remotion render src/index.ts RuntimeTemplatePreview-SteppedBarStrip out/SteppedBarStrip.mp4 --props=templates/runtime-cards/SteppedBarStrip/sample-data.json
 ```
 
-Replace `sceneContent.data` and the matching fields in `sceneContent.template_payload` together. Text scenes use title, subtitle, bullets and their payload fields. Update animation target labels in `scene.animations` when changing labels. Read the component and shared helpers for its supported data shape, then check values and rendered keyframes.
+## 交付检查
 
-替换数据时，同步调整 `sceneContent.data` 与 `sceneContent.template_payload` 中对应字段；文字镜头使用标题、正文、要点及其 payload。改标签后同步调整 `scene.animations` 的高亮目标。依照组件和共享函数支持的数据结构修改，并检查数值与渲染关键帧。
+核对输入与输出的数值、标签、单位、对象身份、图标和配色。检查开场、中段、每次揭晓及结尾的重叠、裁切、对比度、动画连续性和阅读停顿；如有音频，检查音画与字幕同步。演示数据及生成素材须明确标注。交付 MP4、可编辑源码、参数文件和可复现的渲染命令。

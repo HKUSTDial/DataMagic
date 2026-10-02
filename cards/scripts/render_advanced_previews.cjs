@@ -359,14 +359,8 @@ const updateLibrary = () => {
   const nativeIds = new Set(cards.map(card => card.id));
   library.cards = [...cards, ...library.cards.filter(item => !nativeIds.has(item.id))];
   fs.writeFileSync(libraryPath, `${JSON.stringify(enrichLibrary(library), null, 2)}\n`);
-  const publishedRecipes = path.join(root, 'gallery', 'recipes');
-  fs.mkdirSync(publishedRecipes, {recursive: true});
-  for (const card of cards) {
-    fs.copyFileSync(
-      path.join(root, 'recipes', `${card.slug}.md`),
-      path.join(publishedRecipes, `${card.slug}.md`),
-    );
-  }
+  // Publish both languages from the preserved recipe sources.
+  require('./localize_recipes.cjs').build();
 };
 
 const run = async () => {

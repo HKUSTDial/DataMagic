@@ -22,3 +22,13 @@ jobs:
           plugin_dir: "."
           min_score: 80
           fail_on_severity: high
+          format: json
+          output: plugin-security-report.json
+
+      - name: Preserve security findings even when the scan fails
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: plugin-security-report
+          path: plugin-security-report.json
+          if-no-files-found: warn

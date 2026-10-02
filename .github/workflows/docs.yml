@@ -62,7 +62,13 @@ jobs:
           if [ "$EVENT_NAME" = "pull_request" ]; then
             files=$(git diff --name-only --diff-filter=AM "$BASE_SHA" "$HEAD_SHA" -- '*.md')
           elif [ "$EVENT_NAME" = "push" ] && [ -n "${BEFORE_SHA:-}" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
-            files=$(git diff --name-only --diff-filter=AM "$BEFORE_SHA" "$AFTER_SHA" -- '*.md')
+            if git cat-file -e "$BEFORE_SHA^{commit}" 2>/dev/null; then
+              files=$(git diff --name-only --diff-filter=AM "$BEFORE_SHA" "$AFTER_SHA" -- '*.md')
+            else
+              # A history rewrite can leave the old push SHA unreachable.
+              # Validate tracked Markdown rather than failing on a missing ref.
+              files=$(git ls-files '*.md')
+            fi
           else
             files=""
           fi

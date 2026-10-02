@@ -1,15 +1,10 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
-import ts from 'typescript';
-import {createRequire} from 'node:module';
+import {loadTypeScript} from './load-typescript.mjs';
 import {categoryGroups,collectionDefinitions} from '../gallery/discovery.js';
-const require=createRequire(import.meta.url);
 const root=new URL('../',import.meta.url);
-const source=fs.readFileSync(new URL('src/editorialStory.ts',root),'utf8');
-const compiled=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText;
-const helper={exports:{}};new Function('require','exports','module',compiled)(require,helper.exports,helper);
-const {contributionSteps,validateSeries,validateTiers,tierIndex}=helper.exports;
+const {contributionSteps,validateSeries,validateTiers,tierIndex}=await loadTypeScript(new URL('src/editorialStory.ts',root));
 const data=(folder,name='sample-data')=>JSON.parse(fs.readFileSync(new URL(`templates/${folder}/${name}.json`,root)));
 test('signed trend supports alternate focus and common signed domains',()=>{
   for(const file of ['sample-data','alternate-data']) {const p=data('presenter-data-takeover',file);validateSeries(p.points,p.domain,p.focusIndex);assert.ok(p.points[p.focusIndex].value<0);}
@@ -39,7 +34,7 @@ test('new recipes expose source, schema, alternate inputs and explicit silent pr
   for(const [slug,folder] of [['PresenterDataTakeover','presenter-data-takeover'],['ContrastContributionStory','contrast-contribution-story'],['PersistentTierBoard','persistent-tier-board']]) {
     const schema=JSON.parse(fs.readFileSync(new URL(`templates/${folder}/schema.json`,root)));
     for(const file of ['sample-data','alternate-data']) {const p=data(folder,file);for(const key of schema.required) assert.ok(Object.hasOwn(p,key),`${slug} missing ${key}`);for(const key of Object.keys(p)) assert.ok(Object.hasOwn(schema.properties,key),`${slug} extra ${key}`);}
-    const recipe=fs.readFileSync(new URL(`recipes/${slug}.md`,root),'utf8');assert.match(recipe,/silent preview/);assert.ok(recipe.includes(`templates/${folder}/${slug}.tsx`));
+    const recipe=fs.readFileSync(new URL(`recipes/${slug}.md`,root),'utf8');assert.match(recipe,/无声/);assert.ok(recipe.includes(`templates/${folder}/${slug}.tsx`));
     const src=fs.readFileSync(new URL(`templates/${folder}/${slug}.tsx`,root),'utf8');assert.doesNotMatch(src,/animation:|transition:|Math\.random\(|setInterval\(/);
   }
 });

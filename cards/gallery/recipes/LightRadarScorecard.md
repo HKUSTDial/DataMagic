@@ -1,49 +1,46 @@
-# Light Radar Scorecard
+# 浅色雷达图评分卡
 
-- ID: `StyleTemplate-LightRadarScorecard`
-- 中文：浅色雷达图评分卡
-- Category: `radar_chart`
-- Compatible: radar_chart
-- Tags: Radar, Light, Scorecard
+[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LightRadarScorecard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
-## Use
+- 配方标识：`LightRadarScorecard`
 
-Use a light radar scorecard with a white card, score metric, cyan accents, and airy label spacing.
+## 用途
 
-## Runtime animation contract
+适合雷达图场景，以“浅色雷达图评分卡”组织数据并保持可编辑的数据映射。
 
-- Runtime preview: `RuntimeTemplatePreview-LightRadarScorecard`
-- Data contract: `multi-axis scores`
-- Entrance: `scorecard reveal`
-- Emphasis: `profile focus highlight`
-- Highlight targets: axis, series, value
-- Trigger phrase: `Product A`
-- Suggested narration: Product A leads the radar scorecard.
-- Animation intent: Highlight the named radar scorecard profile.
-- Preview status: runtime narrative highlight
+## 开始使用
 
-## Data and review constraints
+首次使用，可把 [DataMagic 仓库](https://github.com/HKUSTDial/DataMagic) 交给编程智能体，请它配置 `datamagic` Skill 并使用本配方；已有仓库则直接复用。附上你的数据、素材和修改要求。[完整使用与安装说明](https://github.com/HKUSTDial/DataMagic/blob/main/skills/datamagic/README.md)。下列文件路径相对于仓库的 `cards/` 目录。
 
-Keep all values, labels, axes, and chart geometry programmatic and editable. Render representative frames and check overlap, clipping, readability, motion continuity, emphasis timing, and final hold time.
+## 源码与数据
 
-## Reference implementation
+- 组件源码：`src/legacy/components/runtime_style_templates/radar_chart/RuntimeLightRadarScorecard.tsx`
+- 数据结构：`templates/runtime-cards/LightRadarScorecard/schema.json`
+- 示例数据：`templates/runtime-cards/LightRadarScorecard/sample-data.json`
+- 渲染入口：`src/runtime/RuntimeCard.tsx`
+- 导出组件：`LightRadarScorecardDemo`
 
-DataMagic Remotion composition: `StyleTemplate-LightRadarScorecard`
+## 数据与制作约束
 
-## Editable implementation / 可编辑实现
+替换数据时，同步调整 `sceneContent.data` 与 `sceneContent.template_payload` 的对应字段；文字场景同步修改标题、正文、要点与其参数。改标签后同步调整 `scene.animations` 的高亮对象。按组件和共享函数支持的数据结构修改，不把数值或文字烘焙成图片。
 
-- Source / 源码: `src/legacy/components/runtime_style_templates/radar_chart/RuntimeLightRadarScorecard.tsx` (`LightRadarScorecardDemo`)
-- Shared render entry / 渲染入口: `src/runtime/RuntimeCard.tsx`
-- Sample props / 示例数据: `templates/runtime-cards/LightRadarScorecard/sample-data.json`
-- Schema / 参数结构: `templates/runtime-cards/LightRadarScorecard/schema.json`
-- Canvas / 画布: 1280×720, 30 fps, 180 frames (6 seconds)
+- 数据契约标识：`multi-axis scores`
+- 入场策略标识：`scorecard reveal`
+- 高亮策略标识：`profile focus highlight`
+- 示例触发词：`Product A`
+- 高亮对象：`axis, series, value`
 
-Run from `cards/` / 在 `cards/` 目录运行：
+标签、高亮触发词和解读必须随数据更新，不能保留与新数据不符的示例旁白。默认渲染规格为 1280×720、30fps、180 帧（6 秒）；网站预览可能来自另一次更高分辨率输出。
+
+## 渲染
+
+在 `cards/` 目录安装依赖后渲染；分辨率、时长和帧率以 Composition 与配方中的声明为准。
 
 ```bash
+npm ci
 npx remotion render src/index.ts RuntimeTemplatePreview-LightRadarScorecard out/LightRadarScorecard.mp4 --props=templates/runtime-cards/LightRadarScorecard/sample-data.json
 ```
 
-Replace `sceneContent.data` and the matching fields in `sceneContent.template_payload` together. Text scenes use title, subtitle, bullets and their payload fields. Update animation target labels in `scene.animations` when changing labels. Read the component and shared helpers for its supported data shape, then check values and rendered keyframes.
+## 交付检查
 
-替换数据时，同步调整 `sceneContent.data` 与 `sceneContent.template_payload` 中对应字段；文字镜头使用标题、正文、要点及其 payload。改标签后同步调整 `scene.animations` 的高亮目标。依照组件和共享函数支持的数据结构修改，并检查数值与渲染关键帧。
+核对输入与输出的数值、标签、单位、对象身份、图标和配色。检查开场、中段、每次揭晓及结尾的重叠、裁切、对比度、动画连续性和阅读停顿；如有音频，检查音画与字幕同步。演示数据及生成素材须明确标注。交付 MP4、可编辑源码、参数文件和可复现的渲染命令。

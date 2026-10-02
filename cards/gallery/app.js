@@ -1,7 +1,7 @@
 import {collectionDefinitions, categoryGroups} from './discovery.js';
 import {createCardSearchIndex, matchesCardSearch} from './search.js?v=zh-search-20261002';
-import {briefPreview} from './brief-preview.js?v=brief-preview-20261002';
-import {implementationBrief} from './implementation-brief.js?v=datamagic-20261002';
+import {briefPreview} from './brief-preview.js?v=recipe-languages-20261002';
+import {implementationBrief} from './implementation-brief.js?v=recipe-languages-20261002';
 import {cardStatus, sortRecentCards} from './card-history.js?v=datamagic-20261002';
 import {LIST_VIDEO_LIMIT, videoSource, posterSource, videoBytes, formatBytes, defaultDataSaver, releaseVideo} from './media-policy.js?v=entity-icons-20261002';
 

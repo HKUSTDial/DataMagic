@@ -1,16 +1,10 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
-import {createRequire} from 'node:module';
-import ts from 'typescript';
+import {loadTypeScript} from './load-typescript.mjs';
 import {collectionDefinitions, categoryGroups} from '../gallery/discovery.js';
 
-const require = createRequire(import.meta.url);
-const source = fs.readFileSync(new URL('../src/sceneTiming.ts', import.meta.url), 'utf8');
-const compiled = ts.transpileModule(source, {compilerOptions: {module: ts.ModuleKind.CommonJS}}).outputText;
-const helper = {exports: {}};
-new Function('require', 'exports', 'module', compiled)(require, helper.exports, helper);
-const {validateRows, activeRow, reveal} = helper.exports;
+const {validateRows, activeRow, reveal} = await loadTypeScript(new URL('../src/sceneTiming.ts', import.meta.url));
 const library = JSON.parse(fs.readFileSync(new URL('../gallery/api/library.json', import.meta.url)));
 
 test('geographic collection excludes contextual percentage scenes', () => {
@@ -49,6 +43,7 @@ test('new recipe files and sample data agree with their runtime constraints', ()
     assert.ok(fs.existsSync(new URL(`../${card.source.schema}`, import.meta.url)));
     const recipe = fs.readFileSync(new URL(`../recipes/${slug}.md`, import.meta.url), 'utf8');
     assert.ok(recipe.includes(card.source.component));
-    assert.ok(recipe.includes('silent preview'));
+    assert.ok(recipe.includes('无声'));
+    assert.ok(fs.readFileSync(new URL(`../recipes/en/${slug}.md`, import.meta.url), 'utf8').includes('silent preview'));
   }
 });

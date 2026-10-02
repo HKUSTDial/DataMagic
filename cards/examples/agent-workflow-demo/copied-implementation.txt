@@ -1,4 +1,5 @@
 请使用 datamagic Skill，按照“动态柱状图竞赛”（BarChartRace）配方制作视频。
+仓库：https://github.com/HKUSTDial/DataMagic 。尚未配置时，请先帮我下载仓库并配置其中的 datamagic Skill；已有则直接使用。
 用途：面向多实体时序排名的连续竞赛图，支持数值插值、动态换位、进入退出和稳定实体配色。
 先读取配方：cards/recipes/BarChartRace.md，再按其中的引用读取源码、数据格式和示例数据。路径相对于 DataMagic 仓库。
 用我提供的数据和修改要求替换示例内容。没有数据时先确认，或明确约定使用标注清楚的演示数据。

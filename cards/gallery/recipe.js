@@ -1,6 +1,6 @@
 import {posterSource} from './media-policy.js?v=entity-icons-20261002';
-import {briefPreview} from './brief-preview.js?v=brief-preview-20261002';
-import {implementationBrief} from './implementation-brief.js?v=datamagic-20261002';
+import {briefPreview} from './brief-preview.js?v=recipe-languages-20261002';
+import {implementationBrief} from './implementation-brief.js?v=recipe-languages-20261002';
 const state = {
   lang: localStorage.getItem('dvsc-language') === 'en' ? 'en' : 'zh',
   theme: localStorage.getItem('dvsc-theme') || 'system',
@@ -155,7 +155,7 @@ const renderRecipe = (item, markdown) => {
             <div><dt>${esc(t('实现源码', 'Source'))}</dt><dd>${esc(source.component || source.compositionId || item.id)}</dd></div>
             ${source.schema ? `<div><dt>${esc(t('数据结构', 'Schema'))}</dt><dd>${esc(source.schema)}</dd></div>` : ''}
             ${source.sampleData ? `<div><dt>${esc(t('示例数据', 'Sample data'))}</dt><dd>${esc(source.sampleData)}</dd></div>` : ''}
-            <div><dt>${esc(t('配方文件', 'Recipe file'))}</dt><dd>recipes/${esc(item.slug)}.md</dd></div>
+            <div><dt>${esc(t('配方文件', 'Recipe file'))}</dt><dd>recipes/${state.lang === 'en' ? 'en/' : ''}${esc(item.slug)}.md</dd></div>
           </dl>
         </section>
         <section>
@@ -202,7 +202,8 @@ const load = async () => {
   const data = await response.json();
   const item = data.cards.find(card => card.slug === slug || card.id === slug);
   if (!item) throw new Error(t('找不到该配方', 'Recipe not found'));
-  const recipeResponse = await fetch(`recipes/${encodeURIComponent(item.slug)}.md`);
+  const recipePath = state.lang === 'en' ? `recipes/en/${encodeURIComponent(item.slug)}.md` : `recipes/${encodeURIComponent(item.slug)}.md`;
+  const recipeResponse = await fetch(recipePath, {cache: 'no-store'});
   const markdown = recipeResponse.ok ? await recipeResponse.text() : `# ${label(item.name)}\n\n${label(item.description)}`;
   renderRecipe(item, markdown);
 };
