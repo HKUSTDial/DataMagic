@@ -1,5 +1,5 @@
 {
-  "name": "datamagic-video",
+  "name": "datamagic",
   "version": "0.1.0",
   "description": "Create with DataMagic recipes: find an effect, adapt its editable source to your data, and render charts or multi-shot stories.",
   "author": {
@@ -20,7 +20,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "DataMagic Video",
+    "displayName": "DataMagic",
     "shortDescription": "Adapt motion recipes to your data and stories",
     "longDescription": "Choose an effect from DataMagic, adapt its source to your data and media, and render an editable video. Get recipe recommendations for a goal or combine several shots into a story, with data analysis and narration guidance when needed.",
     "developerName": "HKUSTDial",

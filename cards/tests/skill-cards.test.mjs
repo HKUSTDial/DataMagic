@@ -6,7 +6,7 @@ import path from 'node:path';
 import test from 'node:test';
 
 const require = createRequire(import.meta.url);
-const {run, resolveRoot} = require('../../skills/datamagic-video/scripts/cards.cjs');
+const {run, resolveRoot} = require('../../skills/datamagic/scripts/cards.cjs');
 const cardsRoot = path.resolve(new URL('../', import.meta.url).pathname);
 
 test('skill resolves companion package independently of current directory', () => {

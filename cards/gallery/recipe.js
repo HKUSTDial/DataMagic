@@ -1,5 +1,6 @@
 import {posterSource} from './media-policy.js?v=entity-icons-20261002';
 import {briefPreview} from './brief-preview.js?v=brief-preview-20261002';
+import {implementationBrief} from './implementation-brief.js?v=datamagic-20261002';
 const state = {
   lang: localStorage.getItem('dvsc-language') === 'en' ? 'en' : 'zh',
   theme: localStorage.getItem('dvsc-theme') || 'system',
@@ -39,36 +40,7 @@ const media = item => {
   return `<span class="media-shell"><img src="${poster}" alt=""><video src="${esc(video)}" poster="${poster}" muted loop playsinline autoplay controls></video></span>`;
 };
 
-const recipePrompt = item => {
-  const source = item.source || {};
-  const runtime = item.runtime || {};
-  return [
-    `Use the DataMagic Cards recipe: ${item.slug}`,
-    `Purpose: ${label(item.description)}`,
-    `Compatible visuals: ${(item.compatibleVisuals || []).join(', ') || 'data video'}.`,
-    `Recipe document: recipes/${item.slug}.md`,
-    'Resolve the listed paths relative to the cards/ directory in the DataMagic repository.',
-    'Editable source, schema, and sample data are bundled with this recipe.',
-    `Render composition: ${source.renderCompositionId || source.compositionId || item.id}`,
-    source.component ? `Implementation: ${source.component}` : `Reference composition: ${source.compositionId || item.id}`,
-    source.schema ? `Data schema: ${source.schema}` : '',
-    source.sampleData ? `Sample data: ${source.sampleData}` : '',
-    'Resolve local iconSrc assets from public/. Keep flags, brand marks and category illustrations attached to their entity identity; preserve colors and reveal timing.',
-    runtime.supported ? `Data contract: ${runtime.dataContract}` : '',
-    runtime.supported ? `Animation: entrance=${runtime.entrance}; emphasis=${runtime.emphasis}.` : '',
-    runtime.supported ? `Highlight targets: ${(runtime.highlightTargets || []).join(', ')}.` : '',
-    runtime.supported ? `Trigger phrase: ${runtime.triggerPhrase}.` : '',
-    runtime.supported ? `Narrative intent: ${runtime.animationIntent}` : '',
-    'Use the resolution, duration and frame rate declared in the selected recipe or composition unless the user specifies otherwise. Do not stretch a landscape layout into portrait.',
-    'Keep titles, sources, legends, and explanatory UI outside camera-transformed layers.',
-    'Keep every readable label and data-bearing mark inside a 64 px canvas safe area at every frame.',
-    'Resolve imports from the final output directory and run TypeScript against the generated files at that exact location.',
-    'At the final frame, explicitly check collisions among the primary value, unit, annotation badge, legend, and source.',
-    'Reserve at least the final 1 second as a fully static reading hold.',
-    'Keep data-bearing marks, labels, values, and chart geometry programmatic and editable.',
-    'Render the actual video plus representative opening, middle, and final frames; verify data fidelity, overlap, clipping, readability, motion continuity, geographic validity when applicable, emphasis timing, and final hold time before delivery.',
-  ].filter(Boolean).join('\n');
-};
+const recipePrompt = item => implementationBrief(item, state.lang);
 
 const inlineMarkdown = text => esc(text)
   .replace(/`([^`]+)`/g, '<code>$1</code>')

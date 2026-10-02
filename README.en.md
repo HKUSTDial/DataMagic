@@ -13,7 +13,13 @@
 [Watch the showcase](#showcase) · [Browse recipes](https://datamagic.chat/cards/) · [Start creating](#create) · [Build a story](#stories) · [Try online](https://datamagic.chat/) · [Research & citation](#research)
 </div>
 
-DataMagic offers **139 motion recipe cards**, each with a preview, editable source, and sample data. Choose an effect and give its implementation instructions and your data to a coding agent. The companion `datamagic-video` Skill guides the agent through reading the recipe, adapting the template, rendering, and checking the result.
+DataMagic offers **139 motion recipe cards**, each with a preview, editable source, and sample data. Choose an effect and give its implementation instructions and your data to a coding agent. The companion `datamagic` Skill guides the agent through reading the recipe, adapting the template, rendering, and checking the result.
+
+## ✨ What's new
+
+- **2026.10.02**: Unified the Skill name as `datamagic`; added Chinese search, localized implementation briefs, and a refreshed walkthrough.
+- **2026.10.02**: Added flags, brand marks, and category illustrations to 60 recipes; refreshed motion previews and the narrated showcase.
+- **2026.09.30**: Added presenter handoffs, contribution stories, and persistent tier boards for story-led data videos.
 
 <a id="showcase"></a>
 
@@ -21,15 +27,9 @@ DataMagic offers **139 motion recipe cards**, each with a preview, editable sour
 
 Character hosts, perspective boards, bar chart races, footage, timeline moves, and layered map glides: explore six approaches in the complete 30-second showcase below.
 
-<video src="assets/promo/datamagic-showcase-en-music.mp4" poster="assets/promo/cover.jpg" width="960" style="max-width:100%;height:auto" controls playsinline preload="none">
-  <a href="assets/promo/datamagic-showcase-en-music.mp4">Play the complete 30-second showcase with music</a>
-</video>
+https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 
-If your local Markdown preview does not show the player, use the video link below or open the [showcase page](assets/promo/index.html) in a browser.
-
-**[Watch / download: English titles, music and SFX](assets/promo/datamagic-showcase-en-music.mp4)** · [Chinese AI narration](assets/promo/datamagic-showcase-zh-voiced.mp4) · [Shot list and production notes](docs/showcase.md)
-
-The reel uses actual library animations and demonstration data. English titles introduce the shots; the underlying recipe examples retain their original labels. Each recipe below links to its implementation so you can replace the data, copy, and media.
+The reel uses actual library animations and demonstration data, with Chinese narration and captions. Each recipe below links to its implementation so you can replace the data, copy, and media.
 
 <a id="examples"></a>
 
@@ -100,7 +100,7 @@ cd DataMagic
 
 Paste the implementation instructions, attach your data, and describe the result you want:
 
-> Use this repository's datamagic-video Skill to adapt RankedReveal to my sales.csv. Keep the sequential reveal, use my brand colors, and deliver an MP4 with editable source.
+> Use this repository's datamagic Skill to adapt RankedReveal to my sales.csv. Keep the sequential reveal, use my brand colors, and deliver an MP4 with editable source.
 
 The companion Skill helps the agent locate source files, map data fields, adapt the visuals, and check the result. You can also start with a goal:
 
@@ -110,7 +110,7 @@ The companion Skill helps the agent locate source files, map data fields, adapt 
 
 Check the values, labels, and conclusion. Ask the agent to adjust the result: “Hold the ending for two more seconds,” “Highlight the East region,” or “Adapt the layout for mobile viewing.”
 
-[Usage and installation guide](skills/datamagic-video/README.md) · [Browse and render locally](cards/README.en.md)
+[Usage and installation guide](skills/datamagic/README.md) · [Browse and render locally](cards/README.en.md)
 
 ### More ways to start
 
@@ -134,7 +134,7 @@ Open with a question, present evidence through charts, then develop the explanat
 
 > Use this quarterly sales table to make a 30-second story: introduce the growth, compare regional contributions, and summarize the main finding. Reuse library recipes and keep colors and captions consistent.
 
-For deeper data analysis, scripts, and narration, follow [Plan a complete video from data](skills/datamagic-video/rules/full-story-workflow.md). The same Skill draws on analysis, narrative planning, and timing guidance as the task requires.
+For deeper data analysis, scripts, and narration, follow [Plan a complete video from data](skills/datamagic/rules/full-story-workflow.md). The same Skill draws on analysis, narrative planning, and timing guidance as the task requires.
 
 ## 📦 What's in the repository
 
@@ -142,8 +142,8 @@ For deeper data analysis, scripts, and narration, follow [Plan a complete video 
 |---|---|
 | Animation previews, recipes, and source references | [Online gallery](https://datamagic.chat/cards/) · [Recipes](cards/recipes/) |
 | Template source, sample data, and rendering | [Cards development guide](cards/README.en.md) |
-| Agent usage and installation | [datamagic-video guide](skills/datamagic-video/README.md) |
-| Planning and creating multi-shot stories | [Full-story workflow](skills/datamagic-video/rules/full-story-workflow.md) |
+| Agent usage and installation | [datamagic guide](skills/datamagic/README.md) |
+| Planning and creating multi-shot stories | [Full-story workflow](skills/datamagic/rules/full-story-workflow.md) |
 | Showcase videos, cover, and reproducible build script | [Showcase notes](docs/showcase.md) |
 | Automatic generation examples and walkthrough | [Online system](docs/online-system.md) |
 
@@ -167,8 +167,7 @@ DataMagic research studies data binding, narrative orchestration, and narration 
 - [VLDB 2026 Demo: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
 - [Project homepage](https://datamagic-home.github.io) · [Pipeline](docs/pipeline-overview.md) · [DVSpec](docs/dvspec-overview.md) · [Input/output examples](docs/input-output-examples.md)
 
-<details>
-<summary>Cite DataMagic (BibTeX)</summary>
+### Cite DataMagic
 
 If you find DataMagic useful in your research or work, please cite:
 
@@ -185,22 +184,6 @@ If you find DataMagic useful in your research or work, please cite:
   url={https://arxiv.org/abs/2609.33403},
 }
 ```
-
-**VLDB 2026 demo paper:**
-
-```bibtex
-@misc{xie2026datamagictransformingtabulardata,
-  title={DataMagic: Transforming Tabular Data into Data Insight Video},
-  author={Yupeng Xie and Chen Ma and Zhenyang Wang and Liangwei Wang and Jiayi Zhu and Chuxuan Zeng and Zhouan Shen and Boyan Li and Yuyu Luo},
-  year={2026},
-  eprint={2606.20388},
-  archivePrefix={arXiv},
-  primaryClass={cs.HC},
-  url={https://arxiv.org/abs/2606.20388},
-}
-```
-
-</details>
 
 ## 🗺️ What's next
 

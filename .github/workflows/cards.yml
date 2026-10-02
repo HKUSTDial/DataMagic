@@ -5,12 +5,12 @@ on:
     branches: [main]
     paths:
       - "cards/**"
-      - "skills/datamagic-video/**"
+      - "skills/datamagic/**"
       - ".github/workflows/cards.yml"
   pull_request:
     paths:
       - "cards/**"
-      - "skills/datamagic-video/**"
+      - "skills/datamagic/**"
       - ".github/workflows/cards.yml"
   workflow_dispatch:
 

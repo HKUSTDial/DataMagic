@@ -1,21 +1,7 @@
-Use the DataMagic Cards recipe: BarChartRace
-Display name: 动态柱状图竞赛
-Purpose: 面向多实体时序排名的连续竞赛图，支持数值插值、动态换位、进入退出和稳定实体配色。
-Compatible visuals: bar_chart, timeline.
-Recipe: recipes/BarChartRace.md
-Resolve the listed paths relative to the cards/ directory in the DataMagic repository.
-Editable source, schema, and sample data are bundled with this recipe.
-Render composition: ShotCraft-BarChartRace
-Implementation: templates/bar-chart-race/BarChartRace.tsx
-Shot strategy: data shapes=time_series; reading speeds=explain; narrative roles=compare, evidence; motion styles=cinematic, guided.
-Data schema: templates/bar-chart-race/schema.json
-Sample data: templates/bar-chart-race/sample-data.json
-Resolve local iconSrc assets from public/. Preserve image-to-entity identity and distinct category colors through ranking, motion and reveals; use accurate flags or supplied brand marks.
-Use the resolution, duration and frame rate declared by the selected recipe composition; do not shorten its reveal sequence or stretch a landscape layout into portrait.
-Keep titles, sources, legends, and explanatory UI outside camera-transformed layers.
-Keep every readable label and data-bearing mark inside a 64 px canvas safe area at every frame.
-Resolve imports from the final output directory and run TypeScript against the generated files at that exact location.
-At the final frame, explicitly check collisions among the primary value, unit, annotation badge, legend, and source.
-Reserve at least the final 1 second for stable chart reading; background movement must not impair readability.
-Keep all data-bearing marks, values, labels, and geometry programmatic and editable.
-Render the actual video plus representative opening, middle, and final frames; verify data fidelity, overlap, clipping, readability, motion continuity, geographic validity when applicable, and final hold time.
+请使用 datamagic Skill，按照“动态柱状图竞赛”（BarChartRace）配方制作视频。
+用途：面向多实体时序排名的连续竞赛图，支持数值插值、动态换位、进入退出和稳定实体配色。
+先读取配方：cards/recipes/BarChartRace.md，再按其中的引用读取源码、数据格式和示例数据。路径相对于 DataMagic 仓库。
+用我提供的数据和修改要求替换示例内容。没有数据时先确认，或明确约定使用标注清楚的演示数据。
+除非我要求重新设计，否则保留模板布局与揭晓节奏。数值、单位、对象图标和配色应与数据正确对应。
+默认沿用所选配方的分辨率、时长和帧率；如果我另有要求，以我的要求为准。
+交付 MP4、可编辑源码与参数文件，以及可复现的渲染命令。按照 Skill 的检查流程核对数据、可读性和开场／中段／结尾画面。

@@ -3,14 +3,14 @@
 Thanks for your interest in DataMagic. The repo is currently **docs-first** —
 the production product lives at [datamagic.chat](https://datamagic.chat/), while this
 repository holds the public documentation, the published paper artifacts, and the
-[`datamagic-video`](./skills/datamagic-video/) skill for AI coding agents.
+[`datamagic`](./skills/datamagic/) skill for AI coding agents.
 
 So contributions today land in one of four buckets:
 
 | Bucket | Examples |
 |---|---|
 | Docs (Chinese / English) | typo fixes, clearer explanations, broken links, missing context |
-| The `datamagic-video` skill | new rule pages, refining narrative patterns, chart-selection guidance, anti-patterns |
+| The `datamagic` skill | new rule pages, refining narrative patterns, chart-selection guidance, anti-patterns |
 | Examples | new input/output examples under `docs/input-output-examples*.md` |
 | Infrastructure | CI, link checking, lint config |
 
@@ -40,7 +40,7 @@ npx --yes markdown-link-check@3.12.2 -c .markdown-link-check.json README.md
   shared sections (links, badges, examples, roadmap).
 - For per-doc Chinese / English pairs under `docs/`, edit both files in the same PR.
 - Don't add new top-level files unless necessary — prefer extending an existing doc.
-- The `datamagic-video` skill has its own conventions; read `skills/datamagic-video/SKILL.md`
+- The `datamagic` skill has its own conventions; read `skills/datamagic/SKILL.md`
   before adding or restructuring rules there.
 
 ## CI

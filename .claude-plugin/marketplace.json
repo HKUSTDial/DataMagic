@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "datamagic-video",
+      "name": "datamagic",
       "description": "Find DataMagic recipes, adapt them to your data, and compose editable video stories.",
       "version": "0.1.0",
       "source": "./",

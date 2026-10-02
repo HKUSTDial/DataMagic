@@ -7,7 +7,7 @@
 | `main`  | Yes |
 | `0.1.x` | Yes |
 
-This repository publishes documentation and the `datamagic-video` skill for coding agents. The hosted product at [datamagic.chat](https://datamagic.chat/) is operated separately.
+This repository publishes documentation and the `datamagic` skill for coding agents. The hosted product at [datamagic.chat](https://datamagic.chat/) is operated separately.
 
 ## Reporting a Vulnerability
 

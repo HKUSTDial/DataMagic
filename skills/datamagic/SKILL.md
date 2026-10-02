@@ -1,5 +1,5 @@
 ---
-name: datamagic-video
+name: datamagic
 description: Find, adapt, and render DataMagic recipes for animated charts and data stories. Use when a user selects a gallery example, wants an effect made with their own data or media, needs recipe recommendations, wants to combine shots into a story, or refines an existing data-video result.
 metadata:
   tags: datamagic, data-video, recipes, visualization, remotion, narration, storytelling

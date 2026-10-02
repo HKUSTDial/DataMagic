@@ -13,7 +13,13 @@
 [观看展示](#showcase) · [浏览配方](https://datamagic.chat/cards/) · [开始制作](#create) · [组合故事](#stories) · [在线体验](https://datamagic.chat/) · [研究与引用](#research)
 </div>
 
-DataMagic 提供 **139 张动态配方卡**，每张都有动画预览、可编辑源码和示例数据。选中一个效果，将实现指令和自己的数据交给编程智能体；配套的 `datamagic-video` Skill 会指导它读取配方、修改模板、渲染视频并检查结果。
+DataMagic 提供 **139 张动态配方卡**，每张都有动画预览、可编辑源码和示例数据。选中一个效果，将实现指令和自己的数据交给编程智能体；配套的 `datamagic` Skill 会指导它读取配方、修改模板、渲染视频并检查结果。
+
+## ✨ 最近更新
+
+- **2026.10.02**：统一使用 `datamagic` Skill；支持中文搜索、中文实现指令预览与复制，更新中文操作演示。
+- **2026.10.02**：为 60 张配方补充国旗、品牌 Logo 和类别插图，更新动画预览与有声宣传片。
+- **2026.09.30**：新增主持人让位、贡献拆解和持续分层模板，把单个图表组织成数据故事。
 
 <a id="showcase"></a>
 
@@ -21,15 +27,7 @@ DataMagic 提供 **139 张动态配方卡**，每张都有动画预览、可编�
 
 角色主持、透视数据板、动态柱状图竞赛、实景证据、趋势运镜与多层地图滑行——下面的完整 30 秒集锦展示六种表达方式。
 
-<video src="assets/promo/datamagic-showcase-zh-voiced.mp4" poster="assets/promo/cover.jpg" width="960" style="max-width:100%;height:auto" controls playsinline preload="none">
-  <a href="assets/promo/datamagic-showcase-zh-voiced.mp4">播放完整 30 秒有声展示片</a>
-</video>
-
-本地预览若未显示播放器，可点击下方视频链接，或用浏览器打开[展示播放页](assets/promo/index.html)。
-
-**[观看 / 下载 30 秒中文有声展示片](assets/promo/datamagic-showcase-zh-voiced.mp4)** · [配乐音效版（无旁白）](assets/promo/datamagic-showcase-zh-music.mp4) · [English titles + music](assets/promo/datamagic-showcase-en-music.mp4) · [镜头清单与制作方式](docs/showcase.md)
-
-中文版配有逐镜头 AI 旁白、内嵌中文字幕、轻配乐与转场音效；英文标题版保留配乐和音效。
+https://github.com/user-attachments/assets/6e9b939a-60e8-4e03-ae8a-b60fb23cf9c7
 
 展示片使用库内实际动画与演示数据，适合快速了解效果；下面每张卡片都能进一步查看对应配方。用自己的数据制作时，图表数值、文字和素材可以独立替换。
 
@@ -102,7 +100,7 @@ cd DataMagic
 
 粘贴实现指令，附上数据文件和要求，例如：
 
-> 使用仓库里的 datamagic-video Skill，把我的 sales.csv 做成 RankedReveal 倒序排行榜。保留逐项揭晓的节奏，换成中文标题和我的品牌配色，输出 MP4 和可编辑源码。
+> 使用仓库里的 datamagic Skill，把我的 sales.csv 做成 RankedReveal 倒序排行榜。保留逐项揭晓的节奏，换成中文标题和我的品牌配色，输出 MP4 和可编辑源码。
 
 配套 Skill 会帮助智能体查找源码、映射数据字段、修改画面并检查结果。你也可以描述用途：
 
@@ -112,7 +110,7 @@ cd DataMagic
 
 检查视频中的数值、标签和结论，再让智能体调整节奏、颜色或布局。例如：“结尾多停留两秒”“突出华东地区”“换成更适合手机阅读的版式”。
 
-[完整使用与安装说明](skills/datamagic-video/README.md) · [本地浏览和手动渲染](cards/README.md)
+[完整使用与安装说明](skills/datamagic/README.md) · [本地浏览和手动渲染](cards/README.md)
 
 ### 也可以这样开始
 
@@ -136,7 +134,7 @@ cd DataMagic
 
 > 用这份季度销售数据做一个 30 秒故事：先展示增长，再比较各地区贡献，最后总结主要发现。请复用库里的配方，统一颜色和字幕样式。
 
-需要更完整的数据分析、脚本和旁白时，可以进一步使用 [从数据策划完整视频](skills/datamagic-video/rules/full-story-workflow.md) 中的流程。数据分析、叙事规划和动画时序规则都由同一个 Skill 按任务调用。
+需要更完整的数据分析、脚本和旁白时，可以进一步使用 [从数据策划完整视频](skills/datamagic/rules/full-story-workflow.md) 中的流程。数据分析、叙事规划和动画时序规则都由同一个 Skill 按任务调用。
 
 ## 📦 仓库里有什么
 
@@ -144,8 +142,8 @@ cd DataMagic
 |---|---|
 | 动画预览、配方说明与源码索引 | [在线案例库](https://datamagic.chat/cards/) · [配方目录](cards/recipes/) |
 | 模板源码、示例数据与渲染方法 | [Cards 开发说明](cards/README.md) |
-| Agent 使用与安装 | [datamagic-video 使用指南](skills/datamagic-video/README.md) |
-| 多镜头故事的策划与制作 | [完整故事工作流](skills/datamagic-video/rules/full-story-workflow.md) |
+| Agent 使用与安装 | [datamagic 使用指南](skills/datamagic/README.md) |
+| 多镜头故事的策划与制作 | [完整故事工作流](skills/datamagic/rules/full-story-workflow.md) |
 | 展示短片、封面与可复现制作脚本 | [展示素材说明](docs/showcase.md) |
 | 自动生成系统的案例与详细介绍 | [在线系统](docs/online-system.zh-CN.md) |
 
@@ -169,8 +167,7 @@ DataMagic 的研究围绕数据绑定、叙事编排与旁白同步展开，为�
 - [VLDB 2026 Demo：Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
 - [项目主页](https://datamagic-home.github.io) · [Pipeline](docs/pipeline-overview.zh-CN.md) · [DVSpec](docs/dvspec-overview.zh-CN.md) · [输入输出示例](docs/input-output-examples.zh-CN.md)
 
-<details>
-<summary>引用 DataMagic（BibTeX）</summary>
+### 引用 DataMagic
 
 如果 DataMagic 对你的研究或工作有帮助，欢迎引用：
 
@@ -187,22 +184,6 @@ DataMagic 的研究围绕数据绑定、叙事编排与旁白同步展开，为�
   url={https://arxiv.org/abs/2609.33403},
 }
 ```
-
-**VLDB 2026 Demo 论文：**
-
-```bibtex
-@misc{xie2026datamagictransformingtabulardata,
-  title={DataMagic: Transforming Tabular Data into Data Insight Video},
-  author={Yupeng Xie and Chen Ma and Zhenyang Wang and Liangwei Wang and Jiayi Zhu and Chuxuan Zeng and Zhouan Shen and Boyan Li and Yuyu Luo},
-  year={2026},
-  eprint={2606.20388},
-  archivePrefix={arXiv},
-  primaryClass={cs.HC},
-  url={https://arxiv.org/abs/2606.20388},
-}
-```
-
-</details>
 
 ## 🗺️ 接下来的计划
 

@@ -4,7 +4,7 @@
 set -euo pipefail
 
 REPO="HKUSTDial/DataMagic"
-PLUGIN="datamagic-video"
+PLUGIN="datamagic"
 MARKETPLACE="datamagic"
 
 usage() {

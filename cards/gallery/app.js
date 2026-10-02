@@ -1,6 +1,8 @@
 import {collectionDefinitions, categoryGroups} from './discovery.js';
 import {createCardSearchIndex, matchesCardSearch} from './search.js?v=zh-search-20261002';
 import {briefPreview} from './brief-preview.js?v=brief-preview-20261002';
+import {implementationBrief} from './implementation-brief.js?v=datamagic-20261002';
+import {cardStatus, sortRecentCards} from './card-history.js?v=datamagic-20261002';
 import {LIST_VIDEO_LIMIT, videoSource, posterSource, videoBytes, formatBytes, defaultDataSaver, releaseVideo} from './media-policy.js?v=entity-icons-20261002';
 
 const state = {
@@ -422,39 +424,7 @@ const showToast = message => {
 
 const recipeKey = item => item.slug || item.id;
 
-const recipePrompt = item => {
-  const compatible = (item.compatibleVisuals || []).join(', ');
-  const source = item.source || {};
-  const runtime = item.runtime || {};
-  return [
-    `Use the DataMagic Cards recipe: ${recipeKey(item)}`,
-    `Display name: ${label(item.name)}`,
-    `Purpose: ${label(item.description)}`,
-    `Compatible visuals: ${compatible || 'data video'}.`,
-    `Recipe: recipes/${item.slug}.md`,
-    'Resolve the listed paths relative to the cards/ directory in the DataMagic repository.',
-    'Editable source, schema, and sample data are bundled with this recipe.',
-    `Render composition: ${source.renderCompositionId || source.compositionId || item.id}`,
-    source.component ? `Implementation: ${source.component}` : `Reference composition: ${source.compositionId || item.id}`,
-    runtime.supported ? `Runtime preview: ${runtime.previewCompositionId}` : '',
-    runtime.supported ? `Animation contract: entrance=${runtime.entrance}; emphasis=${runtime.emphasis}.` : '',
-    runtime.supported ? `Highlight targets: ${(runtime.highlightTargets || []).join(', ')}.` : '',
-    runtime.supported ? `Trigger phrase: ${runtime.triggerPhrase}.` : '',
-    runtime.supported ? `Animation intent: ${runtime.animationIntent}` : '',
-    item.selection ? `Shot strategy: data shapes=${item.selection.dataShapes.join(', ')}; reading speeds=${item.selection.readingSpeeds.join(', ')}; narrative roles=${item.selection.narrativeRoles.join(', ')}; motion styles=${item.selection.motionStyles.join(', ')}.` : '',
-    source.schema ? `Data schema: ${source.schema}` : '',
-    source.sampleData ? `Sample data: ${source.sampleData}` : '',
-    'Resolve local iconSrc assets from public/. Preserve image-to-entity identity and distinct category colors through ranking, motion and reveals; use accurate flags or supplied brand marks.',
-    'Use the resolution, duration and frame rate declared by the selected recipe composition; do not shorten its reveal sequence or stretch a landscape layout into portrait.',
-    'Keep titles, sources, legends, and explanatory UI outside camera-transformed layers.',
-    'Keep every readable label and data-bearing mark inside a 64 px canvas safe area at every frame.',
-    'Resolve imports from the final output directory and run TypeScript against the generated files at that exact location.',
-    'At the final frame, explicitly check collisions among the primary value, unit, annotation badge, legend, and source.',
-    'Reserve at least the final 1 second for stable chart reading; background movement must not impair readability.',
-    'Keep all data-bearing marks, values, labels, and geometry programmatic and editable.',
-    'Render the actual video plus representative opening, middle, and final frames; verify data fidelity, overlap, clipping, readability, motion continuity, geographic validity when applicable, and final hold time.',
-  ].filter(Boolean).join('\n');
-};
+const recipePrompt = item => implementationBrief(item, state.lang);
 
 const copyText = async text => {
   try {
@@ -540,7 +510,7 @@ const renderCollections = () => {
 };
 
 function render() {
-  const cards = filteredCards();
+  const cards = sortRecentCards(filteredCards(), state.history);
   renderFilters();
   pauseObservedMedia();
   $('#grid').innerHTML = cards.map(item => {
@@ -549,7 +519,7 @@ function render() {
       <button class="media-button" type="button" data-action="detail" data-id="${esc(item.id)}" aria-label="${esc(t('查看', 'View'))} ${esc(label(item.name))}">${media(item)}</button>
       <div class="card-copy">
         <div class="card-kicker"><small>${esc(label(state.data.categories[item.category]))}</small><span>${esc(item.id.startsWith('ShotCraft-') ? t('原生模板', 'Native') : item.preview?.mode === 'runtime_highlight' ? t('运行时高亮', 'Runtime highlight') : t('运行时动效', 'Runtime motion'))}</span></div>
-        <h3>${esc(label(item.name))}</h3>
+        <h3>${esc(label(item.name))}${cardStatus(item, state.history) ? `<span class="card-update-badge">${cardStatus(item, state.history) === 'new' ? t('新增', 'NEW') : t('已更新', 'Updated')}</span>` : ''}</h3>
         <p>${esc(label(item.description))}</p>
         <div class="strategy-strip">${selectionSummary(item).map(value => `<span>${esc(value)}</span>`).join('<i>·</i>')}</div>
         <div class="tags">${item.tags.slice(0, 3).map(tag => `<span>${esc(label(tag))}</span>`).join('')}</div>
@@ -813,8 +783,10 @@ const renderFilters = () => {
 Promise.all([
   fetch('api/library.json', {cache: 'no-store'}).then(response => response.json()),
   fetch('api/story-blueprints.json', {cache: 'no-store'}).then(response => response.json()),
-]).then(([data, stories]) => {
+  fetch('api/card-history.json', {cache: 'no-store'}).then(response => response.ok ? response.json() : {}).catch(() => ({})),
+]).then(([data, stories, history]) => {
   state.data = data;
+  state.history = history;
   state.stories = stories;
   $('#language').textContent = state.lang === 'zh' ? 'EN' : '中文';
   $('#themeSystem').textContent = t('系统', 'System');

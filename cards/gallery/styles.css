@@ -713,3 +713,4 @@ button:focus-visible, input:focus-visible { outline: 3px solid color-mix(in srgb
 .brief-preview { margin-top: 14px; min-width: 0; }
 .brief-preview summary { cursor: pointer; font-size: 16px; padding: 10px 0; }
 .brief-preview textarea { box-sizing: border-box; display: block; width: 100%; height: 300px; resize: vertical; padding: 14px; font: 14px/1.65 ui-monospace, monospace; color: var(--ink); background: var(--surface-subtle); border: 1px solid var(--line); border-radius: 8px; }
+.card-update-badge { display: inline-block; margin-left: 8px; padding: 3px 7px; font-size: 12px; line-height: 1.4; font-weight: 600; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; vertical-align: middle; }

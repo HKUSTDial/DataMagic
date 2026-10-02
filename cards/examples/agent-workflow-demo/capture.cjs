@@ -16,7 +16,7 @@ const privateOut=path.resolve(__dirname,'../../out/agent-workflow-private');fs.m
  await page.screenshot({path:path.join(out,'detail-before.png')});
  const button=page.locator('#detailCopy');const bounds=await button.boundingBox();await button.screenshot({path:path.join(out,'copy-button.png')});
  await button.click();const clipboard=await page.evaluate(()=>navigator.clipboard.readText());
- if(!clipboard.includes('BarChartRace')||!clipboard.includes('Editable source'))throw Error('Wrong copied recipe');
+ if(!clipboard.includes('BarChartRace')||!clipboard.includes('cards/recipes/BarChartRace.md'))throw Error('Wrong copied recipe');
  await page.screenshot({path:path.join(out,'detail-after.png')});await page.waitForTimeout(1600);
  fs.writeFileSync(path.join(__dirname,'copied-implementation.txt'),clipboard);
  fs.writeFileSync(path.join(out,'capture-layout.json'),JSON.stringify({viewport:{width:1920,height:1080},dpr:2,copyButton:bounds,offset,errors},null,2));
@@ -27,7 +27,7 @@ const privateOut=path.resolve(__dirname,'../../out/agent-workflow-private');fs.m
  const live=await online.newPage();await live.goto('https://datamagic.chat/cards/',{waitUntil:'domcontentloaded',timeout:60000});await live.locator('[data-action="detail"]').first().waitFor();
  const intro=await live.locator('#introCopy').textContent();if(!intro.includes('均提供'))throw Error('Online release stale');
  await live.locator('#search').fill('动态柱状图竞赛');await live.locator('[data-action="detail"][data-id="ShotCraft-BarChartRace"]').click();if(await live.locator('#detailBody a[href^="workbench"]').count())throw Error('Paused workbench advertised');
- await live.locator('#detailCopy').click();if(!(await live.evaluate(()=>navigator.clipboard.readText())).includes('Editable source'))throw Error('Online copy stale');
+ await live.locator('#detailCopy').click();if(!(await live.evaluate(()=>navigator.clipboard.readText())).includes('cards/recipes/BarChartRace.md'))throw Error('Online copy stale');
  await live.screenshot({path:path.join(privateOut,'online-desktop.png')});await live.setViewportSize({width:390,height:844});if(await live.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Overflow');
  fs.writeFileSync(path.join(__dirname,'deployment-check.json'),JSON.stringify({date:new Date().toISOString(),cards:139,intro,copy:true,mobileOverflow:false,workbenchHidden:true},null,2));
  console.log('Captured real gallery and copy action; online desktop/mobile verified.');
