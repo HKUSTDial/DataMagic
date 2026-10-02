@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://datamagic.dev/shotcraft/cinematic-track-race.schema.json",
+  "title": "Cinematic Track Race",
+  "type": "object",
+  "required": [
+    "title",
+    "subtitle",
+    "unit",
+    "source",
+    "topN",
+    "entities",
+    "snapshots",
+    "story"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topN": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "decimals": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "locale": {
+      "type": "string"
+    },
+    "story": {
+      "type": "object",
+      "required": [
+        "hook",
+        "turningPoint",
+        "takeaway",
+        "focusEntityId"
+      ],
+      "properties": {
+        "hook": {
+          "type": "string"
+        },
+        "turningPoint": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string"
+        },
+        "focusEntityId": {
+          "type": "string"
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "color"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        }
+      }
+    },
+    "snapshots": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "time",
+          "values"
+        ],
+        "properties": {
+          "time": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

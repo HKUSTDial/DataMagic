@@ -1,0 +1,172 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "waterfall_chart",
+    "style_template_id": "StyleTemplate-WaterfallProfitBridge",
+    "style_template_name": "Waterfall Profit Bridge",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-WaterfallProfitBridge",
+      "chart_type": "waterfall_chart",
+      "theme": "light",
+      "data_contract": "cumulative changes",
+      "entrance_animation": "bridge reveal",
+      "emphasis_animation": "bridge step highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "bar",
+        "label",
+        "delta"
+      ],
+      "suggested_narration": "Expansion adds the largest positive step.",
+      "trigger_phrase": "Expansion",
+      "animation_intent": "Highlight the named waterfall step.",
+      "timing": "word_aligned"
+    },
+    "title": "Waterfall Profit Bridge",
+    "data": [
+      {
+        "label": "Base",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#2563eb"
+      },
+      {
+        "label": "Expansion",
+        "value": 54,
+        "display_value": "+54K",
+        "color": "#16a34a"
+      },
+      {
+        "label": "Upsell",
+        "value": 38,
+        "display_value": "+38K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Discounts",
+        "value": -24,
+        "display_value": "-24K",
+        "color": "#ef4444"
+      },
+      {
+        "label": "Churn",
+        "value": -18,
+        "display_value": "-18K",
+        "color": "#f97316"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-WaterfallProfitBridge",
+      "chart_type": "waterfall_chart",
+      "title": "Waterfall Profit Bridge",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "Base",
+          "value": 120,
+          "display_value": "120K",
+          "color": "#2563eb"
+        },
+        {
+          "label": "Expansion",
+          "value": 54,
+          "display_value": "+54K",
+          "color": "#16a34a"
+        },
+        {
+          "label": "Upsell",
+          "value": 38,
+          "display_value": "+38K",
+          "color": "#10b981"
+        },
+        {
+          "label": "Discounts",
+          "value": -24,
+          "display_value": "-24K",
+          "color": "#ef4444"
+        },
+        {
+          "label": "Churn",
+          "value": -18,
+          "display_value": "-18K",
+          "color": "#f97316"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_WaterfallProfitBridge",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-WaterfallProfitBridge"
+    },
+    "narration": [
+      {
+        "text": "Expansion adds the largest positive step.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Expansion"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named waterfall step.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Expansion",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

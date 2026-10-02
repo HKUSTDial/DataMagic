@@ -1,0 +1,413 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "heatmap",
+    "style_template_id": "StyleTemplate-WeeklyActivityHeatmap",
+    "style_template_name": "Weekly Activity Heatmap",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-WeeklyActivityHeatmap",
+      "chart_type": "heatmap",
+      "theme": "light",
+      "data_contract": "x/y/intensity matrix",
+      "entrance_animation": "activity cell reveal",
+      "emphasis_animation": "cell focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "cell",
+        "day",
+        "period"
+      ],
+      "suggested_narration": "Wed contains the weekly activity peak.",
+      "trigger_phrase": "Wed",
+      "animation_intent": "Highlight the peak activity row.",
+      "timing": "word_aligned"
+    },
+    "title": "Weekly Activity Heatmap",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#2563eb",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-WeeklyActivityHeatmap",
+      "chart_type": "heatmap",
+      "title": "Weekly Activity Heatmap",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "comparison_rows"
+      },
+      "rows": [
+        {
+          "label": "Mon",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 20,
+              "display_value": "20"
+            },
+            {
+              "name": "10:00",
+              "value": 32,
+              "display_value": "32"
+            },
+            {
+              "name": "12:00",
+              "value": 58,
+              "display_value": "58"
+            },
+            {
+              "name": "14:00",
+              "value": 70,
+              "display_value": "70"
+            },
+            {
+              "name": "16:00",
+              "value": 62,
+              "display_value": "62"
+            },
+            {
+              "name": "18:00",
+              "value": 38,
+              "display_value": "38"
+            }
+          ]
+        },
+        {
+          "label": "Tue",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 24,
+              "display_value": "24"
+            },
+            {
+              "name": "10:00",
+              "value": 46,
+              "display_value": "46"
+            },
+            {
+              "name": "12:00",
+              "value": 64,
+              "display_value": "64"
+            },
+            {
+              "name": "14:00",
+              "value": 76,
+              "display_value": "76"
+            },
+            {
+              "name": "16:00",
+              "value": 80,
+              "display_value": "80"
+            },
+            {
+              "name": "18:00",
+              "value": 54,
+              "display_value": "54"
+            }
+          ]
+        },
+        {
+          "label": "Wed",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 30,
+              "display_value": "30"
+            },
+            {
+              "name": "10:00",
+              "value": 52,
+              "display_value": "52"
+            },
+            {
+              "name": "12:00",
+              "value": 75,
+              "display_value": "75"
+            },
+            {
+              "name": "14:00",
+              "value": 88,
+              "display_value": "88"
+            },
+            {
+              "name": "16:00",
+              "value": 82,
+              "display_value": "82"
+            },
+            {
+              "name": "18:00",
+              "value": 58,
+              "display_value": "58"
+            }
+          ]
+        },
+        {
+          "label": "Thu",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 26,
+              "display_value": "26"
+            },
+            {
+              "name": "10:00",
+              "value": 48,
+              "display_value": "48"
+            },
+            {
+              "name": "12:00",
+              "value": 69,
+              "display_value": "69"
+            },
+            {
+              "name": "14:00",
+              "value": 84,
+              "display_value": "84"
+            },
+            {
+              "name": "16:00",
+              "value": 78,
+              "display_value": "78"
+            },
+            {
+              "name": "18:00",
+              "value": 51,
+              "display_value": "51"
+            }
+          ]
+        },
+        {
+          "label": "Fri",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 18,
+              "display_value": "18"
+            },
+            {
+              "name": "10:00",
+              "value": 36,
+              "display_value": "36"
+            },
+            {
+              "name": "12:00",
+              "value": 55,
+              "display_value": "55"
+            },
+            {
+              "name": "14:00",
+              "value": 72,
+              "display_value": "72"
+            },
+            {
+              "name": "16:00",
+              "value": 64,
+              "display_value": "64"
+            },
+            {
+              "name": "18:00",
+              "value": 42,
+              "display_value": "42"
+            }
+          ]
+        },
+        {
+          "label": "Sat",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 10,
+              "display_value": "10"
+            },
+            {
+              "name": "10:00",
+              "value": 20,
+              "display_value": "20"
+            },
+            {
+              "name": "12:00",
+              "value": 32,
+              "display_value": "32"
+            },
+            {
+              "name": "14:00",
+              "value": 46,
+              "display_value": "46"
+            },
+            {
+              "name": "16:00",
+              "value": 52,
+              "display_value": "52"
+            },
+            {
+              "name": "18:00",
+              "value": 36,
+              "display_value": "36"
+            }
+          ]
+        },
+        {
+          "label": "Sun",
+          "metrics": [
+            {
+              "name": "8:00",
+              "value": 8,
+              "display_value": "8"
+            },
+            {
+              "name": "10:00",
+              "value": 16,
+              "display_value": "16"
+            },
+            {
+              "name": "12:00",
+              "value": 28,
+              "display_value": "28"
+            },
+            {
+              "name": "14:00",
+              "value": 38,
+              "display_value": "38"
+            },
+            {
+              "name": "16:00",
+              "value": 44,
+              "display_value": "44"
+            },
+            {
+              "name": "18:00",
+              "value": 30,
+              "display_value": "30"
+            }
+          ]
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_WeeklyActivityHeatmap",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-WeeklyActivityHeatmap"
+    },
+    "narration": [
+      {
+        "text": "Wed contains the weekly activity peak.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Wed"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the peak activity row.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Wed",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

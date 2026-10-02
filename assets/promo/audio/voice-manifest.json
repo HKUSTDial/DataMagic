@@ -1,0 +1,119 @@
+{
+  "language": "zh-CN",
+  "model": "IndexTTS2",
+  "duration": 30,
+  "segments": [
+    {
+      "id": "01-opening",
+      "start": 0.25,
+      "end": 3,
+      "text": "让数据，讲个好故事。",
+      "renderedSeconds": 2.4942,
+      "speed": 1,
+      "file": "01-opening.wav",
+      "loudness": {
+        "integratedLUFS": -17.74,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "02-presenter",
+      "start": 3.5,
+      "end": 7,
+      "text": "角色主持，让图表更有表现力。",
+      "renderedSeconds": 3.1695,
+      "speed": 1,
+      "file": "02-presenter.wav",
+      "loudness": {
+        "integratedLUFS": -17.96,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "03-handoff",
+      "start": 7.25,
+      "end": 10.85,
+      "text": "讲到重点，让图表成为主角。",
+      "renderedSeconds": 3.0302,
+      "speed": 1,
+      "file": "03-handoff.wav",
+      "loudness": {
+        "integratedLUFS": -18,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "04-ranking",
+      "start": 11.25,
+      "end": 14.85,
+      "text": "动态柱状图，呈现排名变化。",
+      "renderedSeconds": 3.0418,
+      "speed": 1,
+      "file": "04-ranking.wav",
+      "loudness": {
+        "integratedLUFS": -17.95,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "05-footage",
+      "start": 15.25,
+      "end": 18.85,
+      "text": "从真实场景，转入数据证据。",
+      "renderedSeconds": 2.9018,
+      "speed": 1,
+      "file": "05-footage.wav",
+      "loudness": {
+        "integratedLUFS": -17.79,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "06-timeline",
+      "start": 19.25,
+      "end": 22.85,
+      "text": "沿着时间线，聚焦关键变化。",
+      "renderedSeconds": 3.0241,
+      "speed": 1,
+      "file": "06-timeline.wav",
+      "loudness": {
+        "integratedLUFS": -17.97,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "07-map",
+      "start": 23.25,
+      "end": 26.85,
+      "text": "多层地图滑行，连接数据与空间。",
+      "renderedSeconds": 3.341,
+      "speed": 1,
+      "file": "07-map.wav",
+      "loudness": {
+        "integratedLUFS": -18.15,
+        "truePeakDBTP": -3.56,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    },
+    {
+      "id": "08-create",
+      "start": 27.2,
+      "end": 29.85,
+      "text": "选个配方，换上你的数据。",
+      "renderedSeconds": 2.5255,
+      "speed": 1,
+      "file": "08-create.wav",
+      "loudness": {
+        "integratedLUFS": -17.59,
+        "truePeakDBTP": -2,
+        "method": "padded two-pass, trimmed, measured"
+      }
+    }
+  ]
+}

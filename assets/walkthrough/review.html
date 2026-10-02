@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DataMagic · 实际上手测试</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#17243c;font:20px/1.5 system-ui,sans-serif}header{padding:18px 40px;border-bottom:1px solid #dde3ed;display:flex;justify-content:space-between;background:white;font-size:18px}header b{color:#7045c3}main{padding:28px 48px;max-width:1280px;margin:auto}h1{font-size:36px;margin:0 0 12px}p{margin:10px 0;color:#52627b}pre,textarea{font:20px/1.65 monospace;white-space:pre-wrap;background:#142238;color:#e8f1ff;border:0;border-radius:12px;padding:22px;width:100%;margin:12px 0}textarea{height:350px;resize:none}table{border-collapse:collapse;width:100%;background:white;margin-top:22px;font-size:25px}td,th{padding:12px 20px;border-bottom:1px solid #e3e8f0;text-align:right}td:first-child,th:first-child{text-align:left}th{color:#7142c1;background:#eee8fa}.video{width:100%;height:490px;object-fit:contain;background:white}nav{position:fixed;bottom:8px;right:20px;display:flex;gap:12px}nav a{color:#7355a8;font-size:13px}.badge{display:inline-block;background:#e9e2f8;color:#6941aa;border-radius:5px;padding:6px 12px;font-size:18px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}.box{background:white;padding:24px;border-radius:12px}.box strong{font-size:40px;color:#7142c1}small{font-size:17px}
+</style>
+<style>table{font-size:22px;margin-top:14px}td,th{padding:8px 18px}</style>
+<header><b>DataMagic / 从配方到自己的视频</b><span>实际操作与执行记录 · 演示数据</span></header><main id="main"></main>
+<nav><a href="?step=data">数据</a><a href="?step=brief">指令</a><a href="?step=run">执行</a><a href="?step=v1">首版</a><a href="?step=revision">修改</a><a href="?step=v2">结果</a><a href="?step=check">检查</a></nav>
+<script type="module">
+const base='../../cards/examples/coffee-race-walkthrough/';
+const read=async name=>{const r=await fetch(base+name);if(!r.ok)throw Error(name+' unavailable');return r.text()};
+const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;');
+const main=document.querySelector('#main'),step=new URLSearchParams(location.search).get('step')||'intro';
+if(step==='intro')main.innerHTML='<span class="badge">真实复用测试</span><h1>选一个效果，换成自己的数据。</h1><p>用一份咖啡店销量表，生成动态柱状图竞赛，再做一次修改。</p><div class="cards"><div class="box"><strong>6 × 6</strong><p>六个月，六种饮品，36 个数据值</p></div><div class="box"><strong>12 → 14 秒</strong><p>首版成片，再突出拿铁、延长结尾</p></div></div><p>本演示使用实际页面、实际 CSV、执行日志与真实渲染结果。</p>';
+if(step==='data'){const csv=await read('sales.csv');const rows=csv.trim().split('\n').map(l=>l.split(','));main.innerHTML='<span class="badge">02 / 提供数据</span><h1>这次用自己的 CSV，不改原始示例。</h1><p>sales.csv · 虚构咖啡店月销量，单位：杯。</p><table>'+rows.map((r,i)=>'<tr>'+r.map(c=>`<${i?'td':'th'}>${esc(c)}</${i?'td':'th'}>`).join('')+'</tr>').join('')+'</table>';}
+if(step==='brief'){main.innerHTML='<span class="badge">03 / 给 Agent 的任务</span><h1>配方实现指令 ＋ 数据 ＋ 交付要求</h1><p>在仓库中使用 datamagic-video Skill，读取配方及对应源码。</p><textarea readonly aria-label="实际任务指令">'+esc(await read('brief.md'))+'</textarea>';}
+if(step==='run'){main.innerHTML='<span class="badge">04 / 实际执行记录 · 等待过程已省略</span><h1>校验数据，复用源码，渲染两版结果。</h1><p>下方是本次脚本的真实输出与计时，并非模拟进度。</p><pre style="font-size:18px">'+esc(await read('render.log'))+'</pre>';}
+if(step==='v1'||step==='v2'){main.innerHTML='<span class="badge">'+(step==='v1'?'05 / 首版真实输出 · 12 秒':'07 / 修改后真实输出 · 14 秒')+'</span><video class="video" src="coffee-race-'+step+'.mp4" controls playsinline preload="auto"></video>';}
+if(step==='revision'){main.innerHTML='<span class="badge">06 / 继续修改</span><h1>换标题，突出拿铁，结尾多停两秒。</h1><pre>'+esc(await read('revision.md'))+'</pre><p>保留原有数据和排名动画，只修改标题、颜色和最后一帧的停留时间。</p>';}
+if(step==='check'){const d=JSON.parse(await read('data-check.json'));main.innerHTML='<span class="badge">08 / 结果核对与交付</span><h1>不只看能不能渲染，还要检查结果。</h1><div class="cards"><div class="box"><strong>'+d.numericCellsVerified+' 个数值</strong><p>CSV → 参数映射已核对</p><p>起点：美式 820 杯<br>终点：拿铁 1450 杯</p></div><div class="box"><strong>可继续修改</strong><p>MP4、CSV、参数 JSON、源码入口</p><p>保留首版与修改版<br>查看下面的复现说明，按步骤自己试</p></div></div><p>本次在已有依赖的服务器环境中运行；干净电脑的首次安装尚需单独验证。</p>';}
+window.ready=true;
+</script></html>

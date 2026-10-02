@@ -1,0 +1,38 @@
+{
+  "input": "sales.csv",
+  "rows": 6,
+  "entities": 6,
+  "numericCellsVerified": 36,
+  "firstLeader": "美式",
+  "firstValue": 820,
+  "lastLeader": "拿铁",
+  "lastValue": 1450,
+  "finalRanking": [
+    {
+      "label": "拿铁",
+      "value": 1450
+    },
+    {
+      "label": "美式",
+      "value": 1100
+    },
+    {
+      "label": "冷萃",
+      "value": 1050
+    },
+    {
+      "label": "卡布奇诺",
+      "value": 930
+    },
+    {
+      "label": "摩卡",
+      "value": 710
+    },
+    {
+      "label": "茶饮",
+      "value": 620
+    }
+  ],
+  "schemaValid": true,
+  "revisionPreservesData": true
+}

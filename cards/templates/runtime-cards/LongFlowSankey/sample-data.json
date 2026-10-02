@@ -1,0 +1,318 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "flow_sankey",
+    "style_template_id": "StyleTemplate-LongFlowSankey",
+    "style_template_name": "Long Flow Sankey",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-LongFlowSankey",
+      "chart_type": "flow_sankey",
+      "theme": "dark",
+      "data_contract": "flow/funnel stages",
+      "entrance_animation": "long flow reveal",
+      "emphasis_animation": "node focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "node",
+        "flow",
+        "value"
+      ],
+      "suggested_narration": "Enterprise receives flows from multiple acquisition channels.",
+      "trigger_phrase": "Enterprise",
+      "animation_intent": "Highlight the named destination node.",
+      "timing": "word_aligned"
+    },
+    "title": "Long Flow Sankey",
+    "data": [
+      {
+        "label": "Visitors",
+        "value": 260,
+        "display_value": "260K",
+        "color": "#3b82f6"
+      },
+      {
+        "label": "Leads",
+        "value": 194,
+        "display_value": "194K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Qualified",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Proposal",
+        "value": 98,
+        "display_value": "98K",
+        "color": "#6366f1"
+      },
+      {
+        "label": "Won",
+        "value": 64,
+        "display_value": "64K",
+        "color": "#14b8a6"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-LongFlowSankey",
+      "chart_type": "flow_sankey",
+      "title": "Long Flow Sankey",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "comparison_rows"
+      },
+      "rows": [
+        {
+          "label": "Organic Search",
+          "metrics": [
+            {
+              "name": "Free Tier",
+              "value": 32,
+              "display_value": "32K",
+              "color": "#3b82f6",
+              "iconSrc": "icons/categories/cloud.svg"
+            },
+            {
+              "name": "Starter",
+              "value": 18,
+              "display_value": "18K",
+              "color": "#3b82f6",
+              "iconSrc": "icons/categories/product.svg"
+            },
+            {
+              "name": "Growth",
+              "value": 14,
+              "display_value": "14K",
+              "color": "#3b82f6",
+              "iconSrc": "icons/categories/energy.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/scan.svg"
+        },
+        {
+          "label": "Paid Ads",
+          "metrics": [
+            {
+              "name": "Trial",
+              "value": 24,
+              "display_value": "24K",
+              "color": "#10b981",
+              "iconSrc": "icons/categories/review.svg"
+            },
+            {
+              "name": "Starter",
+              "value": 22,
+              "display_value": "22K",
+              "color": "#10b981",
+              "iconSrc": "icons/categories/product.svg"
+            },
+            {
+              "name": "Enterprise",
+              "value": 16,
+              "display_value": "16K",
+              "color": "#10b981",
+              "iconSrc": "icons/categories/cloud.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/finance.svg"
+        },
+        {
+          "label": "Email",
+          "metrics": [
+            {
+              "name": "Free Tier",
+              "value": 12,
+              "display_value": "12K",
+              "color": "#f59e0b",
+              "iconSrc": "icons/categories/cloud.svg"
+            },
+            {
+              "name": "Growth",
+              "value": 18,
+              "display_value": "18K",
+              "color": "#f59e0b",
+              "iconSrc": "icons/categories/energy.svg"
+            },
+            {
+              "name": "Churned",
+              "value": 8,
+              "display_value": "8K",
+              "color": "#f59e0b",
+              "iconSrc": "icons/categories/service.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "Social",
+          "metrics": [
+            {
+              "name": "Free Tier",
+              "value": 22,
+              "display_value": "22K",
+              "color": "#8b5cf6",
+              "iconSrc": "icons/categories/cloud.svg"
+            },
+            {
+              "name": "Trial",
+              "value": 14,
+              "display_value": "14K",
+              "color": "#8b5cf6",
+              "iconSrc": "icons/categories/review.svg"
+            },
+            {
+              "name": "Churned",
+              "value": 10,
+              "display_value": "10K",
+              "color": "#8b5cf6",
+              "iconSrc": "icons/categories/service.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "Direct",
+          "metrics": [
+            {
+              "name": "Starter",
+              "value": 26,
+              "display_value": "26K",
+              "color": "#ef4444",
+              "iconSrc": "icons/categories/product.svg"
+            },
+            {
+              "name": "Growth",
+              "value": 20,
+              "display_value": "20K",
+              "color": "#ef4444",
+              "iconSrc": "icons/categories/energy.svg"
+            },
+            {
+              "name": "Enterprise",
+              "value": 12,
+              "display_value": "12K",
+              "color": "#ef4444",
+              "iconSrc": "icons/categories/cloud.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "label": "Referral",
+          "metrics": [
+            {
+              "name": "Trial",
+              "value": 16,
+              "display_value": "16K",
+              "color": "#06b6d4",
+              "iconSrc": "icons/categories/review.svg"
+            },
+            {
+              "name": "Growth",
+              "value": 14,
+              "display_value": "14K",
+              "color": "#06b6d4",
+              "iconSrc": "icons/categories/energy.svg"
+            },
+            {
+              "name": "Enterprise",
+              "value": 10,
+              "display_value": "10K",
+              "color": "#06b6d4",
+              "iconSrc": "icons/categories/cloud.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/review.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#3b82f6",
+      "accent_color": "#3b82f6",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#3b82f6",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Organic Search": "icons/categories/scan.svg",
+      "Paid Ads": "icons/categories/finance.svg",
+      "Email": "icons/categories/service.svg",
+      "Social": "icons/categories/service.svg",
+      "Direct": "icons/categories/online.svg",
+      "Referral": "icons/categories/review.svg",
+      "Free Tier": "icons/categories/cloud.svg",
+      "Starter": "icons/categories/product.svg",
+      "Growth": "icons/categories/energy.svg",
+      "Trial": "icons/categories/review.svg",
+      "Enterprise": "icons/categories/cloud.svg",
+      "Churned": "icons/categories/service.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_LongFlowSankey",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-LongFlowSankey"
+    },
+    "narration": [
+      {
+        "text": "Enterprise receives flows from multiple acquisition channels.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Enterprise"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named destination node.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Enterprise",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

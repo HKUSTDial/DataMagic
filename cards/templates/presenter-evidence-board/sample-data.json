@@ -1,0 +1,43 @@
+{
+  "title": "哪一步提高了分选准确率？",
+  "question": "从基础识别到人工复核，逐项看这组示例的变化。",
+  "presenter": {
+    "src": "assets/fictional-presenter.png",
+    "type": "image",
+    "label": "虚构主持人 · AI 生成示例图"
+  },
+  "unit": "%",
+  "metricLabel": "分选准确率",
+  "maximum": 100,
+  "rows": [
+    {
+      "id": "baseline",
+      "label": "基础识别",
+      "value": 81.2,
+      "at": 1,
+      "caption": "基础识别的准确率为 81.2%，这是比较的起点。",
+      "iconSrc": "icons/categories/scan.svg",
+      "color": "#2878b5"
+    },
+    {
+      "id": "vision",
+      "label": "增加视觉校验",
+      "value": 89.5,
+      "at": 3.2,
+      "caption": "加入视觉校验后，示例准确率提高到 89.5%。",
+      "iconSrc": "icons/categories/robot.svg",
+      "color": "#249f86"
+    },
+    {
+      "id": "review",
+      "label": "增加人工复核",
+      "value": 94.6,
+      "at": 5.4,
+      "caption": "最后引入人工复核，达到 94.6%。",
+      "iconSrc": "icons/categories/review.svg",
+      "color": "#b87643"
+    }
+  ],
+  "takeaway": "累计提高 13.4 个百分点；仍有 5.4% 的误差。",
+  "source": "来源：DataMagic Cards 合成演示数据，非实际实验结果。主持人图为 AI 生成静态示例。"
+}

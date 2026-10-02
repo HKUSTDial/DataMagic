@@ -1,0 +1,121 @@
+{
+  "title": "AI 应用月活竞速赛",
+  "subtitle": "2021—2026 · 六类应用的相对规模指数",
+  "unit": "指数",
+  "source": "DataMagic Cards 合成演示数据（非真实统计）",
+  "topN": 6,
+  "decimals": 0,
+  "locale": "zh-CN",
+  "story": {
+    "hook": "领先者不断扩大规模，但真正的悬念来自中段赛道的快速换位。",
+    "turningPoint": "创作助手在 2024 年越过搜索助手，成为增长最快的第二梯队。",
+    "takeaway": "增长不只集中在通用助手，垂直创作工具已经形成第二条主赛道。",
+    "focusEntityId": "creator"
+  },
+  "entities": [
+    {
+      "id": "general",
+      "label": "通用助手",
+      "color": "#38d6b4",
+      "iconSrc": "icons/categories/robot.svg"
+    },
+    {
+      "id": "creator",
+      "label": "创作助手",
+      "color": "#ff765f",
+      "iconSrc": "icons/categories/creator.svg"
+    },
+    {
+      "id": "search",
+      "label": "搜索助手",
+      "color": "#58a6ff",
+      "iconSrc": "icons/categories/scan.svg"
+    },
+    {
+      "id": "coding",
+      "label": "编程助手",
+      "color": "#bb86fc",
+      "iconSrc": "icons/categories/code.svg"
+    },
+    {
+      "id": "office",
+      "label": "办公助手",
+      "color": "#f0bd57",
+      "iconSrc": "icons/categories/office.svg"
+    },
+    {
+      "id": "education",
+      "label": "教育助手",
+      "color": "#79c783",
+      "iconSrc": "icons/categories/education.svg"
+    }
+  ],
+  "snapshots": [
+    {
+      "time": "2021",
+      "values": {
+        "general": 42,
+        "creator": 15,
+        "search": 28,
+        "coding": 12,
+        "office": 20,
+        "education": 10
+      }
+    },
+    {
+      "time": "2022",
+      "values": {
+        "general": 61,
+        "creator": 24,
+        "search": 39,
+        "coding": 22,
+        "office": 29,
+        "education": 16
+      }
+    },
+    {
+      "time": "2023",
+      "values": {
+        "general": 89,
+        "creator": 38,
+        "search": 52,
+        "coding": 41,
+        "office": 40,
+        "education": 25
+      }
+    },
+    {
+      "time": "2024",
+      "values": {
+        "general": 126,
+        "creator": 69,
+        "search": 65,
+        "coding": 62,
+        "office": 54,
+        "education": 38
+      }
+    },
+    {
+      "time": "2025",
+      "values": {
+        "general": 164,
+        "creator": 103,
+        "search": 79,
+        "coding": 88,
+        "office": 72,
+        "education": 55
+      }
+    },
+    {
+      "time": "2026",
+      "values": {
+        "general": 208,
+        "creator": 146,
+        "search": 96,
+        "coding": 121,
+        "office": 93,
+        "education": 76
+      }
+    }
+  ]
+}

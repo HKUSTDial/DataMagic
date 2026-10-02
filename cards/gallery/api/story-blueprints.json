@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "blueprints": [
+    {
+      "id": "editorial_reveal",
+      "name": {"zh": "编辑化问题揭示", "en": "Editorial reveal"},
+      "description": {"zh": "先提出具体问题，再用情境和数据证据推进，最后把镜头停在一个可验证结论上。", "en": "Open with a concrete question, advance through context and evidence, then settle on one verifiable conclusion."},
+      "duration": {"zh": "建议 24–36 秒", "en": "24–36 sec"},
+      "beats": [
+        {"role": "hook", "title": {"zh": "提出问题", "en": "Pose the question"}, "description": {"zh": "用一个关键数字或反常识判断建立悬念。", "en": "Create tension with one number or counter-intuitive claim."}, "categories": ["narrative_scene", "narrative_card", "stat_cards"]},
+        {"role": "context", "title": {"zh": "放回情境", "en": "Restore context"}, "description": {"zh": "说明数字对应的人、地点、物体或原始来源。", "en": "Show the people, place, object, or source behind the number."}, "categories": ["video_data_fusion", "contextual_overlay", "editorial_explainer"]},
+        {"role": "evidence", "title": {"zh": "展开证据", "en": "Develop evidence"}, "description": {"zh": "用比较或趋势证明问题确实存在。", "en": "Use comparison or trend evidence to establish the claim."}, "categories": ["bar_chart", "line_chart", "comparison_chart", "trend_analysis"]},
+        {"role": "conclusion", "title": {"zh": "聚焦结论", "en": "Focus the conclusion"}, "description": {"zh": "通过聚焦、孤立或共享元素转场落到关键发现。", "en": "Land on the finding through focus, isolation, or a shared data transition."}, "categories": ["chart_camera", "data_transition"]}
+      ]
+    },
+    {
+      "id": "change_and_race",
+      "name": {"zh": "变化与竞赛", "en": "Change and competition"},
+      "description": {"zh": "从起点和规则出发，先看整体走势，再进入排名竞争与关键反转。", "en": "Establish the baseline and rules, reveal the overall trend, then enter the ranking contest and pivotal reversal."},
+      "duration": {"zh": "建议 28–42 秒", "en": "28–42 sec"},
+      "beats": [
+        {"role": "hook", "title": {"zh": "交代起点", "en": "Set the baseline"}, "description": {"zh": "说明时间范围、比较对象和初始领先者。", "en": "Define the time range, entities, and initial leader."}, "categories": ["stat_cards", "narrative_card"]},
+        {"role": "overview", "title": {"zh": "观察大势", "en": "Read the trend"}, "description": {"zh": "先让观众看到整体增长、拐点和阶段。", "en": "Show growth, turning points, and phases before the contest."}, "categories": ["line_chart", "trend_analysis", "timeline"]},
+        {"role": "competition", "title": {"zh": "进入竞赛", "en": "Enter the race"}, "description": {"zh": "连续表现领先、超越、掉队和重新排序。", "en": "Continuously show leadership, overtakes, exits, and reranking."}, "categories": ["race_chart"]},
+        {"role": "conclusion", "title": {"zh": "停在反转点", "en": "Land on the reversal"}, "description": {"zh": "推近决定性年份或孤立最终赢家。", "en": "Push toward the decisive period or isolate the final winner."}, "categories": ["chart_camera", "data_transition"]}
+      ]
+    },
+    {
+      "id": "composition_to_detail",
+      "name": {"zh": "构成到细节", "en": "Composition to detail"},
+      "description": {"zh": "从总量切入，拆解构成，再寻找分布、关系或异常。", "en": "Begin with the total, decompose its parts, then inspect distribution, relationships, or anomalies."},
+      "duration": {"zh": "建议 20–32 秒", "en": "20–32 sec"},
+      "beats": [
+        {"role": "hook", "title": {"zh": "给出总量", "en": "State the total"}, "description": {"zh": "先用一个主指标建立阅读尺度。", "en": "Establish scale with one hero metric."}, "categories": ["stat_cards", "narrative_scene"]},
+        {"role": "decompose", "title": {"zh": "拆开构成", "en": "Decompose the whole"}, "description": {"zh": "说明总量由哪些部分组成，以及各部分权重。", "en": "Show which parts form the total and their relative weight."}, "categories": ["pie_chart", "radar_chart"]},
+        {"role": "inspect", "title": {"zh": "寻找结构", "en": "Inspect the structure"}, "description": {"zh": "用分布、密度或变量关系找到隐藏模式。", "en": "Use distribution, density, or relationships to find hidden patterns."}, "categories": ["heatmap", "scatter_chart"]},
+        {"role": "conclusion", "title": {"zh": "提炼发现", "en": "Extract the finding"}, "description": {"zh": "将最重要的一部分转为结论卡或聚焦镜头。", "en": "Carry the most important part into a conclusion or focus shot."}, "categories": ["data_transition", "narrative_card", "chart_camera"]}
+      ]
+    },
+    {
+      "id": "cause_and_flow",
+      "name": {"zh": "因果与流向", "en": "Cause and flow"},
+      "description": {"zh": "解释一个结果如何被多项增减、阶段变化和流向共同形成。", "en": "Explain how additions, subtractions, stages, and flows combine into an outcome."},
+      "duration": {"zh": "建议 24–38 秒", "en": "24–38 sec"},
+      "beats": [
+        {"role": "setup", "title": {"zh": "交代结果", "en": "State the outcome"}, "description": {"zh": "先说明最终变化和需要解释的问题。", "en": "State the resulting change and the question to explain."}, "categories": ["narrative_scene", "stat_cards"]},
+        {"role": "causes", "title": {"zh": "拆分增减项", "en": "Break down drivers"}, "description": {"zh": "逐步出现贡献、损失和关键阶段。", "en": "Reveal contributions, losses, and critical stages."}, "categories": ["waterfall_chart", "timeline"]},
+        {"role": "flow", "title": {"zh": "追踪流向", "en": "Trace the flow"}, "description": {"zh": "把来源、去向和中间路径连接起来。", "en": "Connect origins, destinations, and intermediate paths."}, "categories": ["flow_sankey"]},
+        {"role": "conclusion", "title": {"zh": "回答为什么", "en": "Answer why"}, "description": {"zh": "用编辑化讲解或结论卡收束因果链。", "en": "Close the causal chain with an editorial explanation or takeaway."}, "categories": ["editorial_explainer", "narrative_card"]}
+      ]
+    },
+    {
+      "id": "geographic_journey",
+      "name": {"zh": "空间与路径故事", "en": "Geographic journey"},
+      "description": {"zh": "先建立地点和空间尺度，再比较区域，最后沿真实路径推进。", "en": "Establish place and scale, compare regions, then advance along real paths."},
+      "duration": {"zh": "建议 26–40 秒", "en": "26–40 sec"},
+      "beats": [
+        {"role": "context", "title": {"zh": "建立地点", "en": "Establish place"}, "description": {"zh": "用环境或主体让地图数据先有现实含义。", "en": "Give spatial data real-world meaning through context or subject."}, "categories": ["contextual_overlay", "narrative_scene"]},
+        {"role": "regions", "title": {"zh": "比较区域", "en": "Compare regions"}, "description": {"zh": "同步呈现地理边界、数值和排名。", "en": "Synchronize boundaries, values, and ranks."}, "categories": ["map_visualization"]},
+        {"role": "routes", "title": {"zh": "沿路径推进", "en": "Travel the routes"}, "description": {"zh": "沿贸易、迁移或供应链方向逐段累积。", "en": "Accumulate trade, migration, or supply-chain routes."}, "categories": ["map_visualization", "flow_sankey"]},
+        {"role": "conclusion", "title": {"zh": "停在关键节点", "en": "Land on the key node"}, "description": {"zh": "使用地图滑行、时间巡航或焦点推镜结束。", "en": "Finish with a map glide, timeline travel, or focus push."}, "categories": ["chart_camera"]}
+      ]
+    },
+    {
+      "id": "presenter_guided_evidence",
+      "name": {"zh": "主持人带看证据", "en": "Presenter-guided evidence"},
+      "description": {"zh": "由主持人提出问题，带着观众逐项读取同尺度数据，再把人物退到次要位置，让可核验的结论留在画面中。", "en": "Let a presenter pose the question and guide a shared-scale comparison, then step back so the verifiable finding remains in focus."},
+      "duration": {"zh": "建议 24–36 秒", "en": "24–36 sec"},
+      "beats": [
+        {"role": "hook", "title": {"zh": "由人提出问题", "en": "Ask the question"}, "description": {"zh": "让主持人说出待验证的问题，不提前泄露结论。", "en": "Have the presenter introduce the question without giving away the answer."}, "categories": ["presenter_explainer", "narrative_scene"]},
+        {"role": "context", "title": {"zh": "补充现场情境", "en": "Show the context"}, "description": {"zh": "用实景或原始来源交代数据来自哪里、测量了什么。", "en": "Use footage or a source view to show where the data came from and what was measured."}, "categories": ["video_data_fusion", "contextual_overlay", "editorial_explainer"]},
+        {"role": "evidence", "title": {"zh": "逐项读取证据", "en": "Read the evidence"}, "description": {"zh": "主持人逐项引导比较，保持单位和坐标尺度一致。", "en": "Let the presenter guide each comparison while keeping units and scale consistent."}, "categories": ["presenter_explainer", "comparison_chart", "bar_chart"]},
+        {"role": "conclusion", "title": {"zh": "把画面交给结论", "en": "Leave the finding on screen"}, "description": {"zh": "弱化人物，停留在最高差异及其来源说明。", "en": "Reduce the presenter’s prominence and hold the key difference with its source."}, "categories": ["chart_camera", "narrative_card"]}
+      ]
+    },
+    {
+      "id": "countdown_to_winner",
+      "name": {"zh": "榜单倒序揭晓", "en": "Countdown to the winner"},
+      "description": {"zh": "先交代排名口径，再从低到高逐项揭晓，用每项的证据推动悬念，最后固定完整榜单。", "en": "Establish the ranking rule, reveal entries from low to high with evidence, then hold the complete ranking."},
+      "duration": {"zh": "建议 20–32 秒", "en": "20–32 sec"},
+      "beats": [
+        {"role": "setup", "title": {"zh": "公布排名规则", "en": "Set the ranking rule"}, "description": {"zh": "说明比较对象、单位和时间范围，避免只凭数字制造悬念。", "en": "Define entities, units, and time range before building suspense."}, "categories": ["stat_cards", "narrative_card"]},
+        {"role": "reveal", "title": {"zh": "从末位开始揭晓", "en": "Reveal from the bottom"}, "description": {"zh": "按固定节奏倒序出现，已揭晓条目保留在同一尺度上。", "en": "Reveal entries in countdown order, retaining earlier entries on one scale."}, "categories": ["ranking_reveal", "race_chart"]},
+        {"role": "evidence", "title": {"zh": "解释领先原因", "en": "Explain the lead"}, "description": {"zh": "补充与榜首相关的比较证据，而不改变排名口径。", "en": "Support the leader with comparison evidence without changing the ranking rule."}, "categories": ["comparison_chart", "editorial_explainer"]},
+        {"role": "conclusion", "title": {"zh": "定格完整榜单", "en": "Hold the full ranking"}, "description": {"zh": "停留在完整顺序、关键差距与数据来源。", "en": "Hold the final order, decisive gap, and data source."}, "categories": ["ranking_reveal", "data_transition"]}
+      ]
+    },
+    {
+      "id": "source_to_claim",
+      "name": {"zh": "来源到结论", "en": "Source to claim"},
+      "description": {"zh": "保留数据出处、字段转换和核验过程，适合财报、研究与事实核查。", "en": "Preserve provenance, field transformation, and verification for reports, research, and fact checking."},
+      "duration": {"zh": "建议 24–36 秒", "en": "24–36 sec"},
+      "beats": [
+        {"role": "source", "title": {"zh": "展示原始来源", "en": "Show the source"}, "description": {"zh": "让观众先看到表格、文档或原始记录。", "en": "Begin with the table, document, or raw record."}, "categories": ["editorial_explainer"]},
+        {"role": "rebuild", "title": {"zh": "重构成图", "en": "Rebuild the chart"}, "description": {"zh": "把字段映射为可编辑图形并保留对应关系。", "en": "Map fields into editable marks while preserving traceability."}, "categories": ["editorial_explainer", "bar_chart"]},
+        {"role": "verify", "title": {"zh": "交叉核验", "en": "Cross-check"}, "description": {"zh": "用比较或关系图验证发现不是单点偶然。", "en": "Use comparison or relationships to verify the finding."}, "categories": ["comparison_chart", "scatter_chart"]},
+        {"role": "conclusion", "title": {"zh": "形成主张", "en": "Form the claim"}, "description": {"zh": "聚焦可被来源支持的唯一结论。", "en": "Focus the one conclusion supported by the source."}, "categories": ["chart_camera", "narrative_card", "data_transition"]}
+      ]
+    }
+  ]
+}

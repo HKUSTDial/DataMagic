@@ -1,0 +1,1481 @@
+{
+  "total": 139,
+  "changed": 60,
+  "changedSlugs": [
+    "BarChartRace",
+    "RankedReveal",
+    "PortraitRankedReveal",
+    "PresenterEvidenceBoard",
+    "BumpChartStory",
+    "ChoroplethRankMap",
+    "EditorialLedgerRace",
+    "CinematicTrackRace",
+    "PersistentTierBoard",
+    "FootageEvidenceReveal",
+    "CharacterPerspectiveBoard",
+    "SourceToInsight",
+    "SourceToReconstruction",
+    "StorySequenceGenerator",
+    "SharedDataElementTransition",
+    "PullBackIsolation",
+    "ContrastContributionStory",
+    "SpatialPercentOverlay",
+    "SplitContextComparison",
+    "CraneRiseDashboard",
+    "VideoMetricOverlay",
+    "TrackedVideoCallout",
+    "BasicPieChart",
+    "CoffeeRatingHorizontalRanking",
+    "DepartmentHeadcountDarkBar",
+    "MarginSlopeComparison",
+    "SlopeChangeRanking",
+    "MarketShareDonut",
+    "NestedRingShare",
+    "CustomerSegmentsScatter",
+    "PortfolioBubbleMatrix",
+    "ProductPerformanceRadar",
+    "RadarPerformanceProfile",
+    "LightRadarScorecard",
+    "ScatterOpportunityMap",
+    "ConversionFunnelClean",
+    "SupplyFlowSankey",
+    "SupplyChainSankeyFlow",
+    "MarketTreemapMosaic",
+    "TimelineMilestones",
+    "TimelineMilestoneRoadmap",
+    "MultiSliceDonut",
+    "DenseScatterCloud",
+    "LongFlowSankey",
+    "StackedShareBar",
+    "SegmentTreemapVertical",
+    "RaceTrackShare",
+    "MultiEntityScatterMatrix",
+    "QuadrantSplitScatter",
+    "LabeledScatterGrid",
+    "SmallMultiplesTrend",
+    "SteppedLineRanking",
+    "AreaStackTrend",
+    "BrightScatterGrid",
+    "DarkCompactDonutShare",
+    "DarkCompactScatterPanel",
+    "LightMultiSlicePie",
+    "LightDenseScatter",
+    "LightFlowSankey",
+    "DarkTimelineMilestones"
+  ],
+  "native": {
+    "scope": "24 native recipes excluding 6 parent-owned recipes",
+    "changed": [
+      {
+        "slug": "EditorialLedgerRace",
+        "folder": "editorial-ledger-race",
+        "field": "entities",
+        "reason": "Region illustrations follow ranking and focus; not misleading country flags."
+      },
+      {
+        "slug": "CinematicTrackRace",
+        "folder": "cinematic-track-race",
+        "field": "entities",
+        "reason": "Assistant-type icons follow lane identity and leader."
+      },
+      {
+        "slug": "PersistentTierBoard",
+        "folder": "persistent-tier-board",
+        "field": "items",
+        "reason": "Delivery-station icon remains inside moving item card."
+      },
+      {
+        "slug": "FootageEvidenceReveal",
+        "folder": "footage-evidence-reveal",
+        "field": "rows",
+        "reason": "Recognition/review stage icons reveal with evidence row."
+      },
+      {
+        "slug": "CharacterPerspectiveBoard",
+        "folder": "character-perspective-board",
+        "field": "rows",
+        "reason": "Income, housing and food illustrations inside tilted data board."
+      },
+      {
+        "slug": "SourceToInsight",
+        "folder": "source-to-insight",
+        "field": "rows",
+        "reason": "Same region locator in source table and reordered chart."
+      },
+      {
+        "slug": "SourceToReconstruction",
+        "folder": "source-to-reconstruction",
+        "field": "rows",
+        "reason": "Business-unit icons retained in source table and reconstruction."
+      },
+      {
+        "slug": "StorySequenceGenerator",
+        "folder": "story-sequence-generator",
+        "field": "items",
+        "reason": "Public-space icons carry through hook, context, comparison and takeaway."
+      },
+      {
+        "slug": "SharedDataElementTransition",
+        "folder": "shared-data-element-transition",
+        "field": "data",
+        "reason": "Category icon travels with the same value into conclusion."
+      },
+      {
+        "slug": "PullBackIsolation",
+        "folder": "pull-back-isolation",
+        "field": "items",
+        "reason": "Product icon belongs to card; fades with non-focus entity."
+      },
+      {
+        "slug": "ContrastContributionStory",
+        "folder": "contrast-contribution-story",
+        "field": "contributions",
+        "reason": "Contribution icons reveal with each signed component; baseline/final icons optional."
+      },
+      {
+        "slug": "SpatialPercentOverlay",
+        "folder": "spatial-percent-overlay",
+        "field": "entityIconSrc",
+        "reason": "Neutral product illustration beside sample manufacturer; supplied logo supported."
+      },
+      {
+        "slug": "SplitContextComparison",
+        "folder": "split-context-comparison",
+        "field": "left/right",
+        "reason": "Energy and transport illustrations identify two scenarios."
+      },
+      {
+        "slug": "CraneRiseDashboard",
+        "folder": "crane-rise-dashboard",
+        "field": "categoryIcons",
+        "reason": "Region locators keyed by category name, not screen position."
+      },
+      {
+        "slug": "VideoMetricOverlay",
+        "folder": "video-data-overlay",
+        "field": "metrics",
+        "reason": "Metric icons in protected negative-space panel."
+      },
+      {
+        "slug": "TrackedVideoCallout",
+        "folder": "video-data-overlay",
+        "field": "tracking",
+        "reason": "Robot icon in stable data label while target coordinates remain unchanged."
+      }
+    ],
+    "skipped": [
+      {
+        "slug": "PresenterDataTakeover",
+        "reason": "Quarterly time-series; existing character video already supplies the subject image. Repeating entity icons at time points adds no identity information."
+      },
+      {
+        "slug": "DataMagnifierLens",
+        "reason": "Single trend with time-point labels; magnifier and anomaly affordance already explain focus."
+      },
+      {
+        "slug": "MapRouteAccumulation",
+        "reason": "City nodes and actual geographic routes already carry location identity. No invented city logos or national flags assigned to city-specific quantities."
+      },
+      {
+        "slug": "ChartFocusPush",
+        "reason": "Single time-series anomaly: no distinct entities to attach different imagery."
+      },
+      {
+        "slug": "ChartTimelineTravel",
+        "reason": "Time milestones, not competing entities; existing milestone diagram preserved."
+      },
+      {
+        "slug": "ParallaxMapGlide",
+        "reason": "City-specific spatial markers already locate subjects; avoids extra floating image labels obscuring geography."
+      },
+      {
+        "slug": "NegativeSpaceChartDock",
+        "reason": "Annual electricity time-series with existing wind turbine scene; no distinct category identities."
+      },
+      {
+        "slug": "PresenterChartStage",
+        "reason": "Annual time-series with presenter figure already visible; repeated calendar/category icons would be decorative."
+      }
+    ],
+    "counts": {
+      "audited": 24,
+      "changed": 16,
+      "skipped": 8
+    },
+    "notes": [
+      "Existing numbers and entity labels preserved.",
+      "Local original SVG illustrations; supplied image URLs supported by EntityIcon.",
+      "Schematic region locators are not official emblems or geographic boundary maps.",
+      "Alternate samples remain valid without optional icons."
+    ]
+  },
+  "runtime": {
+    "total": 109,
+    "changed": 38,
+    "cards": [
+      {
+        "slug": "BasicBarChart",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "BasicLineChart",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "BasicPieChart",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "BasicStatCards",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "OpeningEditorialTitle",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "OpeningExecutiveBrief",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "OpeningDataGrid",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "OpeningSplitMetrics",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "OpeningCinematicHeadline",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "HeroNumberSpotlight",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "KpiMicroDashboard",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkKpiMicroDashboard",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "StatCardsKpiTrio",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "QuarterlyRevenueGroupedBar",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "SwissMinimalReport",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "CoffeeRatingHorizontalRanking",
+        "changed": true,
+        "labels": [
+          "Ethiopia",
+          "Kenya",
+          "Colombia",
+          "Brazil",
+          "Guatemala"
+        ],
+        "assets": [
+          "icons/flags/ET.svg",
+          "icons/flags/KE.svg",
+          "icons/flags/CO.svg",
+          "icons/flags/BR.svg",
+          "icons/flags/GT.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "DepartmentHeadcountDarkBar",
+        "changed": true,
+        "labels": [
+          "Engineering",
+          "Product",
+          "Sales",
+          "Operations",
+          "Support"
+        ],
+        "assets": [
+          "icons/categories/robot.svg",
+          "icons/categories/product.svg",
+          "icons/categories/finance.svg",
+          "icons/categories/scan.svg",
+          "icons/categories/service.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "SalesByRegionDarkColumn",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ExecutiveHorizontalBars",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "CompactColumnKpi",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "MarginSlopeComparison",
+        "changed": true,
+        "labels": [
+          "Direct",
+          "Partner",
+          "Retail",
+          "Marketplace"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/market.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "MetricTrendRibbon",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "LightFocusLine",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "EditorialDataStory",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkEditorialTrend",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkSignalTrendline",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DualSeriesPulseLine",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "SlopeChangeRanking",
+        "changed": true,
+        "labels": [
+          "Direct",
+          "Partner",
+          "Retail",
+          "Marketplace"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/market.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "MarketShareDonut",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "NestedRingShare",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "SemiGaugeProgress",
+        "changed": false,
+        "reason": "No entity label/legend rendered by this specific layout; an icon would misrepresent axis metrics."
+      },
+      {
+        "slug": "CustomerSegmentsScatter",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "PortfolioBubbleMatrix",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "ProductPerformanceRadar",
+        "changed": true,
+        "labels": [
+          "Product A",
+          "Product B"
+        ],
+        "assets": [
+          "icons/categories/product.svg",
+          "icons/categories/cloud.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "RadarPerformanceProfile",
+        "changed": true,
+        "labels": [
+          "Product A",
+          "Product B"
+        ],
+        "assets": [
+          "icons/categories/product.svg",
+          "icons/categories/cloud.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "LightRadarScorecard",
+        "changed": true,
+        "labels": [
+          "Product A",
+          "Product B"
+        ],
+        "assets": [
+          "icons/categories/product.svg",
+          "icons/categories/cloud.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "ScatterOpportunityMap",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "CorrelationHeatmapMatrix",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkCorrelationMatrix",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "WeeklyActivityHeatmap",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "WaterfallProfitBridge",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "RevenueWaterfallBridge",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ConversionFunnelClean",
+        "changed": true,
+        "labels": [
+          "Visitors",
+          "Leads",
+          "Qualified",
+          "Proposal",
+          "Won"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/scan.svg",
+          "icons/categories/review.svg",
+          "icons/categories/research.svg",
+          "icons/categories/finance.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "SupplyFlowSankey",
+        "changed": true,
+        "labels": [
+          "Suppliers",
+          "Partners",
+          "Imports",
+          "Factories",
+          "Assemblers",
+          "Warehouses",
+          "Distribution",
+          "Retail",
+          "Online"
+        ],
+        "assets": [
+          "icons/categories/product.svg",
+          "icons/categories/service.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/robot.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg"
+        ],
+        "placements": {
+          "svgLabels": 2,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "SupplyChainSankeyFlow",
+        "changed": true,
+        "labels": [
+          "Suppliers",
+          "Partners",
+          "Imports",
+          "Factories",
+          "Assemblers",
+          "Warehouses",
+          "Distribution",
+          "Retail",
+          "Online"
+        ],
+        "assets": [
+          "icons/categories/product.svg",
+          "icons/categories/service.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/robot.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "MarketTreemapMosaic",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "CyberCommandCenter",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "LuxuryBlackGoldMetrics",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "TimelineMilestones",
+        "changed": true,
+        "labels": [
+          "Plan",
+          "Build",
+          "Launch",
+          "Scale",
+          "Review"
+        ],
+        "assets": [
+          "icons/categories/research.svg",
+          "icons/categories/robot.svg",
+          "icons/categories/online.svg",
+          "icons/categories/energy.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "TimelineMilestoneRoadmap",
+        "changed": true,
+        "labels": [
+          "Plan",
+          "Build",
+          "Launch",
+          "Scale",
+          "Review"
+        ],
+        "assets": [
+          "icons/categories/research.svg",
+          "icons/categories/robot.svg",
+          "icons/categories/online.svg",
+          "icons/categories/energy.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "NarrativeChapterTitle",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeQuestion",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeQuote",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeStatHook",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeContext",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeBullets",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeVersus",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeDefinition",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeBeforeAfter",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeMiniTimeline",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ClosingSimpleOutro",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ClosingGradientSignal",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ClosingLightOutro",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ClosingKeyTakeaways",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ClosingMetricSummary",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "ClosingActionPlan",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DenseRankingTable",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "MultiSliceDonut",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "LongTrendline",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DenseScatterCloud",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "WideComparisonGrid",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "LongFlowSankey",
+        "changed": true,
+        "labels": [
+          "Organic Search",
+          "Paid Ads",
+          "Email",
+          "Social",
+          "Direct",
+          "Referral",
+          "Free Tier",
+          "Starter",
+          "Growth",
+          "Trial",
+          "Enterprise",
+          "Churned"
+        ],
+        "assets": [
+          "icons/categories/scan.svg",
+          "icons/categories/finance.svg",
+          "icons/categories/service.svg",
+          "icons/categories/online.svg",
+          "icons/categories/review.svg",
+          "icons/categories/cloud.svg",
+          "icons/categories/product.svg",
+          "icons/categories/energy.svg"
+        ],
+        "placements": {
+          "svgLabels": 2,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "HorizontalBarMatrix",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "LeaderboardCardGrid",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "SteppedBarStrip",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "StackedShareBar",
+        "changed": true,
+        "labels": [
+          "Mobile App",
+          "Web Direct",
+          "Desktop App",
+          "API Partners",
+          "Email",
+          "Social Referral",
+          "Search",
+          "Affiliate"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/product.svg",
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/scan.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "SegmentTreemapVertical",
+        "changed": true,
+        "labels": [
+          "Mobile App",
+          "Web Direct",
+          "Desktop App",
+          "API Partners",
+          "Email",
+          "Social Referral",
+          "Search",
+          "Affiliate"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/product.svg",
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/scan.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 2,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "RaceTrackShare",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "MultiEntityScatterMatrix",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "QuadrantSplitScatter",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "LabeledScatterGrid",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "SmallMultiplesTrend",
+        "changed": true,
+        "labels": [
+          "India",
+          "EU West",
+          "North America",
+          "APAC",
+          "LATAM",
+          "MEA"
+        ],
+        "assets": [
+          "icons/flags/IN.svg",
+          "icons/regions/europe.svg",
+          "icons/regions/northamerica.svg",
+          "icons/regions/apac.svg",
+          "icons/regions/latam.svg",
+          "icons/regions/mea.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "SteppedLineRanking",
+        "changed": true,
+        "labels": [
+          "Apple",
+          "Microsoft",
+          "Amazon",
+          "Google",
+          "Nvidia",
+          "Meta"
+        ],
+        "assets": [
+          "icons/brands/apple.svg",
+          "icons/brands/microsoft.svg",
+          "icons/brands/amazon.svg",
+          "icons/brands/google.svg",
+          "icons/brands/nvidia.svg",
+          "icons/brands/meta.svg"
+        ],
+        "placements": {
+          "svgLabels": 2,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "AreaStackTrend",
+        "changed": true,
+        "labels": [
+          "Mobile",
+          "Web",
+          "API",
+          "Email"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "CleanTrendCard",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "BrightScatterGrid",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "LightComparisonPanel",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkComparisonPanel",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkCompactBarRanking",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkCompactDonutShare",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 2
+        }
+      },
+      {
+        "slug": "DarkCompactScatterPanel",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "NarrativeChapterTitleLight",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeStatHookLight",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeBulletsLight",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeQuoteLight",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeContextLight",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeContextIllustrated",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeStatHookIllustrated",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeBulletsIllustrated",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeChapterTitleIllustrated",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "NarrativeQuoteIllustrated",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "LightDenseRankingBar",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "LightMultiSlicePie",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg"
+        ],
+        "placements": {
+          "svgLabels": 0,
+          "htmlLabels": 1
+        }
+      },
+      {
+        "slug": "LightDenseScatter",
+        "changed": true,
+        "labels": [
+          "Enterprise",
+          "Consumer",
+          "SMB",
+          "Partner",
+          "Retail",
+          "Online",
+          "Direct",
+          "Wholesale",
+          "Field",
+          "Reseller",
+          "Trial",
+          "Renewal"
+        ],
+        "assets": [
+          "icons/categories/cloud.svg",
+          "icons/categories/service.svg",
+          "icons/categories/store.svg",
+          "icons/categories/online.svg",
+          "icons/categories/market.svg",
+          "icons/categories/transport.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "LightFlowSankey",
+        "changed": true,
+        "labels": [
+          "Visitors",
+          "Leads",
+          "Qualified",
+          "Proposal",
+          "Won"
+        ],
+        "assets": [
+          "icons/categories/online.svg",
+          "icons/categories/scan.svg",
+          "icons/categories/review.svg",
+          "icons/categories/finance.svg"
+        ],
+        "placements": {
+          "svgLabels": 2,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "LightWideComparison",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkWaterfallBridge",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      },
+      {
+        "slug": "DarkTimelineMilestones",
+        "changed": true,
+        "labels": [
+          "Plan",
+          "Build",
+          "Launch",
+          "Scale",
+          "Review"
+        ],
+        "assets": [
+          "icons/categories/research.svg",
+          "icons/categories/robot.svg",
+          "icons/categories/online.svg",
+          "icons/categories/energy.svg",
+          "icons/categories/review.svg"
+        ],
+        "placements": {
+          "svgLabels": 1,
+          "htmlLabels": 0
+        }
+      },
+      {
+        "slug": "LightHeroNumber",
+        "changed": false,
+        "reason": "Time axes, abstract metrics, editorial copy, or no accurately matching entity asset."
+      }
+    ]
+  }
+}

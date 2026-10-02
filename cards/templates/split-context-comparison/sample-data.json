@@ -1,0 +1,28 @@
+{
+  "title": "同样跑 100 公里，成本差在哪？",
+  "subtitle": "把抽象数字放回补能场景，比较才有真正的尺度感",
+  "left": {
+    "label": "SCENARIO A",
+    "name": "家用充电的电动汽车",
+    "value": 8.6,
+    "unit": "元 / 100km",
+    "detail": "按谷段家庭充电价格估算",
+    "accent": "#208C78",
+    "scene": "electric",
+    "iconSrc": "icons/categories/energy.svg"
+  },
+  "right": {
+    "label": "SCENARIO B",
+    "name": "城市通勤的燃油汽车",
+    "value": 52.4,
+    "unit": "元 / 100km",
+    "detail": "按百公里油耗与样例油价估算",
+    "accent": "#C75F42",
+    "scene": "fuel",
+    "iconSrc": "icons/categories/car.svg"
+  },
+  "differenceLabel": "每百公里节省",
+  "differenceValue": "43.8 元",
+  "takeaway": "在这一组假设下，家充电动车的百公里补能成本约为燃油车的 16%。",
+  "source": "DataMagic Cards 合成演示数据；数值仅用于模板展示"
+}

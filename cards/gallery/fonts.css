@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "DataMagic Cards Sans";
+  src: url("fonts/noto-sans-sc-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DataMagic Cards Sans";
+  src: url("fonts/noto-sans-sc-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+}
+
+:root {
+  font-family: "DataMagic Cards Sans", Inter, sans-serif;
+}
+
+.browser aside,
+.results {
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .browser {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .browser aside,
+  .results,
+  .grid,
+  .card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .browser nav {
+    width: 100%;
+    max-width: 100%;
+  }
+}

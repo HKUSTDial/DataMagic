@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChartTimelineTravel / 图表时间线巡航",
+  "description": "A bilingual, editable timeline-chart camera journey. / 可编辑的双语图表时间线运镜模板。",
+  "type": "object",
+  "required": ["locale", "eyebrow", "title", "subtitle", "periods", "finalTakeaway", "source"],
+  "properties": {
+    "locale": {
+      "type": "string",
+      "enum": ["zh", "en"],
+      "description": "Display language. / 显示语言。"
+    },
+    "eyebrow": {"$ref": "#/$defs/localizedText", "description": "Section label. / 栏目标识。"},
+    "title": {"$ref": "#/$defs/localizedText", "description": "Main title. / 主标题。"},
+    "subtitle": {"$ref": "#/$defs/localizedText", "description": "Supporting explanation. / 辅助说明。"},
+    "periods": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 5,
+      "description": "Four or five ordered milestones. / 四到五个有序里程碑。",
+      "items": {"$ref": "#/$defs/period"}
+    },
+    "finalTakeaway": {"$ref": "#/$defs/localizedText", "description": "Conclusion shown after the final brake. / 最终减速停稳后显示的结论。"},
+    "source": {"$ref": "#/$defs/localizedText", "description": "Data source label. / 数据来源。"}
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {
+        "zh": {"type": "string", "minLength": 1},
+        "en": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "period": {
+      "type": "object",
+      "required": ["id", "label", "value", "unit", "note", "accent"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$", "description": "Stable milestone ID. / 稳定的里程碑标识。"},
+        "label": {"$ref": "#/$defs/localizedText"},
+        "value": {"type": "number", "description": "Metric value. / 指标值。"},
+        "unit": {"type": "string", "minLength": 1, "maxLength": 12},
+        "note": {"$ref": "#/$defs/localizedText"},
+        "accent": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+

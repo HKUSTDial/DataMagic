@@ -1,0 +1,8 @@
+{
+  "title":"收入没大涨，结余为何变多？", "question":"结余变化，需要同时核对收入与支出。",
+  "hookLabel":"本月结余变化", "hook":{"before":20,"after":26},
+  "takeaway":"收入增加与支出节省共同作用，结余从 20 到 26。",
+  "source":"DataMagic Cards 合成家庭账本，非真实统计；无声演示。",
+  "baselineLabel":"原有结余", "baseline":20, "finalLabel":"本月结余", "unit":"百元", "maximum":40,
+  "contributions":[{"label":"收入增加","value":4,"at":3.2,"caption":"收入增加 4 百元，结余随之增加。"},{"label":"支出节省","value":5,"at":5.2,"caption":"支出减少贡献 5 百元；减少支出在这里是正贡献。"},{"label":"新增支出","value":-3,"at":7.2,"caption":"新增支出抵消 3 百元，最终结余仍增加 6 百元。"}]
+}

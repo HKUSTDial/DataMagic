@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DataMagic 本机多轨工作台</title><link rel="stylesheet" href="styles.css"><style>main{max-width:900px;padding:40px 24px}h1{font-size:34px}p,li{font-size:18px;line-height:1.8}pre{padding:20px;background:var(--surface-subtle);white-space:pre-wrap;font-size:17px}a{color:var(--accent)}.notice{padding:20px;background:var(--accent-soft);border-radius:10px}</style></head>
+<body><main><a href="index.html">← 返回配方库</a><h1>本机多轨工作台</h1>
+<p>在自己的 Mac／Windows 浏览器里编辑镜头、字幕、音频与数据参数，再生成 MP4 或剪映交付包。在线画廊只提供浏览；渲染和素材导入在运行工作台的电脑完成，不需要我们的内部 DataMagic 系统。</p>
+<h2>启动</h2><p>可以让本机编程智能体阅读项目里的 datamagic-video Skill，代为启动工作台。手动方式：下载含 Cards 的 DataMagic 项目版本，在 <code>cards/</code> 下执行（Node.js 20.10+，需要 ffmpeg／ffprobe）：</p>
+<pre>npm ci
+npm run workbench</pre>
+<p>或者把当前配方直接交给本机工作台：</p><pre id="command">node workbench/motion/scripts/open.mjs --card=RankedReveal</pre>
+<p>启动后访问 <a id="open" href="http://127.0.0.1:5190/" target="_blank" rel="noreferrer">打开本机工作台</a>。第一次渲染需要可用的 Chrome／Remotion 浏览器。不要将开发服务器部署到公网。</p>
+<h2>发送到剪映</h2><p><strong>Mac 本机工作台：</strong>点击“发送到剪映”，先用 Cmd+Q 退出剪映并确认。程序自动渲染、新建草稿、打包素材并尝试打开剪映，不用下载、解压或手动复制草稿。首次准备隔离依赖，后续复用；需要 Python 3.10+。</p>
+<p><strong>服务器页面：</strong>不能直接安装到访问者的 Mac。可下载剪映包，解压后双击 <code>Open-in-Jianying.command</code>，按图形提示确认；下载权限或系统安全提示可能需要右键打开或本机 Agent 协助。</p>
+<h2>功能与边界</h2><ul><li>139 张卡片可入轨：30 个原生模板可改数据参数；109 个参考视频的图中内容不能直接修改。</li><li>多轨移动、跨轨、两端裁剪、分割、复制、变速、隐藏与图层排序。</li><li>独立字幕与本机视频／图片／音频导入，撤销重做、自动保存及工程 JSON。</li><li>同一套 Remotion 组件用于实时预览与导出；每个工程最长 60 秒。</li></ul>
+<div class="notice">剪映交付按镜头切分合成底片，工作台文字和音频分成独立轨。图表和画面合成不是剪映原生图表。Mac 安装仍需要本机可读旧草稿；若只有加密草稿会中止，不伪造设备信息。实际剪映打开、字体布局及导出仍待真机验收，不能保证所有版本兼容。</div>
+</main><script>const card=new URLSearchParams(location.search).get('card');if(card&&/^[A-Za-z0-9_-]{1,80}$/.test(card)){document.getElementById('command').textContent='node workbench/motion/scripts/open.mjs --card='+card;document.getElementById('open').href='http://127.0.0.1:5190/?card='+encodeURIComponent(card);}</script></body></html>

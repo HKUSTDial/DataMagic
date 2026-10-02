@@ -1,0 +1,8 @@
+{
+  "title":"质量波动，也能造成跨层回落", "question":"按同一质量分数阈值，对照两次评估。",
+  "takeaway":"A 组从优秀回落，C 组进入优秀；阈值始终不变。",
+  "source":"DataMagic Cards 合成评估数据，非真实统计；无声演示。",
+  "metricLabel":"质量评分", "unit":"分", "maximum":10,
+  "tiers":[{"label":"优秀","minimum":9},{"label":"稳定","minimum":7},{"label":"待改善","minimum":0}],
+  "items":[{"id":"a","label":"A组","before":9.4,"after":8.5,"at":3.2},{"id":"b","label":"B组","before":7.8,"after":7.8,"at":4.5},{"id":"c","label":"C组","before":6.5,"after":9.1,"at":6},{"id":"d","label":"D组","before":9.6,"after":9.6,"at":7.5}]
+}

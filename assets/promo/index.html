@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DataMagic · 30 秒效果集锦</title>
+<style>
+body{margin:0;background:#101c2b;color:#eef3fa;font:18px/1.7 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:40px 20px}h1{font-size:clamp(28px,5vw,48px);line-height:1.2}p{color:#c7d4e4}a{color:#9ee5d6}video{display:block;width:100%;border-radius:12px;background:#08111d;margin:24px 0}nav{display:flex;gap:24px;flex-wrap:wrap}footer{margin-top:40px;font-size:15px;color:#c7d4e4}
+</style>
+<main>
+<p>DataMagic · 可编辑的数据故事配方</p>
+<h1>挑一个效果，用自己的数据讲故事。</h1>
+<p>角色主持、动态柱状图竞赛、实景证据、趋势与多层地图滑行。30 秒了解六种表达方式。</p>
+<label for="version">播放版本：</label>
+<select id="version" style="font:inherit;padding:8px;max-width:100%">
+<option value="datamagic-showcase-zh-voiced.mp4">中文旁白＋配乐＋音效</option>
+<option value="datamagic-showcase-zh-music.mp4">中文标题＋配乐音效（无旁白）</option>
+<option value="datamagic-showcase-en-music.mp4">English titles + music and SFX</option>
+</select>
+<video controls playsinline preload="none" poster="cover.jpg" src="datamagic-showcase-zh-voiced.mp4" aria-label="有声效果集锦，中文旁白版含内嵌字幕"></video>
+<nav><a href="datamagic-showcase-zh-voiced.mp4" download>下载中文有声版</a><a href="datamagic-showcase-zh-music.mp4" download>下载无旁白版</a><a href="datamagic-showcase-en-music.mp4" download>English MP4</a><a href="https://datamagic.chat/cards/">浏览配方</a><a href="https://github.com/HKUSTDial/DataMagic">GitHub</a></nav>
+<footer>实际配方动画 · 演示数据 · 30 秒。中文旁白由 IndexTTS2 生成；配乐与音效为程序合成。中英文版使用不同的片段标题，配方内保留原始示例文字。</footer>
+<script>
+document.querySelector('#version').addEventListener('change', event => {
+  const video=document.querySelector('video');
+  video.pause();
+  video.src=event.target.value;
+  video.load();
+});
+</script>
+</main>
+</html>

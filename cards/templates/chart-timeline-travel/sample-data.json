@@ -1,0 +1,65 @@
+{
+  "locale": "zh",
+  "eyebrow": {
+    "zh": "数据旅程 · 五年增长轨迹",
+    "en": "DATA JOURNEY · FIVE-YEAR GROWTH"
+  },
+  "title": {
+    "zh": "从试点到规模化：清洁能源装机增长",
+    "en": "From Pilot to Scale: Clean-Energy Capacity Growth"
+  },
+  "subtitle": {
+    "zh": "镜头沿时间线逐段推进，让每一个里程碑拥有独立的阅读停顿。",
+    "en": "The camera advances along the timeline, giving every milestone a dedicated reading pause."
+  },
+  "periods": [
+    {
+      "id": "pilot",
+      "label": {"zh": "2022 试点", "en": "2022 Pilot"},
+      "value": 18,
+      "unit": "GW",
+      "note": {"zh": "首批示范项目完成并网，验证区域协同能力。", "en": "The first demonstration projects connect to the grid and validate regional coordination."},
+      "accent": "#0A7F78"
+    },
+    {
+      "id": "regional",
+      "label": {"zh": "2023 区域扩张", "en": "2023 Regional"},
+      "value": 27,
+      "unit": "GW",
+      "note": {"zh": "建设范围扩展到重点工业区域，增量开始加速。", "en": "Deployment expands into major industrial regions and annual additions begin to accelerate."},
+      "accent": "#2477D4"
+    },
+    {
+      "id": "integration",
+      "label": {"zh": "2024 系统整合", "en": "2024 Integration"},
+      "value": 39,
+      "unit": "GW",
+      "note": {"zh": "储能与调度系统接入，消纳效率进一步提升。", "en": "Storage and dispatch systems come online, improving utilization efficiency."},
+      "accent": "#7A5CD6"
+    },
+    {
+      "id": "scale",
+      "label": {"zh": "2025 规模化", "en": "2025 Scale"},
+      "value": 56,
+      "unit": "GW",
+      "note": {"zh": "标准化建设降低交付成本，装机进入规模增长阶段。", "en": "Standardized delivery lowers cost and moves capacity into a scaled-growth phase."},
+      "accent": "#E38A25"
+    },
+    {
+      "id": "breakthrough",
+      "label": {"zh": "2026 新高", "en": "2026 Record"},
+      "value": 74,
+      "unit": "GW",
+      "note": {"zh": "年度新增装机达到新高，五年规模超过最初的四倍。", "en": "Annual additions reach a new record and total scale exceeds four times the starting level."},
+      "accent": "#D64E4E"
+    }
+  ],
+  "finalTakeaway": {
+    "zh": "增长并非一次跳跃，而是由试点、整合与规模化连续推动。",
+    "en": "Growth is not a single leap; it is a sequence of pilots, integration, and scaling."
+  },
+  "source": {
+    "zh": "DataMagic Cards 合成演示数据",
+    "en": "DataMagic Cards synthetic demonstration data"
+  }
+}

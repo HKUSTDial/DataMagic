@@ -1,0 +1,57 @@
+{
+  "title": "服务表现，要看改善后的位置",
+  "question": "同一套准时率阈值下，谁发生了跨层改善？",
+  "takeaway": "甲站进入优秀层，丙站进入稳定层；其他站点保留。",
+  "source": "DataMagic Cards 合成配送数据，非真实统计；阈值为演示设定；无声演示。",
+  "metricLabel": "配送准时率",
+  "unit": "%",
+  "maximum": 100,
+  "tiers": [
+    {
+      "label": "优秀",
+      "minimum": 95
+    },
+    {
+      "label": "稳定",
+      "minimum": 85
+    },
+    {
+      "label": "待改善",
+      "minimum": 0
+    }
+  ],
+  "items": [
+    {
+      "id": "a",
+      "label": "甲站",
+      "before": 94,
+      "after": 96,
+      "at": 3.2,
+      "iconSrc": "icons/categories/transport.svg"
+    },
+    {
+      "id": "b",
+      "label": "乙站",
+      "before": 88,
+      "after": 88,
+      "at": 4.5,
+      "iconSrc": "icons/categories/transport.svg"
+    },
+    {
+      "id": "c",
+      "label": "丙站",
+      "before": 79,
+      "after": 87,
+      "at": 6,
+      "iconSrc": "icons/categories/transport.svg"
+    },
+    {
+      "id": "d",
+      "label": "丁站",
+      "before": 97,
+      "after": 97,
+      "at": 7.5,
+      "iconSrc": "icons/categories/transport.svg"
+    }
+  ]
+}

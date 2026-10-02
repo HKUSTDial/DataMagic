@@ -1,0 +1,109 @@
+{
+  "title": "咖啡店半年销量竞赛",
+  "subtitle": "1—6月 · 六种饮品 · 演示数据",
+  "unit": "杯",
+  "source": "sales.csv · 教学演示（虚构数据）",
+  "topN": 6,
+  "decimals": 0,
+  "locale": "zh-CN",
+  "entities": [
+    {
+      "id": "drink-1",
+      "label": "美式",
+      "color": "#3478c7"
+    },
+    {
+      "id": "drink-2",
+      "label": "拿铁",
+      "color": "#16a085"
+    },
+    {
+      "id": "drink-3",
+      "label": "卡布奇诺",
+      "color": "#e6a323"
+    },
+    {
+      "id": "drink-4",
+      "label": "摩卡",
+      "color": "#d95f59"
+    },
+    {
+      "id": "drink-5",
+      "label": "茶饮",
+      "color": "#8d6ac8"
+    },
+    {
+      "id": "drink-6",
+      "label": "冷萃",
+      "color": "#4f9d69"
+    }
+  ],
+  "snapshots": [
+    {
+      "time": "1月",
+      "values": {
+        "drink-1": 820,
+        "drink-2": 650,
+        "drink-3": 740,
+        "drink-4": 520,
+        "drink-5": 410,
+        "drink-6": 330
+      }
+    },
+    {
+      "time": "2月",
+      "values": {
+        "drink-1": 860,
+        "drink-2": 780,
+        "drink-3": 770,
+        "drink-4": 550,
+        "drink-5": 440,
+        "drink-6": 480
+      }
+    },
+    {
+      "time": "3月",
+      "values": {
+        "drink-1": 910,
+        "drink-2": 950,
+        "drink-3": 800,
+        "drink-4": 590,
+        "drink-5": 480,
+        "drink-6": 650
+      }
+    },
+    {
+      "time": "4月",
+      "values": {
+        "drink-1": 970,
+        "drink-2": 1110,
+        "drink-3": 850,
+        "drink-4": 640,
+        "drink-5": 530,
+        "drink-6": 800
+      }
+    },
+    {
+      "time": "5月",
+      "values": {
+        "drink-1": 1030,
+        "drink-2": 1290,
+        "drink-3": 890,
+        "drink-4": 680,
+        "drink-5": 570,
+        "drink-6": 930
+      }
+    },
+    {
+      "time": "6月",
+      "values": {
+        "drink-1": 1100,
+        "drink-2": 1450,
+        "drink-3": 930,
+        "drink-4": 710,
+        "drink-5": 620,
+        "drink-6": 1050
+      }
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "line_chart",
+    "style_template_id": "StyleTemplate-SmallMultiplesTrend",
+    "style_template_name": "Small Multiples Trend",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-SmallMultiplesTrend",
+      "chart_type": "line_chart",
+      "theme": "dark",
+      "data_contract": "multi-series points",
+      "entrance_animation": "panel reveal",
+      "emphasis_animation": "panel focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "panel",
+        "series",
+        "value"
+      ],
+      "suggested_narration": "APAC shows the strongest acceleration across the regional panels.",
+      "trigger_phrase": "APAC",
+      "animation_intent": "Bring the named regional panel forward.",
+      "timing": "word_aligned"
+    },
+    "title": "Small Multiples Trend",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#3b82f6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-SmallMultiplesTrend",
+      "chart_type": "line_chart",
+      "title": "Regional Revenue Trends",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "series"
+      },
+      "series": [
+        {
+          "name": "EU West",
+          "points": [
+            {
+              "label": "Jan",
+              "value": 42,
+              "display_value": "42"
+            },
+            {
+              "label": "Feb",
+              "value": 48,
+              "display_value": "48"
+            },
+            {
+              "label": "Mar",
+              "value": 56,
+              "display_value": "56"
+            },
+            {
+              "label": "Apr",
+              "value": 62,
+              "display_value": "62"
+            },
+            {
+              "label": "May",
+              "value": 71,
+              "display_value": "71"
+            },
+            {
+              "label": "Jun",
+              "value": 78,
+              "display_value": "78"
+            },
+            {
+              "label": "Jul",
+              "value": 86,
+              "display_value": "86"
+            }
+          ],
+          "iconSrc": "icons/regions/europe.svg"
+        },
+        {
+          "name": "North America",
+          "points": [
+            {
+              "label": "Jan",
+              "value": 120,
+              "display_value": "120"
+            },
+            {
+              "label": "Feb",
+              "value": 128,
+              "display_value": "128"
+            },
+            {
+              "label": "Mar",
+              "value": 132,
+              "display_value": "132"
+            },
+            {
+              "label": "Apr",
+              "value": 141,
+              "display_value": "141"
+            },
+            {
+              "label": "May",
+              "value": 156,
+              "display_value": "156"
+            },
+            {
+              "label": "Jun",
+              "value": 162,
+              "display_value": "162"
+            },
+            {
+              "label": "Jul",
+              "value": 174,
+              "display_value": "174"
+            }
+          ],
+          "iconSrc": "icons/regions/northamerica.svg"
+        },
+        {
+          "name": "APAC",
+          "points": [
+            {
+              "label": "Jan",
+              "value": 38,
+              "display_value": "38"
+            },
+            {
+              "label": "Feb",
+              "value": 44,
+              "display_value": "44"
+            },
+            {
+              "label": "Mar",
+              "value": 52,
+              "display_value": "52"
+            },
+            {
+              "label": "Apr",
+              "value": 61,
+              "display_value": "61"
+            },
+            {
+              "label": "May",
+              "value": 73,
+              "display_value": "73"
+            },
+            {
+              "label": "Jun",
+              "value": 84,
+              "display_value": "84"
+            },
+            {
+              "label": "Jul",
+              "value": 96,
+              "display_value": "96"
+            }
+          ],
+          "iconSrc": "icons/regions/apac.svg"
+        },
+        {
+          "name": "LATAM",
+          "points": [
+            {
+              "label": "Jan",
+              "value": 22,
+              "display_value": "22"
+            },
+            {
+              "label": "Feb",
+              "value": 24,
+              "display_value": "24"
+            },
+            {
+              "label": "Mar",
+              "value": 28,
+              "display_value": "28"
+            },
+            {
+              "label": "Apr",
+              "value": 32,
+              "display_value": "32"
+            },
+            {
+              "label": "May",
+              "value": 38,
+              "display_value": "38"
+            },
+            {
+              "label": "Jun",
+              "value": 41,
+              "display_value": "41"
+            },
+            {
+              "label": "Jul",
+              "value": 47,
+              "display_value": "47"
+            }
+          ],
+          "iconSrc": "icons/regions/latam.svg"
+        },
+        {
+          "name": "MEA",
+          "points": [
+            {
+              "label": "Jan",
+              "value": 15,
+              "display_value": "15"
+            },
+            {
+              "label": "Feb",
+              "value": 17,
+              "display_value": "17"
+            },
+            {
+              "label": "Mar",
+              "value": 18,
+              "display_value": "18"
+            },
+            {
+              "label": "Apr",
+              "value": 21,
+              "display_value": "21"
+            },
+            {
+              "label": "May",
+              "value": 24,
+              "display_value": "24"
+            },
+            {
+              "label": "Jun",
+              "value": 26,
+              "display_value": "26"
+            },
+            {
+              "label": "Jul",
+              "value": 29,
+              "display_value": "29"
+            }
+          ],
+          "iconSrc": "icons/regions/mea.svg"
+        },
+        {
+          "name": "India",
+          "points": [
+            {
+              "label": "Jan",
+              "value": 11,
+              "display_value": "11"
+            },
+            {
+              "label": "Feb",
+              "value": 14,
+              "display_value": "14"
+            },
+            {
+              "label": "Mar",
+              "value": 18,
+              "display_value": "18"
+            },
+            {
+              "label": "Apr",
+              "value": 22,
+              "display_value": "22"
+            },
+            {
+              "label": "May",
+              "value": 28,
+              "display_value": "28"
+            },
+            {
+              "label": "Jun",
+              "value": 36,
+              "display_value": "36"
+            },
+            {
+              "label": "Jul",
+              "value": 44,
+              "display_value": "44"
+            }
+          ],
+          "iconSrc": "icons/flags/IN.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#3b82f6",
+      "accent_color": "#3b82f6",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#3b82f6",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "India": "icons/flags/IN.svg",
+      "EU West": "icons/regions/europe.svg",
+      "North America": "icons/regions/northamerica.svg",
+      "APAC": "icons/regions/apac.svg",
+      "LATAM": "icons/regions/latam.svg",
+      "MEA": "icons/regions/mea.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_SmallMultiplesTrend",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-SmallMultiplesTrend"
+    },
+    "narration": [
+      {
+        "text": "APAC shows the strongest acceleration across the regional panels.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "draw_line",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "series": "APAC"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Bring the named regional panel forward.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "APAC",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

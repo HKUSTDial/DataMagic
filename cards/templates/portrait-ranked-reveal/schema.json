@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PortraitRankedReveal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "question",
+    "metricLabel",
+    "unit",
+    "maximum",
+    "source",
+    "takeaway",
+    "rows"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 24
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48
+    },
+    "metricLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6
+    },
+    "maximum": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 56
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 48
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "value",
+          "at",
+          "caption"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "at": {
+            "type": "number",
+            "minimum": 1.5,
+            "maximum": 7.2
+          },
+          "caption": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        }
+      }
+    },
+    "fontFamily": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "line_chart",
+    "style_template_id": "StyleTemplate-MarginSlopeComparison",
+    "style_template_name": "Margin Shift by Channel",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-MarginSlopeComparison",
+      "chart_type": "line_chart",
+      "theme": "dark",
+      "data_contract": "start/end comparison",
+      "entrance_animation": "slope reveal",
+      "emphasis_animation": "endpoint highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "line",
+        "endpoint",
+        "label"
+      ],
+      "suggested_narration": "Direct expands the most from start to end.",
+      "trigger_phrase": "Direct",
+      "animation_intent": "Highlight the named slope and its end point.",
+      "timing": "word_aligned"
+    },
+    "title": "Margin Shift by Channel",
+    "data": [
+      {
+        "label": "Direct",
+        "start": 31.5,
+        "end": 44.4,
+        "value": 44.4,
+        "display_value": "44.4%",
+        "color": "#16a34a"
+      },
+      {
+        "label": "Partner",
+        "start": 28.2,
+        "end": 35.1,
+        "value": 35.1,
+        "display_value": "35.1%",
+        "color": "#38bdf8"
+      },
+      {
+        "label": "Retail",
+        "start": 24.8,
+        "end": 27.6,
+        "value": 27.6,
+        "display_value": "27.6%",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Marketplace",
+        "start": 22.4,
+        "end": 20.8,
+        "value": 20.8,
+        "display_value": "20.8%",
+        "color": "#f472b6"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-MarginSlopeComparison",
+      "chart_type": "line_chart",
+      "title": "Margin Shift by Channel",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "start_end_rows"
+      },
+      "rows": [
+        {
+          "label": "Direct",
+          "start": 31.5,
+          "end": 44.4,
+          "value": 44.4,
+          "display_value": "44.4%",
+          "color": "#16a34a",
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "label": "Partner",
+          "start": 28.2,
+          "end": 35.1,
+          "value": 35.1,
+          "display_value": "35.1%",
+          "color": "#38bdf8",
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "Retail",
+          "start": 24.8,
+          "end": 27.6,
+          "value": 27.6,
+          "display_value": "27.6%",
+          "color": "#f59e0b",
+          "iconSrc": "icons/categories/store.svg"
+        },
+        {
+          "label": "Marketplace",
+          "start": 22.4,
+          "end": 20.8,
+          "value": 20.8,
+          "display_value": "20.8%",
+          "color": "#f472b6",
+          "iconSrc": "icons/categories/market.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#16a34a",
+      "accent_color": "#16a34a",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#16a34a",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Direct": "icons/categories/online.svg",
+      "Partner": "icons/categories/service.svg",
+      "Retail": "icons/categories/store.svg",
+      "Marketplace": "icons/categories/market.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_MarginSlopeComparison",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-MarginSlopeComparison"
+    },
+    "narration": [
+      {
+        "text": "Direct expands the most from start to end.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "draw_line",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Direct"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named slope and its end point.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Direct",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

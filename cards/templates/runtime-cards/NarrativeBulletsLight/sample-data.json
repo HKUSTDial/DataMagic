@@ -1,0 +1,173 @@
+{
+  "sceneContent": {
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "style_template_id": "StyleTemplate-NarrativeBulletsLight",
+    "style_template_name": "Light Bullets Narrative",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-NarrativeBulletsLight",
+      "chart_type": "narrative_card",
+      "theme": "light",
+      "data_contract": "title, bullets",
+      "entrance_animation": "bullet reveal",
+      "emphasis_animation": "bullet emphasis",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "bullets"
+      ],
+      "suggested_narration": "Three signals explain the trend in a lighter editorial tone.",
+      "trigger_phrase": "signals",
+      "animation_intent": "Reveal bullets on a light card.",
+      "timing": "word_aligned"
+    },
+    "title": "Light Bullets",
+    "subtitle": "Three signals explain the trend in a lighter editorial tone.",
+    "kicker": "INSIGHT",
+    "bullets": [
+      "Revenue reaches 241K by Aug",
+      "Costs rise more slowly than sales",
+      "Margin quality becomes the next decision point"
+    ],
+    "takeaways": [
+      "Growth is clear",
+      "Efficiency still matters",
+      "Track the next margin inflection"
+    ],
+    "steps": [
+      "Protect the highest-margin channels",
+      "Monitor cost acceleration",
+      "Review the next cohort before scaling"
+    ],
+    "metrics": [
+      {
+        "label": "Revenue",
+        "value": "241K",
+        "display_value": "241K",
+        "color": "#2563eb"
+      },
+      {
+        "label": "Cost",
+        "value": "134K",
+        "display_value": "134K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Margin",
+        "value": "44.4%",
+        "display_value": "44.4%",
+        "color": "#f59e0b"
+      }
+    ],
+    "cards": [
+      {
+        "label": "Revenue",
+        "value": "241K",
+        "display_value": "241K",
+        "color": "#2563eb"
+      },
+      {
+        "label": "Cost",
+        "value": "134K",
+        "display_value": "134K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Margin",
+        "value": "44.4%",
+        "display_value": "44.4%",
+        "color": "#f59e0b"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-NarrativeBulletsLight",
+      "scene_type": "narrative_card",
+      "title": "Light Bullets",
+      "subtitle": "Three signals explain the trend in a lighter editorial tone.",
+      "kicker": "INSIGHT",
+      "bullets": [
+        "Revenue reaches 241K by Aug",
+        "Costs rise more slowly than sales",
+        "Margin quality becomes the next decision point"
+      ],
+      "stat": "241K",
+      "metric": "241K",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": "241K",
+          "display_value": "241K",
+          "color": "#2563eb"
+        },
+        {
+          "label": "Cost",
+          "value": "134K",
+          "display_value": "134K",
+          "color": "#10b981"
+        },
+        {
+          "label": "Margin",
+          "value": "44.4%",
+          "display_value": "44.4%",
+          "color": "#f59e0b"
+        }
+      ],
+      "takeaways": [
+        "Growth is clear",
+        "Efficiency still matters",
+        "Track the next margin inflection"
+      ],
+      "steps": [
+        "Protect the highest-margin channels",
+        "Monitor cost acceleration",
+        "Review the next cohort before scaling"
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_NarrativeBulletsLight",
+    "type": "narrative_card",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeTextTemplateScene",
+      "style_template_id": "StyleTemplate-NarrativeBulletsLight"
+    },
+    "narration": [
+      {
+        "text": "Three signals explain the trend in a lighter editorial tone.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_text_preview_entrance",
+        "type": "entrance",
+        "effect": "text_reveal",
+        "time_start": 0.2,
+        "duration": 2.5,
+        "description": "Reveal bullets on a light card."
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "datamagic-video",
   "version": "0.1.0",
-  "description": "Data-video skill for Codex: turn tabular data into narrated animated videos with DVSpec planning, chart selection, narration, and rendering guidance.",
+  "description": "Create with DataMagic recipes: find an effect, adapt its editable source to your data, and render charts or multi-shot stories.",
   "author": {
     "name": "HKUSTDial",
     "url": "https://github.com/HKUSTDial"
@@ -21,8 +21,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "DataMagic Video",
-    "shortDescription": "Turn tables into narrated animated data videos",
-    "longDescription": "Use DataMagic Video to profile tabular data, choose a narrative pattern, author a DVSpec plan, write narration, and render or refine narrated animated data videos with open tooling.",
+    "shortDescription": "Adapt motion recipes to your data and stories",
+    "longDescription": "Choose an effect from DataMagic, adapt its source to your data and media, and render an editable video. Get recipe recommendations for a goal or combine several shots into a story, with data analysis and narration guidance when needed.",
     "developerName": "HKUSTDial",
     "category": "Data & Analytics",
     "capabilities": [
@@ -34,16 +34,16 @@
     "privacyPolicyURL": "https://github.com/HKUSTDial/DataMagic/blob/main/SECURITY.md",
     "termsOfServiceURL": "https://github.com/HKUSTDial/DataMagic/blob/main/LICENSE",
     "defaultPrompt": [
-      "Make a narrated data video from this CSV",
-      "Create a DVSpec plan for this table",
-      "Refine this data-video storyboard"
+      "Adapt the RankedReveal recipe to my sales data",
+      "Recommend recipes to explain this dataset",
+      "Combine DataMagic recipes into a short data story"
     ],
     "brandColor": "#2563EB",
     "composerIcon": "./assets/datamagic_logo.png",
     "logo": "./assets/datamagic_logo.png",
     "screenshots": [
-      "./assets/framework-1.png",
-      "./images/template-gallery.png"
+      "./cards/gallery/media/poster/CharacterPerspectiveBoard.png",
+      "./cards/gallery/media/poster/PresenterDataTakeover.png"
     ]
   }
 }

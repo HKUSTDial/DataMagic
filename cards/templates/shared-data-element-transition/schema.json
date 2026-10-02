@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SharedDataElementTransition / 共享数据元素转场",
+  "type": "object",
+  "required": [
+    "title",
+    "subtitle",
+    "data",
+    "focusIndex",
+    "unit",
+    "destinationTitle",
+    "takeaway",
+    "source",
+    "accentColor"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "value"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "focusIndex": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unit": {
+      "type": "string"
+    },
+    "destinationTitle": {
+      "type": "string"
+    },
+    "takeaway": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "accentColor": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

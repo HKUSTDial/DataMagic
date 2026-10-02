@@ -1,0 +1,116 @@
+{
+  "title": "谁是咖啡店的增长主角？",
+  "subtitle": "六种饮品，六个月；排名随销量变化",
+  "unit": "杯",
+  "source": "虚构咖啡店演示数据 · sales.csv",
+  "topN": 6,
+  "decimals": 0,
+  "locale": "zh-CN",
+  "entities": [
+    {
+      "id": "drink-0",
+      "label": "美式",
+      "color": "#2878b5",
+      "iconSrc": "icons/coffee/americano.svg"
+    },
+    {
+      "id": "drink-1",
+      "label": "拿铁",
+      "color": "#7c3aed",
+      "iconSrc": "icons/coffee/latte.svg"
+    },
+    {
+      "id": "drink-2",
+      "label": "卡布奇诺",
+      "color": "#40a39a",
+      "iconSrc": "icons/coffee/cappuccino.svg"
+    },
+    {
+      "id": "drink-3",
+      "label": "摩卡",
+      "color": "#9a72b5",
+      "iconSrc": "icons/coffee/mocha.svg"
+    },
+    {
+      "id": "drink-4",
+      "label": "茶饮",
+      "color": "#b8a347",
+      "iconSrc": "icons/coffee/tea.svg"
+    },
+    {
+      "id": "drink-5",
+      "label": "冷萃",
+      "color": "#53788d",
+      "iconSrc": "icons/coffee/cold-brew.svg"
+    }
+  ],
+  "snapshots": [
+    {
+      "time": "1月",
+      "values": {
+        "drink-0": 820,
+        "drink-1": 650,
+        "drink-2": 740,
+        "drink-3": 520,
+        "drink-4": 410,
+        "drink-5": 330
+      }
+    },
+    {
+      "time": "2月",
+      "values": {
+        "drink-0": 860,
+        "drink-1": 780,
+        "drink-2": 770,
+        "drink-3": 550,
+        "drink-4": 440,
+        "drink-5": 480
+      }
+    },
+    {
+      "time": "3月",
+      "values": {
+        "drink-0": 910,
+        "drink-1": 950,
+        "drink-2": 800,
+        "drink-3": 590,
+        "drink-4": 480,
+        "drink-5": 650
+      }
+    },
+    {
+      "time": "4月",
+      "values": {
+        "drink-0": 970,
+        "drink-1": 1110,
+        "drink-2": 850,
+        "drink-3": 640,
+        "drink-4": 530,
+        "drink-5": 800
+      }
+    },
+    {
+      "time": "5月",
+      "values": {
+        "drink-0": 1030,
+        "drink-1": 1290,
+        "drink-2": 890,
+        "drink-3": 680,
+        "drink-4": 570,
+        "drink-5": 930
+      }
+    },
+    {
+      "time": "6月",
+      "values": {
+        "drink-0": 1100,
+        "drink-1": 1450,
+        "drink-2": 930,
+        "drink-3": 710,
+        "drink-4": 620,
+        "drink-5": 1050
+      }
+    }
+  ],
+  "highlightId": "drink-1"
+}

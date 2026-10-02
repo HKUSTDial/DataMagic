@@ -1,74 +1,60 @@
 ---
 name: datamagic-video
-description: Use when a task involves tabular data (CSV, Excel, database result, structured table) becoming a narrated data video, animated chart, data story, DVSpec, visualization storyboard, voiceover-timed chart sequence, Remotion data-video render, or refinement of an existing data-video result.
+description: Find, adapt, and render DataMagic recipes for animated charts and data stories. Use when a user selects a gallery example, wants an effect made with their own data or media, needs recipe recommendations, wants to combine shots into a story, or refines an existing data-video result.
 metadata:
-  tags: datamagic, data-video, dvspec, remotion, data-visualization, narration, animation, storytelling
+  tags: datamagic, data-video, recipes, visualization, remotion, narration, storytelling
 ---
 
-# DataMagic Video
+# DataMagic: create with recipes
 
-Turn tabular data into a narrated, animated data video. Core artifact: **DVSpec**, a renderer-agnostic screenplay for scenes, data bindings, narration, and animation. Render with any stack; Remotion is reference path.
+Help the user turn a chosen effect or a story goal into an editable video using the DataMagic recipe library. The gallery previews, recipe documents, template source, sample props, and this Skill form one workflow.
 
-## Use
+## Choose the route
 
-- CSV / Excel / structured table -> multi-scene narrated video
-- Pasted data -> animated chart or short data story
-- Existing DVSpec / render -> refine, debug, or improve
-- Goal only, no render requested -> produce DVSpec plan
-
-Do not use for raw video editing, non-data text-to-video, or live dashboards.
-
-## Core Rules
-
-- Plan first. DVSpec before render.
-- Data leads story. Pick narrative pattern from data shape, not topic.
-- Narration leads viewer eye. Animation follows narration timing.
-- Read only needed rule files. Heavy details live under `rules/`.
-- Before calling work done: run `rules/self-review.md`.
-
-## Router
-
-| Task | Read |
+| User's starting point | Action |
 |---|---|
-| Profile data, find candidate insights | `rules/data-analysis.md` |
-| Choose narrative pattern, scenes | `rules/scene-planning.md` |
-| Pick chart type, axes, scales | `rules/chart-selection.md` |
-| Author or validate DVSpec | `rules/dvspec.md` |
-| Choose visual system, tokens, motion defaults | `rules/design-system.md` |
-| Pick style pack | `rules/styles/README.md` |
-| Render DVSpec to video with Remotion | `rules/remotion-integration.md` |
-| Add TTS, audio-driven duration, subtitles | `rules/voiceover.md` |
-| Write narration script | `rules/narration.md` |
-| Refine existing output | `rules/refinement.md` |
-| Diagnose bad output | `rules/anti-patterns.md` |
-| Final quality gate | `rules/self-review.md` |
+| A selected card, gallery link, slug, or copied implementation instructions | Read that recipe and adapt its source. Preserve the visual structure and reveal rhythm unless the user asks to redesign them. |
+| Data and a goal, but no selected effect | Inspect the data shape, search the library, and explain suitable candidates. If asked to recommend, return recommendations; if asked to make a video, choose the best fit and proceed. |
+| A story spanning several shots | Choose a narrative structure, match recipes to its beats, and compose them with consistent styling and timing. |
+| An existing output to improve | Inspect its props, source, and render; apply the requested change and review the affected frames. |
 
-## Workflows
+Read [cards-workflow.md](rules/cards-workflow.md) for recipe discovery, adaptation, rendering, and review.
 
-Full video:
+## Locate the recipe
 
-`data-analysis` -> `scene-planning` -> `chart-selection` -> `dvspec` -> `design-system` -> `styles` -> `remotion-integration` -> `voiceover` -> `narration` -> `self-review`
+Use the bundled helper from any working directory:
 
-DVSpec only:
+```bash
+node <skill-directory>/scripts/cards.cjs list --query ranking
+node <skill-directory>/scripts/cards.cjs inspect RankedReveal
+```
 
-`data-analysis` -> `scene-planning` -> `chart-selection` -> `dvspec`
+The helper resolves the companion `cards/` directory and returns absolute paths plus the render Composition ID. All 139 cards include source, schemas and sample props. Search all cards by default; `--native` narrows to the advanced subset when useful.
 
-Single animated chart:
+For a separately installed Skill, pass `--cards /path/to/DataMagic/cards`. If the companion package is missing, use an available local checkout or help obtain the requested repository before referring to its files. Honor the user's rendering environment and dependency-installation preferences.
 
-`data-analysis` -> `chart-selection` -> `dvspec` -> `design-system` -> `remotion-integration`
+## Adapt and deliver
 
-Refinement:
+- Read the chosen recipe, source, shared imports, schema, sample props and preview before adapting it.
+- Map the user's data to the actual input fields. Keep values, units, labels, ordering, display strings and claims consistent with that data.
+- Preserve the selected effect's layout and animation characteristics. Apply requested changes to text, color, media, timing or aspect ratio; portrait output needs an appropriate layout.
+- Save new props and custom source in the user's output location. Keep reusable library samples intact unless the user asks to update them.
+- Render and inspect opening, active reveal and ending frames. Check numeric accuracy, clipping, collisions and legibility. Deliver the MP4, editable files and reproducible render command.
+- Use [self-review.md](rules/self-review.md) for the actual task; apply audio-specific checks when audio is present.
 
-`refinement` -> changed domain rule(s) -> `self-review`
+For a single template, data mapping and a short timing plan are sufficient. For a multi-shot story, read the relevant blueprint in `cards/gallery/api/story-blueprints.json` and [scene-planning.md](rules/scene-planning.md), then compose compatible shots. Retain each template's source clock when trimming or sequencing it.
 
-## Narrative Patterns
+## Add deeper authoring as needed
 
-| Pattern | Use when | Climax |
-|---|---|---|
-| `freytag_default` | One main finding builds over time | 60-75% |
-| `hook_then_evidence` | One striking number should open | first chart scene |
-| `comparison_driven` | A vs B is story spine | largest contrast |
-| `time_driven` | chronological change drives story | sharpest shift |
-| `drill_down` | total -> segment -> cause | deepest zoom |
+When the user wants analysis-led authoring, a custom long-form story, an existing DVSpec edit, or a DVSpec-only plan, read [full-story-workflow.md](rules/full-story-workflow.md). It preserves the data-analysis, narration and DVSpec workflow for these tasks.
 
-See `rules/scene-planning.md` before locking pattern.
+| Need | Read |
+|---|---|
+| Understand columns, units or candidate findings | [data-analysis.md](rules/data-analysis.md) |
+| Match chart form to data | [chart-selection.md](rules/chart-selection.md) |
+| Organize story beats | [scene-planning.md](rules/scene-planning.md) |
+| Unify colors, typography and motion | [design-system.md](rules/design-system.md) |
+| Add narration or subtitles | [narration.md](rules/narration.md), then [voiceover.md](rules/voiceover.md) |
+| Refine or troubleshoot a result | [refinement.md](rules/refinement.md), [anti-patterns.md](rules/anti-patterns.md) |
+
+Add voiceover when requested, align visual emphasis to measured audio, and preserve user-supplied media and provenance. If the user explicitly asks about the experimental workbench or Jianying delivery, read [workbench-delivery.md](rules/workbench-delivery.md); that work is currently a TODO and is separate from the default render workflow.

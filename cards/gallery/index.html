@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Reusable, editable recipes for animated data video and programmatic visualization.">
+  <title>DataMagic Cards</title>
+  <link rel="stylesheet" href="styles.css?v=brief-preview-20261002">
+  <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i></span><strong>DataMagic Cards</strong><span id="brandSuffix">动态图表配方库</span></a>
+      <div class="header-actions">
+        <button class="data-saver-button" id="dataSaver" type="button" aria-pressed="false">省流模式：关</button>
+        <div class="theme-switch" id="themeSwitch" aria-label="页面主题">
+          <button id="themeSystem" data-theme="system" type="button">系统</button>
+          <button id="themeLight" data-theme="light" type="button">浅色</button>
+          <button id="themeDark" data-theme="dark" type="button">深色</button>
+        </div>
+        <button class="language-button" id="language" type="button">EN</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro-grid">
+        <div>
+          <p class="eyebrow">PROGRAMMATIC DATA MOTION LIBRARY</p>
+          <h1 id="title">让代码智能体生成更可靠的动态图表</h1>
+          <p id="introCopy">浏览动态图表、数据叙事和场景配方。查看动态预览、完整配方，以及原生模板的源码、Schema 和示例数据。</p>
+        </div>
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+
+    <section class="browser">
+      <aside>
+        <p class="aside-label">分类</p>
+        <nav id="filters" aria-label="Template categories"></nav>
+      </aside>
+      <div class="results">
+        <div class="discovery-bar">
+          <label class="search"><span aria-hidden="true"></span><input id="search" placeholder="搜索案例、图表或用途"><kbd>⌘ K</kbd></label>
+          <details class="discovery-tools"><summary id="discoveryToolsTitle">辅助工具：选配方与故事方案</summary><div class="discovery-tool-buttons">
+            <button class="selector-open" id="openSelector" type="button"><span aria-hidden="true">✦</span><strong id="selectorOpenTitle">按用途选配方</strong><small id="selectorOpenCopy">根据条件筛选 3 个候选</small></button>
+            <button class="story-tool-open" id="openStories" type="button"><span aria-hidden="true">04</span><strong id="storyEntryTitle">四镜头故事方案</strong><small id="storyEntryCopy">生成分镜与数据文件，非在线成片</small></button>
+          </div></details>
+        </div>
+        <section class="collections" aria-labelledby="collectionsTitle">
+          <div class="collections-head"><strong id="collectionsTitle">专题合集</strong><span id="collectionsHint">按数据视频中的叙事用途快速浏览</span></div>
+          <div class="collection-list" id="collections"></div>
+        </section>
+        <div class="result-head"><div><h2 id="resultTitle">全部案例</h2><span id="count"></span></div></div>
+        <div class="selection-bar" id="selectionBar" hidden>
+          <strong id="selectedCount"></strong>
+          <div><button id="compareSelected" class="primary" type="button">并排比较</button><button id="copySelectedGuides" type="button">复制实现指令</button><button id="clearSelected" type="button">清除选择</button></div>
+        </div>
+        <div id="grid" class="grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="detail">
+    <button class="dialog-close" id="close" type="button" aria-label="关闭">×</button>
+    <div id="detailBody"></div>
+    <div class="toast dialog-toast" id="detailToast" role="status" aria-live="polite"></div>
+  </dialog>
+  <dialog id="recipeDialog" class="recipe-dialog">
+    <div class="recipe-dialog-bar">
+      <strong id="recipeDialogTitle">完整配方</strong>
+      <a id="recipeStandalone" href="recipe.html" target="_blank" rel="noreferrer">独立打开</a>
+      <button id="closeRecipe" type="button" aria-label="关闭">×</button>
+    </div>
+    <iframe id="recipeFrame" title="完整配方" loading="lazy"></iframe>
+  </dialog>
+  <dialog id="compareDialog" class="compare-dialog">
+    <div class="compare-dialog-bar">
+      <div><strong id="compareTitle">并排比较</strong><span id="compareHint">同步观察构图、节奏和运镜差异</span></div>
+      <button id="comparePlayback" type="button">暂停全部</button>
+      <button id="closeCompare" class="compare-close" type="button" aria-label="关闭">×</button>
+    </div>
+    <div id="compareBody" class="compare-body"></div>
+  </dialog>
+  <dialog id="selectorDialog" class="selector-dialog">
+    <div class="selector-dialog-bar">
+      <div><strong id="selectorTitle">按用途选配方</strong><span id="selectorSubtitle">按数据和叙事条件筛选，不调用 AI 模型</span></div>
+      <button id="closeSelector" type="button" aria-label="关闭">×</button>
+    </div>
+    <div class="selector-layout">
+      <section class="selector-form">
+        <div class="selector-intro"><span>SHOT STRATEGY</span><h2 id="selectorHeading">这段数据准备怎么讲？</h2><p id="selectorIntroCopy">选择最接近的条件。系统会综合数据契约、阅读时间、镜头任务与运动强度，而不是只按图表名称匹配。</p></div>
+        <div id="selectorQuestions" class="selector-questions"></div>
+        <label class="native-preference"><input id="preferNative" type="checkbox" checked><span><strong id="nativePreferenceTitle">优先原生高级模板</strong><small id="nativePreferenceCopy">相近条件下，优先选择具有源码、Schema、测试和成片的原生模板</small></span></label>
+        <button class="selector-run" id="runSelector" type="button">生成推荐</button>
+      </section>
+      <section class="selector-results" aria-live="polite">
+        <div class="selector-results-head"><div><span id="selectorResultEyebrow">TOP MATCHES</span><h2 id="selectorResultTitle">推荐候选</h2></div><button id="compareRecommendations" type="button">将 3 项加入比较</button></div>
+        <div id="selectorResults"></div>
+      </section>
+    </div>
+  </dialog>
+  <dialog id="storyDialog" class="story-dialog">
+    <div class="story-dialog-bar">
+      <div><strong id="storyDialogTitle">四镜头故事方案</strong><span id="storyDialogSubtitle">生成分镜与可渲染数据，成片需在本机运行渲染命令</span></div>
+      <button id="closeStories" type="button" aria-label="关闭">×</button>
+    </div>
+    <div class="story-layout">
+      <aside id="storyTabs" class="story-tabs"></aside>
+      <section id="storyBody" class="story-body"></section>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js?v=zh-search-20261002"></script>
+</body>
+</html>

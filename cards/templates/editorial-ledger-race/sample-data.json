@@ -1,0 +1,143 @@
+{
+  "title": "谁正在改写新能源出口版图？",
+  "subtitle": "2019—2026 · 六个目的地市场的年度指数变化",
+  "unit": "指数",
+  "source": "DataMagic Cards 合成演示数据（非真实统计）",
+  "topN": 6,
+  "decimals": 0,
+  "locale": "zh-CN",
+  "story": {
+    "hook": "领先并不是故事的全部，真正值得看的是谁在中途突然加速。",
+    "turningPoint": "东南亚在 2023 年后连续跨越三个梯队，增长斜率成为主线。",
+    "takeaway": "到 2026 年，东南亚从第五位升至第一位，出口重心发生结构性转移。",
+    "focusEntityId": "sea"
+  },
+  "entities": [
+    {
+      "id": "europe",
+      "label": "欧洲",
+      "color": "#4f6f64",
+      "iconSrc": "icons/regions/europe.svg"
+    },
+    {
+      "id": "sea",
+      "label": "东南亚",
+      "color": "#bd4d38",
+      "iconSrc": "icons/regions/sea.svg"
+    },
+    {
+      "id": "latam",
+      "label": "拉丁美洲",
+      "color": "#c28b47",
+      "iconSrc": "icons/regions/latam.svg"
+    },
+    {
+      "id": "middleeast",
+      "label": "中东",
+      "color": "#6f7f9b",
+      "iconSrc": "icons/regions/middleeast.svg"
+    },
+    {
+      "id": "oceania",
+      "label": "大洋洲",
+      "color": "#8f765f",
+      "iconSrc": "icons/regions/oceania.svg"
+    },
+    {
+      "id": "africa",
+      "label": "非洲",
+      "color": "#6c8a7d",
+      "iconSrc": "icons/regions/africa.svg"
+    }
+  ],
+  "snapshots": [
+    {
+      "time": "2019",
+      "values": {
+        "europe": 88,
+        "sea": 34,
+        "latam": 41,
+        "middleeast": 30,
+        "oceania": 52,
+        "africa": 22
+      }
+    },
+    {
+      "time": "2020",
+      "values": {
+        "europe": 92,
+        "sea": 42,
+        "latam": 47,
+        "middleeast": 36,
+        "oceania": 55,
+        "africa": 27
+      }
+    },
+    {
+      "time": "2021",
+      "values": {
+        "europe": 98,
+        "sea": 56,
+        "latam": 55,
+        "middleeast": 44,
+        "oceania": 57,
+        "africa": 34
+      }
+    },
+    {
+      "time": "2022",
+      "values": {
+        "europe": 105,
+        "sea": 73,
+        "latam": 64,
+        "middleeast": 53,
+        "oceania": 60,
+        "africa": 42
+      }
+    },
+    {
+      "time": "2023",
+      "values": {
+        "europe": 109,
+        "sea": 94,
+        "latam": 72,
+        "middleeast": 66,
+        "oceania": 63,
+        "africa": 51
+      }
+    },
+    {
+      "time": "2024",
+      "values": {
+        "europe": 113,
+        "sea": 119,
+        "latam": 84,
+        "middleeast": 82,
+        "oceania": 66,
+        "africa": 63
+      }
+    },
+    {
+      "time": "2025",
+      "values": {
+        "europe": 118,
+        "sea": 147,
+        "latam": 97,
+        "middleeast": 101,
+        "oceania": 70,
+        "africa": 76
+      }
+    },
+    {
+      "time": "2026",
+      "values": {
+        "europe": 124,
+        "sea": 181,
+        "latam": 112,
+        "middleeast": 123,
+        "oceania": 74,
+        "africa": 91
+      }
+    }
+  ]
+}

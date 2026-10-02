@@ -1,0 +1,174 @@
+{
+  "sceneContent": {
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "style_template_id": "StyleTemplate-NarrativeChapterTitle",
+    "style_template_name": "Chapter Title Narrative",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-NarrativeChapterTitle",
+      "chart_type": "narrative_card",
+      "theme": "dark",
+      "data_contract": "kicker, title",
+      "entrance_animation": "chapter reveal",
+      "emphasis_animation": "title emphasis",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "kicker",
+        "title"
+      ],
+      "suggested_narration": "The analysis now shifts into margin quality.",
+      "trigger_phrase": "margin quality",
+      "animation_intent": "Reveal a chapter divider for a new section.",
+      "timing": "word_aligned"
+    },
+    "title": "Chapter Title",
+    "subtitle": "The analysis now shifts into margin quality.",
+    "kicker": "INSIGHT",
+    "bullets": [
+      "Revenue reaches 241K by Aug",
+      "Costs rise more slowly than sales",
+      "Margin quality becomes the next decision point"
+    ],
+    "takeaways": [
+      "Growth is clear",
+      "Efficiency still matters",
+      "Track the next margin inflection"
+    ],
+    "steps": [
+      "Protect the highest-margin channels",
+      "Monitor cost acceleration",
+      "Review the next cohort before scaling"
+    ],
+    "metrics": [
+      {
+        "label": "Revenue",
+        "value": "241K",
+        "display_value": "241K",
+        "color": "#38bdf8"
+      },
+      {
+        "label": "Cost",
+        "value": "134K",
+        "display_value": "134K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Margin",
+        "value": "44.4%",
+        "display_value": "44.4%",
+        "color": "#f59e0b"
+      }
+    ],
+    "cards": [
+      {
+        "label": "Revenue",
+        "value": "241K",
+        "display_value": "241K",
+        "color": "#38bdf8"
+      },
+      {
+        "label": "Cost",
+        "value": "134K",
+        "display_value": "134K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Margin",
+        "value": "44.4%",
+        "display_value": "44.4%",
+        "color": "#f59e0b"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-NarrativeChapterTitle",
+      "scene_type": "narrative_card",
+      "title": "Chapter Title",
+      "subtitle": "The analysis now shifts into margin quality.",
+      "kicker": "INSIGHT",
+      "bullets": [
+        "Revenue reaches 241K by Aug",
+        "Costs rise more slowly than sales",
+        "Margin quality becomes the next decision point"
+      ],
+      "stat": "241K",
+      "metric": "241K",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": "241K",
+          "display_value": "241K",
+          "color": "#38bdf8"
+        },
+        {
+          "label": "Cost",
+          "value": "134K",
+          "display_value": "134K",
+          "color": "#10b981"
+        },
+        {
+          "label": "Margin",
+          "value": "44.4%",
+          "display_value": "44.4%",
+          "color": "#f59e0b"
+        }
+      ],
+      "takeaways": [
+        "Growth is clear",
+        "Efficiency still matters",
+        "Track the next margin inflection"
+      ],
+      "steps": [
+        "Protect the highest-margin channels",
+        "Monitor cost acceleration",
+        "Review the next cohort before scaling"
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#38bdf8",
+      "accent_color": "#38bdf8",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#38bdf8",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_NarrativeChapterTitle",
+    "type": "narrative_card",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeTextTemplateScene",
+      "style_template_id": "StyleTemplate-NarrativeChapterTitle"
+    },
+    "narration": [
+      {
+        "text": "The analysis now shifts into margin quality.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_text_preview_entrance",
+        "type": "entrance",
+        "effect": "text_reveal",
+        "time_start": 0.2,
+        "duration": 2.5,
+        "description": "Reveal a chapter divider for a new section."
+      }
+    ]
+  }
+}

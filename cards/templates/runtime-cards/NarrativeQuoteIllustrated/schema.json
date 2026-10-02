@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "required": [
+    "sceneContent",
+    "scene"
+  ],
+  "additionalProperties": false,
+  "description": "NarrativeQuoteIllustrated: edit sceneContent data/template_payload and scene animation timing together.",
+  "properties": {
+    "sceneContent": {
+      "type": "object",
+      "required": [
+        "style_template_id",
+        "title"
+      ],
+      "properties": {
+        "style_template_id": {
+          "const": "StyleTemplate-NarrativeQuoteIllustrated"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "template_payload": {
+          "type": "object"
+        },
+        "style": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    },
+    "scene": {
+      "type": "object",
+      "properties": {
+        "time_range": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "animations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

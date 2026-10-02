@@ -1,0 +1,172 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "bar_chart",
+    "style_template_id": "StyleTemplate-SalesByRegionDarkColumn",
+    "style_template_name": "Sales by Region Dark Column",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-SalesByRegionDarkColumn",
+      "chart_type": "bar_chart",
+      "theme": "dark",
+      "data_contract": "category values",
+      "entrance_animation": "column grow",
+      "emphasis_animation": "column focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "column",
+        "label",
+        "value"
+      ],
+      "suggested_narration": "The West region tops the columns at 241K.",
+      "trigger_phrase": "West",
+      "animation_intent": "Highlight the named column and value.",
+      "timing": "word_aligned"
+    },
+    "title": "Sales by Region Dark Column",
+    "data": [
+      {
+        "label": "West",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#38bdf8"
+      },
+      {
+        "label": "East",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#60a5fa"
+      },
+      {
+        "label": "Central",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#818cf8"
+      },
+      {
+        "label": "South",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#a78bfa"
+      },
+      {
+        "label": "North",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#c084fc"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-SalesByRegionDarkColumn",
+      "chart_type": "bar_chart",
+      "title": "Sales by Region",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "West",
+          "value": 241,
+          "display_value": "241K",
+          "color": "#38bdf8"
+        },
+        {
+          "label": "East",
+          "value": 205,
+          "display_value": "205K",
+          "color": "#60a5fa"
+        },
+        {
+          "label": "Central",
+          "value": 184,
+          "display_value": "184K",
+          "color": "#818cf8"
+        },
+        {
+          "label": "South",
+          "value": 167,
+          "display_value": "167K",
+          "color": "#a78bfa"
+        },
+        {
+          "label": "North",
+          "value": 151,
+          "display_value": "151K",
+          "color": "#c084fc"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#38bdf8",
+      "accent_color": "#38bdf8",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#38bdf8",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_SalesByRegionDarkColumn",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-SalesByRegionDarkColumn"
+    },
+    "narration": [
+      {
+        "text": "The West region tops the columns at 241K.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "West"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named column and value.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "West",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

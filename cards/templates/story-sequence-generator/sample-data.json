@@ -1,0 +1,53 @@
+{
+  "blueprintId": "editorial_reveal",
+  "title": "六类城市公共空间的夏季使用强度",
+  "question": "真正留住人的，究竟是哪一种公共空间？",
+  "takeaway": "滨水步道以 86 分领先；连续遮阴与可停留设施，比单纯扩大面积更能提升使用强度。",
+  "source": "DataMagic Cards 合成演示数据（非真实统计）",
+  "unit": "分",
+  "accent": "#52e0c4",
+  "items": [
+    {
+      "id": "waterfront",
+      "label": "滨水步道",
+      "value": 86,
+      "color": "#52e0c4",
+      "iconSrc": "icons/categories/waterfront.svg"
+    },
+    {
+      "id": "community",
+      "label": "社区口袋公园",
+      "value": 74,
+      "color": "#ff775f",
+      "iconSrc": "icons/categories/park.svg"
+    },
+    {
+      "id": "market",
+      "label": "街区市集",
+      "value": 68,
+      "color": "#76a9ff",
+      "iconSrc": "icons/categories/market.svg"
+    },
+    {
+      "id": "plaza",
+      "label": "商业广场",
+      "value": 57,
+      "color": "#b184ff",
+      "iconSrc": "icons/categories/plaza.svg"
+    },
+    {
+      "id": "greenway",
+      "label": "城市绿道",
+      "value": 52,
+      "color": "#f6c85f",
+      "iconSrc": "icons/categories/park.svg"
+    },
+    {
+      "id": "square",
+      "label": "纪念广场",
+      "value": 39,
+      "color": "#7fd18b",
+      "iconSrc": "icons/categories/plaza.svg"
+    }
+  ]
+}

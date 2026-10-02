@@ -1,0 +1,10 @@
+{
+  "title": "增长曲线里，真正异常的是这一季",
+  "subtitle": "镜头沿着趋势扫描，在关键节点停下并放大解释。",
+  "labels": ["Q1", "Q2", "Q3", "Q4", "Q1", "Q2", "Q3", "Q4"],
+  "values": [42, 47, 45, 53, 58, 61, 84, 67],
+  "unit": "%",
+  "insight": "第三季度跃升至 84%，与前一季度相比增加 23 个百分点。",
+  "source": "DataMagic Cards synthetic benchmark dataset",
+  "accentColor": "#5ee6c4"
+}

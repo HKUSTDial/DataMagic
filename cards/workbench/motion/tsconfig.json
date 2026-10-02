@@ -1,0 +1,1 @@
+{"extends":"../../tsconfig.json","compilerOptions":{"checkJs":false},"include":["src/**/*.tsx","src/**/*.mjs","src/**/*.json","../../templates/**/*","../../src/**/*"]}

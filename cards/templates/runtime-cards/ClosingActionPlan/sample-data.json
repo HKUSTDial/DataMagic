@@ -1,0 +1,173 @@
+{
+  "sceneContent": {
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "style_template_id": "StyleTemplate-ClosingActionPlan",
+    "style_template_name": "Action Plan Outro",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-ClosingActionPlan",
+      "chart_type": "closing",
+      "theme": "dark",
+      "data_contract": "title, steps",
+      "entrance_animation": "step reveal",
+      "emphasis_animation": "step emphasis",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "steps"
+      ],
+      "suggested_narration": "The next step is to protect margin while scaling revenue.",
+      "trigger_phrase": "margin",
+      "animation_intent": "Close with an action-oriented sequence.",
+      "timing": "word_aligned"
+    },
+    "title": "What the Signal Means",
+    "subtitle": "The next step is to protect margin while scaling revenue.",
+    "kicker": "FINAL READOUT",
+    "bullets": [
+      "Revenue reaches 241K by Aug",
+      "Costs rise more slowly than sales",
+      "Margin quality becomes the next decision point"
+    ],
+    "takeaways": [
+      "Growth is clear",
+      "Efficiency still matters",
+      "Track the next margin inflection"
+    ],
+    "steps": [
+      "Protect the highest-margin channels",
+      "Monitor cost acceleration",
+      "Review the next cohort before scaling"
+    ],
+    "metrics": [
+      {
+        "label": "Revenue",
+        "value": "241K",
+        "display_value": "241K",
+        "color": "#34d399"
+      },
+      {
+        "label": "Cost",
+        "value": "134K",
+        "display_value": "134K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Margin",
+        "value": "44.4%",
+        "display_value": "44.4%",
+        "color": "#f59e0b"
+      }
+    ],
+    "cards": [
+      {
+        "label": "Revenue",
+        "value": "241K",
+        "display_value": "241K",
+        "color": "#34d399"
+      },
+      {
+        "label": "Cost",
+        "value": "134K",
+        "display_value": "134K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Margin",
+        "value": "44.4%",
+        "display_value": "44.4%",
+        "color": "#f59e0b"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-ClosingActionPlan",
+      "scene_type": "closing",
+      "title": "What the Signal Means",
+      "subtitle": "The next step is to protect margin while scaling revenue.",
+      "kicker": "FINAL READOUT",
+      "bullets": [
+        "Revenue reaches 241K by Aug",
+        "Costs rise more slowly than sales",
+        "Margin quality becomes the next decision point"
+      ],
+      "stat": "241K",
+      "metric": "241K",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": "241K",
+          "display_value": "241K",
+          "color": "#34d399"
+        },
+        {
+          "label": "Cost",
+          "value": "134K",
+          "display_value": "134K",
+          "color": "#10b981"
+        },
+        {
+          "label": "Margin",
+          "value": "44.4%",
+          "display_value": "44.4%",
+          "color": "#f59e0b"
+        }
+      ],
+      "takeaways": [
+        "Growth is clear",
+        "Efficiency still matters",
+        "Track the next margin inflection"
+      ],
+      "steps": [
+        "Protect the highest-margin channels",
+        "Monitor cost acceleration",
+        "Review the next cohort before scaling"
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#34d399",
+      "accent_color": "#34d399",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#34d399",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_ClosingActionPlan",
+    "type": "closing",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeTextTemplateScene",
+      "style_template_id": "StyleTemplate-ClosingActionPlan"
+    },
+    "narration": [
+      {
+        "text": "The next step is to protect margin while scaling revenue.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_text_preview_entrance",
+        "type": "entrance",
+        "effect": "text_reveal",
+        "time_start": 0.2,
+        "duration": 2.5,
+        "description": "Close with an action-oriented sequence."
+      }
+    ]
+  }
+}

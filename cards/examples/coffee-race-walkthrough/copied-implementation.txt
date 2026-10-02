@@ -1,0 +1,20 @@
+Use the DataMagic Cards recipe: BarChartRace
+Display name: 动态柱状图竞赛
+Purpose: 面向多实体时序排名的连续竞赛图，支持数值插值、动态换位、进入退出和稳定实体配色。
+Compatible visuals: bar_chart, timeline.
+Recipe: recipes/BarChartRace.md
+Resolve the listed paths relative to the cards/ directory in the DataMagic repository.
+Editable source, schema, and sample data are bundled with this recipe.
+Render composition: ShotCraft-BarChartRace
+Implementation: templates/bar-chart-race/BarChartRace.tsx
+Shot strategy: data shapes=time_series; reading speeds=explain; narrative roles=compare, evidence; motion styles=cinematic, guided.
+Data schema: templates/bar-chart-race/schema.json
+Sample data: templates/bar-chart-race/sample-data.json
+Use the resolution, duration and frame rate declared by the selected recipe composition; do not shorten its reveal sequence or stretch a landscape layout into portrait.
+Keep titles, sources, legends, and explanatory UI outside camera-transformed layers.
+Keep every readable label and data-bearing mark inside a 64 px canvas safe area at every frame.
+Resolve imports from the final output directory and run TypeScript against the generated files at that exact location.
+At the final frame, explicitly check collisions among the primary value, unit, annotation badge, legend, and source.
+Reserve at least the final 1 second for stable chart reading; background movement must not impair readability.
+Keep all data-bearing marks, values, labels, and geometry programmatic and editable.
+Render the actual video plus representative opening, middle, and final frames; verify data fidelity, overlap, clipping, readability, motion continuity, geographic validity when applicable, and final hold time.

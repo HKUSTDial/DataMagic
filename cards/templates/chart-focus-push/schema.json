@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChartFocusPush / 图表焦点推镜",
+  "description": "Editorial chart camera template / 编辑型图表镜头模板",
+  "type": "object",
+  "required": ["metadata", "eyebrow", "title", "subtitle", "labels", "values", "unit", "anomalyIndex", "insight", "source", "accentColor"],
+  "properties": {
+    "metadata": {
+      "title": "Bilingual metadata / 双语元数据",
+      "type": "object",
+      "required": ["nameZh", "nameEn", "descriptionZh", "descriptionEn"],
+      "properties": {
+        "nameZh": {"type": "string", "minLength": 1, "description": "中文名称"},
+        "nameEn": {"type": "string", "minLength": 1, "description": "English name"},
+        "descriptionZh": {"type": "string", "minLength": 1, "description": "中文说明"},
+        "descriptionEn": {"type": "string", "minLength": 1, "description": "English description"}
+      },
+      "additionalProperties": false
+    },
+    "eyebrow": {"type": "string", "minLength": 1, "description": "Section label / 栏目标识"},
+    "title": {"type": "string", "minLength": 1, "description": "Primary title / 主标题"},
+    "subtitle": {"type": "string", "minLength": 1, "description": "Context sentence / 背景说明"},
+    "labels": {"type": "array", "minItems": 3, "maxItems": 12, "items": {"type": "string"}, "description": "Time labels / 时间标签"},
+    "values": {"type": "array", "minItems": 3, "maxItems": 12, "items": {"type": "number"}, "description": "Series values / 序列数值"},
+    "unit": {"type": "string", "description": "Value unit / 数值单位"},
+    "anomalyIndex": {"type": "integer", "minimum": 0, "description": "Focused data index / 聚焦数据索引"},
+    "insight": {"type": "string", "minLength": 1, "description": "Editorial takeaway / 编辑结论"},
+    "source": {"type": "string", "minLength": 1, "description": "Data source / 数据来源"},
+    "accentColor": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$", "description": "Focus color / 强调色"}
+  },
+  "additionalProperties": false
+}

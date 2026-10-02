@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CraneRiseDashboard / 吊臂拉升揭示",
+  "type": "object",
+  "required": [
+    "title",
+    "subtitle",
+    "focusLabel",
+    "focusValue",
+    "unit",
+    "categories",
+    "values",
+    "source",
+    "accentColor"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "focusLabel": {
+      "type": "string"
+    },
+    "focusValue": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
+      "items": {
+        "type": "string"
+      }
+    },
+    "values": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
+      "items": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "source": {
+      "type": "string"
+    },
+    "accentColor": {
+      "type": "string"
+    },
+    "categoryIcons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Map category label to a local icon or supplied image URL."
+    }
+  }
+}

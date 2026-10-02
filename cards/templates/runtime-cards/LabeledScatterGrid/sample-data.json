@@ -1,0 +1,305 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "scatter_chart",
+    "style_template_id": "StyleTemplate-LabeledScatterGrid",
+    "style_template_name": "Labeled Scatter Grid",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-LabeledScatterGrid",
+      "chart_type": "scatter_chart",
+      "theme": "light",
+      "data_contract": "x/y scatter items",
+      "entrance_animation": "point reveal",
+      "emphasis_animation": "point focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "point",
+        "label"
+      ],
+      "suggested_narration": "Enterprise sits highest on the labeled grid.",
+      "trigger_phrase": "Enterprise",
+      "animation_intent": "Highlight the named labeled scatter point.",
+      "timing": "word_aligned"
+    },
+    "title": "Labeled Scatter Grid",
+    "data": [
+      {
+        "label": "Enterprise",
+        "x": 86,
+        "y": 78,
+        "size": 38,
+        "color": "#2563eb"
+      },
+      {
+        "label": "Consumer",
+        "x": 64,
+        "y": 58,
+        "size": 26,
+        "color": "#10b981"
+      },
+      {
+        "label": "SMB",
+        "x": 48,
+        "y": 72,
+        "size": 22,
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Partner",
+        "x": 72,
+        "y": 42,
+        "size": 24,
+        "color": "#6366f1"
+      },
+      {
+        "label": "Retail",
+        "x": 36,
+        "y": 48,
+        "size": 18,
+        "color": "#ec4899"
+      },
+      {
+        "label": "Online",
+        "x": 92,
+        "y": 62,
+        "size": 28,
+        "color": "#14b8a6"
+      },
+      {
+        "label": "Direct",
+        "x": 58,
+        "y": 86,
+        "size": 24,
+        "color": "#f97316"
+      },
+      {
+        "label": "Wholesale",
+        "x": 30,
+        "y": 30,
+        "size": 16,
+        "color": "#8b5cf6"
+      },
+      {
+        "label": "Field",
+        "x": 44,
+        "y": 64,
+        "size": 19,
+        "color": "#22d3ee"
+      },
+      {
+        "label": "Reseller",
+        "x": 78,
+        "y": 34,
+        "size": 20,
+        "color": "#a78bfa"
+      },
+      {
+        "label": "Trial",
+        "x": 24,
+        "y": 72,
+        "size": 15,
+        "color": "#f43f5e"
+      },
+      {
+        "label": "Renewal",
+        "x": 68,
+        "y": 88,
+        "size": 29,
+        "color": "#84cc16"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-LabeledScatterGrid",
+      "chart_type": "scatter_chart",
+      "title": "Labeled Scatter Grid",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "scatter"
+      },
+      "items": [
+        {
+          "label": "Enterprise",
+          "x": 86,
+          "y": 78,
+          "size": 38,
+          "color": "#2563eb",
+          "iconSrc": "icons/categories/cloud.svg"
+        },
+        {
+          "label": "Consumer",
+          "x": 64,
+          "y": 58,
+          "size": 26,
+          "color": "#10b981",
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "SMB",
+          "x": 48,
+          "y": 72,
+          "size": 22,
+          "color": "#f59e0b",
+          "iconSrc": "icons/categories/store.svg"
+        },
+        {
+          "label": "Partner",
+          "x": 72,
+          "y": 42,
+          "size": 24,
+          "color": "#6366f1",
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "Retail",
+          "x": 36,
+          "y": 48,
+          "size": 18,
+          "color": "#ec4899",
+          "iconSrc": "icons/categories/store.svg"
+        },
+        {
+          "label": "Online",
+          "x": 92,
+          "y": 62,
+          "size": 28,
+          "color": "#14b8a6",
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "label": "Direct",
+          "x": 58,
+          "y": 86,
+          "size": 24,
+          "color": "#f97316",
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "label": "Wholesale",
+          "x": 30,
+          "y": 30,
+          "size": 16,
+          "color": "#8b5cf6",
+          "iconSrc": "icons/categories/market.svg"
+        },
+        {
+          "label": "Field",
+          "x": 44,
+          "y": 64,
+          "size": 19,
+          "color": "#22d3ee",
+          "iconSrc": "icons/categories/transport.svg"
+        },
+        {
+          "label": "Reseller",
+          "x": 78,
+          "y": 34,
+          "size": 20,
+          "color": "#a78bfa",
+          "iconSrc": "icons/categories/store.svg"
+        },
+        {
+          "label": "Trial",
+          "x": 24,
+          "y": 72,
+          "size": 15,
+          "color": "#f43f5e",
+          "iconSrc": "icons/categories/review.svg"
+        },
+        {
+          "label": "Renewal",
+          "x": 68,
+          "y": 88,
+          "size": 29,
+          "color": "#84cc16",
+          "iconSrc": "icons/categories/service.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Enterprise": "icons/categories/cloud.svg",
+      "Consumer": "icons/categories/service.svg",
+      "SMB": "icons/categories/store.svg",
+      "Partner": "icons/categories/service.svg",
+      "Retail": "icons/categories/store.svg",
+      "Online": "icons/categories/online.svg",
+      "Direct": "icons/categories/online.svg",
+      "Wholesale": "icons/categories/market.svg",
+      "Field": "icons/categories/transport.svg",
+      "Reseller": "icons/categories/store.svg",
+      "Trial": "icons/categories/review.svg",
+      "Renewal": "icons/categories/service.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_LabeledScatterGrid",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-LabeledScatterGrid"
+    },
+    "narration": [
+      {
+        "text": "Enterprise sits highest on the labeled grid.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Enterprise"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named labeled scatter point.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Enterprise",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

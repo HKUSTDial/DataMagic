@@ -1,0 +1,41 @@
+{
+  "title": "平均值掩盖了真正的异常",
+  "subtitle": "先看完整群体，再让镜头拉远并隔离关键对象",
+  "items": [
+    {
+      "label": "产品 A",
+      "value": 42,
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "产品 B",
+      "value": 47,
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "产品 C",
+      "value": 91,
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "产品 D",
+      "value": 45,
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "产品 E",
+      "value": 39,
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "产品 F",
+      "value": 44,
+      "iconSrc": "icons/categories/product.svg"
+    }
+  ],
+  "focusIndex": 2,
+  "unit": "%",
+  "insight": "产品 C 并非轻微领先，而是脱离了其余样本的共同区间。",
+  "source": "示例数据 · 2026",
+  "accentColor": "#8d7cff"
+}

@@ -1,0 +1,6642 @@
+[
+  {
+    "id": "PresenterDataTakeover",
+    "name": {
+      "zh": "主持人让位与数据接管",
+      "en": "Presenter-to-Data Handoff"
+    },
+    "category": "presenter_explainer",
+    "native": true,
+    "frames": 360,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/PresenterDataTakeover.png",
+    "media": "previewlib/PresenterDataTakeover.mp4",
+    "props": {
+      "title": "整体回升，不代表每一季都增长",
+      "question": "看到后续回升，是否忽略了中间的回落？",
+      "takeaway": "第 4 季出现回落，总体回升不能替代分季度判断。",
+      "source": "DataMagic Cards 合成季度数据，非真实统计；生成猫角色；无声演示。",
+      "metricLabel": "季度环比变化",
+      "unit": "%",
+      "presenter": {
+        "src": "assets/character-perspective-board/cat-host.mp4",
+        "type": "video",
+        "durationSeconds": 14.375,
+        "label": "猫主持 / 趋势解读"
+      },
+      "points": [
+        {
+          "label": "第1季",
+          "value": 1.2
+        },
+        {
+          "label": "第2季",
+          "value": 2.4
+        },
+        {
+          "label": "第3季",
+          "value": 0.8
+        },
+        {
+          "label": "第4季",
+          "value": -1.5
+        },
+        {
+          "label": "第5季",
+          "value": 1.6
+        },
+        {
+          "label": "第6季",
+          "value": 2.1
+        }
+      ],
+      "domain": [
+        -3,
+        4
+      ],
+      "focusIndex": 3
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "PresenterDataTakeover",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "takeaway",
+        "source",
+        "metricLabel",
+        "unit",
+        "presenter",
+        "points",
+        "domain",
+        "focusIndex"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 28
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 44
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 44
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "metricLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 3
+        },
+        "presenter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "src",
+            "type",
+            "label"
+          ],
+          "properties": {
+            "src": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "enum": [
+                "image",
+                "video"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 20
+            },
+            "durationSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": "video"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "durationSeconds"
+                ]
+              }
+            }
+          ]
+        },
+        "points": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "value"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "domain": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number",
+              "exclusiveMaximum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "focusIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        }
+      }
+    }
+  },
+  {
+    "id": "ContrastContributionStory",
+    "name": {
+      "zh": "反差设问与贡献拆解",
+      "en": "Contrast Hook & Contribution Story"
+    },
+    "category": "waterfall_chart",
+    "native": true,
+    "frames": 360,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ContrastContributionStory.png",
+    "media": "previewlib/ContrastContributionStory.mp4",
+    "props": {
+      "title": "营收涨了，利润为什么少了？",
+      "question": "看上去的增长，是否真的留下更多利润？",
+      "hookLabel": "本期营收增长",
+      "hook": {
+        "before": 100,
+        "after": 120
+      },
+      "takeaway": "新增成本超过新增营收，利润从 10 降到 5。",
+      "source": "DataMagic Cards 合成简化账本，非真实财报；不含其他账目；无声演示。",
+      "baselineLabel": "原有利润",
+      "baseline": 10,
+      "finalLabel": "本期利润",
+      "unit": "万元",
+      "maximum": 40,
+      "contributions": [
+        {
+          "label": "新增营收",
+          "value": 20,
+          "at": 3.2,
+          "caption": "新增营收贡献 20 万元，先看增长的一面。",
+          "iconSrc": "icons/categories/finance.svg"
+        },
+        {
+          "label": "材料成本",
+          "value": -15,
+          "at": 5.2,
+          "caption": "材料成本多了 15 万元，抵消了部分增长。",
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "其他成本",
+          "value": -10,
+          "at": 7.2,
+          "caption": "其他成本再增加 10 万元，合计超过新增营收。",
+          "iconSrc": "icons/categories/service.svg"
+        }
+      ],
+      "baselineIconSrc": "icons/categories/finance.svg",
+      "finalIconSrc": "icons/categories/finance.svg"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ContrastContributionStory",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "hookLabel",
+        "hook",
+        "takeaway",
+        "source",
+        "baselineLabel",
+        "baseline",
+        "finalLabel",
+        "unit",
+        "maximum",
+        "contributions"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 28
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 44
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 44
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "hookLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+        },
+        "hook": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "before",
+            "after"
+          ],
+          "properties": {
+            "before": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "after": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "baselineLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10
+        },
+        "finalLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10
+        },
+        "baseline": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 3
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "contributions": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "value",
+              "at",
+              "caption"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 10
+              },
+              "value": {
+                "type": "number"
+              },
+              "at": {
+                "type": "number",
+                "minimum": 3,
+                "maximum": 8
+              },
+              "caption": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 44
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        },
+        "baselineIconSrc": {
+          "type": "string",
+          "minLength": 1
+        },
+        "finalIconSrc": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "PersistentTierBoard",
+    "name": {
+      "zh": "持续分层与证据更新",
+      "en": "Persistent Tier Board"
+    },
+    "category": "ranking_reveal",
+    "native": true,
+    "frames": 360,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/PersistentTierBoard.png",
+    "media": "previewlib/PersistentTierBoard.mp4",
+    "props": {
+      "title": "服务表现，要看改善后的位置",
+      "question": "同一套准时率阈值下，谁发生了跨层改善？",
+      "takeaway": "甲站进入优秀层，丙站进入稳定层；其他站点保留。",
+      "source": "DataMagic Cards 合成配送数据，非真实统计；阈值为演示设定；无声演示。",
+      "metricLabel": "配送准时率",
+      "unit": "%",
+      "maximum": 100,
+      "tiers": [
+        {
+          "label": "优秀",
+          "minimum": 95
+        },
+        {
+          "label": "稳定",
+          "minimum": 85
+        },
+        {
+          "label": "待改善",
+          "minimum": 0
+        }
+      ],
+      "items": [
+        {
+          "id": "a",
+          "label": "甲站",
+          "before": 94,
+          "after": 96,
+          "at": 3.2,
+          "iconSrc": "icons/categories/transport.svg"
+        },
+        {
+          "id": "b",
+          "label": "乙站",
+          "before": 88,
+          "after": 88,
+          "at": 4.5,
+          "iconSrc": "icons/categories/transport.svg"
+        },
+        {
+          "id": "c",
+          "label": "丙站",
+          "before": 79,
+          "after": 87,
+          "at": 6,
+          "iconSrc": "icons/categories/transport.svg"
+        },
+        {
+          "id": "d",
+          "label": "丁站",
+          "before": 97,
+          "after": 97,
+          "at": 7.5,
+          "iconSrc": "icons/categories/transport.svg"
+        }
+      ]
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "PersistentTierBoard",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "takeaway",
+        "source",
+        "unit",
+        "metricLabel",
+        "maximum",
+        "tiers",
+        "items"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 28
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 44
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 44
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 3
+        },
+        "metricLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "tiers": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "minimum"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8
+              },
+              "minimum": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "items": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "before",
+              "after",
+              "at"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8
+              },
+              "before": {
+                "type": "number",
+                "minimum": 0
+              },
+              "after": {
+                "type": "number",
+                "minimum": 0
+              },
+              "at": {
+                "type": "number",
+                "minimum": 3,
+                "maximum": 8
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "CharacterPerspectiveBoard",
+    "name": {
+      "zh": "角色主持与透视数据板",
+      "en": "Character Presenter & Perspective Board"
+    },
+    "category": "presenter_explainer",
+    "native": true,
+    "frames": 420,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CharacterPerspectiveBoard.png",
+    "media": "previewlib/CharacterPerspectiveBoard.mp4",
+    "props": {
+      "title": "收入涨了，为什么还觉得钱不够？",
+      "question": "同一户家庭，收入与两项开支发生了什么变化？",
+      "takeaway": "这两项开支增幅超过收入增幅，不能只看工资涨了多少。",
+      "source": "DataMagic Cards 合成家庭数据，非真实统计；猫主持为生成素材；无声演示。",
+      "presenter": {
+        "src": "assets/character-perspective-board/cat-host.mp4",
+        "type": "video",
+        "label": "猫主持 / 家庭账本",
+        "durationSeconds": 14.375
+      },
+      "metricLabel": "较基期增长幅度",
+      "unit": "%",
+      "maximum": 40,
+      "rows": [
+        {
+          "id": "income",
+          "label": "家庭收入",
+          "value": 8,
+          "at": 3,
+          "caption": "收入增加了 8%，但这还不是故事的全部。",
+          "iconSrc": "icons/categories/finance.svg"
+        },
+        {
+          "id": "rent",
+          "label": "住房开支",
+          "value": 18,
+          "at": 5.4,
+          "caption": "住房开支涨了 18%，比收入增长更快。",
+          "iconSrc": "icons/categories/home.svg"
+        },
+        {
+          "id": "food",
+          "label": "食品开支",
+          "value": 25,
+          "at": 7.8,
+          "caption": "食品开支增加了 25%，也超过了收入增幅。",
+          "iconSrc": "icons/categories/food.svg"
+        }
+      ],
+      "conclusionAt": 10.4,
+      "tiltDegrees": -7
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "CharacterPerspectiveBoard",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "takeaway",
+        "source",
+        "presenter",
+        "metricLabel",
+        "unit",
+        "maximum",
+        "rows",
+        "conclusionAt",
+        "tiltDegrees"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 28
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 42
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 45
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "metricLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 22
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 3
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 9999
+        },
+        "conclusionAt": {
+          "type": "number",
+          "minimum": 4,
+          "maximum": 12
+        },
+        "tiltDegrees": {
+          "type": "number",
+          "minimum": -10,
+          "maximum": 10
+        },
+        "presenter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "src",
+            "type",
+            "label"
+          ],
+          "properties": {
+            "src": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "enum": [
+                "image",
+                "video"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 20
+            },
+            "durationSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": "video"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "durationSeconds"
+                ]
+              }
+            }
+          ]
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "value",
+              "at",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 12
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 9999
+              },
+              "at": {
+                "type": "number",
+                "minimum": 2,
+                "maximum": 10.8
+              },
+              "caption": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 44
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "PortraitRankedReveal",
+    "name": {
+      "zh": "竖屏倒序榜单",
+      "en": "Portrait Countdown Ranking"
+    },
+    "category": "ranking_reveal",
+    "native": true,
+    "frames": 300,
+    "width": 1080,
+    "height": 1920,
+    "poster": "previewlib/poster/PortraitRankedReveal.png",
+    "media": "previewlib/PortraitRankedReveal.mp4",
+    "props": {
+      "title": "哪种公共空间更受欢迎？",
+      "question": "四类空间，先揭晓第四名。",
+      "metricLabel": "空间使用强度",
+      "maximum": 100,
+      "unit": "分",
+      "source": "DataMagic Cards 合成演示数据，非真实统计。",
+      "takeaway": "社区公园领先步行街 12 分。",
+      "rows": [
+        {
+          "id": "plaza",
+          "label": "城市广场",
+          "value": 44,
+          "at": 1.6,
+          "caption": "第四名：城市广场，44 分。",
+          "iconSrc": "icons/categories/plaza.svg",
+          "color": "#2878b5"
+        },
+        {
+          "id": "waterfront",
+          "label": "滨水步道",
+          "value": 61,
+          "at": 3.1,
+          "caption": "滨水步道上升至 61 分。",
+          "iconSrc": "icons/categories/waterfront.svg",
+          "color": "#249f86"
+        },
+        {
+          "id": "street",
+          "label": "步行街",
+          "value": 74,
+          "at": 4.6,
+          "caption": "步行街暂居第二，74 分。",
+          "iconSrc": "icons/categories/street.svg",
+          "color": "#b87643"
+        },
+        {
+          "id": "park",
+          "label": "社区公园",
+          "value": 86,
+          "at": 6.1,
+          "caption": "第一名：社区公园，86 分。",
+          "iconSrc": "icons/categories/park.svg",
+          "color": "#7c3aed"
+        }
+      ]
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "PortraitRankedReveal",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "metricLabel",
+        "unit",
+        "maximum",
+        "source",
+        "takeaway",
+        "rows"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 24
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 48
+        },
+        "metricLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 16
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 6
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 56
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 48
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "value",
+              "at",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 12
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "at": {
+                "type": "number",
+                "minimum": 1.5,
+                "maximum": 7.2
+              },
+              "caption": {
+                "type": "string",
+                "maxLength": 40
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            }
+          }
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "PresenterEvidenceBoard",
+    "name": {
+      "zh": "主持人逐项解读",
+      "en": "Presenter Evidence Board"
+    },
+    "category": "presenter_explainer",
+    "native": true,
+    "frames": 300,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/PresenterEvidenceBoard.png",
+    "media": "previewlib/PresenterEvidenceBoard.mp4",
+    "props": {
+      "title": "哪一步提高了分选准确率？",
+      "question": "从基础识别到人工复核，逐项看这组示例的变化。",
+      "presenter": {
+        "src": "assets/fictional-presenter.png",
+        "type": "image",
+        "label": "虚构主持人 · AI 生成示例图"
+      },
+      "unit": "%",
+      "metricLabel": "分选准确率",
+      "maximum": 100,
+      "rows": [
+        {
+          "id": "baseline",
+          "label": "基础识别",
+          "value": 81.2,
+          "at": 1,
+          "caption": "基础识别的准确率为 81.2%，这是比较的起点。",
+          "iconSrc": "icons/categories/scan.svg",
+          "color": "#2878b5"
+        },
+        {
+          "id": "vision",
+          "label": "增加视觉校验",
+          "value": 89.5,
+          "at": 3.2,
+          "caption": "加入视觉校验后，示例准确率提高到 89.5%。",
+          "iconSrc": "icons/categories/robot.svg",
+          "color": "#249f86"
+        },
+        {
+          "id": "review",
+          "label": "增加人工复核",
+          "value": 94.6,
+          "at": 5.4,
+          "caption": "最后引入人工复核，达到 94.6%。",
+          "iconSrc": "icons/categories/review.svg",
+          "color": "#b87643"
+        }
+      ],
+      "takeaway": "累计提高 13.4 个百分点；仍有 5.4% 的误差。",
+      "source": "来源：DataMagic Cards 合成演示数据，非实际实验结果。主持人图为 AI 生成静态示例。"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "metricLabel",
+        "source",
+        "takeaway",
+        "rows",
+        "maximum",
+        "unit",
+        "presenter"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "question": {
+          "type": "string",
+          "maxLength": 60
+        },
+        "metricLabel": {
+          "type": "string",
+          "maxLength": 22
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "takeaway": {
+          "type": "string",
+          "maxLength": 62
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 6
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "value",
+              "at",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 18
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "at": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 8
+              },
+              "caption": {
+                "type": "string",
+                "maxLength": 55
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            }
+          }
+        },
+        "presenter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "src",
+            "type",
+            "label"
+          ],
+          "properties": {
+            "src": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "enum": [
+                "image",
+                "video"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "maxLength": 32
+            },
+            "durationSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": "video"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "durationSeconds"
+                ]
+              }
+            }
+          ]
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "PresenterEvidenceBoard"
+    }
+  },
+  {
+    "id": "FootageEvidenceReveal",
+    "name": {
+      "zh": "实景转入数据证据",
+      "en": "Footage to Evidence"
+    },
+    "category": "video_data_fusion",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/FootageEvidenceReveal.png",
+    "media": "previewlib/FootageEvidenceReveal.mp4",
+    "props": {
+      "title": "分选效率，不能只看机械臂有多快",
+      "question": "看完生产场景，再比较三个识别阶段的准确率。",
+      "videoSrc": "assets/recycling-facility-agnes.mp4",
+      "videoDurationSeconds": 8,
+      "maximum": 100,
+      "unit": "%",
+      "metricLabel": "识别准确率",
+      "rows": [
+        {
+          "id": "baseline",
+          "label": "基础识别",
+          "value": 81.2,
+          "at": 2.4,
+          "caption": "建立比较基准",
+          "iconSrc": "icons/categories/scan.svg"
+        },
+        {
+          "id": "vision",
+          "label": "视觉校验",
+          "value": 89.5,
+          "at": 3.7,
+          "caption": "增加视觉校验",
+          "iconSrc": "icons/categories/robot.svg"
+        },
+        {
+          "id": "review",
+          "label": "人工复核",
+          "value": 94.6,
+          "at": 5,
+          "caption": "引入人工复核",
+          "iconSrc": "icons/categories/review.svg"
+        }
+      ],
+      "takeaway": "同一示例中，完整流程比基础识别提高 13.4 个百分点。",
+      "source": "来源：合成演示数据，非真实统计。背景为已有 AI 生成视频，仅用于情境说明。"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "metricLabel",
+        "source",
+        "takeaway",
+        "rows",
+        "maximum",
+        "unit",
+        "videoSrc",
+        "videoDurationSeconds"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 26
+        },
+        "question": {
+          "type": "string",
+          "maxLength": 44
+        },
+        "metricLabel": {
+          "type": "string",
+          "maxLength": 22
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "takeaway": {
+          "type": "string",
+          "maxLength": 62
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 6
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "value",
+              "at",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 18
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "at": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 6
+              },
+              "caption": {
+                "type": "string",
+                "maxLength": 55
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        },
+        "videoSrc": {
+          "type": "string",
+          "minLength": 1
+        },
+        "videoDurationSeconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "FootageEvidenceReveal"
+    }
+  },
+  {
+    "id": "RankedReveal",
+    "name": {
+      "zh": "倒序揭晓排行榜",
+      "en": "Countdown Ranking Reveal"
+    },
+    "category": "ranking_reveal",
+    "native": true,
+    "frames": 300,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/RankedReveal.png",
+    "media": "previewlib/RankedReveal.mp4",
+    "props": {
+      "title": "哪种公共空间，更能留住人？",
+      "question": "四类空间使用强度，从第四名开始揭晓。",
+      "maximum": 100,
+      "unit": "分",
+      "metricLabel": "空间使用强度",
+      "rows": [
+        {
+          "id": "waterfront",
+          "label": "滨水步道",
+          "value": 86,
+          "at": 5.8,
+          "caption": "第一名是滨水步道：86 分。",
+          "iconSrc": "icons/categories/waterfront.svg",
+          "color": "#2878b5"
+        },
+        {
+          "id": "park",
+          "label": "社区公园",
+          "value": 74,
+          "at": 4.2,
+          "caption": "社区公园以 74 分位居第二。",
+          "iconSrc": "icons/categories/park.svg",
+          "color": "#249f86"
+        },
+        {
+          "id": "market",
+          "label": "街区市集",
+          "value": 68,
+          "at": 2.6,
+          "caption": "街区市集获得 68 分。",
+          "iconSrc": "icons/categories/market.svg",
+          "color": "#b87643"
+        },
+        {
+          "id": "plaza",
+          "label": "商业广场",
+          "value": 57,
+          "at": 1,
+          "caption": "先看第四名：商业广场，57 分。",
+          "iconSrc": "icons/categories/plaza.svg",
+          "color": "#7c3aed"
+        }
+      ],
+      "takeaway": "滨水步道领先第二名 12 分。排名之外，也要看差距。",
+      "source": "来源：DataMagic Cards 合成演示数据；评分仅用于演示，不代表城市调查结论。"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "question",
+        "metricLabel",
+        "source",
+        "takeaway",
+        "rows",
+        "maximum",
+        "unit"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "question": {
+          "type": "string",
+          "maxLength": 60
+        },
+        "metricLabel": {
+          "type": "string",
+          "maxLength": 22
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 85
+        },
+        "takeaway": {
+          "type": "string",
+          "maxLength": 62
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 6
+        },
+        "maximum": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "value",
+              "at",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 18
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "at": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 8
+              },
+              "caption": {
+                "type": "string",
+                "maxLength": 55
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            }
+          }
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "RankedReveal"
+    }
+  },
+  {
+    "id": "BarChartRace",
+    "name": {
+      "zh": "动态柱状图竞赛",
+      "en": "Bar Chart Race"
+    },
+    "category": "race_chart",
+    "native": true,
+    "frames": 360,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BarChartRace.png",
+    "media": "previewlib/BarChartRace.mp4",
+    "props": {
+      "title": "全球绿色创新指数竞赛",
+      "subtitle": "2018—2026 · 演示数据（非统计结论）",
+      "unit": "指数",
+      "source": "DataMagic Cards synthetic benchmark dataset",
+      "topN": 7,
+      "decimals": 0,
+      "locale": "zh-CN",
+      "entities": [
+        {
+          "id": "china",
+          "label": "中国",
+          "color": "#16a085",
+          "iconSrc": "icons/flags/CN.svg"
+        },
+        {
+          "id": "usa",
+          "label": "美国",
+          "color": "#3478c7",
+          "iconSrc": "icons/flags/US.svg"
+        },
+        {
+          "id": "germany",
+          "label": "德国",
+          "color": "#e6a323",
+          "iconSrc": "icons/flags/DE.svg"
+        },
+        {
+          "id": "japan",
+          "label": "日本",
+          "color": "#d95f59",
+          "iconSrc": "icons/flags/JP.svg"
+        },
+        {
+          "id": "korea",
+          "label": "韩国",
+          "color": "#8d6ac8",
+          "iconSrc": "icons/flags/KR.svg"
+        },
+        {
+          "id": "france",
+          "label": "法国",
+          "color": "#e66c9c",
+          "iconSrc": "icons/flags/FR.svg"
+        },
+        {
+          "id": "uk",
+          "label": "英国",
+          "color": "#4f9d69",
+          "iconSrc": "icons/flags/GB.svg"
+        },
+        {
+          "id": "india",
+          "label": "印度",
+          "color": "#d67b31",
+          "iconSrc": "icons/flags/IN.svg"
+        }
+      ],
+      "snapshots": [
+        {
+          "time": "2018",
+          "values": {
+            "china": 58,
+            "usa": 82,
+            "germany": 71,
+            "japan": 68,
+            "korea": 48,
+            "france": 55,
+            "uk": 62,
+            "india": 29
+          }
+        },
+        {
+          "time": "2019",
+          "values": {
+            "china": 65,
+            "usa": 84,
+            "germany": 74,
+            "japan": 70,
+            "korea": 53,
+            "france": 58,
+            "uk": 64,
+            "india": 34
+          }
+        },
+        {
+          "time": "2020",
+          "values": {
+            "china": 73,
+            "usa": 86,
+            "germany": 77,
+            "japan": 72,
+            "korea": 60,
+            "france": 61,
+            "uk": 67,
+            "india": 40
+          }
+        },
+        {
+          "time": "2021",
+          "values": {
+            "china": 82,
+            "usa": 88,
+            "germany": 80,
+            "japan": 74,
+            "korea": 68,
+            "france": 65,
+            "uk": 70,
+            "india": 49
+          }
+        },
+        {
+          "time": "2022",
+          "values": {
+            "china": 91,
+            "usa": 92,
+            "germany": 83,
+            "japan": 76,
+            "korea": 74,
+            "france": 69,
+            "uk": 73,
+            "india": 58
+          }
+        },
+        {
+          "time": "2023",
+          "values": {
+            "china": 102,
+            "usa": 96,
+            "germany": 87,
+            "japan": 79,
+            "korea": 81,
+            "france": 73,
+            "uk": 76,
+            "india": 68
+          }
+        },
+        {
+          "time": "2024",
+          "values": {
+            "china": 116,
+            "usa": 101,
+            "germany": 91,
+            "japan": 82,
+            "korea": 88,
+            "france": 77,
+            "uk": 80,
+            "india": 79
+          }
+        },
+        {
+          "time": "2025",
+          "values": {
+            "china": 132,
+            "usa": 108,
+            "germany": 96,
+            "japan": 86,
+            "korea": 95,
+            "france": 82,
+            "uk": 84,
+            "india": 91
+          }
+        },
+        {
+          "time": "2026",
+          "values": {
+            "china": 149,
+            "usa": 116,
+            "germany": 102,
+            "japan": 91,
+            "korea": 103,
+            "france": 87,
+            "uk": 89,
+            "india": 105
+          }
+        }
+      ]
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://datamagic.dev/shotcraft/bar-chart-race.schema.json",
+      "title": "Bar Chart Race",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "unit",
+        "source",
+        "topN",
+        "entities",
+        "snapshots"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topN": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "decimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4,
+          "default": 0
+        },
+        "locale": {
+          "type": "string",
+          "default": "zh-CN"
+        },
+        "highlightId": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Emphasize one entity while retaining the other entities' colors."
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entities": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "color"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Optional logo or icon, preferably a local file under public/."
+              }
+            }
+          }
+        },
+        "snapshots": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "time",
+              "values"
+            ],
+            "properties": {
+              "time": {
+                "type": "string",
+                "minLength": 1
+              },
+              "values": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "EditorialLedgerRace",
+    "name": {
+      "zh": "编辑账本式竞赛",
+      "en": "Editorial Ledger Race"
+    },
+    "category": "race_chart",
+    "native": true,
+    "frames": 330,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/EditorialLedgerRace.png",
+    "media": "previewlib/EditorialLedgerRace.mp4",
+    "props": {
+      "title": "谁正在改写新能源出口版图？",
+      "subtitle": "2019—2026 · 六个目的地市场的年度指数变化",
+      "unit": "指数",
+      "source": "DataMagic Cards 合成演示数据（非真实统计）",
+      "topN": 6,
+      "decimals": 0,
+      "locale": "zh-CN",
+      "story": {
+        "hook": "领先并不是故事的全部，真正值得看的是谁在中途突然加速。",
+        "turningPoint": "东南亚在 2023 年后连续跨越三个梯队，增长斜率成为主线。",
+        "takeaway": "到 2026 年，东南亚从第五位升至第一位，出口重心发生结构性转移。",
+        "focusEntityId": "sea"
+      },
+      "entities": [
+        {
+          "id": "europe",
+          "label": "欧洲",
+          "color": "#4f6f64",
+          "iconSrc": "icons/regions/europe.svg"
+        },
+        {
+          "id": "sea",
+          "label": "东南亚",
+          "color": "#bd4d38",
+          "iconSrc": "icons/regions/sea.svg"
+        },
+        {
+          "id": "latam",
+          "label": "拉丁美洲",
+          "color": "#c28b47",
+          "iconSrc": "icons/regions/latam.svg"
+        },
+        {
+          "id": "middleeast",
+          "label": "中东",
+          "color": "#6f7f9b",
+          "iconSrc": "icons/regions/middleeast.svg"
+        },
+        {
+          "id": "oceania",
+          "label": "大洋洲",
+          "color": "#8f765f",
+          "iconSrc": "icons/regions/oceania.svg"
+        },
+        {
+          "id": "africa",
+          "label": "非洲",
+          "color": "#6c8a7d",
+          "iconSrc": "icons/regions/africa.svg"
+        }
+      ],
+      "snapshots": [
+        {
+          "time": "2019",
+          "values": {
+            "europe": 88,
+            "sea": 34,
+            "latam": 41,
+            "middleeast": 30,
+            "oceania": 52,
+            "africa": 22
+          }
+        },
+        {
+          "time": "2020",
+          "values": {
+            "europe": 92,
+            "sea": 42,
+            "latam": 47,
+            "middleeast": 36,
+            "oceania": 55,
+            "africa": 27
+          }
+        },
+        {
+          "time": "2021",
+          "values": {
+            "europe": 98,
+            "sea": 56,
+            "latam": 55,
+            "middleeast": 44,
+            "oceania": 57,
+            "africa": 34
+          }
+        },
+        {
+          "time": "2022",
+          "values": {
+            "europe": 105,
+            "sea": 73,
+            "latam": 64,
+            "middleeast": 53,
+            "oceania": 60,
+            "africa": 42
+          }
+        },
+        {
+          "time": "2023",
+          "values": {
+            "europe": 109,
+            "sea": 94,
+            "latam": 72,
+            "middleeast": 66,
+            "oceania": 63,
+            "africa": 51
+          }
+        },
+        {
+          "time": "2024",
+          "values": {
+            "europe": 113,
+            "sea": 119,
+            "latam": 84,
+            "middleeast": 82,
+            "oceania": 66,
+            "africa": 63
+          }
+        },
+        {
+          "time": "2025",
+          "values": {
+            "europe": 118,
+            "sea": 147,
+            "latam": 97,
+            "middleeast": 101,
+            "oceania": 70,
+            "africa": 76
+          }
+        },
+        {
+          "time": "2026",
+          "values": {
+            "europe": 124,
+            "sea": 181,
+            "latam": 112,
+            "middleeast": 123,
+            "oceania": 74,
+            "africa": 91
+          }
+        }
+      ]
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://datamagic.dev/shotcraft/editorial-ledger-race.schema.json",
+      "title": "Editorial Ledger Race",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "unit",
+        "source",
+        "topN",
+        "entities",
+        "snapshots",
+        "story"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topN": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "decimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "locale": {
+          "type": "string"
+        },
+        "story": {
+          "type": "object",
+          "required": [
+            "hook",
+            "turningPoint",
+            "takeaway",
+            "focusEntityId"
+          ],
+          "properties": {
+            "hook": {
+              "type": "string"
+            },
+            "turningPoint": {
+              "type": "string"
+            },
+            "takeaway": {
+              "type": "string"
+            },
+            "focusEntityId": {
+              "type": "string"
+            }
+          }
+        },
+        "entities": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "color"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        },
+        "snapshots": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "time",
+              "values"
+            ],
+            "properties": {
+              "time": {
+                "type": "string"
+              },
+              "values": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "CinematicTrackRace",
+    "name": {
+      "zh": "电影赛道式竞赛",
+      "en": "Cinematic Track Race"
+    },
+    "category": "race_chart",
+    "native": true,
+    "frames": 330,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CinematicTrackRace.png",
+    "media": "previewlib/CinematicTrackRace.mp4",
+    "props": {
+      "title": "AI 应用月活竞速赛",
+      "subtitle": "2021—2026 · 六类应用的相对规模指数",
+      "unit": "指数",
+      "source": "DataMagic Cards 合成演示数据（非真实统计）",
+      "topN": 6,
+      "decimals": 0,
+      "locale": "zh-CN",
+      "story": {
+        "hook": "领先者不断扩大规模，但真正的悬念来自中段赛道的快速换位。",
+        "turningPoint": "创作助手在 2024 年越过搜索助手，成为增长最快的第二梯队。",
+        "takeaway": "增长不只集中在通用助手，垂直创作工具已经形成第二条主赛道。",
+        "focusEntityId": "creator"
+      },
+      "entities": [
+        {
+          "id": "general",
+          "label": "通用助手",
+          "color": "#38d6b4",
+          "iconSrc": "icons/categories/robot.svg"
+        },
+        {
+          "id": "creator",
+          "label": "创作助手",
+          "color": "#ff765f",
+          "iconSrc": "icons/categories/creator.svg"
+        },
+        {
+          "id": "search",
+          "label": "搜索助手",
+          "color": "#58a6ff",
+          "iconSrc": "icons/categories/scan.svg"
+        },
+        {
+          "id": "coding",
+          "label": "编程助手",
+          "color": "#bb86fc",
+          "iconSrc": "icons/categories/code.svg"
+        },
+        {
+          "id": "office",
+          "label": "办公助手",
+          "color": "#f0bd57",
+          "iconSrc": "icons/categories/office.svg"
+        },
+        {
+          "id": "education",
+          "label": "教育助手",
+          "color": "#79c783",
+          "iconSrc": "icons/categories/education.svg"
+        }
+      ],
+      "snapshots": [
+        {
+          "time": "2021",
+          "values": {
+            "general": 42,
+            "creator": 15,
+            "search": 28,
+            "coding": 12,
+            "office": 20,
+            "education": 10
+          }
+        },
+        {
+          "time": "2022",
+          "values": {
+            "general": 61,
+            "creator": 24,
+            "search": 39,
+            "coding": 22,
+            "office": 29,
+            "education": 16
+          }
+        },
+        {
+          "time": "2023",
+          "values": {
+            "general": 89,
+            "creator": 38,
+            "search": 52,
+            "coding": 41,
+            "office": 40,
+            "education": 25
+          }
+        },
+        {
+          "time": "2024",
+          "values": {
+            "general": 126,
+            "creator": 69,
+            "search": 65,
+            "coding": 62,
+            "office": 54,
+            "education": 38
+          }
+        },
+        {
+          "time": "2025",
+          "values": {
+            "general": 164,
+            "creator": 103,
+            "search": 79,
+            "coding": 88,
+            "office": 72,
+            "education": 55
+          }
+        },
+        {
+          "time": "2026",
+          "values": {
+            "general": 208,
+            "creator": 146,
+            "search": 96,
+            "coding": 121,
+            "office": 93,
+            "education": 76
+          }
+        }
+      ]
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://datamagic.dev/shotcraft/cinematic-track-race.schema.json",
+      "title": "Cinematic Track Race",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "unit",
+        "source",
+        "topN",
+        "entities",
+        "snapshots",
+        "story"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topN": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "decimals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "locale": {
+          "type": "string"
+        },
+        "story": {
+          "type": "object",
+          "required": [
+            "hook",
+            "turningPoint",
+            "takeaway",
+            "focusEntityId"
+          ],
+          "properties": {
+            "hook": {
+              "type": "string"
+            },
+            "turningPoint": {
+              "type": "string"
+            },
+            "takeaway": {
+              "type": "string"
+            },
+            "focusEntityId": {
+              "type": "string"
+            }
+          }
+        },
+        "entities": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "color"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        },
+        "snapshots": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "time",
+              "values"
+            ],
+            "properties": {
+              "time": {
+                "type": "string"
+              },
+              "values": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "SpatialPercentOverlay",
+    "name": {
+      "zh": "实景融合百分比",
+      "en": "Contextual Percent Overlay"
+    },
+    "category": "contextual_overlay",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SpatialPercentOverlay.png",
+    "media": "previewlib/SpatialPercentOverlay.mp4",
+    "props": {
+      "title": "先进制程产能集中度",
+      "context": "全球半导体制造 · 演示数据",
+      "metricLabel": "头部厂商份额",
+      "entityLabel": "样例企业 A",
+      "value": 58.2,
+      "unit": "%",
+      "takeaway": "把精确指标放入产业场景的负空间，让背景说明对象，让动态图形负责解释数据。",
+      "source": "DataMagic Cards synthetic benchmark dataset",
+      "backgroundSrc": "assets/editorial/semiconductor-cleanroom.png",
+      "accentColor": "#56d9ff",
+      "entityIconSrc": "icons/categories/product.svg"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "SpatialPercentOverlay",
+      "type": "object",
+      "required": [
+        "title",
+        "context",
+        "metricLabel",
+        "entityLabel",
+        "value",
+        "unit",
+        "takeaway",
+        "source",
+        "backgroundSrc",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metricLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entityLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "unit": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "backgroundSrc": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "entityIconSrc": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "BumpChartStory",
+    "name": {
+      "zh": "动态排名轨迹",
+      "en": "Bump Chart Story"
+    },
+    "category": "race_chart",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BumpChartStory.png",
+    "media": "previewlib/BumpChartStory.mp4",
+    "props": {
+      "title": "算力市场格局正在重排",
+      "subtitle": "用名次轨迹呈现竞争关系，比逐年播放多张柱状图更容易看见超越与反转。",
+      "periods": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "series": [
+        {
+          "name": "Northstar",
+          "color": "#2f6fed",
+          "values": [
+            72,
+            76,
+            86,
+            101,
+            124
+          ],
+          "iconSrc": "icons/categories/cloud.svg"
+        },
+        {
+          "name": "Vertex",
+          "color": "#16a085",
+          "values": [
+            91,
+            88,
+            93,
+            97,
+            110
+          ],
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "name": "Helio",
+          "color": "#ef8f32",
+          "values": [
+            64,
+            80,
+            89,
+            94,
+            102
+          ],
+          "iconSrc": "icons/categories/energy.svg"
+        },
+        {
+          "name": "Nova",
+          "color": "#8b5cf6",
+          "values": [
+            79,
+            83,
+            78,
+            87,
+            96
+          ],
+          "iconSrc": "icons/categories/research.svg"
+        }
+      ],
+      "takeaway": "Northstar 从第三名升至第一名；真正重要的信息是排名变化，而不只是最终数值。",
+      "source": "DataMagic Cards synthetic benchmark dataset"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "BumpChartStory",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "periods",
+        "series",
+        "takeaway",
+        "source"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "periods": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "series": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "color",
+              "values"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              },
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1
+        },
+        "highlightSeries": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "DataMagnifierLens",
+    "name": {
+      "zh": "数据放大镜",
+      "en": "Data Magnifier Lens"
+    },
+    "category": "editorial_explainer",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DataMagnifierLens.png",
+    "media": "previewlib/DataMagnifierLens.mp4",
+    "props": {
+      "title": "增长曲线里，真正异常的是这一季",
+      "subtitle": "镜头沿着趋势扫描，在关键节点停下并放大解释。",
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "values": [
+        42,
+        47,
+        45,
+        53,
+        58,
+        61,
+        84,
+        67
+      ],
+      "unit": "%",
+      "insight": "第三季度跃升至 84%，与前一季度相比增加 23 个百分点。",
+      "source": "DataMagic Cards synthetic benchmark dataset",
+      "accentColor": "#5ee6c4"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "DataMagnifierLens",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "labels",
+        "values",
+        "unit",
+        "insight",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "labels": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "values": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "number"
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "insight": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "SourceToInsight",
+    "name": {
+      "zh": "来源到洞察",
+      "en": "Source to Insight"
+    },
+    "category": "editorial_explainer",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SourceToInsight.png",
+    "media": "previewlib/SourceToInsight.mp4",
+    "props": {
+      "title": "一张表，如何变成一个可讲述的结论",
+      "question": "哪些地区贡献了大多数活跃用户？",
+      "rows": [
+        {
+          "label": "华东",
+          "value": 928,
+          "iconSrc": "icons/regions/east.svg"
+        },
+        {
+          "label": "华南",
+          "value": 814,
+          "iconSrc": "icons/regions/south.svg"
+        },
+        {
+          "label": "华北",
+          "value": 742,
+          "iconSrc": "icons/regions/north.svg"
+        },
+        {
+          "label": "西南",
+          "value": 596,
+          "iconSrc": "icons/regions/southwest.svg"
+        },
+        {
+          "label": "东北",
+          "value": 472,
+          "iconSrc": "icons/regions/northeast.svg"
+        }
+      ],
+      "unit": "万",
+      "takeaway": "华东和华南合计贡献 1,742 万活跃用户，是当前增长的主要来源。",
+      "source": "DataMagic Cards synthetic benchmark dataset"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "SourceToInsight",
+      "type": "object",
+      "required": [
+        "title",
+        "question",
+        "rows",
+        "unit",
+        "takeaway",
+        "source"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "ChoroplethRankMap",
+    "name": {
+      "zh": "区域分级着色地图",
+      "en": "Choropleth Rank Map"
+    },
+    "category": "map_visualization",
+    "native": true,
+    "frames": 270,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ChoroplethRankMap.png",
+    "media": "previewlib/ChoroplethRankMap.mp4",
+    "props": {
+      "title": "全球市场规模并不平均",
+      "subtitle": "把区域数值映射到真实地理边界，并同步给出可核对的排名。",
+      "regions": [
+        {
+          "code": "CHN",
+          "label": "中国",
+          "value": 126,
+          "iconSrc": "icons/flags/CN.svg"
+        },
+        {
+          "code": "USA",
+          "label": "美国",
+          "value": 118,
+          "iconSrc": "icons/flags/US.svg"
+        },
+        {
+          "code": "DEU",
+          "label": "德国",
+          "value": 64,
+          "iconSrc": "icons/flags/DE.svg"
+        },
+        {
+          "code": "JPN",
+          "label": "日本",
+          "value": 58,
+          "iconSrc": "icons/flags/JP.svg"
+        },
+        {
+          "code": "BRA",
+          "label": "巴西",
+          "value": 43,
+          "iconSrc": "icons/flags/BR.svg"
+        }
+      ],
+      "unit": "B",
+      "takeaway": "前两个市场明显领先，区域差异比单一全球总量更值得关注。",
+      "source": "DataMagic Cards synthetic benchmark dataset",
+      "accentColor": "#2f6fed"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ChoroplethRankMap",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "regions",
+        "unit",
+        "takeaway",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "required": [
+              "code",
+              "label",
+              "value"
+            ],
+            "properties": {
+              "code": {
+                "type": "string",
+                "pattern": "^[A-Z]{3}$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "MapRouteAccumulation",
+    "name": {
+      "zh": "地图路径累积",
+      "en": "Map Route Accumulation"
+    },
+    "category": "map_visualization",
+    "native": true,
+    "frames": 300,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MapRouteAccumulation.png",
+    "media": "previewlib/MapRouteAccumulation.mp4",
+    "props": {
+      "title": "全球供应网络如何逐步展开",
+      "subtitle": "路径按叙事顺序出现，累计值与每条流向使用同一份结构化数据。",
+      "origin": {
+        "label": "上海",
+        "coordinate": [
+          121.47,
+          31.23
+        ]
+      },
+      "routes": [
+        {
+          "label": "新加坡",
+          "destination": [
+            103.82,
+            1.35
+          ],
+          "value": 38,
+          "color": "#55d7c8"
+        },
+        {
+          "label": "迪拜",
+          "destination": [
+            55.27,
+            25.2
+          ],
+          "value": 29,
+          "color": "#f2b84b"
+        },
+        {
+          "label": "鹿特丹",
+          "destination": [
+            4.48,
+            51.92
+          ],
+          "value": 24,
+          "color": "#6ea8fe"
+        },
+        {
+          "label": "洛杉矶",
+          "destination": [
+            -118.24,
+            34.05
+          ],
+          "value": 31,
+          "color": "#d987f2"
+        }
+      ],
+      "unit": "K",
+      "takeaway": "亚洲节点最先形成，随后向欧洲和北美扩展。",
+      "source": "DataMagic Cards synthetic benchmark dataset"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "MapRouteAccumulation",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "origin",
+        "routes",
+        "unit",
+        "takeaway",
+        "source"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "type": "object",
+          "required": [
+            "label",
+            "coordinate"
+          ],
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "coordinate": {
+              "$ref": "#/$defs/coordinate"
+            }
+          },
+          "additionalProperties": false
+        },
+        "routes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "destination",
+              "value",
+              "color"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "destination": {
+                "$ref": "#/$defs/coordinate"
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "$defs": {
+        "coordinate": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            }
+          ],
+          "items": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "ChartFocusPush",
+    "name": {
+      "zh": "图表焦点推镜",
+      "en": "Chart Focus Push"
+    },
+    "category": "chart_camera",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ChartFocusPush.png",
+    "media": "previewlib/ChartFocusPush.mp4",
+    "props": {
+      "metadata": {
+        "nameZh": "图表焦点推镜",
+        "nameEn": "Chart Focus Push",
+        "descriptionZh": "先建立完整趋势，再缓慢推向值得解释的异常值。",
+        "descriptionEn": "Establish the full trend before slowly pushing toward an anomaly worth explaining."
+      },
+      "eyebrow": "趋势扫描 · 异常聚焦",
+      "title": "增长并不均匀，第三季度出现结构性跃升",
+      "subtitle": "完整趋势先提供上下文，镜头随后靠近关键节点，将观众注意力集中到真正需要解释的数据上。",
+      "labels": [
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4"
+      ],
+      "values": [
+        42,
+        47,
+        45,
+        53,
+        58,
+        61,
+        84,
+        67
+      ],
+      "unit": "%",
+      "anomalyIndex": 6,
+      "insight": "2025 Q3 升至 84%，较前一季度增加 23 个百分点。",
+      "source": "DataMagic Cards synthetic benchmark dataset / 演示数据",
+      "accentColor": "#087f8c"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ChartFocusPush / 图表焦点推镜",
+      "description": "Editorial chart camera template / 编辑型图表镜头模板",
+      "type": "object",
+      "required": [
+        "metadata",
+        "eyebrow",
+        "title",
+        "subtitle",
+        "labels",
+        "values",
+        "unit",
+        "anomalyIndex",
+        "insight",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "metadata": {
+          "title": "Bilingual metadata / 双语元数据",
+          "type": "object",
+          "required": [
+            "nameZh",
+            "nameEn",
+            "descriptionZh",
+            "descriptionEn"
+          ],
+          "properties": {
+            "nameZh": {
+              "type": "string",
+              "minLength": 1,
+              "description": "中文名称"
+            },
+            "nameEn": {
+              "type": "string",
+              "minLength": 1,
+              "description": "English name"
+            },
+            "descriptionZh": {
+              "type": "string",
+              "minLength": 1,
+              "description": "中文说明"
+            },
+            "descriptionEn": {
+              "type": "string",
+              "minLength": 1,
+              "description": "English description"
+            }
+          },
+          "additionalProperties": false
+        },
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Section label / 栏目标识"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Primary title / 主标题"
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Context sentence / 背景说明"
+        },
+        "labels": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 12,
+          "items": {
+            "type": "string"
+          },
+          "description": "Time labels / 时间标签"
+        },
+        "values": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 12,
+          "items": {
+            "type": "number"
+          },
+          "description": "Series values / 序列数值"
+        },
+        "unit": {
+          "type": "string",
+          "description": "Value unit / 数值单位"
+        },
+        "anomalyIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Focused data index / 聚焦数据索引"
+        },
+        "insight": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Editorial takeaway / 编辑结论"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Data source / 数据来源"
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Focus color / 强调色"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "ChartTimelineTravel",
+    "name": {
+      "zh": "图表时间线巡航",
+      "en": "Chart Timeline Travel"
+    },
+    "category": "chart_camera",
+    "native": true,
+    "frames": 300,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ChartTimelineTravel.png",
+    "media": "previewlib/ChartTimelineTravel.mp4",
+    "props": {
+      "locale": "zh",
+      "eyebrow": {
+        "zh": "数据旅程 · 五年增长轨迹",
+        "en": "DATA JOURNEY · FIVE-YEAR GROWTH"
+      },
+      "title": {
+        "zh": "从试点到规模化：清洁能源装机增长",
+        "en": "From Pilot to Scale: Clean-Energy Capacity Growth"
+      },
+      "subtitle": {
+        "zh": "镜头沿时间线逐段推进，让每一个里程碑拥有独立的阅读停顿。",
+        "en": "The camera advances along the timeline, giving every milestone a dedicated reading pause."
+      },
+      "periods": [
+        {
+          "id": "pilot",
+          "label": {
+            "zh": "2022 试点",
+            "en": "2022 Pilot"
+          },
+          "value": 18,
+          "unit": "GW",
+          "note": {
+            "zh": "首批示范项目完成并网，验证区域协同能力。",
+            "en": "The first demonstration projects connect to the grid and validate regional coordination."
+          },
+          "accent": "#0A7F78"
+        },
+        {
+          "id": "regional",
+          "label": {
+            "zh": "2023 区域扩张",
+            "en": "2023 Regional"
+          },
+          "value": 27,
+          "unit": "GW",
+          "note": {
+            "zh": "建设范围扩展到重点工业区域，增量开始加速。",
+            "en": "Deployment expands into major industrial regions and annual additions begin to accelerate."
+          },
+          "accent": "#2477D4"
+        },
+        {
+          "id": "integration",
+          "label": {
+            "zh": "2024 系统整合",
+            "en": "2024 Integration"
+          },
+          "value": 39,
+          "unit": "GW",
+          "note": {
+            "zh": "储能与调度系统接入，消纳效率进一步提升。",
+            "en": "Storage and dispatch systems come online, improving utilization efficiency."
+          },
+          "accent": "#7A5CD6"
+        },
+        {
+          "id": "scale",
+          "label": {
+            "zh": "2025 规模化",
+            "en": "2025 Scale"
+          },
+          "value": 56,
+          "unit": "GW",
+          "note": {
+            "zh": "标准化建设降低交付成本，装机进入规模增长阶段。",
+            "en": "Standardized delivery lowers cost and moves capacity into a scaled-growth phase."
+          },
+          "accent": "#E38A25"
+        },
+        {
+          "id": "breakthrough",
+          "label": {
+            "zh": "2026 新高",
+            "en": "2026 Record"
+          },
+          "value": 74,
+          "unit": "GW",
+          "note": {
+            "zh": "年度新增装机达到新高，五年规模超过最初的四倍。",
+            "en": "Annual additions reach a new record and total scale exceeds four times the starting level."
+          },
+          "accent": "#D64E4E"
+        }
+      ],
+      "finalTakeaway": {
+        "zh": "增长并非一次跳跃，而是由试点、整合与规模化连续推动。",
+        "en": "Growth is not a single leap; it is a sequence of pilots, integration, and scaling."
+      },
+      "source": {
+        "zh": "DataMagic Cards 合成演示数据",
+        "en": "DataMagic Cards synthetic demonstration data"
+      }
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ChartTimelineTravel / 图表时间线巡航",
+      "description": "A bilingual, editable timeline-chart camera journey. / 可编辑的双语图表时间线运镜模板。",
+      "type": "object",
+      "required": [
+        "locale",
+        "eyebrow",
+        "title",
+        "subtitle",
+        "periods",
+        "finalTakeaway",
+        "source"
+      ],
+      "properties": {
+        "locale": {
+          "type": "string",
+          "enum": [
+            "zh",
+            "en"
+          ],
+          "description": "Display language. / 显示语言。"
+        },
+        "eyebrow": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Section label. / 栏目标识。"
+        },
+        "title": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Main title. / 主标题。"
+        },
+        "subtitle": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Supporting explanation. / 辅助说明。"
+        },
+        "periods": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 5,
+          "description": "Four or five ordered milestones. / 四到五个有序里程碑。",
+          "items": {
+            "$ref": "#/$defs/period"
+          }
+        },
+        "finalTakeaway": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Conclusion shown after the final brake. / 最终减速停稳后显示的结论。"
+        },
+        "source": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Data source label. / 数据来源。"
+        }
+      },
+      "$defs": {
+        "localizedText": {
+          "type": "object",
+          "required": [
+            "zh",
+            "en"
+          ],
+          "properties": {
+            "zh": {
+              "type": "string",
+              "minLength": 1
+            },
+            "en": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "period": {
+          "type": "object",
+          "required": [
+            "id",
+            "label",
+            "value",
+            "unit",
+            "note",
+            "accent"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$",
+              "description": "Stable milestone ID. / 稳定的里程碑标识。"
+            },
+            "label": {
+              "$ref": "#/$defs/localizedText"
+            },
+            "value": {
+              "type": "number",
+              "description": "Metric value. / 指标值。"
+            },
+            "unit": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 12
+            },
+            "note": {
+              "$ref": "#/$defs/localizedText"
+            },
+            "accent": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "CraneRiseDashboard",
+    "name": {
+      "zh": "吊臂拉升揭示",
+      "en": "Crane Rise Dashboard"
+    },
+    "category": "chart_camera",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CraneRiseDashboard.png",
+    "media": "previewlib/CraneRiseDashboard.mp4",
+    "props": {
+      "title": "区域增长结构",
+      "subtitle": "从单个高点拉升到完整比较",
+      "focusLabel": "华东",
+      "focusValue": 86,
+      "unit": "%",
+      "categories": [
+        "华北",
+        "华东",
+        "华南",
+        "西南",
+        "西北"
+      ],
+      "values": [
+        52,
+        86,
+        69,
+        43,
+        31
+      ],
+      "source": "示例数据 · 2026",
+      "accentColor": "#087f68",
+      "categoryIcons": {
+        "华北": "icons/regions/north.svg",
+        "华东": "icons/regions/east.svg",
+        "华南": "icons/regions/south.svg",
+        "西南": "icons/regions/southwest.svg",
+        "西北": "icons/regions/northwest.svg"
+      }
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "CraneRiseDashboard / 吊臂拉升揭示",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "focusLabel",
+        "focusValue",
+        "unit",
+        "categories",
+        "values",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "focusLabel": {
+          "type": "string"
+        },
+        "focusValue": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 6,
+          "items": {
+            "type": "string"
+          }
+        },
+        "values": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 6,
+          "items": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "source": {
+          "type": "string"
+        },
+        "accentColor": {
+          "type": "string"
+        },
+        "categoryIcons": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Map category label to a local icon or supplied image URL."
+        }
+      }
+    }
+  },
+  {
+    "id": "ParallaxMapGlide",
+    "name": {
+      "zh": "多层数据地图滑行",
+      "en": "Parallax Map Glide"
+    },
+    "category": "chart_camera",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ParallaxMapGlide.png",
+    "media": "previewlib/ParallaxMapGlide.mp4",
+    "props": {
+      "title": "新能源节点正在形成空间网络",
+      "subtitle": "从上海出发观察主要城市节点的连接关系与综合评分。",
+      "regions": [
+        {
+          "name": "上海",
+          "value": 92,
+          "coordinate": [
+            121.47,
+            31.23
+          ]
+        },
+        {
+          "name": "北京",
+          "value": 83,
+          "coordinate": [
+            116.41,
+            39.9
+          ]
+        },
+        {
+          "name": "成都",
+          "value": 64,
+          "coordinate": [
+            104.07,
+            30.67
+          ]
+        },
+        {
+          "name": "深圳",
+          "value": 78,
+          "coordinate": [
+            114.06,
+            22.55
+          ]
+        }
+      ],
+      "unit": "分",
+      "source": "示例数据 · 2026",
+      "accentColor": "#35d4c0"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ParallaxMapGlide / 多层地图滑行",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "regions",
+        "unit",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "value",
+              "coordinate"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              },
+              "coordinate": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "accentColor": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "id": "PullBackIsolation",
+    "name": {
+      "zh": "拉远孤立异常",
+      "en": "Pull Back Isolation"
+    },
+    "category": "chart_camera",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/PullBackIsolation.png",
+    "media": "previewlib/PullBackIsolation.mp4",
+    "props": {
+      "title": "平均值掩盖了真正的异常",
+      "subtitle": "先看完整群体，再让镜头拉远并隔离关键对象",
+      "items": [
+        {
+          "label": "产品 A",
+          "value": 42,
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "产品 B",
+          "value": 47,
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "产品 C",
+          "value": 91,
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "产品 D",
+          "value": 45,
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "产品 E",
+          "value": 39,
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "产品 F",
+          "value": 44,
+          "iconSrc": "icons/categories/product.svg"
+        }
+      ],
+      "focusIndex": 2,
+      "unit": "%",
+      "insight": "产品 C 并非轻微领先，而是脱离了其余样本的共同区间。",
+      "source": "示例数据 · 2026",
+      "accentColor": "#8d7cff"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "PullBackIsolation / 拉远孤立",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "items",
+        "focusIndex",
+        "unit",
+        "insight",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            }
+          }
+        },
+        "focusIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string"
+        },
+        "insight": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "accentColor": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "id": "SplitContextComparison",
+    "name": {
+      "zh": "双场景数据对比",
+      "en": "Split Context Comparison"
+    },
+    "category": "contextual_overlay",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SplitContextComparison.png",
+    "media": "previewlib/SplitContextComparison.mp4",
+    "props": {
+      "title": "同样跑 100 公里，成本差在哪？",
+      "subtitle": "把抽象数字放回补能场景，比较才有真正的尺度感",
+      "left": {
+        "label": "SCENARIO A",
+        "name": "家用充电的电动汽车",
+        "value": 8.6,
+        "unit": "元 / 100km",
+        "detail": "按谷段家庭充电价格估算",
+        "accent": "#208C78",
+        "scene": "electric",
+        "iconSrc": "icons/categories/energy.svg"
+      },
+      "right": {
+        "label": "SCENARIO B",
+        "name": "城市通勤的燃油汽车",
+        "value": 52.4,
+        "unit": "元 / 100km",
+        "detail": "按百公里油耗与样例油价估算",
+        "accent": "#C75F42",
+        "scene": "fuel",
+        "iconSrc": "icons/categories/car.svg"
+      },
+      "differenceLabel": "每百公里节省",
+      "differenceValue": "43.8 元",
+      "takeaway": "在这一组假设下，家充电动车的百公里补能成本约为燃油车的 16%。",
+      "source": "DataMagic Cards 合成演示数据；数值仅用于模板展示"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "SplitContextComparison / 双场景数据对比",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "subtitle",
+        "left",
+        "right",
+        "differenceLabel",
+        "differenceValue",
+        "takeaway",
+        "source"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "left": {
+          "$ref": "#/$defs/context"
+        },
+        "right": {
+          "$ref": "#/$defs/context"
+        },
+        "differenceLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "differenceValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "$defs": {
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "name",
+            "value",
+            "unit",
+            "detail",
+            "accent",
+            "scene"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "minLength": 1
+            },
+            "detail": {
+              "type": "string",
+              "minLength": 1
+            },
+            "accent": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "scene": {
+              "enum": [
+                "electric",
+                "fuel"
+              ]
+            },
+            "iconSrc": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "NegativeSpaceChartDock",
+    "name": {
+      "zh": "负空间图表停靠",
+      "en": "Negative Space Chart Dock"
+    },
+    "category": "contextual_overlay",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NegativeSpaceChartDock.png",
+    "media": "previewlib/NegativeSpaceChartDock.mp4",
+    "props": {
+      "title": "海风吹过之后，电从哪里增长？",
+      "subtitle": "图表停靠在左侧负空间，完整保留风机主体与环境方向",
+      "focalBox": {
+        "x": 1280,
+        "y": 238,
+        "width": 500,
+        "height": 610
+      },
+      "safeRegion": {
+        "x": 72,
+        "y": 232,
+        "width": 980,
+        "height": 700
+      },
+      "subjectLabel": "近海风机 · 视觉主体",
+      "metricLabel": "年度上网电量",
+      "metricValue": "26.8",
+      "unit": "亿千瓦时",
+      "series": [
+        {
+          "label": "2021",
+          "value": 12.2
+        },
+        {
+          "label": "2022",
+          "value": 16.4
+        },
+        {
+          "label": "2023",
+          "value": 21.1
+        },
+        {
+          "label": "2024",
+          "value": 26.8
+        }
+      ],
+      "callout": "四年间样例上网电量增加 14.6 亿千瓦时，图表增长方向与海面空间方向保持一致。",
+      "source": "DataMagic Cards 合成演示数据",
+      "accentColor": "#E66D45"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "NegativeSpaceChartDock / 负空间图表停靠",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "subtitle",
+        "focalBox",
+        "safeRegion",
+        "subjectLabel",
+        "metricLabel",
+        "metricValue",
+        "unit",
+        "series",
+        "callout",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "focalBox": {
+          "$ref": "#/$defs/box"
+        },
+        "safeRegion": {
+          "$ref": "#/$defs/box"
+        },
+        "subjectLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metricLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metricValue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "series": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/datum"
+          }
+        },
+        "callout": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      },
+      "$defs": {
+        "box": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "x",
+            "y",
+            "width",
+            "height"
+          ],
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1920
+            },
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1080
+            },
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1792
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 952
+            }
+          }
+        },
+        "datum": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "value"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "SourceToReconstruction",
+    "name": {
+      "zh": "原稿到可编辑复刻",
+      "en": "Source to Reconstruction"
+    },
+    "category": "editorial_explainer",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SourceToReconstruction.png",
+    "media": "previewlib/SourceToReconstruction.mp4",
+    "props": {
+      "title": "从财报原页，重构一张可讲述的增长图",
+      "subtitle": "保留原始字段关系，再将阅读负担转化为视觉层级",
+      "sourceTitle": "季度业务摘要（节选）",
+      "rows": [
+        {
+          "label": "云服务",
+          "value": 42.8,
+          "sourceText": "企业订阅续费率持续提升",
+          "iconSrc": "icons/categories/cloud.svg"
+        },
+        {
+          "label": "智能终端",
+          "value": 31.6,
+          "sourceText": "新品周期带动结构回暖",
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "数字内容",
+          "value": 18.9,
+          "sourceText": "会员收入保持稳定增长",
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "label": "其他业务",
+          "value": 9.7,
+          "sourceText": "海外市场贡献小幅增加",
+          "iconSrc": "icons/categories/service.svg"
+        }
+      ],
+      "unit": "亿元",
+      "highlightIndex": 0,
+      "takeaway": "云服务以 42.8 亿元成为主要增长引擎，规模约为其他业务的 4.4 倍。",
+      "source": "DataMagic Cards 演示数据（非真实财报）",
+      "accentColor": "#22a78f"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "SourceToReconstruction",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "sourceTitle",
+        "rows",
+        "unit",
+        "highlightIndex",
+        "takeaway",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value",
+              "sourceText"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "sourceText": {
+                "type": "string",
+                "minLength": 1
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "highlightIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "PresenterChartStage",
+    "name": {
+      "zh": "主持人与图表舞台",
+      "en": "Presenter Chart Stage"
+    },
+    "category": "presenter_explainer",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/PresenterChartStage.png",
+    "media": "previewlib/PresenterChartStage.mp4",
+    "props": {
+      "title": "增长没有消失，只是换了一个发动机",
+      "subtitle": "主持人引导注意力，图表负责给出可核验的比较",
+      "presenterSide": "left",
+      "presenterName": "林澈",
+      "presenterRole": "商业数据观察员",
+      "activeBeat": 2,
+      "chartData": [
+        {
+          "label": "2021",
+          "value": 18,
+          "context": "需求恢复带来第一轮回升"
+        },
+        {
+          "label": "2022",
+          "value": 24,
+          "context": "产品结构优化继续抬升规模"
+        },
+        {
+          "label": "2023",
+          "value": 39,
+          "context": "海外市场贡献了最明显的增量"
+        },
+        {
+          "label": "2024",
+          "value": 46,
+          "context": "增长进入更稳定的兑现阶段"
+        }
+      ],
+      "unit": "%",
+      "takeaway": "2023 年是增速跳升的关键节点，重点应从总量增长转向海外业务的持续性。",
+      "source": "DataMagic Cards 演示数据",
+      "accentColor": "#1fb89b"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "PresenterChartStage",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "presenterSide",
+        "presenterName",
+        "presenterRole",
+        "activeBeat",
+        "chartData",
+        "unit",
+        "takeaway",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "presenterSide": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "presenterName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "presenterRole": {
+          "type": "string",
+          "minLength": 1
+        },
+        "activeBeat": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "chartData": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value",
+              "context"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "context": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "SharedDataElementTransition",
+    "name": {
+      "zh": "共享数据元素转场",
+      "en": "Shared Data Element Transition"
+    },
+    "category": "data_transition",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SharedDataElementTransition.png",
+    "media": "previewlib/SharedDataElementTransition.mp4",
+    "props": {
+      "title": "从完整比较进入关键结论",
+      "subtitle": "同一个数据对象跨越两个场景，保持数值、标签和视觉身份一致。",
+      "data": [
+        {
+          "label": "基础设施",
+          "value": 42,
+          "iconSrc": "icons/categories/transport.svg"
+        },
+        {
+          "label": "研发",
+          "value": 68,
+          "iconSrc": "icons/categories/research.svg"
+        },
+        {
+          "label": "市场",
+          "value": 31,
+          "iconSrc": "icons/categories/market.svg"
+        },
+        {
+          "label": "人才",
+          "value": 57,
+          "iconSrc": "icons/categories/education.svg"
+        }
+      ],
+      "focusIndex": 1,
+      "unit": "%",
+      "destinationTitle": "研发投入成为下一阶段增长的核心杠杆",
+      "takeaway": "研发占比达到 68%，镜头沿用同一指标进入结论场景，避免观众重新寻找视觉对象。",
+      "source": "示例数据 · 2026",
+      "accentColor": "#0f8f7c"
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "SharedDataElementTransition / 共享数据元素转场",
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "data",
+        "focusIndex",
+        "unit",
+        "destinationTitle",
+        "takeaway",
+        "source",
+        "accentColor"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "focusIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string"
+        },
+        "destinationTitle": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "accentColor": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "StorySequenceGenerator",
+    "name": {
+      "zh": "四镜头故事生成器",
+      "en": "Four-shot Story Generator"
+    },
+    "category": "editorial_explainer",
+    "native": true,
+    "frames": 360,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/StorySequenceGenerator.png",
+    "media": "previewlib/StorySequenceGenerator.mp4",
+    "props": {
+      "blueprintId": "editorial_reveal",
+      "title": "六类城市公共空间的夏季使用强度",
+      "question": "真正留住人的，究竟是哪一种公共空间？",
+      "takeaway": "滨水步道以 86 分领先；连续遮阴与可停留设施，比单纯扩大面积更能提升使用强度。",
+      "source": "DataMagic Cards 合成演示数据（非真实统计）",
+      "unit": "分",
+      "accent": "#52e0c4",
+      "items": [
+        {
+          "id": "waterfront",
+          "label": "滨水步道",
+          "value": 86,
+          "color": "#52e0c4",
+          "iconSrc": "icons/categories/waterfront.svg"
+        },
+        {
+          "id": "community",
+          "label": "社区口袋公园",
+          "value": 74,
+          "color": "#ff775f",
+          "iconSrc": "icons/categories/park.svg"
+        },
+        {
+          "id": "market",
+          "label": "街区市集",
+          "value": 68,
+          "color": "#76a9ff",
+          "iconSrc": "icons/categories/market.svg"
+        },
+        {
+          "id": "plaza",
+          "label": "商业广场",
+          "value": 57,
+          "color": "#b184ff",
+          "iconSrc": "icons/categories/plaza.svg"
+        },
+        {
+          "id": "greenway",
+          "label": "城市绿道",
+          "value": 52,
+          "color": "#f6c85f",
+          "iconSrc": "icons/categories/park.svg"
+        },
+        {
+          "id": "square",
+          "label": "纪念广场",
+          "value": 39,
+          "color": "#7fd18b",
+          "iconSrc": "icons/categories/plaza.svg"
+        }
+      ]
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "StorySequenceGenerator",
+      "type": "object",
+      "required": [
+        "blueprintId",
+        "title",
+        "question",
+        "takeaway",
+        "source",
+        "unit",
+        "accent",
+        "items"
+      ],
+      "properties": {
+        "blueprintId": {
+          "enum": [
+            "editorial_reveal",
+            "change_and_race",
+            "composition_to_detail",
+            "cause_and_flow",
+            "geographic_journey",
+            "source_to_claim"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "takeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string"
+        },
+        "accent": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "value"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "number"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "VideoMetricOverlay",
+    "name": {
+      "zh": "生成视频数据叠加",
+      "en": "Generated Video Metric Overlay"
+    },
+    "category": "video_data_fusion",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/VideoMetricOverlay.png",
+    "media": "previewlib/VideoMetricOverlay.mp4",
+    "props": {
+      "layout": "negative_space",
+      "videoSrc": "assets/recycling-facility-agnes.mp4",
+      "title": "自动分选正在改变材料回收效率",
+      "subtitle": "将运行指标放入视频左侧负空间，保留机械臂与输送线作为现场证据。",
+      "source": "Agnes Video 2.0 生成影像与 DataMagic Cards 合成数据（非真实统计）",
+      "conclusion": "视觉识别环节达到 94.6% 准确率，但人工复核仍是保证高价值材料纯度的关键。",
+      "metrics": [
+        {
+          "id": "accuracy",
+          "label": "识别准确率",
+          "value": 94.6,
+          "unit": "%",
+          "color": "#55dfc2",
+          "iconSrc": "icons/categories/scan.svg"
+        },
+        {
+          "id": "throughput",
+          "label": "每小时处理量",
+          "value": 18.4,
+          "unit": "吨",
+          "color": "#ffbd5b",
+          "iconSrc": "icons/categories/transport.svg"
+        },
+        {
+          "id": "purity",
+          "label": "输出纯度",
+          "value": 88.2,
+          "unit": "%",
+          "color": "#76a9ff",
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "id": "manual",
+          "label": "人工复核占比",
+          "value": 12.8,
+          "unit": "%",
+          "color": "#ff775f",
+          "iconSrc": "icons/categories/review.svg"
+        }
+      ],
+      "tracking": {
+        "label": "机械臂单次抓取成功率",
+        "value": 91.3,
+        "unit": "%",
+        "color": "#55dfc2",
+        "keyframes": [
+          {
+            "frame": 0,
+            "x": 0.99,
+            "y": 0.47
+          },
+          {
+            "frame": 66,
+            "x": 0.84,
+            "y": 0.46
+          },
+          {
+            "frame": 99,
+            "x": 0.87,
+            "y": 0.46
+          },
+          {
+            "frame": 132,
+            "x": 0.87,
+            "y": 0.46
+          },
+          {
+            "frame": 165,
+            "x": 0.85,
+            "y": 0.43
+          },
+          {
+            "frame": 204,
+            "x": 0.82,
+            "y": 0.39
+          }
+        ],
+        "iconSrc": "icons/categories/robot.svg"
+      }
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "VideoDataOverlay",
+      "type": "object",
+      "required": [
+        "layout",
+        "videoSrc",
+        "title",
+        "subtitle",
+        "source",
+        "conclusion",
+        "metrics",
+        "tracking"
+      ],
+      "properties": {
+        "layout": {
+          "enum": [
+            "negative_space",
+            "tracked_callout"
+          ]
+        },
+        "videoSrc": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conclusion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "value",
+              "unit",
+              "color"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "tracking": {
+          "type": "object",
+          "required": [
+            "label",
+            "value",
+            "unit",
+            "color",
+            "keyframes"
+          ],
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            },
+            "keyframes": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "required": [
+                  "frame",
+                  "x",
+                  "y"
+                ],
+                "properties": {
+                  "frame": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "x": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "y": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "iconSrc": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "TrackedVideoCallout",
+    "name": {
+      "zh": "视频对象跟踪标注",
+      "en": "Tracked Video Callout"
+    },
+    "category": "video_data_fusion",
+    "native": true,
+    "frames": 240,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/TrackedVideoCallout.png",
+    "media": "previewlib/TrackedVideoCallout.mp4",
+    "props": {
+      "layout": "tracked_callout",
+      "videoSrc": "assets/recycling-facility-agnes.mp4",
+      "title": "跟随设备运动解释一个关键指标",
+      "subtitle": "数据标签不固定贴在画面角落，而是通过可编辑关键帧持续指向被解释的对象。",
+      "source": "Agnes Video 2.0 生成影像与 DataMagic Cards 合成数据（非真实统计）",
+      "conclusion": "跟踪标注只服务于一个关键对象；标题、来源和结论始终保持在稳定界面层。",
+      "metrics": [
+        {
+          "id": "success",
+          "label": "抓取成功率",
+          "value": 91.3,
+          "unit": "%",
+          "color": "#ffbd5b",
+          "iconSrc": "icons/categories/robot.svg"
+        },
+        {
+          "id": "cycle",
+          "label": "平均周期",
+          "value": 2.8,
+          "unit": "秒",
+          "color": "#55dfc2",
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "id": "uptime",
+          "label": "设备开机率",
+          "value": 96.1,
+          "unit": "%",
+          "color": "#76a9ff",
+          "iconSrc": "icons/categories/energy.svg"
+        }
+      ],
+      "tracking": {
+        "label": "机械臂单次抓取成功率",
+        "value": 91.3,
+        "unit": "%",
+        "color": "#ffbd5b",
+        "keyframes": [
+          {
+            "frame": 0,
+            "x": 0.99,
+            "y": 0.47
+          },
+          {
+            "frame": 33,
+            "x": 0.96,
+            "y": 0.48
+          },
+          {
+            "frame": 66,
+            "x": 0.84,
+            "y": 0.46
+          },
+          {
+            "frame": 99,
+            "x": 0.87,
+            "y": 0.46
+          },
+          {
+            "frame": 132,
+            "x": 0.87,
+            "y": 0.46
+          },
+          {
+            "frame": 165,
+            "x": 0.85,
+            "y": 0.43
+          },
+          {
+            "frame": 204,
+            "x": 0.82,
+            "y": 0.39
+          }
+        ],
+        "iconSrc": "icons/categories/robot.svg"
+      }
+    },
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "VideoDataOverlay",
+      "type": "object",
+      "required": [
+        "layout",
+        "videoSrc",
+        "title",
+        "subtitle",
+        "source",
+        "conclusion",
+        "metrics",
+        "tracking"
+      ],
+      "properties": {
+        "layout": {
+          "enum": [
+            "negative_space",
+            "tracked_callout"
+          ]
+        },
+        "videoSrc": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conclusion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "value",
+              "unit",
+              "color"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              },
+              "iconSrc": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "tracking": {
+          "type": "object",
+          "required": [
+            "label",
+            "value",
+            "unit",
+            "color",
+            "keyframes"
+          ],
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            },
+            "keyframes": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "required": [
+                  "frame",
+                  "x",
+                  "y"
+                ],
+                "properties": {
+                  "frame": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "x": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "y": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "iconSrc": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "id": "BasicBarChart",
+    "name": {
+      "zh": "基础条形图",
+      "en": "Basic Bar Chart"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BasicBarChart.webp",
+    "media": "previewlib/BasicBarChart.mp4"
+  },
+  {
+    "id": "BasicLineChart",
+    "name": {
+      "zh": "基础折线图",
+      "en": "Basic Line Chart"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BasicLineChart.webp",
+    "media": "previewlib/BasicLineChart.mp4"
+  },
+  {
+    "id": "BasicPieChart",
+    "name": {
+      "zh": "基础饼图",
+      "en": "Basic Pie Chart"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BasicPieChart.webp",
+    "media": "previewlib/BasicPieChart.mp4"
+  },
+  {
+    "id": "BasicStatCards",
+    "name": {
+      "zh": "基础指标卡片",
+      "en": "Basic Stat Cards"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BasicStatCards.webp",
+    "media": "previewlib/BasicStatCards.mp4"
+  },
+  {
+    "id": "OpeningEditorialTitle",
+    "name": {
+      "zh": "开场编辑式标题",
+      "en": "Opening Editorial Title"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/OpeningEditorialTitle.webp",
+    "media": "previewlib/OpeningEditorialTitle.mp4"
+  },
+  {
+    "id": "OpeningExecutiveBrief",
+    "name": {
+      "zh": "开场商务简报",
+      "en": "Opening Executive Brief"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/OpeningExecutiveBrief.webp",
+    "media": "previewlib/OpeningExecutiveBrief.mp4"
+  },
+  {
+    "id": "OpeningDataGrid",
+    "name": {
+      "zh": "开场数据网格",
+      "en": "Opening Data Grid"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/OpeningDataGrid.webp",
+    "media": "previewlib/OpeningDataGrid.mp4"
+  },
+  {
+    "id": "OpeningSplitMetrics",
+    "name": {
+      "zh": "开场分屏指标",
+      "en": "Opening Split Metrics"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/OpeningSplitMetrics.webp",
+    "media": "previewlib/OpeningSplitMetrics.mp4"
+  },
+  {
+    "id": "OpeningCinematicHeadline",
+    "name": {
+      "zh": "开场电影感大标题",
+      "en": "Opening Cinematic Headline"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/OpeningCinematicHeadline.webp",
+    "media": "previewlib/OpeningCinematicHeadline.mp4"
+  },
+  {
+    "id": "HeroNumberSpotlight",
+    "name": {
+      "zh": "核心数字聚焦",
+      "en": "Hero Number Spotlight"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/HeroNumberSpotlight.webp",
+    "media": "previewlib/HeroNumberSpotlight.mp4"
+  },
+  {
+    "id": "KpiMicroDashboard",
+    "name": {
+      "zh": "关键指标微型仪表盘",
+      "en": "KPI Micro Dashboard"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/KpiMicroDashboard.webp",
+    "media": "previewlib/KpiMicroDashboard.mp4"
+  },
+  {
+    "id": "DarkKpiMicroDashboard",
+    "name": {
+      "zh": "深色关键指标微型仪表盘",
+      "en": "Dark KPI Micro Dashboard"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkKpiMicroDashboard.webp",
+    "media": "previewlib/DarkKpiMicroDashboard.mp4"
+  },
+  {
+    "id": "StatCardsKpiTrio",
+    "name": {
+      "zh": "指标卡片关键指标三联",
+      "en": "Stat Cards KPI Trio"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/StatCardsKpiTrio.webp",
+    "media": "previewlib/StatCardsKpiTrio.mp4"
+  },
+  {
+    "id": "QuarterlyRevenueGroupedBar",
+    "name": {
+      "zh": "季度营收分组条形图",
+      "en": "Quarterly Revenue Grouped Bar"
+    },
+    "category": "comparison_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/QuarterlyRevenueGroupedBar.webp",
+    "media": "previewlib/QuarterlyRevenueGroupedBar.mp4"
+  },
+  {
+    "id": "SwissMinimalReport",
+    "name": {
+      "zh": "瑞士极简报告",
+      "en": "Swiss Minimal Report"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SwissMinimalReport.webp",
+    "media": "previewlib/SwissMinimalReport.mp4"
+  },
+  {
+    "id": "CoffeeRatingHorizontalRanking",
+    "name": {
+      "zh": "咖啡评分横向排名",
+      "en": "Coffee Rating Horizontal Ranking"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CoffeeRatingHorizontalRanking.webp",
+    "media": "previewlib/CoffeeRatingHorizontalRanking.mp4"
+  },
+  {
+    "id": "DepartmentHeadcountDarkBar",
+    "name": {
+      "zh": "部门人数深色条形图",
+      "en": "Department Headcount Dark Bar"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DepartmentHeadcountDarkBar.webp",
+    "media": "previewlib/DepartmentHeadcountDarkBar.mp4"
+  },
+  {
+    "id": "SalesByRegionDarkColumn",
+    "name": {
+      "zh": "销售区域深色柱状图",
+      "en": "Sales by Region Dark Column"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SalesByRegionDarkColumn.webp",
+    "media": "previewlib/SalesByRegionDarkColumn.mp4"
+  },
+  {
+    "id": "ExecutiveHorizontalBars",
+    "name": {
+      "zh": "商务横向条形图",
+      "en": "Executive Horizontal Bars"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ExecutiveHorizontalBars.webp",
+    "media": "previewlib/ExecutiveHorizontalBars.mp4"
+  },
+  {
+    "id": "CompactColumnKpi",
+    "name": {
+      "zh": "紧凑柱状图关键指标",
+      "en": "Compact Column KPI"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CompactColumnKpi.webp",
+    "media": "previewlib/CompactColumnKpi.mp4"
+  },
+  {
+    "id": "MarginSlopeComparison",
+    "name": {
+      "zh": "利润率斜率对比",
+      "en": "Margin Shift by Channel"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MarginSlopeComparison.webp",
+    "media": "previewlib/MarginSlopeComparison.mp4"
+  },
+  {
+    "id": "MetricTrendRibbon",
+    "name": {
+      "zh": "指标趋势带状",
+      "en": "Metric Trend Ribbon"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MetricTrendRibbon.webp",
+    "media": "previewlib/MetricTrendRibbon.mp4"
+  },
+  {
+    "id": "LightFocusLine",
+    "name": {
+      "zh": "浅色聚焦折线图",
+      "en": "Light Focus Line"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightFocusLine.webp",
+    "media": "previewlib/LightFocusLine.mp4"
+  },
+  {
+    "id": "EditorialDataStory",
+    "name": {
+      "zh": "编辑式数据叙事",
+      "en": "Editorial Data Story"
+    },
+    "category": "trend_analysis",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/EditorialDataStory.webp",
+    "media": "previewlib/EditorialDataStory.mp4"
+  },
+  {
+    "id": "DarkEditorialTrend",
+    "name": {
+      "zh": "深色编辑式趋势",
+      "en": "Dark Editorial Trend"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkEditorialTrend.webp",
+    "media": "previewlib/DarkEditorialTrend.mp4"
+  },
+  {
+    "id": "DarkSignalTrendline",
+    "name": {
+      "zh": "深色信号趋势线",
+      "en": "Dark Signal Trendline"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkSignalTrendline.webp",
+    "media": "previewlib/DarkSignalTrendline.mp4"
+  },
+  {
+    "id": "DualSeriesPulseLine",
+    "name": {
+      "zh": "双系列脉冲折线图",
+      "en": "Dual Series Pulse Line"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DualSeriesPulseLine.webp",
+    "media": "previewlib/DualSeriesPulseLine.mp4"
+  },
+  {
+    "id": "SlopeChangeRanking",
+    "name": {
+      "zh": "斜率变化排名",
+      "en": "Slope Change Ranking"
+    },
+    "category": "trend_analysis",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SlopeChangeRanking.webp",
+    "media": "previewlib/SlopeChangeRanking.mp4"
+  },
+  {
+    "id": "MarketShareDonut",
+    "name": {
+      "zh": "市场占比环形图",
+      "en": "Market Share Donut"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MarketShareDonut.webp",
+    "media": "previewlib/MarketShareDonut.mp4"
+  },
+  {
+    "id": "NestedRingShare",
+    "name": {
+      "zh": "嵌套环图占比",
+      "en": "Nested Ring Share"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NestedRingShare.webp",
+    "media": "previewlib/NestedRingShare.mp4"
+  },
+  {
+    "id": "SemiGaugeProgress",
+    "name": {
+      "zh": "半圆仪表进度",
+      "en": "Semi Gauge Progress"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SemiGaugeProgress.webp",
+    "media": "previewlib/SemiGaugeProgress.mp4"
+  },
+  {
+    "id": "CustomerSegmentsScatter",
+    "name": {
+      "zh": "客户分群散点图",
+      "en": "Customer Segment Map"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CustomerSegmentsScatter.webp",
+    "media": "previewlib/CustomerSegmentsScatter.mp4"
+  },
+  {
+    "id": "PortfolioBubbleMatrix",
+    "name": {
+      "zh": "组合气泡矩阵",
+      "en": "Portfolio Bubble Matrix"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/PortfolioBubbleMatrix.webp",
+    "media": "previewlib/PortfolioBubbleMatrix.mp4"
+  },
+  {
+    "id": "ProductPerformanceRadar",
+    "name": {
+      "zh": "产品表现雷达图",
+      "en": "Product Performance Radar"
+    },
+    "category": "radar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ProductPerformanceRadar.webp",
+    "media": "previewlib/ProductPerformanceRadar.mp4"
+  },
+  {
+    "id": "RadarPerformanceProfile",
+    "name": {
+      "zh": "雷达图表现画像",
+      "en": "Radar Performance Profile"
+    },
+    "category": "radar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/RadarPerformanceProfile.webp",
+    "media": "previewlib/RadarPerformanceProfile.mp4"
+  },
+  {
+    "id": "LightRadarScorecard",
+    "name": {
+      "zh": "浅色雷达图评分卡",
+      "en": "Light Radar Scorecard"
+    },
+    "category": "radar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightRadarScorecard.webp",
+    "media": "previewlib/LightRadarScorecard.mp4"
+  },
+  {
+    "id": "ScatterOpportunityMap",
+    "name": {
+      "zh": "散点图机会地图",
+      "en": "Scatter Opportunity Map"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ScatterOpportunityMap.webp",
+    "media": "previewlib/ScatterOpportunityMap.mp4"
+  },
+  {
+    "id": "CorrelationHeatmapMatrix",
+    "name": {
+      "zh": "相关性热力图矩阵",
+      "en": "Correlation Heatmap Matrix"
+    },
+    "category": "heatmap",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CorrelationHeatmapMatrix.webp",
+    "media": "previewlib/CorrelationHeatmapMatrix.mp4"
+  },
+  {
+    "id": "DarkCorrelationMatrix",
+    "name": {
+      "zh": "深色相关性矩阵",
+      "en": "Dark Correlation Matrix"
+    },
+    "category": "heatmap",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkCorrelationMatrix.webp",
+    "media": "previewlib/DarkCorrelationMatrix.mp4"
+  },
+  {
+    "id": "WeeklyActivityHeatmap",
+    "name": {
+      "zh": "每周活跃度热力图",
+      "en": "Weekly Activity Heatmap"
+    },
+    "category": "heatmap",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/WeeklyActivityHeatmap.webp",
+    "media": "previewlib/WeeklyActivityHeatmap.mp4"
+  },
+  {
+    "id": "WaterfallProfitBridge",
+    "name": {
+      "zh": "瀑布图利润桥接",
+      "en": "Waterfall Profit Bridge"
+    },
+    "category": "waterfall_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/WaterfallProfitBridge.webp",
+    "media": "previewlib/WaterfallProfitBridge.mp4"
+  },
+  {
+    "id": "RevenueWaterfallBridge",
+    "name": {
+      "zh": "营收瀑布图桥接",
+      "en": "Revenue Waterfall Bridge"
+    },
+    "category": "waterfall_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/RevenueWaterfallBridge.webp",
+    "media": "previewlib/RevenueWaterfallBridge.mp4"
+  },
+  {
+    "id": "ConversionFunnelClean",
+    "name": {
+      "zh": "转化漏斗简洁",
+      "en": "Conversion Funnel"
+    },
+    "category": "flow_sankey",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ConversionFunnelClean.webp",
+    "media": "previewlib/ConversionFunnelClean.mp4"
+  },
+  {
+    "id": "SupplyFlowSankey",
+    "name": {
+      "zh": "供应流向桑基图",
+      "en": "Supply Flow Sankey"
+    },
+    "category": "flow_sankey",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SupplyFlowSankey.webp",
+    "media": "previewlib/SupplyFlowSankey.mp4"
+  },
+  {
+    "id": "SupplyChainSankeyFlow",
+    "name": {
+      "zh": "供应链路桑基图流向",
+      "en": "Supply Chain Sankey Flow"
+    },
+    "category": "flow_sankey",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SupplyChainSankeyFlow.webp",
+    "media": "previewlib/SupplyChainSankeyFlow.mp4"
+  },
+  {
+    "id": "MarketTreemapMosaic",
+    "name": {
+      "zh": "市场矩形树图拼接",
+      "en": "Market Treemap Mosaic"
+    },
+    "category": "comparison_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MarketTreemapMosaic.webp",
+    "media": "previewlib/MarketTreemapMosaic.mp4"
+  },
+  {
+    "id": "CyberCommandCenter",
+    "name": {
+      "zh": "赛博指挥中心",
+      "en": "Cyber Command Center"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CyberCommandCenter.webp",
+    "media": "previewlib/CyberCommandCenter.mp4"
+  },
+  {
+    "id": "LuxuryBlackGoldMetrics",
+    "name": {
+      "zh": "高级黑色金色指标",
+      "en": "Luxury Black Gold Metrics"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LuxuryBlackGoldMetrics.webp",
+    "media": "previewlib/LuxuryBlackGoldMetrics.mp4"
+  },
+  {
+    "id": "TimelineMilestones",
+    "name": {
+      "zh": "时间线里程碑",
+      "en": "Timeline Milestones"
+    },
+    "category": "timeline",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/TimelineMilestones.webp",
+    "media": "previewlib/TimelineMilestones.mp4"
+  },
+  {
+    "id": "TimelineMilestoneRoadmap",
+    "name": {
+      "zh": "时间线里程碑路线图",
+      "en": "Timeline Milestone Roadmap"
+    },
+    "category": "timeline",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/TimelineMilestoneRoadmap.webp",
+    "media": "previewlib/TimelineMilestoneRoadmap.mp4"
+  },
+  {
+    "id": "NarrativeChapterTitle",
+    "name": {
+      "zh": "叙事章节标题",
+      "en": "Narrative Chapter Title"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeChapterTitle.webp",
+    "media": "previewlib/NarrativeChapterTitle.mp4"
+  },
+  {
+    "id": "NarrativeQuestion",
+    "name": {
+      "zh": "叙事提问",
+      "en": "Narrative Question"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeQuestion.webp",
+    "media": "previewlib/NarrativeQuestion.mp4"
+  },
+  {
+    "id": "NarrativeQuote",
+    "name": {
+      "zh": "叙事引语",
+      "en": "Narrative Quote"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeQuote.webp",
+    "media": "previewlib/NarrativeQuote.mp4"
+  },
+  {
+    "id": "NarrativeStatHook",
+    "name": {
+      "zh": "叙事指标钩子",
+      "en": "Narrative Stat Hook"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeStatHook.webp",
+    "media": "previewlib/NarrativeStatHook.mp4"
+  },
+  {
+    "id": "NarrativeContext",
+    "name": {
+      "zh": "叙事背景",
+      "en": "Narrative Context"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeContext.webp",
+    "media": "previewlib/NarrativeContext.mp4"
+  },
+  {
+    "id": "NarrativeBullets",
+    "name": {
+      "zh": "叙事要点",
+      "en": "Narrative Bullets"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeBullets.webp",
+    "media": "previewlib/NarrativeBullets.mp4"
+  },
+  {
+    "id": "NarrativeVersus",
+    "name": {
+      "zh": "叙事对比",
+      "en": "Narrative Versus"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeVersus.webp",
+    "media": "previewlib/NarrativeVersus.mp4"
+  },
+  {
+    "id": "NarrativeDefinition",
+    "name": {
+      "zh": "叙事定义",
+      "en": "Narrative Definition"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeDefinition.webp",
+    "media": "previewlib/NarrativeDefinition.mp4"
+  },
+  {
+    "id": "NarrativeBeforeAfter",
+    "name": {
+      "zh": "叙事前后",
+      "en": "Narrative Before After"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeBeforeAfter.webp",
+    "media": "previewlib/NarrativeBeforeAfter.mp4"
+  },
+  {
+    "id": "NarrativeMiniTimeline",
+    "name": {
+      "zh": "叙事迷你时间线",
+      "en": "Narrative Mini Timeline"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeMiniTimeline.webp",
+    "media": "previewlib/NarrativeMiniTimeline.mp4"
+  },
+  {
+    "id": "ClosingSimpleOutro",
+    "name": {
+      "zh": "结尾简洁片尾",
+      "en": "Closing Simple Outro"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ClosingSimpleOutro.webp",
+    "media": "previewlib/ClosingSimpleOutro.mp4"
+  },
+  {
+    "id": "ClosingGradientSignal",
+    "name": {
+      "zh": "结尾渐变信号",
+      "en": "Closing Gradient Signal"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ClosingGradientSignal.webp",
+    "media": "previewlib/ClosingGradientSignal.mp4"
+  },
+  {
+    "id": "ClosingLightOutro",
+    "name": {
+      "zh": "结尾浅色片尾",
+      "en": "Closing Light Outro"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ClosingLightOutro.webp",
+    "media": "previewlib/ClosingLightOutro.mp4"
+  },
+  {
+    "id": "ClosingKeyTakeaways",
+    "name": {
+      "zh": "结尾关键结论",
+      "en": "Closing Key Takeaways"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ClosingKeyTakeaways.webp",
+    "media": "previewlib/ClosingKeyTakeaways.mp4"
+  },
+  {
+    "id": "ClosingMetricSummary",
+    "name": {
+      "zh": "结尾指标总结",
+      "en": "Closing Metric Summary"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ClosingMetricSummary.webp",
+    "media": "previewlib/ClosingMetricSummary.mp4"
+  },
+  {
+    "id": "ClosingActionPlan",
+    "name": {
+      "zh": "结尾行动计划",
+      "en": "Closing Action Plan"
+    },
+    "category": "narrative_scene",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/ClosingActionPlan.webp",
+    "media": "previewlib/ClosingActionPlan.mp4"
+  },
+  {
+    "id": "DenseRankingTable",
+    "name": {
+      "zh": "密集排名表格",
+      "en": "Dense Ranking Table"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DenseRankingTable.webp",
+    "media": "previewlib/DenseRankingTable.mp4"
+  },
+  {
+    "id": "MultiSliceDonut",
+    "name": {
+      "zh": "多分块环形图",
+      "en": "Multi-Slice Donut"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MultiSliceDonut.webp",
+    "media": "previewlib/MultiSliceDonut.mp4"
+  },
+  {
+    "id": "LongTrendline",
+    "name": {
+      "zh": "长序列趋势线",
+      "en": "Long Trendline"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LongTrendline.webp",
+    "media": "previewlib/LongTrendline.mp4"
+  },
+  {
+    "id": "DenseScatterCloud",
+    "name": {
+      "zh": "密集散点图云",
+      "en": "Dense Scatter Cloud"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DenseScatterCloud.webp",
+    "media": "previewlib/DenseScatterCloud.mp4"
+  },
+  {
+    "id": "WideComparisonGrid",
+    "name": {
+      "zh": "宽幅对比网格",
+      "en": "Wide Comparison Grid"
+    },
+    "category": "comparison_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/WideComparisonGrid.webp",
+    "media": "previewlib/WideComparisonGrid.mp4"
+  },
+  {
+    "id": "LongFlowSankey",
+    "name": {
+      "zh": "长序列流向桑基图",
+      "en": "Long Flow Sankey"
+    },
+    "category": "flow_sankey",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LongFlowSankey.webp",
+    "media": "previewlib/LongFlowSankey.mp4"
+  },
+  {
+    "id": "HorizontalBarMatrix",
+    "name": {
+      "zh": "横向条形图矩阵",
+      "en": "Horizontal Bar Matrix"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/HorizontalBarMatrix.webp",
+    "media": "previewlib/HorizontalBarMatrix.mp4"
+  },
+  {
+    "id": "LeaderboardCardGrid",
+    "name": {
+      "zh": "排行榜卡片网格",
+      "en": "Leaderboard Card Grid"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LeaderboardCardGrid.webp",
+    "media": "previewlib/LeaderboardCardGrid.mp4"
+  },
+  {
+    "id": "SteppedBarStrip",
+    "name": {
+      "zh": "阶梯条形图条带",
+      "en": "Stepped Bar Strip"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SteppedBarStrip.webp",
+    "media": "previewlib/SteppedBarStrip.mp4"
+  },
+  {
+    "id": "StackedShareBar",
+    "name": {
+      "zh": "堆叠占比条形图",
+      "en": "Stacked Share Bar"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/StackedShareBar.webp",
+    "media": "previewlib/StackedShareBar.mp4"
+  },
+  {
+    "id": "SegmentTreemapVertical",
+    "name": {
+      "zh": "分群矩形树图纵向",
+      "en": "Segment Treemap Vertical"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SegmentTreemapVertical.webp",
+    "media": "previewlib/SegmentTreemapVertical.mp4"
+  },
+  {
+    "id": "RaceTrackShare",
+    "name": {
+      "zh": "赛道轨道占比",
+      "en": "Race Track Share"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/RaceTrackShare.webp",
+    "media": "previewlib/RaceTrackShare.mp4"
+  },
+  {
+    "id": "MultiEntityScatterMatrix",
+    "name": {
+      "zh": "多实体散点图矩阵",
+      "en": "Multi-Entity Scatter Matrix"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/MultiEntityScatterMatrix.webp",
+    "media": "previewlib/MultiEntityScatterMatrix.mp4"
+  },
+  {
+    "id": "QuadrantSplitScatter",
+    "name": {
+      "zh": "象限分屏散点图",
+      "en": "Quadrant Split Scatter"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/QuadrantSplitScatter.webp",
+    "media": "previewlib/QuadrantSplitScatter.mp4"
+  },
+  {
+    "id": "LabeledScatterGrid",
+    "name": {
+      "zh": "带标签散点图网格",
+      "en": "Labeled Scatter Grid"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LabeledScatterGrid.webp",
+    "media": "previewlib/LabeledScatterGrid.mp4"
+  },
+  {
+    "id": "SmallMultiplesTrend",
+    "name": {
+      "zh": "小型多图趋势",
+      "en": "Small Multiples Trend"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SmallMultiplesTrend.webp",
+    "media": "previewlib/SmallMultiplesTrend.mp4"
+  },
+  {
+    "id": "SteppedLineRanking",
+    "name": {
+      "zh": "阶梯折线图排名",
+      "en": "Stepped Line Ranking"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/SteppedLineRanking.webp",
+    "media": "previewlib/SteppedLineRanking.mp4"
+  },
+  {
+    "id": "AreaStackTrend",
+    "name": {
+      "zh": "面积堆叠趋势",
+      "en": "Area Stack Trend"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/AreaStackTrend.webp",
+    "media": "previewlib/AreaStackTrend.mp4"
+  },
+  {
+    "id": "CleanTrendCard",
+    "name": {
+      "zh": "简洁趋势卡片",
+      "en": "Clean Trend Card"
+    },
+    "category": "line_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/CleanTrendCard.webp",
+    "media": "previewlib/CleanTrendCard.mp4"
+  },
+  {
+    "id": "BrightScatterGrid",
+    "name": {
+      "zh": "明亮散点图网格",
+      "en": "Bright Scatter Grid"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/BrightScatterGrid.webp",
+    "media": "previewlib/BrightScatterGrid.mp4"
+  },
+  {
+    "id": "LightComparisonPanel",
+    "name": {
+      "zh": "浅色对比面板",
+      "en": "Light Comparison Panel"
+    },
+    "category": "comparison_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightComparisonPanel.webp",
+    "media": "previewlib/LightComparisonPanel.mp4"
+  },
+  {
+    "id": "DarkComparisonPanel",
+    "name": {
+      "zh": "深色对比面板",
+      "en": "Dark Comparison Panel"
+    },
+    "category": "comparison_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkComparisonPanel.webp",
+    "media": "previewlib/DarkComparisonPanel.mp4"
+  },
+  {
+    "id": "DarkCompactBarRanking",
+    "name": {
+      "zh": "深色紧凑条形图排名",
+      "en": "Dark Compact Bar Ranking"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkCompactBarRanking.webp",
+    "media": "previewlib/DarkCompactBarRanking.mp4"
+  },
+  {
+    "id": "DarkCompactDonutShare",
+    "name": {
+      "zh": "深色紧凑环形图占比",
+      "en": "Dark Compact Donut Share"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkCompactDonutShare.webp",
+    "media": "previewlib/DarkCompactDonutShare.mp4"
+  },
+  {
+    "id": "DarkCompactScatterPanel",
+    "name": {
+      "zh": "深色紧凑散点图面板",
+      "en": "Dark Compact Scatter Panel"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkCompactScatterPanel.webp",
+    "media": "previewlib/DarkCompactScatterPanel.mp4"
+  },
+  {
+    "id": "NarrativeChapterTitleLight",
+    "name": {
+      "zh": "叙事章节标题浅色",
+      "en": "Narrative Chapter Title Light"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeChapterTitleLight.webp",
+    "media": "previewlib/NarrativeChapterTitleLight.mp4"
+  },
+  {
+    "id": "NarrativeStatHookLight",
+    "name": {
+      "zh": "叙事指标钩子浅色",
+      "en": "Narrative Stat Hook Light"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeStatHookLight.webp",
+    "media": "previewlib/NarrativeStatHookLight.mp4"
+  },
+  {
+    "id": "NarrativeBulletsLight",
+    "name": {
+      "zh": "叙事要点浅色",
+      "en": "Narrative Bullets Light"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeBulletsLight.webp",
+    "media": "previewlib/NarrativeBulletsLight.mp4"
+  },
+  {
+    "id": "NarrativeQuoteLight",
+    "name": {
+      "zh": "叙事引语浅色",
+      "en": "Narrative Quote Light"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeQuoteLight.webp",
+    "media": "previewlib/NarrativeQuoteLight.mp4"
+  },
+  {
+    "id": "NarrativeContextLight",
+    "name": {
+      "zh": "叙事背景浅色",
+      "en": "Narrative Context Light"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeContextLight.webp",
+    "media": "previewlib/NarrativeContextLight.mp4"
+  },
+  {
+    "id": "NarrativeContextIllustrated",
+    "name": {
+      "zh": "叙事背景插画式",
+      "en": "Narrative Context Illustrated"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeContextIllustrated.webp",
+    "media": "previewlib/NarrativeContextIllustrated.mp4"
+  },
+  {
+    "id": "NarrativeStatHookIllustrated",
+    "name": {
+      "zh": "叙事指标钩子插画式",
+      "en": "Narrative Stat Hook Illustrated"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeStatHookIllustrated.webp",
+    "media": "previewlib/NarrativeStatHookIllustrated.mp4"
+  },
+  {
+    "id": "NarrativeBulletsIllustrated",
+    "name": {
+      "zh": "叙事要点插画式",
+      "en": "Narrative Bullets Illustrated"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeBulletsIllustrated.webp",
+    "media": "previewlib/NarrativeBulletsIllustrated.mp4"
+  },
+  {
+    "id": "NarrativeChapterTitleIllustrated",
+    "name": {
+      "zh": "叙事章节标题插画式",
+      "en": "Narrative Chapter Title Illustrated"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeChapterTitleIllustrated.webp",
+    "media": "previewlib/NarrativeChapterTitleIllustrated.mp4"
+  },
+  {
+    "id": "NarrativeQuoteIllustrated",
+    "name": {
+      "zh": "叙事引语插画式",
+      "en": "Narrative Quote Illustrated"
+    },
+    "category": "narrative_card",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/NarrativeQuoteIllustrated.webp",
+    "media": "previewlib/NarrativeQuoteIllustrated.mp4"
+  },
+  {
+    "id": "LightDenseRankingBar",
+    "name": {
+      "zh": "浅色密集排名条形图",
+      "en": "Light Dense Ranking Bar"
+    },
+    "category": "bar_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightDenseRankingBar.webp",
+    "media": "previewlib/LightDenseRankingBar.mp4"
+  },
+  {
+    "id": "LightMultiSlicePie",
+    "name": {
+      "zh": "浅色多分块饼图",
+      "en": "Light Multi-Slice Pie"
+    },
+    "category": "pie_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightMultiSlicePie.webp",
+    "media": "previewlib/LightMultiSlicePie.mp4"
+  },
+  {
+    "id": "LightDenseScatter",
+    "name": {
+      "zh": "浅色密集散点图",
+      "en": "Light Dense Scatter"
+    },
+    "category": "scatter_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightDenseScatter.webp",
+    "media": "previewlib/LightDenseScatter.mp4"
+  },
+  {
+    "id": "LightFlowSankey",
+    "name": {
+      "zh": "浅色流向桑基图",
+      "en": "Light Flow Sankey"
+    },
+    "category": "flow_sankey",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightFlowSankey.webp",
+    "media": "previewlib/LightFlowSankey.mp4"
+  },
+  {
+    "id": "LightWideComparison",
+    "name": {
+      "zh": "浅色宽幅对比",
+      "en": "Light Wide Comparison"
+    },
+    "category": "comparison_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightWideComparison.webp",
+    "media": "previewlib/LightWideComparison.mp4"
+  },
+  {
+    "id": "DarkWaterfallBridge",
+    "name": {
+      "zh": "深色瀑布图桥接",
+      "en": "Dark Waterfall Bridge"
+    },
+    "category": "waterfall_chart",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkWaterfallBridge.webp",
+    "media": "previewlib/DarkWaterfallBridge.mp4"
+  },
+  {
+    "id": "DarkTimelineMilestones",
+    "name": {
+      "zh": "深色时间线里程碑",
+      "en": "Dark Timeline Milestones"
+    },
+    "category": "timeline",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/DarkTimelineMilestones.webp",
+    "media": "previewlib/DarkTimelineMilestones.mp4"
+  },
+  {
+    "id": "LightHeroNumber",
+    "name": {
+      "zh": "浅色核心数字",
+      "en": "Light Hero Number"
+    },
+    "category": "stat_cards",
+    "native": false,
+    "frames": 180,
+    "width": 1920,
+    "height": 1080,
+    "poster": "previewlib/poster/LightHeroNumber.webp",
+    "media": "previewlib/LightHeroNumber.mp4"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SourceToInsight",
+  "type": "object",
+  "required": [
+    "title",
+    "question",
+    "rows",
+    "unit",
+    "takeaway",
+    "source"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "value"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "unit": {
+      "type": "string"
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

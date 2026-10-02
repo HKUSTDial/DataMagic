@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "nameZh": "图表焦点推镜",
+    "nameEn": "Chart Focus Push",
+    "descriptionZh": "先建立完整趋势，再缓慢推向值得解释的异常值。",
+    "descriptionEn": "Establish the full trend before slowly pushing toward an anomaly worth explaining."
+  },
+  "eyebrow": "趋势扫描 · 异常聚焦",
+  "title": "增长并不均匀，第三季度出现结构性跃升",
+  "subtitle": "完整趋势先提供上下文，镜头随后靠近关键节点，将观众注意力集中到真正需要解释的数据上。",
+  "labels": ["2024 Q1", "2024 Q2", "2024 Q3", "2024 Q4", "2025 Q1", "2025 Q2", "2025 Q3", "2025 Q4"],
+  "values": [42, 47, 45, 53, 58, 61, 84, 67],
+  "unit": "%",
+  "anomalyIndex": 6,
+  "insight": "2025 Q3 升至 84%，较前一季度增加 23 个百分点。",
+  "source": "DataMagic Cards synthetic benchmark dataset / 演示数据",
+  "accentColor": "#087f8c"
+}

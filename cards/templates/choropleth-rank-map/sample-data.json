@@ -1,0 +1,40 @@
+{
+  "title": "全球市场规模并不平均",
+  "subtitle": "把区域数值映射到真实地理边界，并同步给出可核对的排名。",
+  "regions": [
+    {
+      "code": "CHN",
+      "label": "中国",
+      "value": 126,
+      "iconSrc": "icons/flags/CN.svg"
+    },
+    {
+      "code": "USA",
+      "label": "美国",
+      "value": 118,
+      "iconSrc": "icons/flags/US.svg"
+    },
+    {
+      "code": "DEU",
+      "label": "德国",
+      "value": 64,
+      "iconSrc": "icons/flags/DE.svg"
+    },
+    {
+      "code": "JPN",
+      "label": "日本",
+      "value": 58,
+      "iconSrc": "icons/flags/JP.svg"
+    },
+    {
+      "code": "BRA",
+      "label": "巴西",
+      "value": 43,
+      "iconSrc": "icons/flags/BR.svg"
+    }
+  ],
+  "unit": "B",
+  "takeaway": "前两个市场明显领先，区域差异比单一全球总量更值得关注。",
+  "source": "DataMagic Cards synthetic benchmark dataset",
+  "accentColor": "#2f6fed"
+}

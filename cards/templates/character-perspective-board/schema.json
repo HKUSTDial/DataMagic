@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CharacterPerspectiveBoard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "question",
+    "takeaway",
+    "source",
+    "presenter",
+    "metricLabel",
+    "unit",
+    "maximum",
+    "rows",
+    "conclusionAt",
+    "tiltDegrees"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 28
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 42
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 45
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 85
+    },
+    "metricLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 22
+    },
+    "unit": {
+      "type": "string",
+      "maxLength": 3
+    },
+    "maximum": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 9999
+    },
+    "conclusionAt": {
+      "type": "number",
+      "minimum": 4,
+      "maximum": 12
+    },
+    "tiltDegrees": {
+      "type": "number",
+      "minimum": -10,
+      "maximum": 10
+    },
+    "presenter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "src",
+        "type",
+        "label"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "image",
+            "video"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "durationSeconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "video"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "durationSeconds"
+            ]
+          }
+        }
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "value",
+          "at",
+          "caption"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 9999
+          },
+          "at": {
+            "type": "number",
+            "minimum": 2,
+            "maximum": 10.8
+          },
+          "caption": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 44
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "question",
+    "metricLabel",
+    "source",
+    "takeaway",
+    "rows",
+    "maximum",
+    "unit"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32
+    },
+    "question": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metricLabel": {
+      "type": "string",
+      "maxLength": 22
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 85
+    },
+    "takeaway": {
+      "type": "string",
+      "maxLength": 62
+    },
+    "unit": {
+      "type": "string",
+      "maxLength": 6
+    },
+    "maximum": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "value",
+          "at",
+          "caption"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 18
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "at": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "caption": {
+            "type": "string",
+            "maxLength": 55
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        }
+      }
+    },
+    "fontFamily": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RankedReveal"
+}

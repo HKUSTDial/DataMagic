@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DataMagnifierLens",
+  "type": "object",
+  "required": ["title", "subtitle", "labels", "values", "unit", "insight", "source", "accentColor"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1}, "subtitle": {"type": "string", "minLength": 1},
+    "labels": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+    "values": {"type": "array", "minItems": 3, "items": {"type": "number"}},
+    "unit": {"type": "string"}, "insight": {"type": "string", "minLength": 1}, "source": {"type": "string", "minLength": 1},
+    "accentColor": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+  }, "additionalProperties": false
+}

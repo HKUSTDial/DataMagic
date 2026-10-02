@@ -1,0 +1,14 @@
+{
+  "title": "全球供应网络如何逐步展开",
+  "subtitle": "路径按叙事顺序出现，累计值与每条流向使用同一份结构化数据。",
+  "origin": {"label": "上海", "coordinate": [121.47, 31.23]},
+  "routes": [
+    {"label": "新加坡", "destination": [103.82, 1.35], "value": 38, "color": "#55d7c8"},
+    {"label": "迪拜", "destination": [55.27, 25.20], "value": 29, "color": "#f2b84b"},
+    {"label": "鹿特丹", "destination": [4.48, 51.92], "value": 24, "color": "#6ea8fe"},
+    {"label": "洛杉矶", "destination": [-118.24, 34.05], "value": 31, "color": "#d987f2"}
+  ],
+  "unit": "K",
+  "takeaway": "亚洲节点最先形成，随后向欧洲和北美扩展。",
+  "source": "DataMagic Cards synthetic benchmark dataset"
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "datamagic",
-  "description": "DataMagic skills for Claude Code",
+  "description": "Create animated charts and data stories with DataMagic recipes",
   "owner": {
     "name": "HKUSTDial",
     "url": "https://github.com/HKUSTDial"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "datamagic-video",
-      "description": "Plan and render narrated animated data videos from tabular data.",
+      "description": "Find DataMagic recipes, adapt them to your data, and compose editable video stories.",
       "version": "0.1.0",
       "source": "./",
       "category": "data-science",

@@ -1,0 +1,13 @@
+{
+  "title": "先进制程产能集中度",
+  "context": "全球半导体制造 · 演示数据",
+  "metricLabel": "头部厂商份额",
+  "entityLabel": "样例企业 A",
+  "value": 58.2,
+  "unit": "%",
+  "takeaway": "把精确指标放入产业场景的负空间，让背景说明对象，让动态图形负责解释数据。",
+  "source": "DataMagic Cards synthetic benchmark dataset",
+  "backgroundSrc": "assets/editorial/semiconductor-cleanroom.png",
+  "accentColor": "#56d9ff",
+  "entityIconSrc": "icons/categories/product.svg"
+}

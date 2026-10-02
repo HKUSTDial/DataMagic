@@ -1,0 +1,81 @@
+{
+  "layout": "negative_space",
+  "videoSrc": "assets/recycling-facility-agnes.mp4",
+  "title": "自动分选正在改变材料回收效率",
+  "subtitle": "将运行指标放入视频左侧负空间，保留机械臂与输送线作为现场证据。",
+  "source": "Agnes Video 2.0 生成影像与 DataMagic Cards 合成数据（非真实统计）",
+  "conclusion": "视觉识别环节达到 94.6% 准确率，但人工复核仍是保证高价值材料纯度的关键。",
+  "metrics": [
+    {
+      "id": "accuracy",
+      "label": "识别准确率",
+      "value": 94.6,
+      "unit": "%",
+      "color": "#55dfc2",
+      "iconSrc": "icons/categories/scan.svg"
+    },
+    {
+      "id": "throughput",
+      "label": "每小时处理量",
+      "value": 18.4,
+      "unit": "吨",
+      "color": "#ffbd5b",
+      "iconSrc": "icons/categories/transport.svg"
+    },
+    {
+      "id": "purity",
+      "label": "输出纯度",
+      "value": 88.2,
+      "unit": "%",
+      "color": "#76a9ff",
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "id": "manual",
+      "label": "人工复核占比",
+      "value": 12.8,
+      "unit": "%",
+      "color": "#ff775f",
+      "iconSrc": "icons/categories/review.svg"
+    }
+  ],
+  "tracking": {
+    "label": "机械臂单次抓取成功率",
+    "value": 91.3,
+    "unit": "%",
+    "color": "#55dfc2",
+    "keyframes": [
+      {
+        "frame": 0,
+        "x": 0.99,
+        "y": 0.47
+      },
+      {
+        "frame": 66,
+        "x": 0.84,
+        "y": 0.46
+      },
+      {
+        "frame": 99,
+        "x": 0.87,
+        "y": 0.46
+      },
+      {
+        "frame": 132,
+        "x": 0.87,
+        "y": 0.46
+      },
+      {
+        "frame": 165,
+        "x": 0.85,
+        "y": 0.43
+      },
+      {
+        "frame": 204,
+        "x": 0.82,
+        "y": 0.39
+      }
+    ],
+    "iconSrc": "icons/categories/robot.svg"
+  }
+}

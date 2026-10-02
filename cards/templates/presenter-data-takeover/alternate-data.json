@@ -1,0 +1,9 @@
+{
+  "title":"订单变化，也有短暂的低谷", "question":"六周订单变化，哪一周值得单独解释？",
+  "takeaway":"第 3 周订单下降，后续回升并不消除这一段波动。",
+  "source":"DataMagic Cards 合成订单数据，非真实统计；生成猫角色；无声演示。",
+  "metricLabel":"订单周环比", "unit":"%",
+  "presenter":{"src":"assets/character-perspective-board/cat-host.mp4","type":"video","durationSeconds":14.375,"label":"猫主持 / 订单解读"},
+  "points":[{"label":"第1周","value":4},{"label":"第2周","value":6},{"label":"第3周","value":-3},{"label":"第4周","value":2},{"label":"第5周","value":5},{"label":"第6周","value":1}],
+  "domain":[-5,8],"focusIndex":2
+}

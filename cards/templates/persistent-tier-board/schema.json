@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PersistentTierBoard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "question",
+    "takeaway",
+    "source",
+    "unit",
+    "metricLabel",
+    "maximum",
+    "tiers",
+    "items"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 28
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 44
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 44
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 85
+    },
+    "unit": {
+      "type": "string",
+      "maxLength": 3
+    },
+    "metricLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 22
+    },
+    "maximum": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "tiers": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "minimum"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8
+          },
+          "minimum": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "before",
+          "after",
+          "at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8
+          },
+          "before": {
+            "type": "number",
+            "minimum": 0
+          },
+          "after": {
+            "type": "number",
+            "minimum": 0
+          },
+          "at": {
+            "type": "number",
+            "minimum": 3,
+            "maximum": 8
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "dpr": 2,
+  "copyButton": {
+    "x": 1377.640625,
+    "y": 843,
+    "width": 123.015625,
+    "height": 42
+  },
+  "offset": 1.073,
+  "errors": []
+}

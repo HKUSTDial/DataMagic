@@ -1,0 +1,224 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "bar_chart",
+    "style_template_id": "StyleTemplate-LeaderboardCardGrid",
+    "style_template_name": "Leaderboard Card Grid",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-LeaderboardCardGrid",
+      "chart_type": "bar_chart",
+      "theme": "dark",
+      "data_contract": "ranked items",
+      "entrance_animation": "card grid reveal",
+      "emphasis_animation": "card focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "card",
+        "bar",
+        "value"
+      ],
+      "suggested_narration": "August takes the top card on the leaderboard.",
+      "trigger_phrase": "August",
+      "animation_intent": "Highlight the matching card, mini bar, and value.",
+      "timing": "word_aligned"
+    },
+    "title": "Leaderboard Card Grid",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#fbbf24",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-LeaderboardCardGrid",
+      "chart_type": "bar_chart",
+      "title": "Leaderboard Card Grid",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "Jan",
+          "value": 120,
+          "display_value": "120K",
+          "color": "#fbbf24",
+          "series": "Revenue"
+        },
+        {
+          "label": "Feb",
+          "value": 138,
+          "display_value": "138K",
+          "color": "#10b981",
+          "series": "Revenue"
+        },
+        {
+          "label": "Mar",
+          "value": 151,
+          "display_value": "151K",
+          "color": "#f59e0b",
+          "series": "Revenue"
+        },
+        {
+          "label": "Apr",
+          "value": 167,
+          "display_value": "167K",
+          "color": "#6366f1",
+          "series": "Revenue"
+        },
+        {
+          "label": "May",
+          "value": 184,
+          "display_value": "184K",
+          "color": "#ec4899",
+          "series": "Revenue"
+        },
+        {
+          "label": "Jun",
+          "value": 205,
+          "display_value": "205K",
+          "color": "#14b8a6",
+          "series": "Revenue"
+        },
+        {
+          "label": "Jul",
+          "value": 226,
+          "display_value": "226K",
+          "color": "#f97316",
+          "series": "Revenue"
+        },
+        {
+          "label": "Aug",
+          "value": 241,
+          "display_value": "241K",
+          "color": "#8b5cf6",
+          "series": "Revenue"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#fbbf24",
+      "accent_color": "#fbbf24",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#fbbf24",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_LeaderboardCardGrid",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-LeaderboardCardGrid"
+    },
+    "narration": [
+      {
+        "text": "August takes the top card on the leaderboard.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Aug"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the matching card, mini bar, and value.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "August",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

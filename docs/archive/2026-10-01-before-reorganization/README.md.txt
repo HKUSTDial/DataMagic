@@ -1,0 +1,354 @@
+<div align="center">
+<img src="./assets/datamagic_logo.png" width="380" alt="DataMagic Logo">
+
+**用配方卡和 Agent Skill，把数据变成可编辑的动态故事。**
+
+*面向创作者、分析师和研究者：选一个案例，换成自己的数据，再交给编程智能体实现。*
+
+[![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://vldb.org/2026/)
+[![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://ieeevis.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
+[![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
+[![plugin-scanner](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml)
+![Status](https://img.shields.io/badge/状态-上线中-brightgreen)
+
+[中文](./README.md) | [English](./README.en.md)
+
+[🎨 配方卡](#-datamagic-cards) • [⚡ 快速上手](#-快速上手) • [🧩 Agent Skill](#-agent-skill) • [🌐 在线系统](#-datamagic-在线系统) • [📖 引用](#-引用) • [🤝 交流社区](#-交流社区)
+</div>
+
+DataMagic 提供 **[Cards 配方库](cards/README.md)** 和 **[datamagic-video Skill](skills/datamagic-video/)**，帮助创作者把数据做成动态图表和有故事感的视频。浏览动画案例，选择喜欢的配方，再让编程智能体替换数据、调整画面并渲染成片。
+
+仓库提供动画预览、配方说明、可编辑模板源码、示例数据、Agent Skill 和研究文档，支持本地浏览、模板复用与数据故事制作。
+
+## 🎨 DataMagic Cards
+
+**在线浏览：[datamagic.chat/cards/](https://datamagic.chat/cards/)** — 无需安装，直接查看动态预览与配方。
+
+你可以按排名、趋势、地图、主持人讲解、实景证据等用途浏览案例，查看动画，再复制实现指令，替换自己的数据和素材。适合自媒体短视频、业务解读、教学和研究展示。
+
+| 排名揭晓 | 趋势讲解 | 地图叙事 |
+|---|---|---|
+| [![倒序揭晓排行榜](cards/gallery/media/poster/RankedReveal.png)](cards/recipes/RankedReveal.md) | [![时间线镜头](cards/gallery/media/poster/ChartTimelineTravel.png)](cards/recipes/ChartTimelineTravel.md) | [![分区地图](cards/gallery/media/poster/ChoroplethRankMap.png)](cards/recipes/ChoroplethRankMap.md) |
+| 逐项揭晓，建立悬念与比较 | 沿时间推进，聚焦关键变化 | 用空间关系解释区域差异 |
+
+| 主持人逐项解读 | 实景转入数据证据 |
+|---|---|
+| [![主持人逐项解读](cards/gallery/media/poster/PresenterEvidenceBoard.png)](cards/recipes/PresenterEvidenceBoard.md) | [![实景转入数据证据](cards/gallery/media/poster/FootageEvidenceReveal.png)](cards/recipes/FootageEvidenceReveal.md) |
+| 人物、数据板和结论分阶段出现 | 先看场景，再读指标，不让图表抢占现场 |
+
+配方库目前包含 **139 张卡片、高清 MP4 预览和 8 套故事蓝图**：
+
+- **139 张配方卡均提供可编辑源码、schema 和示例数据**，支持替换数据后本地渲染。
+- 覆盖 **109 个图表与文字镜头**及 **30 个进阶故事、场景和运镜模板**。
+- **8 套故事蓝图**提供开场、证据、转折和结论的组织指南，帮助规划多镜头数据故事。
+
+完整配方目录和使用方法见 [Cards 文档](cards/README.md)。
+
+角色故事示例：[猫主持与透视数据板](cards/recipes/CharacterPerspectiveBoard.md)，用“设问 → 分步证据 → 结论”组织讲解；附家庭开支、物流提速两套输入，支持替换角色视频与数据。
+
+| 主持人与数据交接 | 反差与贡献解释 | 持续分层更新 |
+|---|---|---|
+| [![主持人让位](cards/gallery/media/poster/PresenterDataTakeover.png)](cards/recipes/PresenterDataTakeover.md) | [![贡献拆解](cards/gallery/media/poster/ContrastContributionStory.png)](cards/recipes/ContrastContributionStory.md) | [![分层板](cards/gallery/media/poster/PersistentTierBoard.png)](cards/recipes/PersistentTierBoard.md) |
+| 主持人缩成圆形小窗，图表接管 | 开场设问，核对正负贡献与终点 | 旧证据保留，新证据改变位置 |
+
+网页按“讲解与故事、实景与情境、镜头与转场、图表类型”浏览；“故事化讲解”专题跨类型组织案例。
+
+自媒体竖屏示例：[9:16 倒序榜单](cards/recipes/PortraitRankedReveal.md)，采用专为竖屏设计的 1080×1920 布局。
+
+## ⚡ 快速上手
+
+### 1. 本地浏览配方卡
+
+```bash
+git clone https://github.com/HKUSTDial/DataMagic.git
+cd DataMagic
+python3 -m http.server 8000 --directory cards/gallery
+```
+
+打开 [http://localhost:8000](http://localhost:8000)，查看预览和配方。画廊已有预览文件，浏览不需要先安装 Node 依赖。
+
+### 2. 运行一个可编辑示例
+
+另开终端，在仓库的 `cards/` 下执行（Node.js 20+）：
+
+```bash
+cd cards
+npm ci
+npx remotion render src/index.ts ShotCraft-RankedReveal out/ranking.mp4
+```
+
+先检查 `templates/ranked-reveal/sample-data.json` 的演示数据，再按 [配方](cards/recipes/RankedReveal.md) 和 schema 替换。输出 MP4 位于 `cards/out/ranking.mp4`。首次渲染可能需要下载浏览器；视频示例不默认包含配音。
+
+### 3. 让智能体使用你的数据
+
+在这个仓库里开启编程智能体，让它阅读 [datamagic-video Skill](skills/datamagic-video/SKILL.md)，例如：
+
+> 使用这个仓库的 datamagic-video Skill，把我提供的 CSV 做成倒序揭晓排行榜。先检查数据和单位，选用 Cards 中有源码的模板，保留正确排序和标签；输出可编辑源码、MP4，以及数据与画面检查结果。
+
+需要多镜头故事、主持人或实景素材时，再明确故事目标、横竖屏比例、素材路径和是否配音。
+
+## 🧩 Agent Skill
+
+[`datamagic-video`](skills/datamagic-video/) 把配方库和实际制作连起来：按任务选卡，读取所选配方、源码、schema 和示例数据，再替换数据与素材，安排时序，渲染并核对数字、布局和关键帧。
+
+支持三个入口：**单张动态图表、指定配方复用、短篇数据故事**。模板复用从替换数据与素材开始；短篇故事结合场景规划、DVSpec、旁白和同步规则，组织连续镜头与讲解节奏。
+
+仓库内直接使用的方式见上方示例；插件安装方式和完整使用说明见 [Skill README](skills/datamagic-video/README.md)。
+
+## 🌐 DataMagic 在线系统
+
+体验 [datamagic.chat](https://datamagic.chat/) 的在线制作流程：上传表格，规划场景，生成旁白并导出视频。下面介绍在线系统的制作模式与界面。
+
+**项目主页：** [datamagic-home.github.io](https://datamagic-home.github.io)
+
+**VIS 2026 长文：** [DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://arxiv.org/abs/2609.33403)
+
+**VLDB 2026 Demo 论文：** [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
+
+## 🔥 动态
+
+- **[2026.09.27]** 📄 IEEE VIS 2026 长文已上线 [arXiv](https://arxiv.org/abs/2609.33403)。
+- **[2026.08.09]** 📄 我们的长文 **[DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://arxiv.org/abs/2609.33403)** 被 **IEEE VIS 2026** 录用。
+- **[2026.07.05]** ✨ 新增 **定制化生成流程**：DataMagic 会先展示推荐的场景计划、可视化方案、叙事编排和动画高亮方式，用户可以在生成前逐步确认和调整，而不是等视频生成后再修改。
+- **[2026.06.20]** 🚀 DataMagic 正式上线！前往 [datamagic.chat](https://datamagic.chat/) 试用，上传数据即可在几分钟内生成带旁白的数据视频。
+- **[2026.06.20]** 🧩 发布 **[datamagic-video skill](./skills/datamagic-video/)**，可复用的指导，教 AI 编程智能体（Claude Code、Cursor、Codex）把表格数据变成带旁白的动态数据视频。
+- **[2026.06.18]** 📄 我们的论文 **"DataMagic: Transforming Tabular Data into Data Insight Video"** 被 **VLDB 2026 Demo Track** 录用，现已上线 [arXiv](https://arxiv.org/abs/2606.20388)。
+
+## 💡 为什么需要 DataMagic？
+
+很多时候，我们手里已经有了一份表格，却还要花大量时间回答这些问题：数据里到底有什么值得讲？应该画什么图？怎么把图串成一个清楚的故事？如果要给团队、客户或课堂展示，还要写旁白、配动画、录屏或剪视频。
+
+DataMagic 想解决的就是这个过程中的重复劳动：让 AI 先帮你分析数据、发现重点，再把这些重点组织成一段可以直接播放、修改和分享的数据视频。
+
+今天的工具各有擅长的环节：Excel、Vega-Lite、Matplotlib 适合做图，Tableau、Power BI、Looker 适合探索和监控，After Effects、Premiere、CapCut 适合精修视频，Seedance、Sora、Veo 等视频生成模型适合生成视觉画面。但从“原始表格”到“可播放、可编辑、可追溯的数据故事视频”，中间仍然需要分析、选图、写旁白、配动画和检查数据准确性。
+
+DataMagic 面向的正是这个缺口：**把原始结构化数据转化为可编辑、可追溯、带旁白的数据视频**。
+
+## 🪄 DataMagic 是什么？
+
+DataMagic 是一个 AI 辅助的数据视频生成系统。你可以上传 CSV 或 Excel 表格，给出一个分析目标或业务问题，DataMagic 会帮助分析数据、挖掘洞察、规划故事结构、选择图表、生成旁白、同步动画、预览结果，并导出 MP4 视频。
+
+它的核心不是简单地“生成一个视频”，而是让视频里的数字、标签和图表都能对应回原始数据。技术上，DataMagic 使用 **DVSpec** 把视觉元素、旁白和动画时序连接起来，让结果更容易检查、修改和继续生成。
+
+## 🔍 DataMagic 有什么不同？
+
+| 用户想做的事 | 常见工具的问题 | DataMagic 的做法 |
+|---|---|---|
+| 从一张表快速变成视频 | 分析、作图、写稿、剪辑通常分散在不同工具里 | 从上传数据到生成带旁白视频的一体化流程 |
+| 让 AI 帮忙发现重点 | 很多工具只负责画图，不负责判断哪些数据值得讲 | 自动分析数据并组织成可讲述的场景 |
+| 保证数字和图表可核查 | 像素级视频模型主要生成画面，数据绑定和溯源需要额外验证 | 图表元素通过 DVSpec 绑定到源数据 |
+| 生成后还能改 | 往往需要重新生成或手动剪辑 | 支持预览、文本编辑、自然语言调整，并尽可能保持局部更新 |
+| 直接用于汇报和分享 | 静态图表仍然需要人工讲解 | 导出可播放、可分享的动态数据故事 |
+
+### 在线试用步骤
+
+1. **上传数据**：CSV 或 Excel 表格
+2. **查看并调整 DataMagic 推荐**：确认场景计划、图表方案、叙事顺序、模板和动画高亮方式
+3. **导出视频**：下载生成好的数据故事视频
+
+## 🎯 生成模式
+
+**完整流程**：从一份数据表格出发，AI 自动分析数据、规划叙事结构、为每个场景生成旁白和动效，动效与旁白自动同步，最终输出一段完整的多场景数据视频。适合需要高质量呈现的场合，比如业务汇报、研究展示，以及向团队或领导展示分析结论。
+
+**快速生成**：流程与完整流程相同，AI 同样负责规划内容和生成旁白，区别在于场景渲染使用预置视觉模板而非逐场景 AI 生成，因此速度更快，但视觉上没有完整流程那么精细。适合对效率要求更高的用户，比如需要定期产出报告、或对视觉风格没有特别要求的场景。
+
+**单图表生成**：不需要完整视频，只需要一张能帮助发现或说明重点的动态图表。粘贴数据，快速生成一张带动效的图表，直接用在 PPT、对外报告或社交媒体里。适合快速探索一个数据重点，或表达一个不需要完整叙事结构的局部洞察。
+
+> [!NOTE]
+> **快速生成** 与 **单图表生成** 目前处于测试阶段（Beta）。常见用例下运行正常，但在一些边缘情况下可能出现非预期结果。欢迎通过 Issues 反馈问题。
+
+### 定制化生成流程
+
+完整流程和快速生成都支持定制化模式。DataMagic 会在关键阶段展示系统推荐结果，包括场景计划、可视化候选、叙事编排、视觉模板和动画高亮方式。用户可以接受推荐，也可以增删场景、切换图表或模板、调整叙事顺序，再进入最终生成。全自动模式仍然保留，适合希望快速得到完整结果的用户。
+
+## 🎬 演示视频
+
+<div align="center">
+<video src="https://github.com/user-attachments/assets/60bf21f9-1b04-4025-9f58-38b73818b068" width="760" controls></video>
+</div>
+
+**系统流程展示**：从上传数据到输出带旁白的动态视频。
+
+## 🌟 生成示例
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/76c81435-1ac1-49a0-b21f-413e33b57287" width="100%" controls></video>
+      <br><strong>中国消费复苏趋势</strong><br>
+      分析 2019-2025 年社会消费品零售总额与餐饮收入变化，展示疫情冲击后的消费韧性与服务型消费复苏。
+    </td>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/e15d0742-af24-4b30-a640-73264db91d7f" width="100%" controls></video>
+      <br><strong>中国新能源汽车竞争格局</strong><br>
+      对比 2024 年主要新能源汽车品牌月度销量、全年节奏与同比增长，呈现头部品牌的规模优势和增长拐点。
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/4600c2ca-72fe-4690-9ad4-3a611ef2ba7e" width="100%" controls></video>
+      <br><strong>Q4 销售分析</strong><br>
+      基于销售数据的动态柱状图和趋势可视化。
+    </td>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/1ef81518-b49d-4484-9b92-faaeff9cd188" width="100%" controls></video>
+      <br><strong>全球可再生能源转型</strong><br>
+      围绕 2018-2024 年全球可再生能源装机容量展开叙事，突出太阳能快速增长以及化石能源占比下降。
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/ea70e828-c6fa-4913-a2e5-29799dea1d47" width="100%" controls></video>
+      <br><strong>2024 科技公司营收排行</strong><br>
+      对比主要科技公司的 2024 年营收表现，展示 Amazon 的规模优势以及 Apple、Google、Nvidia、Meta 等公司的位置。
+    </td>
+    <td width="50%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/57a347d5-8076-4662-8f27-ec4051d6e622" width="100%" controls></video>
+      <br><strong>科技增长与市场动能</strong><br>
+      以执行摘要的方式回顾 2024 年科技行业表现，对比营收规模与增长速度，并突出 Nvidia 的高增长动能。
+    </td>
+  </tr>
+</table>
+
+## 🎨 模板库
+
+内置 100+ 种视觉风格，覆盖柱状图、折线图、饼图、散点图、桑基图、瀑布图、KPI 卡片等类型，每种样式均有预览图和社区评分。生成前可提前浏览并标记偏好风格。
+
+在线产品的模板浏览界面如下。公开可复用的配方与源码请看上方 [DataMagic Cards](#-datamagic-cards)。
+
+<div align="center">
+<img src="./images/template-gallery.png" width="760" alt="DataMagic 模板库">
+</div>
+
+## ✨ 功能概览
+
+DataMagic 以**数据绑定场景**（视觉元素直接绑定数据字段，可追溯可编辑）和**旁白感知时序**（动画与旁白自动对齐，生成有叙事感的完整视频）为核心。
+
+- AI 辅助推荐图表类型和视觉模板。
+- 支持定制化生成流程，在场景规划、可视化设计、叙事编排和动画高亮阶段让用户确认和调整 DataMagic 推荐。
+- 支持运行时预览、直接视觉编辑和自然语言修改。
+
+## 🧩 数据视频 Skill
+
+需要把 Skill 安装到智能体环境，而不是在克隆的仓库里使用时，可参考以下现有安装入口。先确认你的客户端支持相应插件命令；详细配置和使用说明见 [Skill README](./skills/datamagic-video/README.md)。
+
+```bash
+claude plugin marketplace add HKUSTDial/DataMagic
+claude plugin install datamagic-video@datamagic
+```
+
+Codex：
+
+```bash
+codex plugin marketplace add HKUSTDial/DataMagic
+codex plugin add datamagic-video@datamagic
+```
+
+也可用 shell 一行安装：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash
+```
+
+然后对智能体说：「帮我用这个 CSV 生成一个带旁白的数据视频……」。详见 [skill 说明](./skills/datamagic-video/README.md)。
+
+## 🤝 交流社区
+
+配方卡、原生模板和 Skill 已在本仓库提供；在线系统的完整后端暂未公开。欢迎 ⭐ Star、提交案例与反馈，一起完善公开资源。
+
+<table>
+  <tr>
+    <td width="68%" valign="middle">
+      <strong>加入微信交流群</strong><br>
+      欢迎分享使用案例、提问反馈，或交流数据可视化、AI 生成视频相关话题。
+    </td>
+    <td width="32%" align="center">
+      <img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic 微信交流群二维码"><br>
+      <sub>扫码加入</sub>
+    </td>
+  </tr>
+</table>
+
+### 关注公众号，免费领取额度
+
+关注以下任一微信公众号，回复 **DataMagic**，即可获得一次性兑换码（20 点额度），用于在线产品。
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./images/wechat-qr-dial-lab.jpg" width="160" alt="DIAL实验室微信公众号二维码"><br>
+      <strong>DIAL 实验室</strong><br>
+      <sub>实验室动态 &amp; DataMagic 最新进展</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./images/wechat-qr-xiege.jpg" width="160" alt="蟹哥聊科研微信公众号二维码"><br>
+      <strong>蟹哥聊科研</strong><br>
+      <sub>科研干货 &amp; AI 工具分享</sub>
+    </td>
+  </tr>
+</table>
+
+## 📍 当前状态
+
+- [x] 公开配方卡、动画预览、原生模板源码与 Agent Skill。
+- [x] 核心生成模式：完整流程、快速生成和单图表生成。
+- [x] 模板库和运行时编辑：预览视觉风格、编辑生成文本，并通过自然语言继续优化。
+- [x] 中英文公开文档：面向英文和中文用户的发布说明。
+- [x] 数据视频 skill 包：沉淀数据视频规划、图表选择、DVSpec 编写和动画设计的可复用指导。（[skills/datamagic-video/](./skills/datamagic-video/)）
+- [ ] 更多样的视觉风格：扩展叙事卡片、报告主题、领域化模板和适合演示的版式。
+- [ ] 多轨工作台与剪映交付：已有实验实现，暂缓推进；后续简化使用流程并完成 Mac 真机验收，再作为正式功能推广。（[实验说明](cards/workbench/README.md)）
+- [ ] 推荐与反馈学习：基于用户偏好和真实生成结果改进模板排序。
+- [ ] 公开实现资料：完善 pipeline、DVSpec、模板适配器、示例数据集和部署说明。
+- [ ] 扩展导出格式与分享流程。
+- [ ] 面向部署场景的团队和后台监控能力。
+
+## 📖 引用
+
+如果 DataMagic 对你的研究或工作有帮助，欢迎引用：
+
+**IEEE VIS 2026 长文：**
+
+```bibtex
+@misc{xie2026datamagicauthoringdata,
+  title={DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration},
+  author={Yupeng Xie and Zhenyang Wang and Liangwei Wang and Jiayi Zhu and Zhouan Shen and Yuyu Luo},
+  year={2026},
+  eprint={2609.33403},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC},
+  url={https://arxiv.org/abs/2609.33403},
+}
+```
+
+**VLDB 2026 Demo 论文：**
+
+```bibtex
+@misc{xie2026datamagictransformingtabulardata,
+  title={DataMagic: Transforming Tabular Data into Data Insight Video},
+  author={Yupeng Xie and Chen Ma and Zhenyang Wang and Liangwei Wang and Jiayi Zhu and Chuxuan Zeng and Zhouan Shen and Boyan Li and Yuyu Luo},
+  year={2026},
+  eprint={2606.20388},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC},
+  url={https://arxiv.org/abs/2606.20388},
+}
+```
+
+## 📄 许可证
+
+本仓库以 MIT License 开源，详见 [LICENSE](./LICENSE)。安全问题请按 [SECURITY.md](./SECURITY.md) 私下报告。
+
+## 📚 文档
+
+- [数据视频 Skill](./skills/datamagic-video/README.md)
+- [DataMagic Cards 配方与模板](./cards/README.md)
+- [核心 Pipeline 说明](./docs/pipeline-overview.zh-CN.md)
+- [DVSpec 设计说明](./docs/dvspec-overview.zh-CN.md)
+- [输入输出示例](./docs/input-output-examples.zh-CN.md)
+- [帮助中心](./docs/help-center.zh-CN.md)
+- [发布状态](./docs/release-status.zh-CN.md)
+
+<div align="center">
+<img src="./assets/framework-1.png" width="760" alt="DataMagic 系统架构图">
+</div>

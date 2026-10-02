@@ -1,0 +1,874 @@
+[
+  {
+    "slug": "BasicBarChart",
+    "id": "StyleTemplate-BasicBarChart",
+    "previewId": "RuntimeTemplatePreview-BasicBarChart",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeBasicBarChart.tsx",
+    "schema": "templates/runtime-cards/BasicBarChart/schema.json",
+    "sampleData": "templates/runtime-cards/BasicBarChart/sample-data.json"
+  },
+  {
+    "slug": "BasicLineChart",
+    "id": "StyleTemplate-BasicLineChart",
+    "previewId": "RuntimeTemplatePreview-BasicLineChart",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeBasicLineChart.tsx",
+    "schema": "templates/runtime-cards/BasicLineChart/schema.json",
+    "sampleData": "templates/runtime-cards/BasicLineChart/sample-data.json"
+  },
+  {
+    "slug": "BasicPieChart",
+    "id": "StyleTemplate-BasicPieChart",
+    "previewId": "RuntimeTemplatePreview-BasicPieChart",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeBasicPieChart.tsx",
+    "schema": "templates/runtime-cards/BasicPieChart/schema.json",
+    "sampleData": "templates/runtime-cards/BasicPieChart/sample-data.json"
+  },
+  {
+    "slug": "BasicStatCards",
+    "id": "StyleTemplate-BasicStatCards",
+    "previewId": "RuntimeTemplatePreview-BasicStatCards",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeBasicStatCards.tsx",
+    "schema": "templates/runtime-cards/BasicStatCards/schema.json",
+    "sampleData": "templates/runtime-cards/BasicStatCards/sample-data.json"
+  },
+  {
+    "slug": "OpeningEditorialTitle",
+    "id": "StyleTemplate-OpeningEditorialTitle",
+    "previewId": "RuntimeTemplatePreview-OpeningEditorialTitle",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeOpeningEditorialTitle.tsx",
+    "schema": "templates/runtime-cards/OpeningEditorialTitle/schema.json",
+    "sampleData": "templates/runtime-cards/OpeningEditorialTitle/sample-data.json"
+  },
+  {
+    "slug": "OpeningExecutiveBrief",
+    "id": "StyleTemplate-OpeningExecutiveBrief",
+    "previewId": "RuntimeTemplatePreview-OpeningExecutiveBrief",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeOpeningExecutiveBrief.tsx",
+    "schema": "templates/runtime-cards/OpeningExecutiveBrief/schema.json",
+    "sampleData": "templates/runtime-cards/OpeningExecutiveBrief/sample-data.json"
+  },
+  {
+    "slug": "OpeningDataGrid",
+    "id": "StyleTemplate-OpeningDataGrid",
+    "previewId": "RuntimeTemplatePreview-OpeningDataGrid",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeOpeningDataGrid.tsx",
+    "schema": "templates/runtime-cards/OpeningDataGrid/schema.json",
+    "sampleData": "templates/runtime-cards/OpeningDataGrid/sample-data.json"
+  },
+  {
+    "slug": "OpeningSplitMetrics",
+    "id": "StyleTemplate-OpeningSplitMetrics",
+    "previewId": "RuntimeTemplatePreview-OpeningSplitMetrics",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeOpeningSplitMetrics.tsx",
+    "schema": "templates/runtime-cards/OpeningSplitMetrics/schema.json",
+    "sampleData": "templates/runtime-cards/OpeningSplitMetrics/sample-data.json"
+  },
+  {
+    "slug": "OpeningCinematicHeadline",
+    "id": "StyleTemplate-OpeningCinematicHeadline",
+    "previewId": "RuntimeTemplatePreview-OpeningCinematicHeadline",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeOpeningCinematicHeadline.tsx",
+    "schema": "templates/runtime-cards/OpeningCinematicHeadline/schema.json",
+    "sampleData": "templates/runtime-cards/OpeningCinematicHeadline/sample-data.json"
+  },
+  {
+    "slug": "HeroNumberSpotlight",
+    "id": "StyleTemplate-HeroNumberSpotlight",
+    "previewId": "RuntimeTemplatePreview-HeroNumberSpotlight",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeHeroNumberSpotlight.tsx",
+    "schema": "templates/runtime-cards/HeroNumberSpotlight/schema.json",
+    "sampleData": "templates/runtime-cards/HeroNumberSpotlight/sample-data.json"
+  },
+  {
+    "slug": "KpiMicroDashboard",
+    "id": "StyleTemplate-KpiMicroDashboard",
+    "previewId": "RuntimeTemplatePreview-KpiMicroDashboard",
+    "component": "src/legacy/components/runtime_style_templates/RuntimeKpiMicroDashboard.tsx",
+    "schema": "templates/runtime-cards/KpiMicroDashboard/schema.json",
+    "sampleData": "templates/runtime-cards/KpiMicroDashboard/sample-data.json"
+  },
+  {
+    "slug": "DarkKpiMicroDashboard",
+    "id": "StyleTemplate-DarkKpiMicroDashboard",
+    "previewId": "RuntimeTemplatePreview-DarkKpiMicroDashboard",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeDarkKpiMicroDashboard.tsx",
+    "schema": "templates/runtime-cards/DarkKpiMicroDashboard/schema.json",
+    "sampleData": "templates/runtime-cards/DarkKpiMicroDashboard/sample-data.json"
+  },
+  {
+    "slug": "StatCardsKpiTrio",
+    "id": "StyleTemplate-StatCardsKpiTrio",
+    "previewId": "RuntimeTemplatePreview-StatCardsKpiTrio",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeStatCardsKpiTrio.tsx",
+    "schema": "templates/runtime-cards/StatCardsKpiTrio/schema.json",
+    "sampleData": "templates/runtime-cards/StatCardsKpiTrio/sample-data.json"
+  },
+  {
+    "slug": "QuarterlyRevenueGroupedBar",
+    "id": "StyleTemplate-QuarterlyRevenueGroupedBar",
+    "previewId": "RuntimeTemplatePreview-QuarterlyRevenueGroupedBar",
+    "component": "src/legacy/components/runtime_style_templates/comparison_chart/RuntimeQuarterlyRevenueGroupedBar.tsx",
+    "schema": "templates/runtime-cards/QuarterlyRevenueGroupedBar/schema.json",
+    "sampleData": "templates/runtime-cards/QuarterlyRevenueGroupedBar/sample-data.json"
+  },
+  {
+    "slug": "SwissMinimalReport",
+    "id": "StyleTemplate-SwissMinimalReport",
+    "previewId": "RuntimeTemplatePreview-SwissMinimalReport",
+    "component": "src/legacy/components/runtime_style_templates/comparison_chart/RuntimeSwissMinimalReport.tsx",
+    "schema": "templates/runtime-cards/SwissMinimalReport/schema.json",
+    "sampleData": "templates/runtime-cards/SwissMinimalReport/sample-data.json"
+  },
+  {
+    "slug": "CoffeeRatingHorizontalRanking",
+    "id": "StyleTemplate-CoffeeRatingHorizontalRanking",
+    "previewId": "RuntimeTemplatePreview-CoffeeRatingHorizontalRanking",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeCoffeeRatingHorizontalRanking.tsx",
+    "schema": "templates/runtime-cards/CoffeeRatingHorizontalRanking/schema.json",
+    "sampleData": "templates/runtime-cards/CoffeeRatingHorizontalRanking/sample-data.json"
+  },
+  {
+    "slug": "DepartmentHeadcountDarkBar",
+    "id": "StyleTemplate-DepartmentHeadcountDarkBar",
+    "previewId": "RuntimeTemplatePreview-DepartmentHeadcountDarkBar",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeDepartmentHeadcountDarkBar.tsx",
+    "schema": "templates/runtime-cards/DepartmentHeadcountDarkBar/schema.json",
+    "sampleData": "templates/runtime-cards/DepartmentHeadcountDarkBar/sample-data.json"
+  },
+  {
+    "slug": "SalesByRegionDarkColumn",
+    "id": "StyleTemplate-SalesByRegionDarkColumn",
+    "previewId": "RuntimeTemplatePreview-SalesByRegionDarkColumn",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeSalesByRegionDarkColumn.tsx",
+    "schema": "templates/runtime-cards/SalesByRegionDarkColumn/schema.json",
+    "sampleData": "templates/runtime-cards/SalesByRegionDarkColumn/sample-data.json"
+  },
+  {
+    "slug": "ExecutiveHorizontalBars",
+    "id": "StyleTemplate-ExecutiveHorizontalBars",
+    "previewId": "RuntimeTemplatePreview-ExecutiveHorizontalBars",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeExecutiveHorizontalBars.tsx",
+    "schema": "templates/runtime-cards/ExecutiveHorizontalBars/schema.json",
+    "sampleData": "templates/runtime-cards/ExecutiveHorizontalBars/sample-data.json"
+  },
+  {
+    "slug": "CompactColumnKpi",
+    "id": "StyleTemplate-CompactColumnKpi",
+    "previewId": "RuntimeTemplatePreview-CompactColumnKpi",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeCompactColumnKpi.tsx",
+    "schema": "templates/runtime-cards/CompactColumnKpi/schema.json",
+    "sampleData": "templates/runtime-cards/CompactColumnKpi/sample-data.json"
+  },
+  {
+    "slug": "MarginSlopeComparison",
+    "id": "StyleTemplate-MarginSlopeComparison",
+    "previewId": "RuntimeTemplatePreview-MarginSlopeComparison",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeMarginSlopeComparison.tsx",
+    "schema": "templates/runtime-cards/MarginSlopeComparison/schema.json",
+    "sampleData": "templates/runtime-cards/MarginSlopeComparison/sample-data.json"
+  },
+  {
+    "slug": "MetricTrendRibbon",
+    "id": "StyleTemplate-MetricTrendRibbon",
+    "previewId": "RuntimeTemplatePreview-MetricTrendRibbon",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeMetricTrendRibbon.tsx",
+    "schema": "templates/runtime-cards/MetricTrendRibbon/schema.json",
+    "sampleData": "templates/runtime-cards/MetricTrendRibbon/sample-data.json"
+  },
+  {
+    "slug": "LightFocusLine",
+    "id": "StyleTemplate-LightFocusLine",
+    "previewId": "RuntimeTemplatePreview-LightFocusLine",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeLightFocusLine.tsx",
+    "schema": "templates/runtime-cards/LightFocusLine/schema.json",
+    "sampleData": "templates/runtime-cards/LightFocusLine/sample-data.json"
+  },
+  {
+    "slug": "EditorialDataStory",
+    "id": "StyleTemplate-EditorialDataStory",
+    "previewId": "RuntimeTemplatePreview-EditorialDataStory",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeEditorialDataStory.tsx",
+    "schema": "templates/runtime-cards/EditorialDataStory/schema.json",
+    "sampleData": "templates/runtime-cards/EditorialDataStory/sample-data.json"
+  },
+  {
+    "slug": "DarkEditorialTrend",
+    "id": "StyleTemplate-DarkEditorialTrend",
+    "previewId": "RuntimeTemplatePreview-DarkEditorialTrend",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeDarkEditorialTrend.tsx",
+    "schema": "templates/runtime-cards/DarkEditorialTrend/schema.json",
+    "sampleData": "templates/runtime-cards/DarkEditorialTrend/sample-data.json"
+  },
+  {
+    "slug": "DarkSignalTrendline",
+    "id": "StyleTemplate-DarkSignalTrendline",
+    "previewId": "RuntimeTemplatePreview-DarkSignalTrendline",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeLongTrendline.tsx",
+    "schema": "templates/runtime-cards/DarkSignalTrendline/schema.json",
+    "sampleData": "templates/runtime-cards/DarkSignalTrendline/sample-data.json"
+  },
+  {
+    "slug": "DualSeriesPulseLine",
+    "id": "StyleTemplate-DualSeriesPulseLine",
+    "previewId": "RuntimeTemplatePreview-DualSeriesPulseLine",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeDualSeriesPulseLine.tsx",
+    "schema": "templates/runtime-cards/DualSeriesPulseLine/schema.json",
+    "sampleData": "templates/runtime-cards/DualSeriesPulseLine/sample-data.json"
+  },
+  {
+    "slug": "SlopeChangeRanking",
+    "id": "StyleTemplate-SlopeChangeRanking",
+    "previewId": "RuntimeTemplatePreview-SlopeChangeRanking",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeSlopeChangeRanking.tsx",
+    "schema": "templates/runtime-cards/SlopeChangeRanking/schema.json",
+    "sampleData": "templates/runtime-cards/SlopeChangeRanking/sample-data.json"
+  },
+  {
+    "slug": "MarketShareDonut",
+    "id": "StyleTemplate-MarketShareDonut",
+    "previewId": "RuntimeTemplatePreview-MarketShareDonut",
+    "component": "src/legacy/components/runtime_style_templates/RuntimeMarketShareDonut.tsx",
+    "schema": "templates/runtime-cards/MarketShareDonut/schema.json",
+    "sampleData": "templates/runtime-cards/MarketShareDonut/sample-data.json"
+  },
+  {
+    "slug": "NestedRingShare",
+    "id": "StyleTemplate-NestedRingShare",
+    "previewId": "RuntimeTemplatePreview-NestedRingShare",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeNestedRingShare.tsx",
+    "schema": "templates/runtime-cards/NestedRingShare/schema.json",
+    "sampleData": "templates/runtime-cards/NestedRingShare/sample-data.json"
+  },
+  {
+    "slug": "SemiGaugeProgress",
+    "id": "StyleTemplate-SemiGaugeProgress",
+    "previewId": "RuntimeTemplatePreview-SemiGaugeProgress",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeSemiGaugeProgress.tsx",
+    "schema": "templates/runtime-cards/SemiGaugeProgress/schema.json",
+    "sampleData": "templates/runtime-cards/SemiGaugeProgress/sample-data.json"
+  },
+  {
+    "slug": "CustomerSegmentsScatter",
+    "id": "StyleTemplate-CustomerSegmentsScatter",
+    "previewId": "RuntimeTemplatePreview-CustomerSegmentsScatter",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeCustomerSegmentsScatter.tsx",
+    "schema": "templates/runtime-cards/CustomerSegmentsScatter/schema.json",
+    "sampleData": "templates/runtime-cards/CustomerSegmentsScatter/sample-data.json"
+  },
+  {
+    "slug": "PortfolioBubbleMatrix",
+    "id": "StyleTemplate-PortfolioBubbleMatrix",
+    "previewId": "RuntimeTemplatePreview-PortfolioBubbleMatrix",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimePortfolioBubbleMatrix.tsx",
+    "schema": "templates/runtime-cards/PortfolioBubbleMatrix/schema.json",
+    "sampleData": "templates/runtime-cards/PortfolioBubbleMatrix/sample-data.json"
+  },
+  {
+    "slug": "ProductPerformanceRadar",
+    "id": "StyleTemplate-ProductPerformanceRadar",
+    "previewId": "RuntimeTemplatePreview-ProductPerformanceRadar",
+    "component": "src/legacy/components/runtime_style_templates/radar_chart/RuntimeProductPerformanceRadar.tsx",
+    "schema": "templates/runtime-cards/ProductPerformanceRadar/schema.json",
+    "sampleData": "templates/runtime-cards/ProductPerformanceRadar/sample-data.json"
+  },
+  {
+    "slug": "RadarPerformanceProfile",
+    "id": "StyleTemplate-RadarPerformanceProfile",
+    "previewId": "RuntimeTemplatePreview-RadarPerformanceProfile",
+    "component": "src/legacy/components/runtime_style_templates/radar_chart/RuntimeRadarPerformanceProfile.tsx",
+    "schema": "templates/runtime-cards/RadarPerformanceProfile/schema.json",
+    "sampleData": "templates/runtime-cards/RadarPerformanceProfile/sample-data.json"
+  },
+  {
+    "slug": "LightRadarScorecard",
+    "id": "StyleTemplate-LightRadarScorecard",
+    "previewId": "RuntimeTemplatePreview-LightRadarScorecard",
+    "component": "src/legacy/components/runtime_style_templates/radar_chart/RuntimeLightRadarScorecard.tsx",
+    "schema": "templates/runtime-cards/LightRadarScorecard/schema.json",
+    "sampleData": "templates/runtime-cards/LightRadarScorecard/sample-data.json"
+  },
+  {
+    "slug": "ScatterOpportunityMap",
+    "id": "StyleTemplate-ScatterOpportunityMap",
+    "previewId": "RuntimeTemplatePreview-ScatterOpportunityMap",
+    "component": "src/legacy/components/runtime_style_templates/RuntimeScatterOpportunityMap.tsx",
+    "schema": "templates/runtime-cards/ScatterOpportunityMap/schema.json",
+    "sampleData": "templates/runtime-cards/ScatterOpportunityMap/sample-data.json"
+  },
+  {
+    "slug": "CorrelationHeatmapMatrix",
+    "id": "StyleTemplate-CorrelationHeatmapMatrix",
+    "previewId": "RuntimeTemplatePreview-CorrelationHeatmapMatrix",
+    "component": "src/legacy/components/runtime_style_templates/heatmap/RuntimeCorrelationHeatmapMatrix.tsx",
+    "schema": "templates/runtime-cards/CorrelationHeatmapMatrix/schema.json",
+    "sampleData": "templates/runtime-cards/CorrelationHeatmapMatrix/sample-data.json"
+  },
+  {
+    "slug": "DarkCorrelationMatrix",
+    "id": "StyleTemplate-DarkCorrelationMatrix",
+    "previewId": "RuntimeTemplatePreview-DarkCorrelationMatrix",
+    "component": "src/legacy/components/runtime_style_templates/heatmap/RuntimeDarkCorrelationMatrix.tsx",
+    "schema": "templates/runtime-cards/DarkCorrelationMatrix/schema.json",
+    "sampleData": "templates/runtime-cards/DarkCorrelationMatrix/sample-data.json"
+  },
+  {
+    "slug": "WeeklyActivityHeatmap",
+    "id": "StyleTemplate-WeeklyActivityHeatmap",
+    "previewId": "RuntimeTemplatePreview-WeeklyActivityHeatmap",
+    "component": "src/legacy/components/runtime_style_templates/heatmap/RuntimeWeeklyActivityHeatmap.tsx",
+    "schema": "templates/runtime-cards/WeeklyActivityHeatmap/schema.json",
+    "sampleData": "templates/runtime-cards/WeeklyActivityHeatmap/sample-data.json"
+  },
+  {
+    "slug": "WaterfallProfitBridge",
+    "id": "StyleTemplate-WaterfallProfitBridge",
+    "previewId": "RuntimeTemplatePreview-WaterfallProfitBridge",
+    "component": "src/legacy/components/runtime_style_templates/waterfall_chart/RuntimeWaterfallProfitBridge.tsx",
+    "schema": "templates/runtime-cards/WaterfallProfitBridge/schema.json",
+    "sampleData": "templates/runtime-cards/WaterfallProfitBridge/sample-data.json"
+  },
+  {
+    "slug": "RevenueWaterfallBridge",
+    "id": "StyleTemplate-RevenueWaterfallBridge",
+    "previewId": "RuntimeTemplatePreview-RevenueWaterfallBridge",
+    "component": "src/legacy/components/runtime_style_templates/waterfall_chart/RuntimeRevenueWaterfallBridge.tsx",
+    "schema": "templates/runtime-cards/RevenueWaterfallBridge/schema.json",
+    "sampleData": "templates/runtime-cards/RevenueWaterfallBridge/sample-data.json"
+  },
+  {
+    "slug": "ConversionFunnelClean",
+    "id": "StyleTemplate-ConversionFunnelClean",
+    "previewId": "RuntimeTemplatePreview-ConversionFunnelClean",
+    "component": "src/legacy/components/runtime_style_templates/flow_sankey/RuntimeConversionFunnelClean.tsx",
+    "schema": "templates/runtime-cards/ConversionFunnelClean/schema.json",
+    "sampleData": "templates/runtime-cards/ConversionFunnelClean/sample-data.json"
+  },
+  {
+    "slug": "SupplyFlowSankey",
+    "id": "StyleTemplate-SupplyFlowSankey",
+    "previewId": "RuntimeTemplatePreview-SupplyFlowSankey",
+    "component": "src/legacy/components/runtime_style_templates/flow_sankey/RuntimeSupplyFlowSankey.tsx",
+    "schema": "templates/runtime-cards/SupplyFlowSankey/schema.json",
+    "sampleData": "templates/runtime-cards/SupplyFlowSankey/sample-data.json"
+  },
+  {
+    "slug": "SupplyChainSankeyFlow",
+    "id": "StyleTemplate-SupplyChainSankeyFlow",
+    "previewId": "RuntimeTemplatePreview-SupplyChainSankeyFlow",
+    "component": "src/legacy/components/runtime_style_templates/flow_sankey/RuntimeSupplyChainSankeyFlow.tsx",
+    "schema": "templates/runtime-cards/SupplyChainSankeyFlow/schema.json",
+    "sampleData": "templates/runtime-cards/SupplyChainSankeyFlow/sample-data.json"
+  },
+  {
+    "slug": "MarketTreemapMosaic",
+    "id": "StyleTemplate-MarketTreemapMosaic",
+    "previewId": "RuntimeTemplatePreview-MarketTreemapMosaic",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeMarketTreemapMosaic.tsx",
+    "schema": "templates/runtime-cards/MarketTreemapMosaic/schema.json",
+    "sampleData": "templates/runtime-cards/MarketTreemapMosaic/sample-data.json"
+  },
+  {
+    "slug": "CyberCommandCenter",
+    "id": "StyleTemplate-CyberCommandCenter",
+    "previewId": "RuntimeTemplatePreview-CyberCommandCenter",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeCyberCommandCenter.tsx",
+    "schema": "templates/runtime-cards/CyberCommandCenter/schema.json",
+    "sampleData": "templates/runtime-cards/CyberCommandCenter/sample-data.json"
+  },
+  {
+    "slug": "LuxuryBlackGoldMetrics",
+    "id": "StyleTemplate-LuxuryBlackGoldMetrics",
+    "previewId": "RuntimeTemplatePreview-LuxuryBlackGoldMetrics",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeLuxuryBlackGoldMetrics.tsx",
+    "schema": "templates/runtime-cards/LuxuryBlackGoldMetrics/schema.json",
+    "sampleData": "templates/runtime-cards/LuxuryBlackGoldMetrics/sample-data.json"
+  },
+  {
+    "slug": "TimelineMilestones",
+    "id": "StyleTemplate-TimelineMilestones",
+    "previewId": "RuntimeTemplatePreview-TimelineMilestones",
+    "component": "src/legacy/components/runtime_style_templates/timeline/RuntimeTimelineMilestones.tsx",
+    "schema": "templates/runtime-cards/TimelineMilestones/schema.json",
+    "sampleData": "templates/runtime-cards/TimelineMilestones/sample-data.json"
+  },
+  {
+    "slug": "TimelineMilestoneRoadmap",
+    "id": "StyleTemplate-TimelineMilestoneRoadmap",
+    "previewId": "RuntimeTemplatePreview-TimelineMilestoneRoadmap",
+    "component": "src/legacy/components/runtime_style_templates/timeline/RuntimeTimelineMilestoneRoadmap.tsx",
+    "schema": "templates/runtime-cards/TimelineMilestoneRoadmap/schema.json",
+    "sampleData": "templates/runtime-cards/TimelineMilestoneRoadmap/sample-data.json"
+  },
+  {
+    "slug": "NarrativeChapterTitle",
+    "id": "StyleTemplate-NarrativeChapterTitle",
+    "previewId": "RuntimeTemplatePreview-NarrativeChapterTitle",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeChapterTitle.tsx",
+    "schema": "templates/runtime-cards/NarrativeChapterTitle/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeChapterTitle/sample-data.json"
+  },
+  {
+    "slug": "NarrativeQuestion",
+    "id": "StyleTemplate-NarrativeQuestion",
+    "previewId": "RuntimeTemplatePreview-NarrativeQuestion",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeQuestion.tsx",
+    "schema": "templates/runtime-cards/NarrativeQuestion/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeQuestion/sample-data.json"
+  },
+  {
+    "slug": "NarrativeQuote",
+    "id": "StyleTemplate-NarrativeQuote",
+    "previewId": "RuntimeTemplatePreview-NarrativeQuote",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeQuote.tsx",
+    "schema": "templates/runtime-cards/NarrativeQuote/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeQuote/sample-data.json"
+  },
+  {
+    "slug": "NarrativeStatHook",
+    "id": "StyleTemplate-NarrativeStatHook",
+    "previewId": "RuntimeTemplatePreview-NarrativeStatHook",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeStatHook.tsx",
+    "schema": "templates/runtime-cards/NarrativeStatHook/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeStatHook/sample-data.json"
+  },
+  {
+    "slug": "NarrativeContext",
+    "id": "StyleTemplate-NarrativeContext",
+    "previewId": "RuntimeTemplatePreview-NarrativeContext",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeContext.tsx",
+    "schema": "templates/runtime-cards/NarrativeContext/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeContext/sample-data.json"
+  },
+  {
+    "slug": "NarrativeBullets",
+    "id": "StyleTemplate-NarrativeBullets",
+    "previewId": "RuntimeTemplatePreview-NarrativeBullets",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeBullets.tsx",
+    "schema": "templates/runtime-cards/NarrativeBullets/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeBullets/sample-data.json"
+  },
+  {
+    "slug": "NarrativeVersus",
+    "id": "StyleTemplate-NarrativeVersus",
+    "previewId": "RuntimeTemplatePreview-NarrativeVersus",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeVersus.tsx",
+    "schema": "templates/runtime-cards/NarrativeVersus/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeVersus/sample-data.json"
+  },
+  {
+    "slug": "NarrativeDefinition",
+    "id": "StyleTemplate-NarrativeDefinition",
+    "previewId": "RuntimeTemplatePreview-NarrativeDefinition",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeDefinition.tsx",
+    "schema": "templates/runtime-cards/NarrativeDefinition/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeDefinition/sample-data.json"
+  },
+  {
+    "slug": "NarrativeBeforeAfter",
+    "id": "StyleTemplate-NarrativeBeforeAfter",
+    "previewId": "RuntimeTemplatePreview-NarrativeBeforeAfter",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeBeforeAfter.tsx",
+    "schema": "templates/runtime-cards/NarrativeBeforeAfter/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeBeforeAfter/sample-data.json"
+  },
+  {
+    "slug": "NarrativeMiniTimeline",
+    "id": "StyleTemplate-NarrativeMiniTimeline",
+    "previewId": "RuntimeTemplatePreview-NarrativeMiniTimeline",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeMiniTimeline.tsx",
+    "schema": "templates/runtime-cards/NarrativeMiniTimeline/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeMiniTimeline/sample-data.json"
+  },
+  {
+    "slug": "ClosingSimpleOutro",
+    "id": "StyleTemplate-ClosingSimpleOutro",
+    "previewId": "RuntimeTemplatePreview-ClosingSimpleOutro",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeClosingSimpleOutro.tsx",
+    "schema": "templates/runtime-cards/ClosingSimpleOutro/schema.json",
+    "sampleData": "templates/runtime-cards/ClosingSimpleOutro/sample-data.json"
+  },
+  {
+    "slug": "ClosingGradientSignal",
+    "id": "StyleTemplate-ClosingGradientSignal",
+    "previewId": "RuntimeTemplatePreview-ClosingGradientSignal",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeClosingGradientSignal.tsx",
+    "schema": "templates/runtime-cards/ClosingGradientSignal/schema.json",
+    "sampleData": "templates/runtime-cards/ClosingGradientSignal/sample-data.json"
+  },
+  {
+    "slug": "ClosingLightOutro",
+    "id": "StyleTemplate-ClosingLightOutro",
+    "previewId": "RuntimeTemplatePreview-ClosingLightOutro",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeClosingLightOutro.tsx",
+    "schema": "templates/runtime-cards/ClosingLightOutro/schema.json",
+    "sampleData": "templates/runtime-cards/ClosingLightOutro/sample-data.json"
+  },
+  {
+    "slug": "ClosingKeyTakeaways",
+    "id": "StyleTemplate-ClosingKeyTakeaways",
+    "previewId": "RuntimeTemplatePreview-ClosingKeyTakeaways",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeClosingKeyTakeaways.tsx",
+    "schema": "templates/runtime-cards/ClosingKeyTakeaways/schema.json",
+    "sampleData": "templates/runtime-cards/ClosingKeyTakeaways/sample-data.json"
+  },
+  {
+    "slug": "ClosingMetricSummary",
+    "id": "StyleTemplate-ClosingMetricSummary",
+    "previewId": "RuntimeTemplatePreview-ClosingMetricSummary",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeClosingMetricSummary.tsx",
+    "schema": "templates/runtime-cards/ClosingMetricSummary/schema.json",
+    "sampleData": "templates/runtime-cards/ClosingMetricSummary/sample-data.json"
+  },
+  {
+    "slug": "ClosingActionPlan",
+    "id": "StyleTemplate-ClosingActionPlan",
+    "previewId": "RuntimeTemplatePreview-ClosingActionPlan",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeClosingActionPlan.tsx",
+    "schema": "templates/runtime-cards/ClosingActionPlan/schema.json",
+    "sampleData": "templates/runtime-cards/ClosingActionPlan/sample-data.json"
+  },
+  {
+    "slug": "DenseRankingTable",
+    "id": "StyleTemplate-DenseRankingTable",
+    "previewId": "RuntimeTemplatePreview-DenseRankingTable",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeDenseRankingTable.tsx",
+    "schema": "templates/runtime-cards/DenseRankingTable/schema.json",
+    "sampleData": "templates/runtime-cards/DenseRankingTable/sample-data.json"
+  },
+  {
+    "slug": "MultiSliceDonut",
+    "id": "StyleTemplate-MultiSliceDonut",
+    "previewId": "RuntimeTemplatePreview-MultiSliceDonut",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeMultiSliceDonut.tsx",
+    "schema": "templates/runtime-cards/MultiSliceDonut/schema.json",
+    "sampleData": "templates/runtime-cards/MultiSliceDonut/sample-data.json"
+  },
+  {
+    "slug": "LongTrendline",
+    "id": "StyleTemplate-LongTrendline",
+    "previewId": "RuntimeTemplatePreview-LongTrendline",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeLongTrendline.tsx",
+    "schema": "templates/runtime-cards/LongTrendline/schema.json",
+    "sampleData": "templates/runtime-cards/LongTrendline/sample-data.json"
+  },
+  {
+    "slug": "DenseScatterCloud",
+    "id": "StyleTemplate-DenseScatterCloud",
+    "previewId": "RuntimeTemplatePreview-DenseScatterCloud",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeDenseScatterCloud.tsx",
+    "schema": "templates/runtime-cards/DenseScatterCloud/schema.json",
+    "sampleData": "templates/runtime-cards/DenseScatterCloud/sample-data.json"
+  },
+  {
+    "slug": "WideComparisonGrid",
+    "id": "StyleTemplate-WideComparisonGrid",
+    "previewId": "RuntimeTemplatePreview-WideComparisonGrid",
+    "component": "src/legacy/components/runtime_style_templates/comparison_chart/RuntimeWideComparisonGrid.tsx",
+    "schema": "templates/runtime-cards/WideComparisonGrid/schema.json",
+    "sampleData": "templates/runtime-cards/WideComparisonGrid/sample-data.json"
+  },
+  {
+    "slug": "LongFlowSankey",
+    "id": "StyleTemplate-LongFlowSankey",
+    "previewId": "RuntimeTemplatePreview-LongFlowSankey",
+    "component": "src/legacy/components/runtime_style_templates/flow_sankey/RuntimeLongFlowSankey.tsx",
+    "schema": "templates/runtime-cards/LongFlowSankey/schema.json",
+    "sampleData": "templates/runtime-cards/LongFlowSankey/sample-data.json"
+  },
+  {
+    "slug": "HorizontalBarMatrix",
+    "id": "StyleTemplate-HorizontalBarMatrix",
+    "previewId": "RuntimeTemplatePreview-HorizontalBarMatrix",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeHorizontalBarMatrix.tsx",
+    "schema": "templates/runtime-cards/HorizontalBarMatrix/schema.json",
+    "sampleData": "templates/runtime-cards/HorizontalBarMatrix/sample-data.json"
+  },
+  {
+    "slug": "LeaderboardCardGrid",
+    "id": "StyleTemplate-LeaderboardCardGrid",
+    "previewId": "RuntimeTemplatePreview-LeaderboardCardGrid",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeLeaderboardCardGrid.tsx",
+    "schema": "templates/runtime-cards/LeaderboardCardGrid/schema.json",
+    "sampleData": "templates/runtime-cards/LeaderboardCardGrid/sample-data.json"
+  },
+  {
+    "slug": "SteppedBarStrip",
+    "id": "StyleTemplate-SteppedBarStrip",
+    "previewId": "RuntimeTemplatePreview-SteppedBarStrip",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeSteppedBarStrip.tsx",
+    "schema": "templates/runtime-cards/SteppedBarStrip/schema.json",
+    "sampleData": "templates/runtime-cards/SteppedBarStrip/sample-data.json"
+  },
+  {
+    "slug": "StackedShareBar",
+    "id": "StyleTemplate-StackedShareBar",
+    "previewId": "RuntimeTemplatePreview-StackedShareBar",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeStackedShareBar.tsx",
+    "schema": "templates/runtime-cards/StackedShareBar/schema.json",
+    "sampleData": "templates/runtime-cards/StackedShareBar/sample-data.json"
+  },
+  {
+    "slug": "SegmentTreemapVertical",
+    "id": "StyleTemplate-SegmentTreemapVertical",
+    "previewId": "RuntimeTemplatePreview-SegmentTreemapVertical",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeSegmentTreemapVertical.tsx",
+    "schema": "templates/runtime-cards/SegmentTreemapVertical/schema.json",
+    "sampleData": "templates/runtime-cards/SegmentTreemapVertical/sample-data.json"
+  },
+  {
+    "slug": "RaceTrackShare",
+    "id": "StyleTemplate-RaceTrackShare",
+    "previewId": "RuntimeTemplatePreview-RaceTrackShare",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeRaceTrackShare.tsx",
+    "schema": "templates/runtime-cards/RaceTrackShare/schema.json",
+    "sampleData": "templates/runtime-cards/RaceTrackShare/sample-data.json"
+  },
+  {
+    "slug": "MultiEntityScatterMatrix",
+    "id": "StyleTemplate-MultiEntityScatterMatrix",
+    "previewId": "RuntimeTemplatePreview-MultiEntityScatterMatrix",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeMultiEntityScatterMatrix.tsx",
+    "schema": "templates/runtime-cards/MultiEntityScatterMatrix/schema.json",
+    "sampleData": "templates/runtime-cards/MultiEntityScatterMatrix/sample-data.json"
+  },
+  {
+    "slug": "QuadrantSplitScatter",
+    "id": "StyleTemplate-QuadrantSplitScatter",
+    "previewId": "RuntimeTemplatePreview-QuadrantSplitScatter",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeQuadrantSplitScatter.tsx",
+    "schema": "templates/runtime-cards/QuadrantSplitScatter/schema.json",
+    "sampleData": "templates/runtime-cards/QuadrantSplitScatter/sample-data.json"
+  },
+  {
+    "slug": "LabeledScatterGrid",
+    "id": "StyleTemplate-LabeledScatterGrid",
+    "previewId": "RuntimeTemplatePreview-LabeledScatterGrid",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeLabeledScatterGrid.tsx",
+    "schema": "templates/runtime-cards/LabeledScatterGrid/schema.json",
+    "sampleData": "templates/runtime-cards/LabeledScatterGrid/sample-data.json"
+  },
+  {
+    "slug": "SmallMultiplesTrend",
+    "id": "StyleTemplate-SmallMultiplesTrend",
+    "previewId": "RuntimeTemplatePreview-SmallMultiplesTrend",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeSmallMultiplesTrend.tsx",
+    "schema": "templates/runtime-cards/SmallMultiplesTrend/schema.json",
+    "sampleData": "templates/runtime-cards/SmallMultiplesTrend/sample-data.json"
+  },
+  {
+    "slug": "SteppedLineRanking",
+    "id": "StyleTemplate-SteppedLineRanking",
+    "previewId": "RuntimeTemplatePreview-SteppedLineRanking",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeSteppedLineRanking.tsx",
+    "schema": "templates/runtime-cards/SteppedLineRanking/schema.json",
+    "sampleData": "templates/runtime-cards/SteppedLineRanking/sample-data.json"
+  },
+  {
+    "slug": "AreaStackTrend",
+    "id": "StyleTemplate-AreaStackTrend",
+    "previewId": "RuntimeTemplatePreview-AreaStackTrend",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeAreaStackTrend.tsx",
+    "schema": "templates/runtime-cards/AreaStackTrend/schema.json",
+    "sampleData": "templates/runtime-cards/AreaStackTrend/sample-data.json"
+  },
+  {
+    "slug": "CleanTrendCard",
+    "id": "StyleTemplate-CleanTrendCard",
+    "previewId": "RuntimeTemplatePreview-CleanTrendCard",
+    "component": "src/legacy/components/runtime_style_templates/line_chart/RuntimeCleanTrendCard.tsx",
+    "schema": "templates/runtime-cards/CleanTrendCard/schema.json",
+    "sampleData": "templates/runtime-cards/CleanTrendCard/sample-data.json"
+  },
+  {
+    "slug": "BrightScatterGrid",
+    "id": "StyleTemplate-BrightScatterGrid",
+    "previewId": "RuntimeTemplatePreview-BrightScatterGrid",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeBrightScatterGrid.tsx",
+    "schema": "templates/runtime-cards/BrightScatterGrid/schema.json",
+    "sampleData": "templates/runtime-cards/BrightScatterGrid/sample-data.json"
+  },
+  {
+    "slug": "LightComparisonPanel",
+    "id": "StyleTemplate-LightComparisonPanel",
+    "previewId": "RuntimeTemplatePreview-LightComparisonPanel",
+    "component": "src/legacy/components/runtime_style_templates/comparison_chart/RuntimeLightComparisonPanel.tsx",
+    "schema": "templates/runtime-cards/LightComparisonPanel/schema.json",
+    "sampleData": "templates/runtime-cards/LightComparisonPanel/sample-data.json"
+  },
+  {
+    "slug": "DarkComparisonPanel",
+    "id": "StyleTemplate-DarkComparisonPanel",
+    "previewId": "RuntimeTemplatePreview-DarkComparisonPanel",
+    "component": "src/legacy/components/runtime_style_templates/comparison_chart/RuntimeDarkComparisonPanel.tsx",
+    "schema": "templates/runtime-cards/DarkComparisonPanel/schema.json",
+    "sampleData": "templates/runtime-cards/DarkComparisonPanel/sample-data.json"
+  },
+  {
+    "slug": "DarkCompactBarRanking",
+    "id": "StyleTemplate-DarkCompactBarRanking",
+    "previewId": "RuntimeTemplatePreview-DarkCompactBarRanking",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeDarkCompactBarRanking.tsx",
+    "schema": "templates/runtime-cards/DarkCompactBarRanking/schema.json",
+    "sampleData": "templates/runtime-cards/DarkCompactBarRanking/sample-data.json"
+  },
+  {
+    "slug": "DarkCompactDonutShare",
+    "id": "StyleTemplate-DarkCompactDonutShare",
+    "previewId": "RuntimeTemplatePreview-DarkCompactDonutShare",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeDarkCompactDonutShare.tsx",
+    "schema": "templates/runtime-cards/DarkCompactDonutShare/schema.json",
+    "sampleData": "templates/runtime-cards/DarkCompactDonutShare/sample-data.json"
+  },
+  {
+    "slug": "DarkCompactScatterPanel",
+    "id": "StyleTemplate-DarkCompactScatterPanel",
+    "previewId": "RuntimeTemplatePreview-DarkCompactScatterPanel",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeDarkCompactScatterPanel.tsx",
+    "schema": "templates/runtime-cards/DarkCompactScatterPanel/schema.json",
+    "sampleData": "templates/runtime-cards/DarkCompactScatterPanel/sample-data.json"
+  },
+  {
+    "slug": "NarrativeChapterTitleLight",
+    "id": "StyleTemplate-NarrativeChapterTitleLight",
+    "previewId": "RuntimeTemplatePreview-NarrativeChapterTitleLight",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeChapterTitleLight.tsx",
+    "schema": "templates/runtime-cards/NarrativeChapterTitleLight/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeChapterTitleLight/sample-data.json"
+  },
+  {
+    "slug": "NarrativeStatHookLight",
+    "id": "StyleTemplate-NarrativeStatHookLight",
+    "previewId": "RuntimeTemplatePreview-NarrativeStatHookLight",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeStatHookLight.tsx",
+    "schema": "templates/runtime-cards/NarrativeStatHookLight/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeStatHookLight/sample-data.json"
+  },
+  {
+    "slug": "NarrativeBulletsLight",
+    "id": "StyleTemplate-NarrativeBulletsLight",
+    "previewId": "RuntimeTemplatePreview-NarrativeBulletsLight",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeBulletsLight.tsx",
+    "schema": "templates/runtime-cards/NarrativeBulletsLight/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeBulletsLight/sample-data.json"
+  },
+  {
+    "slug": "NarrativeQuoteLight",
+    "id": "StyleTemplate-NarrativeQuoteLight",
+    "previewId": "RuntimeTemplatePreview-NarrativeQuoteLight",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeQuoteLight.tsx",
+    "schema": "templates/runtime-cards/NarrativeQuoteLight/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeQuoteLight/sample-data.json"
+  },
+  {
+    "slug": "NarrativeContextLight",
+    "id": "StyleTemplate-NarrativeContextLight",
+    "previewId": "RuntimeTemplatePreview-NarrativeContextLight",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeContextLight.tsx",
+    "schema": "templates/runtime-cards/NarrativeContextLight/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeContextLight/sample-data.json"
+  },
+  {
+    "slug": "NarrativeContextIllustrated",
+    "id": "StyleTemplate-NarrativeContextIllustrated",
+    "previewId": "RuntimeTemplatePreview-NarrativeContextIllustrated",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeContextIllustrated.tsx",
+    "schema": "templates/runtime-cards/NarrativeContextIllustrated/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeContextIllustrated/sample-data.json"
+  },
+  {
+    "slug": "NarrativeStatHookIllustrated",
+    "id": "StyleTemplate-NarrativeStatHookIllustrated",
+    "previewId": "RuntimeTemplatePreview-NarrativeStatHookIllustrated",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeStatHookIllustrated.tsx",
+    "schema": "templates/runtime-cards/NarrativeStatHookIllustrated/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeStatHookIllustrated/sample-data.json"
+  },
+  {
+    "slug": "NarrativeBulletsIllustrated",
+    "id": "StyleTemplate-NarrativeBulletsIllustrated",
+    "previewId": "RuntimeTemplatePreview-NarrativeBulletsIllustrated",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeBulletsIllustrated.tsx",
+    "schema": "templates/runtime-cards/NarrativeBulletsIllustrated/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeBulletsIllustrated/sample-data.json"
+  },
+  {
+    "slug": "NarrativeChapterTitleIllustrated",
+    "id": "StyleTemplate-NarrativeChapterTitleIllustrated",
+    "previewId": "RuntimeTemplatePreview-NarrativeChapterTitleIllustrated",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeChapterTitleIllustrated.tsx",
+    "schema": "templates/runtime-cards/NarrativeChapterTitleIllustrated/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeChapterTitleIllustrated/sample-data.json"
+  },
+  {
+    "slug": "NarrativeQuoteIllustrated",
+    "id": "StyleTemplate-NarrativeQuoteIllustrated",
+    "previewId": "RuntimeTemplatePreview-NarrativeQuoteIllustrated",
+    "component": "src/legacy/components/runtime_style_templates/text/RuntimeNarrativeQuoteIllustrated.tsx",
+    "schema": "templates/runtime-cards/NarrativeQuoteIllustrated/schema.json",
+    "sampleData": "templates/runtime-cards/NarrativeQuoteIllustrated/sample-data.json"
+  },
+  {
+    "slug": "LightDenseRankingBar",
+    "id": "StyleTemplate-LightDenseRankingBar",
+    "previewId": "RuntimeTemplatePreview-LightDenseRankingBar",
+    "component": "src/legacy/components/runtime_style_templates/bar_chart/RuntimeLightDenseRankingBar.tsx",
+    "schema": "templates/runtime-cards/LightDenseRankingBar/schema.json",
+    "sampleData": "templates/runtime-cards/LightDenseRankingBar/sample-data.json"
+  },
+  {
+    "slug": "LightMultiSlicePie",
+    "id": "StyleTemplate-LightMultiSlicePie",
+    "previewId": "RuntimeTemplatePreview-LightMultiSlicePie",
+    "component": "src/legacy/components/runtime_style_templates/pie_chart/RuntimeLightMultiSlicePie.tsx",
+    "schema": "templates/runtime-cards/LightMultiSlicePie/schema.json",
+    "sampleData": "templates/runtime-cards/LightMultiSlicePie/sample-data.json"
+  },
+  {
+    "slug": "LightDenseScatter",
+    "id": "StyleTemplate-LightDenseScatter",
+    "previewId": "RuntimeTemplatePreview-LightDenseScatter",
+    "component": "src/legacy/components/runtime_style_templates/scatter_chart/RuntimeLightDenseScatter.tsx",
+    "schema": "templates/runtime-cards/LightDenseScatter/schema.json",
+    "sampleData": "templates/runtime-cards/LightDenseScatter/sample-data.json"
+  },
+  {
+    "slug": "LightFlowSankey",
+    "id": "StyleTemplate-LightFlowSankey",
+    "previewId": "RuntimeTemplatePreview-LightFlowSankey",
+    "component": "src/legacy/components/runtime_style_templates/flow_sankey/RuntimeLightFlowSankey.tsx",
+    "schema": "templates/runtime-cards/LightFlowSankey/schema.json",
+    "sampleData": "templates/runtime-cards/LightFlowSankey/sample-data.json"
+  },
+  {
+    "slug": "LightWideComparison",
+    "id": "StyleTemplate-LightWideComparison",
+    "previewId": "RuntimeTemplatePreview-LightWideComparison",
+    "component": "src/legacy/components/runtime_style_templates/comparison_chart/RuntimeLightWideComparison.tsx",
+    "schema": "templates/runtime-cards/LightWideComparison/schema.json",
+    "sampleData": "templates/runtime-cards/LightWideComparison/sample-data.json"
+  },
+  {
+    "slug": "DarkWaterfallBridge",
+    "id": "StyleTemplate-DarkWaterfallBridge",
+    "previewId": "RuntimeTemplatePreview-DarkWaterfallBridge",
+    "component": "src/legacy/components/runtime_style_templates/waterfall_chart/RuntimeDarkWaterfallBridge.tsx",
+    "schema": "templates/runtime-cards/DarkWaterfallBridge/schema.json",
+    "sampleData": "templates/runtime-cards/DarkWaterfallBridge/sample-data.json"
+  },
+  {
+    "slug": "DarkTimelineMilestones",
+    "id": "StyleTemplate-DarkTimelineMilestones",
+    "previewId": "RuntimeTemplatePreview-DarkTimelineMilestones",
+    "component": "src/legacy/components/runtime_style_templates/timeline/RuntimeDarkTimelineMilestones.tsx",
+    "schema": "templates/runtime-cards/DarkTimelineMilestones/schema.json",
+    "sampleData": "templates/runtime-cards/DarkTimelineMilestones/sample-data.json"
+  },
+  {
+    "slug": "LightHeroNumber",
+    "id": "StyleTemplate-LightHeroNumber",
+    "previewId": "RuntimeTemplatePreview-LightHeroNumber",
+    "component": "src/legacy/components/runtime_style_templates/stat_cards/RuntimeLightHeroNumber.tsx",
+    "schema": "templates/runtime-cards/LightHeroNumber/schema.json",
+    "sampleData": "templates/runtime-cards/LightHeroNumber/sample-data.json"
+  }
+]

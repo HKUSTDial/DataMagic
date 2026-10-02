@@ -1,0 +1,19 @@
+{
+  "title": "海风吹过之后，电从哪里增长？",
+  "subtitle": "图表停靠在左侧负空间，完整保留风机主体与环境方向",
+  "focalBox": {"x": 1280, "y": 238, "width": 500, "height": 610},
+  "safeRegion": {"x": 72, "y": 232, "width": 980, "height": 700},
+  "subjectLabel": "近海风机 · 视觉主体",
+  "metricLabel": "年度上网电量",
+  "metricValue": "26.8",
+  "unit": "亿千瓦时",
+  "series": [
+    {"label": "2021", "value": 12.2},
+    {"label": "2022", "value": 16.4},
+    {"label": "2023", "value": 21.1},
+    {"label": "2024", "value": 26.8}
+  ],
+  "callout": "四年间样例上网电量增加 14.6 亿千瓦时，图表增长方向与海面空间方向保持一致。",
+  "source": "DataMagic Cards 合成演示数据",
+  "accentColor": "#E66D45"
+}

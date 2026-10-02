@@ -1,0 +1,160 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "pie_chart",
+    "style_template_id": "StyleTemplate-SemiGaugeProgress",
+    "style_template_name": "Semi Gauge Progress",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-SemiGaugeProgress",
+      "chart_type": "pie_chart",
+      "theme": "light",
+      "data_contract": "positive share items",
+      "entrance_animation": "gauge sweep",
+      "emphasis_animation": "segment focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "segment",
+        "label",
+        "value"
+      ],
+      "suggested_narration": "Enterprise leads the gauge at 42 percent.",
+      "trigger_phrase": "Enterprise",
+      "animation_intent": "Highlight the named gauge segment and share.",
+      "timing": "word_aligned"
+    },
+    "title": "Semi Gauge Progress",
+    "data": [
+      {
+        "label": "Enterprise",
+        "value": 42,
+        "display_value": "42%",
+        "color": "#2563eb"
+      },
+      {
+        "label": "Consumer",
+        "value": 28,
+        "display_value": "28%",
+        "color": "#10b981"
+      },
+      {
+        "label": "SMB",
+        "value": 18,
+        "display_value": "18%",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Partner",
+        "value": 12,
+        "display_value": "12%",
+        "color": "#6366f1"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-SemiGaugeProgress",
+      "chart_type": "pie_chart",
+      "title": "Semi Gauge Progress",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "positive_items"
+      },
+      "items": [
+        {
+          "label": "Enterprise",
+          "value": 42,
+          "display_value": "42%",
+          "color": "#2563eb"
+        },
+        {
+          "label": "Consumer",
+          "value": 28,
+          "display_value": "28%",
+          "color": "#10b981"
+        },
+        {
+          "label": "SMB",
+          "value": 18,
+          "display_value": "18%",
+          "color": "#f59e0b"
+        },
+        {
+          "label": "Partner",
+          "value": 12,
+          "display_value": "12%",
+          "color": "#6366f1"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_SemiGaugeProgress",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-SemiGaugeProgress"
+    },
+    "narration": [
+      {
+        "text": "Enterprise leads the gauge at 42 percent.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "reveal_slices",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Enterprise"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named gauge segment and share.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Enterprise",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

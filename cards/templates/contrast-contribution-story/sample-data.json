@@ -1,0 +1,41 @@
+{
+  "title": "营收涨了，利润为什么少了？",
+  "question": "看上去的增长，是否真的留下更多利润？",
+  "hookLabel": "本期营收增长",
+  "hook": {
+    "before": 100,
+    "after": 120
+  },
+  "takeaway": "新增成本超过新增营收，利润从 10 降到 5。",
+  "source": "DataMagic Cards 合成简化账本，非真实财报；不含其他账目；无声演示。",
+  "baselineLabel": "原有利润",
+  "baseline": 10,
+  "finalLabel": "本期利润",
+  "unit": "万元",
+  "maximum": 40,
+  "contributions": [
+    {
+      "label": "新增营收",
+      "value": 20,
+      "at": 3.2,
+      "caption": "新增营收贡献 20 万元，先看增长的一面。",
+      "iconSrc": "icons/categories/finance.svg"
+    },
+    {
+      "label": "材料成本",
+      "value": -15,
+      "at": 5.2,
+      "caption": "材料成本多了 15 万元，抵消了部分增长。",
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "其他成本",
+      "value": -10,
+      "at": 7.2,
+      "caption": "其他成本再增加 10 万元，合计超过新增营收。",
+      "iconSrc": "icons/categories/service.svg"
+    }
+  ],
+  "baselineIconSrc": "icons/categories/finance.svg",
+  "finalIconSrc": "icons/categories/finance.svg"
+}

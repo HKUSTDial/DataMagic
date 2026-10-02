@@ -1,0 +1,25 @@
+{
+  "duration": 30,
+  "sampleRate": 48000,
+  "bpm": 120,
+  "seed": 20261001,
+  "cues": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27
+  ],
+  "source": "Procedural original synthesis in cards/scripts/score_promo.cjs",
+  "mixes": {
+    "voiced": "-16 LUFS target; music ducks under voice",
+    "music": "-21 LUFS target"
+  },
+  "outputs": [
+    "zh-voiced",
+    "zh-music",
+    "en-music"
+  ]
+}

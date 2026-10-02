@@ -1,0 +1,5 @@
+使用 DataMagic 的 BarChartRace 配方，把 sales.csv 做成咖啡店销量的动态柱状图竞赛。标题「咖啡店的半年销量变化」，单位「杯」，12 秒、1920×1080、30fps。每种饮品用固定的不同颜色和对应图标。标明虚构演示数据，给我 MP4、可编辑参数与数据检查结果。
+
+这是一次真实用户流程验收。请阅读 /home/xieyupeng/DataMagicGitHub/skills/datamagic-video/SKILL.md 及要求的 cards-workflow 和 self-review，再读取对应配方、schema、source、sample。代码库在 /home/xieyupeng/DataMagicGitHub/cards，可读但不能修改公共模板或旧示例。只在当前 agent-workflow-demo 目录写入新文件。
+当前目录已准备 render.cjs 作为固定的渲染基础设施；它只读取 v1.json，不会帮你映射数据。请自行根据 CSV 写 v1.json 和 verify-data.cjs，然后执行 node render.cjs v1 和 node verify-data.cjs。依赖已准备，无需安装。运行完若有可用看图工具，查看 out/v1-middle.png、out/v1-final.png；不可用就如实说明。不得读取任何账号、密钥或服务器配置。
+请不要打开工作台，不部署任何网站，不复制旧成片来假装生成。不声称已完成未实际执行的验证。完成后用中文简短说明输出文件和核对结果。

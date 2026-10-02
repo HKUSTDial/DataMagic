@@ -1,0 +1,32 @@
+{
+  "title": "从完整比较进入关键结论",
+  "subtitle": "同一个数据对象跨越两个场景，保持数值、标签和视觉身份一致。",
+  "data": [
+    {
+      "label": "基础设施",
+      "value": 42,
+      "iconSrc": "icons/categories/transport.svg"
+    },
+    {
+      "label": "研发",
+      "value": 68,
+      "iconSrc": "icons/categories/research.svg"
+    },
+    {
+      "label": "市场",
+      "value": 31,
+      "iconSrc": "icons/categories/market.svg"
+    },
+    {
+      "label": "人才",
+      "value": 57,
+      "iconSrc": "icons/categories/education.svg"
+    }
+  ],
+  "focusIndex": 1,
+  "unit": "%",
+  "destinationTitle": "研发投入成为下一阶段增长的核心杠杆",
+  "takeaway": "研发占比达到 68%，镜头沿用同一指标进入结论场景，避免观众重新寻找视觉对象。",
+  "source": "示例数据 · 2026",
+  "accentColor": "#0f8f7c"
+}

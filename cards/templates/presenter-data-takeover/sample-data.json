@@ -1,0 +1,9 @@
+{
+  "title":"整体回升，不代表每一季都增长", "question":"看到后续回升，是否忽略了中间的回落？",
+  "takeaway":"第 4 季出现回落，总体回升不能替代分季度判断。",
+  "source":"DataMagic Cards 合成季度数据，非真实统计；生成猫角色；无声演示。",
+  "metricLabel":"季度环比变化", "unit":"%",
+  "presenter":{"src":"assets/character-perspective-board/cat-host.mp4","type":"video","durationSeconds":14.375,"label":"猫主持 / 趋势解读"},
+  "points":[{"label":"第1季","value":1.2},{"label":"第2季","value":2.4},{"label":"第3季","value":0.8},{"label":"第4季","value":-1.5},{"label":"第5季","value":1.6},{"label":"第6季","value":2.1}],
+  "domain":[-3,4],"focusIndex":3
+}

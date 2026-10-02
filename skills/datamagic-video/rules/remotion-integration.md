@@ -292,6 +292,6 @@ a `slide()` can suit vibrant's higher energy. Keep them short.
 5. Wire animation triggers to narration segment frames.
 6. Render to MP4.
 
-## What you are NOT shipping
+## Reusable implementations
 
-You generate fresh Remotion chart/scene components guided by this skill's principles. You are **not** copying DataMagic's production templates — those are the premium hosted path. Standalone output should be clean and correct; pixel-perfect premium templates are a reason to use the hosted product, not a requirement here.
+DataMagic Cards includes editable source, schemas and sample props for all 139 cards; see `cards-workflow.md`. Use the selected card's registered composition and retain its shared dependencies. For custom DVSpec scenes, generate new data-bound components or compose the bundled templates.

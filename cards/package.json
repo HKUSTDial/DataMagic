@@ -1,0 +1,43 @@
+{
+  "name": "datamagic-cards",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DataMagic's open data-video recipe cards and editable native examples.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "render:advanced": "node scripts/render_advanced_previews.cjs",
+    "preview:lite": "node scripts/build_light_previews.cjs",
+    "export:jianying": "node scripts/export_jianying.cjs",
+    "workbench": "node workbench/motion/scripts/catalog.mjs && vite --config workbench/motion/vite.config.mjs",
+    "workbench:build": "node workbench/motion/scripts/catalog.mjs && vite build --config workbench/motion/vite.config.mjs",
+    "workbench:typecheck": "tsc --noEmit --project workbench/motion/tsconfig.json"
+  },
+  "engines": {
+    "node": ">=20.10"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/noto-sans-sc": "^5.2.9",
+    "@remotion/player": "4.0.531",
+    "ajv": "^8.20.0",
+    "d3-geo": "^3.1.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.531"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.531",
+    "@remotion/cli": "4.0.531",
+    "@remotion/renderer": "4.0.531",
+    "@types/d3-geo": "^3.1.0",
+    "@types/node": "^20.10.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^6.4.3"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "从财报原页，重构一张可讲述的增长图",
+  "subtitle": "保留原始字段关系，再将阅读负担转化为视觉层级",
+  "sourceTitle": "季度业务摘要（节选）",
+  "rows": [
+    {
+      "label": "云服务",
+      "value": 42.8,
+      "sourceText": "企业订阅续费率持续提升",
+      "iconSrc": "icons/categories/cloud.svg"
+    },
+    {
+      "label": "智能终端",
+      "value": 31.6,
+      "sourceText": "新品周期带动结构回暖",
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "label": "数字内容",
+      "value": 18.9,
+      "sourceText": "会员收入保持稳定增长",
+      "iconSrc": "icons/categories/online.svg"
+    },
+    {
+      "label": "其他业务",
+      "value": 9.7,
+      "sourceText": "海外市场贡献小幅增加",
+      "iconSrc": "icons/categories/service.svg"
+    }
+  ],
+  "unit": "亿元",
+  "highlightIndex": 0,
+  "takeaway": "云服务以 42.8 亿元成为主要增长引擎，规模约为其他业务的 4.4 倍。",
+  "source": "DataMagic Cards 演示数据（非真实财报）",
+  "accentColor": "#22a78f"
+}

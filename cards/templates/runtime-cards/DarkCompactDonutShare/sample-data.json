@@ -1,0 +1,169 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "pie_chart",
+    "style_template_id": "StyleTemplate-DarkCompactDonutShare",
+    "style_template_name": "Dark Compact Donut Share",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-DarkCompactDonutShare",
+      "chart_type": "pie_chart",
+      "theme": "dark",
+      "data_contract": "positive share items",
+      "entrance_animation": "donut reveal",
+      "emphasis_animation": "slice focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "slice",
+        "label"
+      ],
+      "suggested_narration": "Enterprise is the segment that leads the mix.",
+      "trigger_phrase": "Enterprise",
+      "animation_intent": "Bring the named donut segment forward.",
+      "timing": "word_aligned"
+    },
+    "title": "Dark Compact Donut Share",
+    "data": [
+      {
+        "label": "Enterprise",
+        "value": 42,
+        "display_value": "42%",
+        "color": "#22d3ee"
+      },
+      {
+        "label": "Consumer",
+        "value": 28,
+        "display_value": "28%",
+        "color": "#10b981"
+      },
+      {
+        "label": "SMB",
+        "value": 18,
+        "display_value": "18%",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Partner",
+        "value": 12,
+        "display_value": "12%",
+        "color": "#6366f1"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-DarkCompactDonutShare",
+      "chart_type": "pie_chart",
+      "title": "Dark Compact Donut Share",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "positive_items"
+      },
+      "items": [
+        {
+          "label": "Enterprise",
+          "value": 42,
+          "display_value": "42%",
+          "color": "#22d3ee",
+          "iconSrc": "icons/categories/cloud.svg"
+        },
+        {
+          "label": "Consumer",
+          "value": 28,
+          "display_value": "28%",
+          "color": "#10b981",
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "SMB",
+          "value": 18,
+          "display_value": "18%",
+          "color": "#f59e0b",
+          "iconSrc": "icons/categories/store.svg"
+        },
+        {
+          "label": "Partner",
+          "value": 12,
+          "display_value": "12%",
+          "color": "#6366f1",
+          "iconSrc": "icons/categories/service.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#22d3ee",
+      "accent_color": "#22d3ee",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#22d3ee",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Enterprise": "icons/categories/cloud.svg",
+      "Consumer": "icons/categories/service.svg",
+      "SMB": "icons/categories/store.svg",
+      "Partner": "icons/categories/service.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_DarkCompactDonutShare",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-DarkCompactDonutShare"
+    },
+    "narration": [
+      {
+        "text": "Enterprise is the segment that leads the mix.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "reveal_slices",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Enterprise"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Bring the named donut segment forward.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Enterprise",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

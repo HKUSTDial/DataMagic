@@ -1,0 +1,30 @@
+{
+  "title": "区域增长结构",
+  "subtitle": "从单个高点拉升到完整比较",
+  "focusLabel": "华东",
+  "focusValue": 86,
+  "unit": "%",
+  "categories": [
+    "华北",
+    "华东",
+    "华南",
+    "西南",
+    "西北"
+  ],
+  "values": [
+    52,
+    86,
+    69,
+    43,
+    31
+  ],
+  "source": "示例数据 · 2026",
+  "accentColor": "#087f68",
+  "categoryIcons": {
+    "华北": "icons/regions/north.svg",
+    "华东": "icons/regions/east.svg",
+    "华南": "icons/regions/south.svg",
+    "西南": "icons/regions/southwest.svg",
+    "西北": "icons/regions/northwest.svg"
+  }
+}

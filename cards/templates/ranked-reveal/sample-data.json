@@ -1,0 +1,47 @@
+{
+  "title": "哪种公共空间，更能留住人？",
+  "question": "四类空间使用强度，从第四名开始揭晓。",
+  "maximum": 100,
+  "unit": "分",
+  "metricLabel": "空间使用强度",
+  "rows": [
+    {
+      "id": "waterfront",
+      "label": "滨水步道",
+      "value": 86,
+      "at": 5.8,
+      "caption": "第一名是滨水步道：86 分。",
+      "iconSrc": "icons/categories/waterfront.svg",
+      "color": "#2878b5"
+    },
+    {
+      "id": "park",
+      "label": "社区公园",
+      "value": 74,
+      "at": 4.2,
+      "caption": "社区公园以 74 分位居第二。",
+      "iconSrc": "icons/categories/park.svg",
+      "color": "#249f86"
+    },
+    {
+      "id": "market",
+      "label": "街区市集",
+      "value": 68,
+      "at": 2.6,
+      "caption": "街区市集获得 68 分。",
+      "iconSrc": "icons/categories/market.svg",
+      "color": "#b87643"
+    },
+    {
+      "id": "plaza",
+      "label": "商业广场",
+      "value": 57,
+      "at": 1,
+      "caption": "先看第四名：商业广场，57 分。",
+      "iconSrc": "icons/categories/plaza.svg",
+      "color": "#7c3aed"
+    }
+  ],
+  "takeaway": "滨水步道领先第二名 12 分。排名之外，也要看差距。",
+  "source": "来源：DataMagic Cards 合成演示数据；评分仅用于演示，不代表城市调查结论。"
+}

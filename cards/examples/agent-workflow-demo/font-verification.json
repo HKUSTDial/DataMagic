@@ -1,0 +1,44 @@
+{
+  "video": "/home/xieyupeng/DataMagicGitHub/assets/walkthrough-v2/datamagic-workflow-v2.mp4",
+  "regions": [
+    {
+      "name": "completedText",
+      "max": 0.0005454545454545455,
+      "mean": 0.00024793388429752067
+    },
+    {
+      "name": "sidebar",
+      "max": 0,
+      "mean": 0
+    },
+    {
+      "name": "panelTitle",
+      "max": 0,
+      "mean": 0
+    },
+    {
+      "name": "sceneHeadingAt22s",
+      "max": 0.00016,
+      "mean": 0.00008727272727272727
+    },
+    {
+      "name": "sceneHeadingAt32s",
+      "max": 0.00052,
+      "mean": 0.00023636363636363636
+    },
+    {
+      "name": "sceneHeadingAt46s",
+      "max": 0.00014666666666666666,
+      "mean": 0.00006666666666666667
+    },
+    {
+      "name": "sceneHeadingAt69s",
+      "max": 0,
+      "mean": 0
+    }
+  ],
+  "before": {
+    "max": 0.6181157024793389,
+    "mean": 0.6179353869271226
+  }
+}

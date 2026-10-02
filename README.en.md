@@ -1,233 +1,190 @@
 <div align="center">
 <img src="./assets/datamagic_logo.png" width="380" alt="DataMagic Logo">
 
-**Turn structured data into narrated, animated data stories.**
+**Pick an effect. Tell a story with your data.**
 
-*For analysts, researchers, and anyone who wants their data to tell a story.*
+*A reusable recipe library for animated charts and data stories, for creators, analysts, and researchers.*
 
-[![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://vldb.org/2026/)
-[![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://ieeevis.org/)
-[![arXiv](https://img.shields.io/badge/arXiv-2606.20388-b31b1b)](https://arxiv.org/abs/2606.20388)
-[![docs](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/docs.yml)
-[![plugin-scanner](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml/badge.svg)](https://github.com/HKUSTDial/DataMagic/actions/workflows/plugin-scanner.yml)
-![Status](https://img.shields.io/badge/status-live-brightgreen)
+[![IEEE VIS 2026](https://img.shields.io/badge/IEEE_VIS_2026-Accepted-007b8f)](https://arxiv.org/abs/2609.33403)
+[![VLDB 2026 Demo](https://img.shields.io/badge/VLDB_2026-Demo_Track-blue)](https://arxiv.org/abs/2606.20388)
 
-[中文](./README.md) | [English](./README.en.md)
+[中文](README.md) | [English](README.en.md)
 
-[🔥 News](#-news) • [⚡ Quick Start](#-quick-start) • [🌟 Examples](#-examples) • [🎯 Workflows](#-workflows) • [📖 Citation](#-citation) • [🤝 Community](#-community)
+[Watch the showcase](#showcase) · [Browse recipes](https://datamagic.chat/cards/) · [Start creating](#create) · [Build a story](#stories) · [Try online](https://datamagic.chat/) · [Research & citation](#research)
 </div>
 
-## Links
+DataMagic offers **139 motion recipe cards**, each with a preview, editable source, and sample data. Choose an effect and give its implementation instructions and your data to a coding agent. The companion `datamagic-video` Skill guides the agent through reading the recipe, adapting the template, rendering, and checking the result.
 
-**Try it:** [https://datamagic.chat/](https://datamagic.chat/)
+<a id="showcase"></a>
 
-**Project homepage:** [https://datamagic-home.github.io](https://datamagic-home.github.io)
+## See data become a story
 
-**Paper:** [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
+Character hosts, perspective boards, bar chart races, footage, timeline moves, and layered map glides: explore six approaches in the complete 30-second showcase below.
 
-## 🔥 News
+<video src="assets/promo/datamagic-showcase-en-music.mp4" poster="assets/promo/cover.jpg" width="960" style="max-width:100%;height:auto" controls playsinline preload="none">
+  <a href="assets/promo/datamagic-showcase-en-music.mp4">Play the complete 30-second showcase with music</a>
+</video>
 
-- **[2026.08.09]** 📄 Our long paper **"DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration"** has been accepted to **IEEE VIS 2026**.
-- **[2026.07.05]** ✨ Added a **Customizable Generation Workflow**: DataMagic now surfaces recommended scene plans, visual designs, narrative ordering, and animation highlights before final rendering, so users can review and adjust key decisions instead of editing only after generation.
-- **[2026.06.20]** 🚀 DataMagic is now live! Try it at [datamagic.chat](https://datamagic.chat/) — upload your data and generate a narrated data video in minutes.
-- **[2026.06.20]** 🧩 Released the **[datamagic-video skill](./skills/datamagic-video/)** — reusable guidance that teaches AI coding agents (Claude Code, Cursor, Codex) to turn tabular data into narrated data videos.
-- **[2026.06.18]** 📄 Our paper **"DataMagic: Transforming Tabular Data into Data Insight Video"** has been accepted to **VLDB 2026 Demo Track** and is now available on [arXiv](https://arxiv.org/abs/2606.20388).
+If your local Markdown preview does not show the player, use the video link below or open the [showcase page](assets/promo/index.html) in a browser.
 
-## 💡 Why DataMagic?
+**[Watch / download: English titles, music and SFX](assets/promo/datamagic-showcase-en-music.mp4)** · [Chinese AI narration](assets/promo/datamagic-showcase-zh-voiced.mp4) · [Shot list and production notes](docs/showcase.md)
 
-Most teams already have tables. The hard part is turning those tables into something other people can quickly understand: finding what is worth saying, choosing the right charts, arranging the story, writing narration, timing animations, and producing a video people can actually watch.
+The reel uses actual library animations and demonstration data. English titles introduce the shots; the underlying recipe examples retain their original labels. Each recipe below links to its implementation so you can replace the data, copy, and media.
 
-DataMagic is built to remove that repetitive work. It helps analyze the data, surface useful insights, and turn them into an editable narrated video you can preview, refine, export, and share.
+<a id="examples"></a>
 
-Today's tools are strong in their own domains: Excel, Vega-Lite, and Matplotlib are great for charts; Tableau, Power BI, and Looker are strong for exploration and monitoring; After Effects, Premiere, and CapCut are good for video editing; Seedance, Sora, and Veo can generate visual footage. But going from a raw table to a playable, editable, and traceable data-story video still requires analysis, chart selection, narration, animation timing, and data checking.
+## Explore the effects
 
-DataMagic focuses on this missing workflow: **turning raw structured data into an editable, traceable, narrated data video**.
+Click an image to watch its animation, or open the recipe for implementation details and source locations.
 
-## 🪄 What Is DataMagic?
-
-DataMagic is an AI-assisted system for authoring data videos from tabular data. Upload a CSV or Excel table, provide an analysis goal or business question, and DataMagic helps analyze the data, surface insights, plan the story, choose charts, draft narration, synchronize animation, preview the result, and export an MP4 video.
-
-The goal is not just to "generate a video." The numbers, labels, and charts in a DataMagic video should remain connected to the original table. Under the hood, **DVSpec** connects visual elements, narration, and animation timing so the result is easier to inspect, edit, and extend.
-
-## 🔍 What Makes It Different?
-
-| What you want to do | Where common tools fall short | How DataMagic helps |
+| Character host and data board | Presenter-to-chart handoff | Countdown ranking |
 |---|---|---|
-| Turn a table into a video | Analysis, charting, scripting, and editing usually happen in separate tools | One workflow from uploaded data to narrated video |
-| Let AI find what matters | Many tools draw charts but do not decide what is worth saying | Analyze the data and organize useful findings into scenes |
-| Keep numbers and charts verifiable | Pixel-level video models primarily generate frames; data binding and provenance require extra verification | Bind chart elements to source data through DVSpec |
-| Edit after generation | Regeneration or manual video editing is often required | Preview, edit text, refine with natural language, and keep changes local where possible |
-| Share the result quickly | Static charts still need someone to explain them | Export a playable animated data story |
+| [![Character perspective board](cards/gallery/media/poster/CharacterPerspectiveBoard.png)](https://datamagic.chat/cards/#CharacterPerspectiveBoard) | [![Presenter data takeover](cards/gallery/media/poster/PresenterDataTakeover.png)](https://datamagic.chat/cards/#PresenterDataTakeover) | [![Countdown ranking](cards/gallery/media/poster/RankedReveal.png)](https://datamagic.chat/cards/#RankedReveal) |
+| Explain with a character, perspective board, and staged evidence. [Recipe](cards/recipes/CharacterPerspectiveBoard.md) | Shift attention between the presenter and the data. [Recipe](cards/recipes/PresenterDataTakeover.md) | Build suspense and comparison through sequential reveals. [Recipe](cards/recipes/RankedReveal.md) |
 
-## ⚡ Quick Start
+| Footage to evidence | Travel through a trend | Maps and regional comparison |
+|---|---|---|
+| [![Footage to evidence](cards/gallery/media/poster/FootageEvidenceReveal.png)](https://datamagic.chat/cards/#FootageEvidenceReveal) | [![Timeline camera](cards/gallery/media/poster/ChartTimelineTravel.png)](https://datamagic.chat/cards/#ChartTimelineTravel) | [![Regional map and ranking](cards/gallery/media/poster/ChoroplethRankMap.png)](https://datamagic.chat/cards/#ChoroplethRankMap) |
+| Establish the scene, then introduce its key metrics. [Recipe](cards/recipes/FootageEvidenceReveal.md) | Move along a timeline and pause at important changes. [Recipe](cards/recipes/ChartTimelineTravel.md) | Explain differences through geography and rankings. [Recipe](cards/recipes/ChoroplethRankMap.md) |
 
-1. **Upload your data** — CSV or Excel table
-2. **Review and adjust DataMagic recommendations** — scene plans, chart designs, story order, templates, and animation highlights
-3. **Export your video** — download the finished data story
+The library also covers bars, lines, shares, scatterplots, flows, openings, conclusions, and transitions, plus a [9:16 portrait ranking](cards/recipes/PortraitRankedReveal.md) for mobile content. Adapt the data, copy, colors, media, and timing, and keep the editable source.
 
-## 🎯 Workflows
+**[Explore all recipes →](https://datamagic.chat/cards/)**
 
-**Full Pipeline** — Starting from a data table, AI automatically analyzes the data, plans the narrative structure, and generates narration and animations for each scene, with animations synchronized to the narration automatically. The result is a complete multi-scene data video. Best for high-quality presentations such as business reports, research showcases, and sharing analytical conclusions with your team or leadership.
+## Find an approach for your story
 
-**Fast Generation** — Follows the same process as Full Pipeline — AI still handles content planning and narration — but scene rendering uses pre-built visual templates instead of per-scene AI generation, making it significantly faster with less visual customization. Best for users who prioritize speed, such as recurring report production or when visual style is not a primary concern.
+| What you want to explain | Visual approaches | Example uses |
+|---|---|---|
+| A finding worth explaining | Hosts, character windows, perspective boards | Finance explainers, education, creator content |
+| Who leads and what changed | Countdown rankings, bar races, rank changes | Industry rankings, competition, sports |
+| Where growth comes from | Timeline moves, focus shots, contribution comparisons | Earnings, business reviews, product growth |
+| How places differ | Regional maps, routes, map rankings | Cities, population, regional economies |
+| What real footage reveals | Footage-to-evidence transitions, negative-space overlays | Industry, environment, documentary content |
 
-**Single Chart** — No full video needed, just one animated chart to discover or explain a focused data point. Paste your data and quickly generate a single animated chart, ready to embed in a presentation, report, or social media post. Best for quick exploration or communicating a local insight without a full narrative structure.
+### See it, adapt it, keep creating
 
-> [!NOTE]
-> **Fast Generation** and **Single Chart** are experimental features currently in beta. They work well for typical inputs but may produce unexpected results in edge cases. Feedback and bug reports via Issues are very welcome.
+- **Start with an effect you like**: browse animations or ask the agent to recommend a recipe for your data.
+- **Reuse tuned motion**: adapt the matching source, including entrances, focus, highlights, and closing holds.
+- **Bring your data and identity**: replace values, labels, units, titles, colors, and media; country flags, brand marks, and category illustrations follow their entities through motion, ranking changes, and reveals.
+- **Build an explanation**: combine people, footage, charts, and conclusions into a sequence.
+- **Keep editable output**: retain the video and source for your next topic.
 
-### Customizable Generation Workflow
+<a id="create"></a>
 
-Both Full Pipeline and Fast Generation support a customizable mode. DataMagic surfaces its recommendations at key stages, including scene planning, visual candidates, narrative ordering, visual templates, and animation highlights. Users can accept the recommendations or adjust scenes, charts, templates, and story order before final rendering. Fully automatic generation remains available for users who want the fastest end-to-end result.
+## Create with your content
 
-## 🎬 Demo Video
+### Watch a real reuse walkthrough
 
-<div align="center">
-<video src="https://github.com/user-attachments/assets/60bf21f9-1b04-4025-9f58-38b73818b068" width="760" controls></video>
-</div>
+Turn a coffee-sales CSV into a bar chart race with drink icons, then change the title, highlight lattes, and extend the ending. Each drink retains its own color, and icons travel with their labels as ranks change. This 72-second walkthrough follows selection, copying instructions, task input, generation, and revision. Gallery interaction is recorded; the task panel is explicitly labeled as a reconstructed workflow, not a client recording. The revised output plays in full. Narration and embedded captions are in Chinese.
 
-**System walkthrough** — from data upload to narrated animated video.
+<video src="assets/walkthrough-v2/datamagic-workflow-v2.mp4" poster="assets/walkthrough-v2/v2-final.png" width="960" style="max-width:100%;height:auto" controls playsinline preload="none">
+  <a href="assets/walkthrough-v2/datamagic-workflow-v2.mp4">Watch the full walkthrough</a>
+</video>
 
-## 🌟 Examples
+[Watch / download](assets/walkthrough-v2/datamagic-workflow-v2.mp4) · [Data, prompts and reproduction record](cards/examples/agent-workflow-demo/README.md) · [Compare versions](assets/walkthrough-v2/index.html) · [Previous walkthrough](assets/walkthrough/datamagic-first-video-zh.mp4)
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/76c81435-1ac1-49a0-b21f-413e33b57287" width="100%" controls></video>
-      <br><strong>China consumption recovery</strong><br>
-      Analyzes China's retail sales and catering revenue from 2019 to 2025, showing consumption resilience and service-sector recovery after the pandemic shock.
-    </td>
-    <td width="50%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/e15d0742-af24-4b30-a640-73264db91d7f" width="100%" controls></video>
-      <br><strong>China EV market competition</strong><br>
-      Compares 2024 monthly sales, annual pacing, and year-over-year growth across major EV brands, highlighting market leaders and growth inflection points.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/4600c2ca-72fe-4690-9ad4-3a611ef2ba7e" width="100%" controls></video>
-      <br><strong>Q4 sales analysis</strong><br>
-      Animated bar and trend visualization for business performance insights.
-    </td>
-    <td width="50%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/1ef81518-b49d-4484-9b92-faaeff9cd188" width="100%" controls></video>
-      <br><strong>Renewable energy transition</strong><br>
-      A narrated look at global renewable capacity growth from 2018 to 2024, highlighting solar expansion and the declining share of fossil fuels.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/ea70e828-c6fa-4913-a2e5-29799dea1d47" width="100%" controls></video>
-      <br><strong>2024 tech revenue leaders</strong><br>
-      A comparison of major technology companies by 2024 revenue, showing Amazon's scale alongside Apple, Google, Nvidia, and Meta.
-    </td>
-    <td width="50%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/57a347d5-8076-4662-8f27-ec4051d6e622" width="100%" controls></video>
-      <br><strong>Tech growth and market momentum</strong><br>
-      An executive-style recap of 2024 tech performance, contrasting revenue scale with fast growth led by Nvidia.
-    </td>
-  </tr>
-</table>
+### 1. Pick an effect
 
-## 🎨 Template Gallery
+Watch the gallery previews and click “Copy implementation instructions.” If you are still choosing an effect, give the agent your data and intended use so it can suggest suitable recipes.
 
-Over 100 ready-made visual styles across bar, line, pie, scatter, Sankey, waterfall, KPI card, and more — each with a preview and community ratings. Browse and mark your preferred styles before generation.
+### 2. Give the recipe and data to your agent
 
-<div align="center">
-<img src="./images/template-gallery.png" width="760" alt="DataMagic template gallery">
-</div>
-
-## ✨ Features
-
-DataMagic is built around two core principles: **data-grounded scenes** (every visual element bound directly to a data field, keeping the story fully traceable and editable) and **narration-aware timing** (animations auto-synced with the voiceover, producing a coherent narrative rather than a collection of disconnected charts).
-
-- AI-assisted chart type and visual template recommendation.
-- Customizable generation workflow for reviewing and adjusting DataMagic recommendations during scene planning, visual design, narrative arrangement, and animation highlighting.
-- Runtime preview, direct visual editing, and natural-language refinement.
-
-## 🧩 Data-Video Skill
-
-We also publish **[`datamagic-video`](./skills/datamagic-video/)** — a skill that teaches AI coding
-agents (Claude Code, Cursor, Codex, …) the *methodology* behind data videos: narrative
-patterns, chart selection, DVSpec authoring, narration writing, and animation timing. The
-videos it produces render with open tooling, so anyone can generate and watch them — no
-account needed.
-
-The hosted product adds premium templates and the full pipeline; the skill gives any agent
-strong standalone results and shares the same DVSpec format.
+Clone the repository and open your coding agent in its directory:
 
 ```bash
-claude plugin marketplace add HKUSTDial/DataMagic
-claude plugin install datamagic-video@datamagic
+git clone https://github.com/HKUSTDial/DataMagic.git
+cd DataMagic
 ```
 
-Codex:
+Paste the implementation instructions, attach your data, and describe the result you want:
 
-```bash
-codex plugin marketplace add HKUSTDial/DataMagic
-codex plugin add datamagic-video@datamagic
-```
+> Use this repository's datamagic-video Skill to adapt RankedReveal to my sales.csv. Keep the sequential reveal, use my brand colors, and deliver an MP4 with editable source.
 
-Or install from shell:
+The companion Skill helps the agent locate source files, map data fields, adapt the visuals, and check the result. You can also start with a goal:
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash
-```
+> I want to explain how sales changed across regions. Recommend suitable recipes for this CSV, then use the best fit to create a short video.
 
-Then ask your agent: *"Make a narrated data video from this CSV …"*. See the
-[skill README](./skills/datamagic-video/README.md) for details.
+### 3. Review and refine
 
-## 🤝 Community
+Check the values, labels, and conclusion. Ask the agent to adjust the result: “Hold the ending for two more seconds,” “Highlight the East region,” or “Adapt the layout for mobile viewing.”
 
-The source code is being progressively open-sourced — ⭐ star this repo to follow updates.
+[Usage and installation guide](skills/datamagic-video/README.md) · [Browse and render locally](cards/README.en.md)
 
-<table>
-  <tr>
-    <td width="68%" valign="middle">
-      <strong>Join the WeChat discussion group</strong><br>
-      Share use cases, ask questions, and discuss data visualization or AI-generated videos with the community.
-    </td>
-    <td width="32%" align="center">
-      <img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic WeChat community QR code"><br>
-      <sub>Scan to join</sub>
-    </td>
-  </tr>
-</table>
+### More ways to start
 
-### Get free credits via WeChat
+**Adapt an explainer:**
 
-Follow either official account below and reply **DataMagic** to receive a one-time credit code (20 credits) for the hosted product.
+> Use CharacterPerspectiveBoard with a cat presenter on the left and the angled data board on the right. Map my data to the chart, highlight each item, and hold the conclusion. Start with the existing sample assets.
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="./images/wechat-qr-dial-lab.jpg" width="160" alt="DIAL Lab WeChat official account QR code"><br>
-      <strong>DIAL 实验室</strong><br>
-      <sub>Research updates &amp; DataMagic news</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="./images/wechat-qr-xiege.jpg" width="160" alt="蟹哥聊科研 WeChat official account QR code"><br>
-      <strong>蟹哥聊科研</strong><br>
-      <sub>Research &amp; AI tool tips</sub>
-    </td>
-  </tr>
-</table>
+**Create for mobile:**
 
-## 📍 Roadmap
+> Use PortraitRankedReveal to turn this ranking into a 9:16 video. Reveal entries from last to first and keep names, values, and units readable.
 
-- [x] Core generation modes — Full Pipeline, Fast Generation, and Single Chart.
-- [x] Template gallery and runtime editing — preview styles, edit generated text, and refine with natural language.
-- [x] Bilingual public documentation — English and Chinese release docs.
-- [x] Data-video skill package — reusable guidance for data-video planning, chart selection, DVSpec authoring, and animation design. ([skills/datamagic-video/](./skills/datamagic-video/))
-- [ ] More diverse visual styles — richer narrative cards, report themes, domain-specific templates, and presentation-ready layouts.
-- [ ] Recommendation and feedback learning — improve template ranking from user preferences and real generation outcomes.
-- [ ] Public implementation materials — clearer notes for the pipeline, DVSpec, template adapters, example datasets, and deployment.
-- [ ] Expanded export and sharing workflows.
-- [ ] Team/admin monitoring for production deployments.
+**Apply your identity:**
 
-## 📖 Citation
+> Keep this recipe's camera motion and structure, adapt its titles, colors, and media to my brand, check the values and labels, and deliver video plus source.
+
+<a id="stories"></a>
+
+## Build a story from several shots
+
+Open with a question, present evidence through charts, then develop the explanation through comparisons, turns, and a conclusion. **8 story blueprints** offer starting structures for the agent to select recipes and compose shots around your content.
+
+> Use this quarterly sales table to make a 30-second story: introduce the growth, compare regional contributions, and summarize the main finding. Reuse library recipes and keep colors and captions consistent.
+
+For deeper data analysis, scripts, and narration, follow [Plan a complete video from data](skills/datamagic-video/rules/full-story-workflow.md). The same Skill draws on analysis, narrative planning, and timing guidance as the task requires.
+
+## What's in the repository
+
+| Resource | Where to start |
+|---|---|
+| Animation previews, recipes, and source references | [Online gallery](https://datamagic.chat/cards/) · [Recipes](cards/recipes/) |
+| Template source, sample data, and rendering | [Cards development guide](cards/README.en.md) |
+| Agent usage and installation | [datamagic-video guide](skills/datamagic-video/README.md) |
+| Planning and creating multi-shot stories | [Full-story workflow](skills/datamagic-video/rules/full-story-workflow.md) |
+| Showcase videos, cover, and reproducible build script | [Showcase notes](docs/showcase.md) |
+| Automatic generation examples and walkthrough | [Online system](docs/online-system.md) |
+
+<a id="online"></a>
+
+## Explore further: automatic video generation
+
+The [DataMagic online system](https://datamagic.chat/) combines table upload, data analysis, scene planning, narration, and video export. Review its recommendations and adjust the content and visuals.
+
+Complete system examples include a story about competition in the Chinese EV market, illustrating the workflow from a table to a multi-shot video.
+
+**[Explore the system walkthrough, generation modes, and more complete examples →](docs/online-system.md)**
+
+<a id="research"></a>
+
+## Research and documentation
+
+DataMagic research studies data binding, narrative orchestration, and narration timing, informing both recipe reuse and complete video production.
+
+- [IEEE VIS 2026: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://arxiv.org/abs/2609.33403)
+- [VLDB 2026 Demo: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)
+- [Project homepage](https://datamagic-home.github.io) · [Pipeline](docs/pipeline-overview.md) · [DVSpec](docs/dvspec-overview.md) · [Input/output examples](docs/input-output-examples.md)
+
+<details>
+<summary>Cite DataMagic (BibTeX)</summary>
 
 If you find DataMagic useful in your research or work, please cite:
+
+**IEEE VIS 2026 full paper:**
+
+```bibtex
+@misc{xie2026datamagicauthoringdata,
+  title={DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration},
+  author={Yupeng Xie and Zhenyang Wang and Liangwei Wang and Jiayi Zhu and Zhouan Shen and Yuyu Luo},
+  year={2026},
+  eprint={2609.33403},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC},
+  url={https://arxiv.org/abs/2609.33403},
+}
+```
+
+**VLDB 2026 demo paper:**
 
 ```bibtex
 @misc{xie2026datamagictransformingtabulardata,
@@ -241,19 +198,20 @@ If you find DataMagic useful in your research or work, please cite:
 }
 ```
 
-## 📄 License
+</details>
 
-This repository is released under the MIT License. See [LICENSE](./LICENSE). Report security issues privately using [SECURITY.md](./SECURITY.md).
+## What's next
 
-## 📚 Documentation
+- [ ] More story recipes, domain examples, and portrait layouts.
+- [ ] More reuse examples across different datasets and topics.
+- [ ] Multitrack workbench and Jianying delivery: simplify the workflow and complete Mac desktop validation; retained as a future TODO.
 
-- [Data-Video Skill](./skills/datamagic-video/README.md)
-- [Pipeline Overview](./docs/pipeline-overview.md)
-- [DVSpec Overview](./docs/dvspec-overview.md)
-- [Input and Output Examples](./docs/input-output-examples.md)
-- [Help Center](./docs/help-center.md)
-- [Release Status](./docs/release-status.md)
+<a id="community"></a>
 
-<div align="center">
-<img src="./assets/framework-1.png" width="760" alt="DataMagic system framework">
-</div>
+## Community and contributions
+
+Share what you create, contribute a recipe, or report an issue through [GitHub Issues](https://github.com/HKUSTDial/DataMagic/issues). [Contributing guide](CONTRIBUTING.md)
+
+<img src="./images/wechat-community-qr.jpg" width="180" alt="DataMagic WeChat community QR code">
+
+[Online system and trial credits](docs/online-system.md) · [Document history](docs/archive/README.md) · [MIT License](LICENSE) · [Security reports](SECURITY.md)

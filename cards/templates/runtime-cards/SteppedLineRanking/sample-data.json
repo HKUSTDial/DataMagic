@@ -1,0 +1,362 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "line_chart",
+    "style_template_id": "StyleTemplate-SteppedLineRanking",
+    "style_template_name": "Stepped Line Ranking",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-SteppedLineRanking",
+      "chart_type": "line_chart",
+      "theme": "dark",
+      "data_contract": "multi-series ranking",
+      "entrance_animation": "rank movement draw",
+      "emphasis_animation": "series focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "series",
+        "line",
+        "rank"
+      ],
+      "suggested_narration": "Apple holds the top rank in the latest quarter.",
+      "trigger_phrase": "Apple",
+      "animation_intent": "Bring the named company forward while muting the other rank lines.",
+      "timing": "word_aligned"
+    },
+    "title": "Stepped Line Ranking",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#60a5fa",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-SteppedLineRanking",
+      "chart_type": "line_chart",
+      "title": "Quarterly Rank Movement",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "series"
+      },
+      "series": [
+        {
+          "name": "Apple",
+          "color": "#3b82f6",
+          "points": [
+            {
+              "label": "Q1",
+              "value": 1
+            },
+            {
+              "label": "Q2",
+              "value": 1
+            },
+            {
+              "label": "Q3",
+              "value": 2
+            },
+            {
+              "label": "Q4",
+              "value": 2
+            },
+            {
+              "label": "Q1",
+              "value": 1
+            },
+            {
+              "label": "Q2",
+              "value": 1
+            }
+          ],
+          "iconSrc": "icons/brands/apple.svg"
+        },
+        {
+          "name": "Microsoft",
+          "color": "#10b981",
+          "points": [
+            {
+              "label": "Q1",
+              "value": 2
+            },
+            {
+              "label": "Q2",
+              "value": 2
+            },
+            {
+              "label": "Q3",
+              "value": 1
+            },
+            {
+              "label": "Q4",
+              "value": 1
+            },
+            {
+              "label": "Q1",
+              "value": 2
+            },
+            {
+              "label": "Q2",
+              "value": 3
+            }
+          ],
+          "iconSrc": "icons/brands/microsoft.svg"
+        },
+        {
+          "name": "Amazon",
+          "color": "#f59e0b",
+          "points": [
+            {
+              "label": "Q1",
+              "value": 3
+            },
+            {
+              "label": "Q2",
+              "value": 4
+            },
+            {
+              "label": "Q3",
+              "value": 3
+            },
+            {
+              "label": "Q4",
+              "value": 3
+            },
+            {
+              "label": "Q1",
+              "value": 4
+            },
+            {
+              "label": "Q2",
+              "value": 2
+            }
+          ],
+          "iconSrc": "icons/brands/amazon.svg"
+        },
+        {
+          "name": "Google",
+          "color": "#8b5cf6",
+          "points": [
+            {
+              "label": "Q1",
+              "value": 4
+            },
+            {
+              "label": "Q2",
+              "value": 3
+            },
+            {
+              "label": "Q3",
+              "value": 4
+            },
+            {
+              "label": "Q4",
+              "value": 4
+            },
+            {
+              "label": "Q1",
+              "value": 3
+            },
+            {
+              "label": "Q2",
+              "value": 4
+            }
+          ],
+          "iconSrc": "icons/brands/google.svg"
+        },
+        {
+          "name": "Nvidia",
+          "color": "#ef4444",
+          "points": [
+            {
+              "label": "Q1",
+              "value": 6
+            },
+            {
+              "label": "Q2",
+              "value": 5
+            },
+            {
+              "label": "Q3",
+              "value": 5
+            },
+            {
+              "label": "Q4",
+              "value": 5
+            },
+            {
+              "label": "Q1",
+              "value": 5
+            },
+            {
+              "label": "Q2",
+              "value": 5
+            }
+          ],
+          "iconSrc": "icons/brands/nvidia.svg"
+        },
+        {
+          "name": "Meta",
+          "color": "#06b6d4",
+          "points": [
+            {
+              "label": "Q1",
+              "value": 5
+            },
+            {
+              "label": "Q2",
+              "value": 6
+            },
+            {
+              "label": "Q3",
+              "value": 6
+            },
+            {
+              "label": "Q4",
+              "value": 6
+            },
+            {
+              "label": "Q1",
+              "value": 6
+            },
+            {
+              "label": "Q2",
+              "value": 6
+            }
+          ],
+          "iconSrc": "icons/brands/meta.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#60a5fa",
+      "accent_color": "#60a5fa",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#60a5fa",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Apple": "icons/brands/apple.svg",
+      "Microsoft": "icons/brands/microsoft.svg",
+      "Amazon": "icons/brands/amazon.svg",
+      "Google": "icons/brands/google.svg",
+      "Nvidia": "icons/brands/nvidia.svg",
+      "Meta": "icons/brands/meta.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_SteppedLineRanking",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-SteppedLineRanking"
+    },
+    "narration": [
+      {
+        "text": "Apple holds the top rank in the latest quarter.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "draw_line",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "series": "Apple"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Bring the named company forward while muting the other rank lines.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Apple",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

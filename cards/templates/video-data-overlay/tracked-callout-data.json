@@ -1,0 +1,78 @@
+{
+  "layout": "tracked_callout",
+  "videoSrc": "assets/recycling-facility-agnes.mp4",
+  "title": "跟随设备运动解释一个关键指标",
+  "subtitle": "数据标签不固定贴在画面角落，而是通过可编辑关键帧持续指向被解释的对象。",
+  "source": "Agnes Video 2.0 生成影像与 DataMagic Cards 合成数据（非真实统计）",
+  "conclusion": "跟踪标注只服务于一个关键对象；标题、来源和结论始终保持在稳定界面层。",
+  "metrics": [
+    {
+      "id": "success",
+      "label": "抓取成功率",
+      "value": 91.3,
+      "unit": "%",
+      "color": "#ffbd5b",
+      "iconSrc": "icons/categories/robot.svg"
+    },
+    {
+      "id": "cycle",
+      "label": "平均周期",
+      "value": 2.8,
+      "unit": "秒",
+      "color": "#55dfc2",
+      "iconSrc": "icons/categories/service.svg"
+    },
+    {
+      "id": "uptime",
+      "label": "设备开机率",
+      "value": 96.1,
+      "unit": "%",
+      "color": "#76a9ff",
+      "iconSrc": "icons/categories/energy.svg"
+    }
+  ],
+  "tracking": {
+    "label": "机械臂单次抓取成功率",
+    "value": 91.3,
+    "unit": "%",
+    "color": "#ffbd5b",
+    "keyframes": [
+      {
+        "frame": 0,
+        "x": 0.99,
+        "y": 0.47
+      },
+      {
+        "frame": 33,
+        "x": 0.96,
+        "y": 0.48
+      },
+      {
+        "frame": 66,
+        "x": 0.84,
+        "y": 0.46
+      },
+      {
+        "frame": 99,
+        "x": 0.87,
+        "y": 0.46
+      },
+      {
+        "frame": 132,
+        "x": 0.87,
+        "y": 0.46
+      },
+      {
+        "frame": 165,
+        "x": 0.85,
+        "y": 0.43
+      },
+      {
+        "frame": 204,
+        "x": 0.82,
+        "y": 0.39
+      }
+    ],
+    "iconSrc": "icons/categories/robot.svg"
+  }
+}

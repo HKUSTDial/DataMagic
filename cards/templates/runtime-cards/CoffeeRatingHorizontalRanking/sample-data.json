@@ -1,0 +1,184 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "bar_chart",
+    "style_template_id": "StyleTemplate-CoffeeRatingHorizontalRanking",
+    "style_template_name": "Coffee Rating Horizontal Ranking",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-CoffeeRatingHorizontalRanking",
+      "chart_type": "bar_chart",
+      "theme": "light",
+      "data_contract": "ranked items",
+      "entrance_animation": "card row reveal",
+      "emphasis_animation": "row focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "rank",
+        "label",
+        "value"
+      ],
+      "suggested_narration": "Ethiopia leads the rating ranking at 4.8.",
+      "trigger_phrase": "Ethiopia",
+      "animation_intent": "Highlight the named ranked row and rating.",
+      "timing": "word_aligned"
+    },
+    "title": "Coffee Rating Horizontal Ranking",
+    "data": [
+      {
+        "label": "Ethiopia",
+        "value": 4.8,
+        "display_value": "4.8",
+        "color": "#b45309"
+      },
+      {
+        "label": "Kenya",
+        "value": 4.6,
+        "display_value": "4.6",
+        "color": "#d97706"
+      },
+      {
+        "label": "Colombia",
+        "value": 4.5,
+        "display_value": "4.5",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Brazil",
+        "value": 4.3,
+        "display_value": "4.3",
+        "color": "#fbbf24"
+      },
+      {
+        "label": "Guatemala",
+        "value": 4.2,
+        "display_value": "4.2",
+        "color": "#fcd34d"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-CoffeeRatingHorizontalRanking",
+      "chart_type": "bar_chart",
+      "title": "Coffee Rating",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "Ethiopia",
+          "value": 4.8,
+          "display_value": "4.8",
+          "color": "#b45309",
+          "iconSrc": "icons/flags/ET.svg"
+        },
+        {
+          "label": "Kenya",
+          "value": 4.6,
+          "display_value": "4.6",
+          "color": "#d97706",
+          "iconSrc": "icons/flags/KE.svg"
+        },
+        {
+          "label": "Colombia",
+          "value": 4.5,
+          "display_value": "4.5",
+          "color": "#f59e0b",
+          "iconSrc": "icons/flags/CO.svg"
+        },
+        {
+          "label": "Brazil",
+          "value": 4.3,
+          "display_value": "4.3",
+          "color": "#fbbf24",
+          "iconSrc": "icons/flags/BR.svg"
+        },
+        {
+          "label": "Guatemala",
+          "value": 4.2,
+          "display_value": "4.2",
+          "color": "#fcd34d",
+          "iconSrc": "icons/flags/GT.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#b45309",
+      "accent_color": "#b45309",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#b45309",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Ethiopia": "icons/flags/ET.svg",
+      "Kenya": "icons/flags/KE.svg",
+      "Colombia": "icons/flags/CO.svg",
+      "Brazil": "icons/flags/BR.svg",
+      "Guatemala": "icons/flags/GT.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_CoffeeRatingHorizontalRanking",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-CoffeeRatingHorizontalRanking"
+    },
+    "narration": [
+      {
+        "text": "Ethiopia leads the rating ranking at 4.8.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Ethiopia"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named ranked row and rating.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Ethiopia",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

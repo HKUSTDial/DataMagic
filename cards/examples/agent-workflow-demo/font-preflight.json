@@ -1,0 +1,24 @@
+{
+  "video": "/home/xieyupeng/DataMagicGitHub/cards/examples/agent-workflow-demo/out/film/font-check.mp4",
+  "regions": [
+    {
+      "name": "completedText",
+      "max": 0.006710743801652892,
+      "mean": 0.0007122464312546956
+    },
+    {
+      "name": "sidebar",
+      "max": 0.00031347962382445143,
+      "mean": 0.00011304265222760522
+    },
+    {
+      "name": "panelTitle",
+      "max": 0.0048484848484848485,
+      "mean": 0.0010853994490358126
+    }
+  ],
+  "before": {
+    "max": 0.6181157024793389,
+    "mean": 0.6179353869271226
+  }
+}

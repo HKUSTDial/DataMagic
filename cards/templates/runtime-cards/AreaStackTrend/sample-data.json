@@ -1,0 +1,342 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "line_chart",
+    "style_template_id": "StyleTemplate-AreaStackTrend",
+    "style_template_name": "Area Stack Trend",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-AreaStackTrend",
+      "chart_type": "line_chart",
+      "theme": "dark",
+      "data_contract": "multi-series time series",
+      "entrance_animation": "stacked area draw",
+      "emphasis_animation": "series focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "series",
+        "area",
+        "label"
+      ],
+      "suggested_narration": "Mobile remains the largest channel in 2024.",
+      "trigger_phrase": "Mobile",
+      "animation_intent": "Bring the named channel forward while muting the other stacked areas.",
+      "timing": "word_aligned"
+    },
+    "title": "Area Stack Trend",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#34d399",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-AreaStackTrend",
+      "chart_type": "line_chart",
+      "title": "Channel Mix Over Time",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "series"
+      },
+      "series": [
+        {
+          "name": "Mobile",
+          "color": "#3b82f6",
+          "points": [
+            {
+              "label": "2018",
+              "value": 12,
+              "display_value": "12"
+            },
+            {
+              "label": "2019",
+              "value": 18,
+              "display_value": "18"
+            },
+            {
+              "label": "2020",
+              "value": 24,
+              "display_value": "24"
+            },
+            {
+              "label": "2021",
+              "value": 32,
+              "display_value": "32"
+            },
+            {
+              "label": "2022",
+              "value": 41,
+              "display_value": "41"
+            },
+            {
+              "label": "2023",
+              "value": 52,
+              "display_value": "52"
+            },
+            {
+              "label": "2024",
+              "value": 64,
+              "display_value": "64"
+            }
+          ],
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "name": "Web",
+          "color": "#10b981",
+          "points": [
+            {
+              "label": "2018",
+              "value": 22,
+              "display_value": "22"
+            },
+            {
+              "label": "2019",
+              "value": 24,
+              "display_value": "24"
+            },
+            {
+              "label": "2020",
+              "value": 26,
+              "display_value": "26"
+            },
+            {
+              "label": "2021",
+              "value": 28,
+              "display_value": "28"
+            },
+            {
+              "label": "2022",
+              "value": 30,
+              "display_value": "30"
+            },
+            {
+              "label": "2023",
+              "value": 32,
+              "display_value": "32"
+            },
+            {
+              "label": "2024",
+              "value": 34,
+              "display_value": "34"
+            }
+          ],
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "name": "API",
+          "color": "#f59e0b",
+          "points": [
+            {
+              "label": "2018",
+              "value": 4,
+              "display_value": "4"
+            },
+            {
+              "label": "2019",
+              "value": 6,
+              "display_value": "6"
+            },
+            {
+              "label": "2020",
+              "value": 9,
+              "display_value": "9"
+            },
+            {
+              "label": "2021",
+              "value": 13,
+              "display_value": "13"
+            },
+            {
+              "label": "2022",
+              "value": 18,
+              "display_value": "18"
+            },
+            {
+              "label": "2023",
+              "value": 24,
+              "display_value": "24"
+            },
+            {
+              "label": "2024",
+              "value": 31,
+              "display_value": "31"
+            }
+          ],
+          "iconSrc": "icons/categories/cloud.svg"
+        },
+        {
+          "name": "Email",
+          "color": "#8b5cf6",
+          "points": [
+            {
+              "label": "2018",
+              "value": 8,
+              "display_value": "8"
+            },
+            {
+              "label": "2019",
+              "value": 9,
+              "display_value": "9"
+            },
+            {
+              "label": "2020",
+              "value": 9,
+              "display_value": "9"
+            },
+            {
+              "label": "2021",
+              "value": 10,
+              "display_value": "10"
+            },
+            {
+              "label": "2022",
+              "value": 11,
+              "display_value": "11"
+            },
+            {
+              "label": "2023",
+              "value": 12,
+              "display_value": "12"
+            },
+            {
+              "label": "2024",
+              "value": 13,
+              "display_value": "13"
+            }
+          ],
+          "iconSrc": "icons/categories/service.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#34d399",
+      "accent_color": "#34d399",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#34d399",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Mobile": "icons/categories/online.svg",
+      "Web": "icons/categories/online.svg",
+      "API": "icons/categories/cloud.svg",
+      "Email": "icons/categories/service.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_AreaStackTrend",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-AreaStackTrend"
+    },
+    "narration": [
+      {
+        "text": "Mobile remains the largest channel in 2024.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "draw_line",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "series": "Mobile"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Bring the named channel forward while muting the other stacked areas.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Mobile",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

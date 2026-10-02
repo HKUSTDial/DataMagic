@@ -1,0 +1,17 @@
+{
+  "schema": true,
+  "valuesCheckedPerVersion": 36,
+  "unchangedData": true,
+  "distinctIcons": 6,
+  "distinctColorsPerVersion": 6,
+  "highlightId": "drink-1",
+  "firstLeader": {
+    "label": "美式",
+    "value": 820
+  },
+  "finalLeader": {
+    "label": "拿铁",
+    "value": 1450
+  },
+  "producer": "current assistant; standalone Codex CLI attempt failed authentication"
+}

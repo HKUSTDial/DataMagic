@@ -1,0 +1,25 @@
+{
+  "provider": "agnes",
+  "model": "agnes-video-v2.0",
+  "videoId": "task_lh6P3xUeHNie9G69I8aT1frbBkEWp5ng",
+  "generatedAt": "2026-08-19",
+  "prompt": "Documentary cinematic shot of modern automated material recovery and recycling facility, conveyor belts carrying mixed recyclables, one visible robotic sorting arm working on the right half of frame. Editorial visual direction: realistic documentary industrial footage, stable locked-off or gently stabilized camera, left third kept calm and uncluttered for data overlay. Natural light, realistic motion, clear subject, calm negative space on one side. Stable slow camera movement, no dramatic camera move, no logos, no text, 16:9.",
+  "request": {
+    "ratio": "16:9",
+    "durationSeconds": 10,
+    "frameRate": 24
+  },
+  "providerOutput": {
+    "width": 1088,
+    "height": 832,
+    "durationSeconds": 10.042
+  },
+  "output": {
+    "file": "public/assets/recycling-facility-agnes.mp4",
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 8,
+    "frameRate": 30,
+    "processing": "center crop to 16:9, upscale, frame-rate normalization, audio removal"
+  }
+}

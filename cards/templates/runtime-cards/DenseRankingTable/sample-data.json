@@ -1,0 +1,257 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "bar_chart",
+    "style_template_id": "StyleTemplate-DenseRankingTable",
+    "style_template_name": "Dense Ranking Table",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-DenseRankingTable",
+      "chart_type": "bar_chart",
+      "theme": "dark",
+      "data_contract": "dense ranked items",
+      "entrance_animation": "compact row reveal",
+      "emphasis_animation": "row focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "row",
+        "rank",
+        "bar",
+        "value"
+      ],
+      "suggested_narration": "San Francisco leads the dense ranking at 928 active users.",
+      "trigger_phrase": "San Francisco",
+      "animation_intent": "Highlight the named dense table row.",
+      "timing": "word_aligned"
+    },
+    "title": "Dense Ranking Table",
+    "data": [
+      {
+        "label": "San Francisco",
+        "value": 928,
+        "display_value": "928",
+        "color": "#60a5fa"
+      },
+      {
+        "label": "New York",
+        "value": 814,
+        "display_value": "814",
+        "color": "#475569"
+      },
+      {
+        "label": "Seattle",
+        "value": 742,
+        "display_value": "742",
+        "color": "#475569"
+      },
+      {
+        "label": "Austin",
+        "value": 681,
+        "display_value": "681",
+        "color": "#475569"
+      },
+      {
+        "label": "Boston",
+        "value": 596,
+        "display_value": "596",
+        "color": "#475569"
+      },
+      {
+        "label": "Chicago",
+        "value": 524,
+        "display_value": "524",
+        "color": "#475569"
+      },
+      {
+        "label": "Denver",
+        "value": 472,
+        "display_value": "472",
+        "color": "#475569"
+      },
+      {
+        "label": "Atlanta",
+        "value": 408,
+        "display_value": "408",
+        "color": "#475569"
+      },
+      {
+        "label": "Portland",
+        "value": 364,
+        "display_value": "364",
+        "color": "#475569"
+      },
+      {
+        "label": "Miami",
+        "value": 318,
+        "display_value": "318",
+        "color": "#475569"
+      },
+      {
+        "label": "San Diego",
+        "value": 281,
+        "display_value": "281",
+        "color": "#475569"
+      },
+      {
+        "label": "Phoenix",
+        "value": 245,
+        "display_value": "245",
+        "color": "#475569"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-DenseRankingTable",
+      "chart_type": "bar_chart",
+      "title": "Top 12 Cities by Active Users",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "San Francisco",
+          "value": 928,
+          "display_value": "928",
+          "color": "#60a5fa"
+        },
+        {
+          "label": "New York",
+          "value": 814,
+          "display_value": "814",
+          "color": "#475569"
+        },
+        {
+          "label": "Seattle",
+          "value": 742,
+          "display_value": "742",
+          "color": "#475569"
+        },
+        {
+          "label": "Austin",
+          "value": 681,
+          "display_value": "681",
+          "color": "#475569"
+        },
+        {
+          "label": "Boston",
+          "value": 596,
+          "display_value": "596",
+          "color": "#475569"
+        },
+        {
+          "label": "Chicago",
+          "value": 524,
+          "display_value": "524",
+          "color": "#475569"
+        },
+        {
+          "label": "Denver",
+          "value": 472,
+          "display_value": "472",
+          "color": "#475569"
+        },
+        {
+          "label": "Atlanta",
+          "value": 408,
+          "display_value": "408",
+          "color": "#475569"
+        },
+        {
+          "label": "Portland",
+          "value": 364,
+          "display_value": "364",
+          "color": "#475569"
+        },
+        {
+          "label": "Miami",
+          "value": 318,
+          "display_value": "318",
+          "color": "#475569"
+        },
+        {
+          "label": "San Diego",
+          "value": 281,
+          "display_value": "281",
+          "color": "#475569"
+        },
+        {
+          "label": "Phoenix",
+          "value": 245,
+          "display_value": "245",
+          "color": "#475569"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#60a5fa",
+      "accent_color": "#60a5fa",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#60a5fa",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_DenseRankingTable",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-DenseRankingTable"
+    },
+    "narration": [
+      {
+        "text": "San Francisco leads the dense ranking at 928 active users.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "San Francisco"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named dense table row.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "San Francisco",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

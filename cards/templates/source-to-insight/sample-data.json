@@ -1,0 +1,34 @@
+{
+  "title": "一张表，如何变成一个可讲述的结论",
+  "question": "哪些地区贡献了大多数活跃用户？",
+  "rows": [
+    {
+      "label": "华东",
+      "value": 928,
+      "iconSrc": "icons/regions/east.svg"
+    },
+    {
+      "label": "华南",
+      "value": 814,
+      "iconSrc": "icons/regions/south.svg"
+    },
+    {
+      "label": "华北",
+      "value": 742,
+      "iconSrc": "icons/regions/north.svg"
+    },
+    {
+      "label": "西南",
+      "value": 596,
+      "iconSrc": "icons/regions/southwest.svg"
+    },
+    {
+      "label": "东北",
+      "value": 472,
+      "iconSrc": "icons/regions/northeast.svg"
+    }
+  ],
+  "unit": "万",
+  "takeaway": "华东和华南合计贡献 1,742 万活跃用户，是当前增长的主要来源。",
+  "source": "DataMagic Cards synthetic benchmark dataset"
+}

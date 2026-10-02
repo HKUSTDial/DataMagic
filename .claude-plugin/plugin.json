@@ -1,6 +1,6 @@
 {
   "name": "datamagic-video",
-  "description": "Data-video skill for Claude Code: turn tabular data into narrated animated videos with DVSpec planning, chart selection, narration, and rendering guidance.",
+  "description": "Create with DataMagic recipes: find an effect, adapt its editable source to your data, and render charts or multi-shot stories.",
   "version": "0.1.0",
   "author": {
     "name": "HKUSTDial",

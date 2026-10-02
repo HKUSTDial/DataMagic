@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NegativeSpaceChartDock / 负空间图表停靠",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "subtitle", "focalBox", "safeRegion", "subjectLabel", "metricLabel", "metricValue", "unit", "series", "callout", "source", "accentColor"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1},
+    "subtitle": {"type": "string", "minLength": 1},
+    "focalBox": {"$ref": "#/$defs/box"},
+    "safeRegion": {"$ref": "#/$defs/box"},
+    "subjectLabel": {"type": "string", "minLength": 1},
+    "metricLabel": {"type": "string", "minLength": 1},
+    "metricValue": {"type": "string", "minLength": 1},
+    "unit": {"type": "string", "minLength": 1},
+    "series": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"$ref": "#/$defs/datum"}},
+    "callout": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "accentColor": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+  },
+  "$defs": {
+    "box": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1920},
+        "y": {"type": "number", "minimum": 0, "maximum": 1080},
+        "width": {"type": "number", "exclusiveMinimum": 0, "maximum": 1792},
+        "height": {"type": "number", "exclusiveMinimum": 0, "maximum": 952}
+      }
+    },
+    "datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "value"],
+      "properties": {"label": {"type": "string", "minLength": 1}, "value": {"type": "number", "minimum": 0}}
+    }
+  }
+}

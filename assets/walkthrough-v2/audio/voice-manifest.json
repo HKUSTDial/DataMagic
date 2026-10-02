@@ -1,0 +1,133 @@
+{
+  "language": "zh-CN",
+  "model": "IndexTTS2",
+  "duration": 72,
+  "segments": [
+    {
+      "id": "01-result",
+      "start": 0.3,
+      "end": 3.8,
+      "text": "把一份销量表，变成动态图表。",
+      "loudness": {
+        "integratedLUFS": -18.08,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 3.3089,
+      "speed": 1.0,
+      "file": "01-result.wav"
+    },
+    {
+      "id": "02-gallery",
+      "start": 4.4,
+      "end": 13.6,
+      "text": "先在配方库找到动态柱状图竞赛，打开预览，确认想要的效果。",
+      "loudness": {
+        "integratedLUFS": -18.03,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 5.4791,
+      "speed": 1.0,
+      "file": "02-gallery.wav"
+    },
+    {
+      "id": "03-copy",
+      "start": 14.3,
+      "end": 18.8,
+      "text": "复制实现指令，带走配方和源码位置。",
+      "loudness": {
+        "integratedLUFS": -18.18,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 3.5443,
+      "speed": 1.0,
+      "file": "03-copy.wav"
+    },
+    {
+      "id": "04-prompt",
+      "start": 19.3,
+      "end": 28.5,
+      "text": "把指令和销量表交给智能体，告诉它标题、单位和时长。这里按实际执行过程重排展示。",
+      "loudness": {
+        "integratedLUFS": -18.11,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 7.5672,
+      "speed": 1.0,
+      "file": "04-prompt.wav"
+    },
+    {
+      "id": "05-execute",
+      "start": 29.3,
+      "end": 34.8,
+      "text": "读取配方，校验数据，再渲染视频。实际等待已省略。",
+      "loudness": {
+        "integratedLUFS": -18.18,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 4.9691,
+      "speed": 1.0,
+      "file": "05-execute.wav"
+    },
+    {
+      "id": "06-first",
+      "start": 35.3,
+      "end": 42.8,
+      "text": "第一版已经生成。六种饮品随月份变化，拿铁逐渐领先。",
+      "loudness": {
+        "integratedLUFS": -18.47,
+        "truePeakDBTP": -2.52,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 5.6236,
+      "speed": 1.0,
+      "file": "06-first.wav"
+    },
+    {
+      "id": "07-revise",
+      "start": 43.3,
+      "end": 50.8,
+      "text": "继续提出修改：突出拿铁，其他颜色变淡，结尾多停两秒。",
+      "loudness": {
+        "integratedLUFS": -18.21,
+        "truePeakDBTP": -1.99,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 4.9674,
+      "speed": 1.0,
+      "file": "07-revise.wav"
+    },
+    {
+      "id": "08-final",
+      "start": 51.3,
+      "end": 61.5,
+      "text": "这是修改后的完整视频。数据保持不变，拿铁改为紫色，结尾留出阅读时间。",
+      "loudness": {
+        "integratedLUFS": -18.21,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 6.8014,
+      "speed": 1.0,
+      "file": "08-final.wav"
+    },
+    {
+      "id": "09-deliver",
+      "start": 65.3,
+      "end": 71.5,
+      "text": "视频、数据和可编辑参数一起保留。挑一个效果，用你的数据试一次。",
+      "loudness": {
+        "integratedLUFS": -17.92,
+        "truePeakDBTP": -2.0,
+        "method": "padded two-pass, trimmed, measured"
+      },
+      "renderedSeconds": 6.208,
+      "speed": 1.043025,
+      "file": "09-deliver.wav"
+    }
+  ]
+}

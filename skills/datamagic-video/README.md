@@ -1,105 +1,98 @@
-# datamagic-video — a data-video skill for AI coding agents
+# Create with DataMagic recipes
 
-A **skill** that teaches AI coding agents (Claude Code, Cursor, Codex, …) how to turn a
-**table of data into a narrated, animated data video** — the right narrative structure, the
-right chart, narration that leads the eye, and animation timed to the voiceover.
+[返回首页](../../README.md) · [Homepage](../../README.en.md) · [Browse effects](https://datamagic.chat/cards/)
 
-At its core is a **DVSpec** — a *renderer-agnostic* plan for the video. It compiles with open
-tooling (Vega-Lite / ECharts / D3 for charts, Remotion / GSAP / Anime.js for animation), so
-anyone can generate and watch the result — no DataMagic account required. The skill ships a
-worked **reference path using Remotion**; the methodology itself is independent of any renderer.
+The `datamagic-video` Skill is the agent guide for the DataMagic recipe library. It helps a coding agent find an effect, read its implementation, adapt your data and media, render a video, and check the result.
 
-> This skill distills the methodology behind [DataMagic](https://github.com/HKUSTDial/DataMagic)
-> (VLDB 2026 Demo). The hosted DataMagic product adds premium templates and a full multi-agent
-> pipeline; this skill helps any agent produce strong data videos on its own, and shares the
-> same DVSpec format.
+配套 Skill 把“看到一个喜欢的效果”和“用自己的内容做出来”连起来：选配方、读源码、换数据、调整画面、渲染并检查结果。
 
-## What it does
+## Start in the repository / 在仓库中开始
 
-Given a CSV/Excel table and a goal, the skill guides the agent through:
+Clone the repository and open your coding agent in it:
 
-1. **Profile the data** — field types, candidate insights
-2. **Plan the story** — pick a narrative pattern, lay out scenes
-3. **Choose charts** — match chart type to data shape
-4. **Author a DVSpec** — a portable, renderer-agnostic JSON "screenplay" of the video
-5. **Render it** — compile the DVSpec to a video (the skill's reference path uses Remotion)
-6. **Add voiceover** — free TTS, with scene duration derived from the audio
-7. **Self-review** — a checklist the agent runs before declaring it done
+```bash
+git clone https://github.com/HKUSTDial/DataMagic.git
+cd DataMagic
+```
 
-## Install
+Ask the agent to use `skills/datamagic-video/SKILL.md`. The `cards/` directory contains the previews, source, schemas, sample props, and render entry. For local rendering, use Node.js 20.10+ and install the package dependencies with `npm ci` inside `cards/`.
 
-Source repo: <https://github.com/HKUSTDial/DataMagic>
+### Use an effect you selected / 复用选好的效果
 
-### Claude Code plugin
+Watch the gallery preview, copy its implementation instructions, and provide your data or media.
 
-```text
+> 使用 datamagic-video Skill，把 RankedReveal 换成我的 sales.csv，保留倒序揭晓的节奏，改成中文和品牌配色。输出 MP4 和可编辑源码。
+>
+> Use datamagic-video to adapt RankedReveal to my sales.csv. Keep the countdown reveal, apply my brand colors, and deliver an MP4 with editable source.
+
+### Find an effect for your goal / 根据用途选配方
+
+> 我想比较各地区的销售变化。看看这份 CSV，推荐适合的配方，说明各自能讲清楚什么。
+>
+> Inspect this CSV and recommend recipes for explaining sales changes across regions. Explain what each one would help communicate.
+
+The agent searches by data shape and purpose, then explains the fit. If you ask it to make the video as well, it can choose a suitable recipe and continue.
+
+### Build a story / 组合成故事
+
+> 用这份季度数据做一个 30 秒故事：开场展示增长，中间比较地区贡献，最后总结发现。复用库里的配方，统一颜色和文字样式。
+>
+> Make a 30-second story from this quarterly data: open with the growth, compare regional contributions, then close with the main finding. Reuse library recipes and keep the styling consistent.
+
+The agent plans the beats, selects recipes, and composes the shots. Add your preferred aspect ratio, supplied media, and narration requirements when relevant.
+
+## Find source files / 查找配方与源码
+
+From the repository root:
+
+```bash
+node skills/datamagic-video/scripts/cards.cjs list --query ranking
+node skills/datamagic-video/scripts/cards.cjs inspect RankedReveal
+```
+
+The helper returns absolute paths and the render Composition ID. All 139 cards have editable source, schemas and sample data. For the complete local workflow, see [Cards documentation](../../cards/README.en.md) / [中文](../../cards/README.md).
+
+## Install into your agent / 安装到智能体环境
+
+You can also install the Skill as a plugin. Keep a local DataMagic checkout for the recipe assets and source; point a separately installed Skill to it with `--cards /path/to/DataMagic/cards`.
+
+### Claude Code
+
+```bash
 claude plugin marketplace add HKUSTDial/DataMagic
 claude plugin install datamagic-video@datamagic
 ```
 
-### Codex plugin
+### Codex
 
 ```bash
 codex plugin marketplace add HKUSTDial/DataMagic
 codex plugin add datamagic-video@datamagic
 ```
 
-### One-line shell install
+### Repository installer
+
+The repository's [install.sh](../../install.sh) supports both clients:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash
+bash install.sh --only claude
+# or
+bash install.sh --only codex
 ```
 
-Install only one agent:
+## Deeper authoring / 进阶制作
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash -s -- --only claude
-curl -fsSL https://raw.githubusercontent.com/HKUSTDial/DataMagic/main/install.sh | bash -s -- --only codex
-```
+For analysis-led videos, custom scripts, narration, or DVSpec plans, use [Plan a complete video from data](rules/full-story-workflow.md). The same Skill draws on these rules when the task needs them.
 
-## Use
+原来的数据分析、叙事规划、旁白和 DVSpec 工作流继续保留为进阶能力。制作时按任务调用；已有配方的替换和调整从模板直接开始。
 
-Once installed, just ask in natural language:
-
-> "Make a narrated data video from this CSV: <paste your data or path>"
-
-The agent reads `SKILL.md` (the router), follows the pipeline, and produces a DVSpec plan and
-a Remotion project. To get audio + a rendered MP4, you'll need Node.js (for Remotion) and
-Python with `edge-tts` (free voiceover) — the skill explains the steps.
-
-## What's inside
-
-| File | Purpose |
+| Resource | Purpose |
 |---|---|
-| `SKILL.md` | Entry point / router — read first |
-| `rules/data-analysis.md` | Profiling tabular data into candidate insights |
-| `rules/scene-planning.md` | The 5 narrative patterns and scene layout |
-| `rules/chart-selection.md` | Choosing the right chart for the data shape |
-| `rules/dvspec.md` | The DVSpec format (the planning "screenplay") |
-| `rules/design-system.md` | Color, type, spacing, motion, subtitle safe zone, anti-clutter |
-| `rules/remotion-integration.md` | Rendering a DVSpec to video (reference path: Remotion) |
-| `rules/voiceover.md` | Free/BYO-key TTS + narration-driven timing |
-| `rules/narration.md` | Writing narration scripts and subtitles |
-| `rules/refinement.md` | Editing an existing result |
-| `rules/self-review.md` | The pre-finish quality checklist |
-| `rules/anti-patterns.md` | Common mistakes and how to avoid them |
+| [SKILL.md](SKILL.md) | Select the appropriate route for the user's task |
+| [cards-workflow.md](rules/cards-workflow.md) | Inspect, adapt, compose and render recipes |
+| [cards.cjs](scripts/cards.cjs) | Locate the library and resolve source files |
+| [full-story-workflow.md](rules/full-story-workflow.md) | Plan a custom video from data |
+| [self-review.md](rules/self-review.md) | Review values, visuals and any audio |
+| [Document history](../../docs/archive/README.md) | Previous README and Skill snapshots |
 
-## Relationship to DataMagic
-
-- **This skill** → plan a data video and render it anywhere with open tooling (Remotion shown as the reference path). Great standalone.
-- **[DataMagic hosted](https://datamagic.chat/)** → upload data, get a premium video with
-  refined templates and the full pipeline. No setup.
-
-The DVSpec format is the bridge: the same plan this skill authors is what DataMagic renders at
-full fidelity.
-
-## Status
-
-This is an **early release**. The skill works end-to-end; we're actively refining the rules from
-real generations. Issues and suggestions are very welcome — open one on the
-[main repository](https://github.com/HKUSTDial/DataMagic).
-
-## License & citation
-
-If you use this in research or work, please cite DataMagic — see the
-[main repository](https://github.com/HKUSTDial/DataMagic) for the BibTeX entry.
+[DataMagic research and citation](../../README.en.md#research) · [在线系统](../../docs/online-system.zh-CN.md) · [MIT License](../../LICENSE)

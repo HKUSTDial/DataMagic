@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SplitContextComparison / 双场景数据对比",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "subtitle",
+    "left",
+    "right",
+    "differenceLabel",
+    "differenceValue",
+    "takeaway",
+    "source"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "left": {
+      "$ref": "#/$defs/context"
+    },
+    "right": {
+      "$ref": "#/$defs/context"
+    },
+    "differenceLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "differenceValue": {
+      "type": "string",
+      "minLength": 1
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "name",
+        "value",
+        "unit",
+        "detail",
+        "accent",
+        "scene"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detail": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accent": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "scene": {
+          "enum": [
+            "electric",
+            "fuel"
+          ]
+        },
+        "iconSrc": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

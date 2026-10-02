@@ -1,0 +1,24 @@
+{
+  "node": "v24.13.0",
+  "elapsedSeconds": 124.658,
+  "results": [
+    {
+      "id": "CoffeeRaceV1",
+      "version": "v1",
+      "width": 1920,
+      "height": 1080,
+      "frames": 360,
+      "fps": 30,
+      "renderSeconds": 57.434
+    },
+    {
+      "id": "CoffeeRaceV2",
+      "version": "v2",
+      "width": 1920,
+      "height": 1080,
+      "frames": 420,
+      "fps": 30,
+      "renderSeconds": 61.817
+    }
+  ]
+}

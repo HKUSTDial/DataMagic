@@ -1,0 +1,37 @@
+{
+  "title": "分选效率，不能只看机械臂有多快",
+  "question": "看完生产场景，再比较三个识别阶段的准确率。",
+  "videoSrc": "assets/recycling-facility-agnes.mp4",
+  "videoDurationSeconds": 8,
+  "maximum": 100,
+  "unit": "%",
+  "metricLabel": "识别准确率",
+  "rows": [
+    {
+      "id": "baseline",
+      "label": "基础识别",
+      "value": 81.2,
+      "at": 2.4,
+      "caption": "建立比较基准",
+      "iconSrc": "icons/categories/scan.svg"
+    },
+    {
+      "id": "vision",
+      "label": "视觉校验",
+      "value": 89.5,
+      "at": 3.7,
+      "caption": "增加视觉校验",
+      "iconSrc": "icons/categories/robot.svg"
+    },
+    {
+      "id": "review",
+      "label": "人工复核",
+      "value": 94.6,
+      "at": 5,
+      "caption": "引入人工复核",
+      "iconSrc": "icons/categories/review.svg"
+    }
+  ],
+  "takeaway": "同一示例中，完整流程比基础识别提高 13.4 个百分点。",
+  "source": "来源：合成演示数据，非真实统计。背景为已有 AI 生成视频，仅用于情境说明。"
+}

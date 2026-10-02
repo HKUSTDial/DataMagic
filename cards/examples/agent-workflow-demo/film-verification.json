@@ -1,0 +1,31 @@
+{
+  "voiceLUFS": [
+    -18.08,
+    -18.03,
+    -18.18,
+    -18.11,
+    -18.18,
+    -18.47,
+    -18.21,
+    -18.21,
+    -17.92
+  ],
+  "files": [
+    {
+      "file": "datamagic-workflow-v2.mp4",
+      "bytes": 9493702,
+      "duration": 72,
+      "frames": 2160,
+      "integratedLUFS": -18.07,
+      "truePeakDBTP": -1.91
+    },
+    {
+      "file": "datamagic-workflow-v2-no-bgm.mp4",
+      "bytes": 9402757,
+      "duration": 72,
+      "frames": 2160,
+      "integratedLUFS": -18.04,
+      "truePeakDBTP": -1.94
+    }
+  ]
+}

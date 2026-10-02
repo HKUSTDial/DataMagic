@@ -1,0 +1,15 @@
+{
+  "language": "zh-CN",
+  "model": "IndexTTS2",
+  "duration": 30,
+  "segments": [
+    {"id": "01-opening", "start": 0.25, "end": 3.0, "text": "让数据，讲个好故事。"},
+    {"id": "02-presenter", "start": 3.5, "end": 7.0, "text": "角色主持，让图表更有表现力。"},
+    {"id": "03-handoff", "start": 7.25, "end": 10.85, "text": "讲到重点，让图表成为主角。"},
+    {"id": "04-ranking", "start": 11.25, "end": 14.85, "text": "动态柱状图，呈现排名变化。"},
+    {"id": "05-footage", "start": 15.25, "end": 18.85, "text": "从真实场景，转入数据证据。"},
+    {"id": "06-timeline", "start": 19.25, "end": 22.85, "text": "沿着时间线，聚焦关键变化。"},
+    {"id": "07-map", "start": 23.25, "end": 26.85, "text": "多层地图滑行，连接数据与空间。"},
+    {"id": "08-create", "start": 27.2, "end": 29.85, "text": "选个配方，换上你的数据。"}
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "bar_chart",
+    "style_template_id": "StyleTemplate-CompactColumnKpi",
+    "style_template_name": "Compact Column KPI",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-CompactColumnKpi",
+      "chart_type": "bar_chart",
+      "theme": "dark",
+      "data_contract": "time or category values",
+      "entrance_animation": "column grow",
+      "emphasis_animation": "column focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "bar",
+        "label",
+        "value"
+      ],
+      "suggested_narration": "June is where the column sequence reaches its key value.",
+      "trigger_phrase": "June",
+      "animation_intent": "Mark the named column and its value label.",
+      "timing": "word_aligned"
+    },
+    "title": "Compact Column KPI",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#f472b6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-CompactColumnKpi",
+      "chart_type": "bar_chart",
+      "title": "Compact Column KPI",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "Jan",
+          "value": 120,
+          "display_value": "120K",
+          "color": "#f472b6",
+          "series": "Revenue"
+        },
+        {
+          "label": "Feb",
+          "value": 138,
+          "display_value": "138K",
+          "color": "#10b981",
+          "series": "Revenue"
+        },
+        {
+          "label": "Mar",
+          "value": 151,
+          "display_value": "151K",
+          "color": "#f59e0b",
+          "series": "Revenue"
+        },
+        {
+          "label": "Apr",
+          "value": 167,
+          "display_value": "167K",
+          "color": "#6366f1",
+          "series": "Revenue"
+        },
+        {
+          "label": "May",
+          "value": 184,
+          "display_value": "184K",
+          "color": "#ec4899",
+          "series": "Revenue"
+        },
+        {
+          "label": "Jun",
+          "value": 205,
+          "display_value": "205K",
+          "color": "#14b8a6",
+          "series": "Revenue"
+        },
+        {
+          "label": "Jul",
+          "value": 226,
+          "display_value": "226K",
+          "color": "#f97316",
+          "series": "Revenue"
+        },
+        {
+          "label": "Aug",
+          "value": 241,
+          "display_value": "241K",
+          "color": "#8b5cf6",
+          "series": "Revenue"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#f472b6",
+      "accent_color": "#f472b6",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#f472b6",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_CompactColumnKpi",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-CompactColumnKpi"
+    },
+    "narration": [
+      {
+        "text": "June is where the column sequence reaches its key value.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Jun"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Mark the named column and its value label.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "June",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SpatialPercentOverlay",
+  "type": "object",
+  "required": [
+    "title",
+    "context",
+    "metricLabel",
+    "entityLabel",
+    "value",
+    "unit",
+    "takeaway",
+    "source",
+    "backgroundSrc",
+    "accentColor"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metricLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entityLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "unit": {
+      "type": "string"
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "backgroundSrc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "accentColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "entityIconSrc": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

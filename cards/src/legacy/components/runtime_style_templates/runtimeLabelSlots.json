@@ -1,0 +1,94 @@
+{
+  "StyleTemplate-CleanTrendCard": {
+    "change": "Change"
+  },
+  "StyleTemplate-MetricTrendRibbon": {
+    "latest": "Latest"
+  },
+  "StyleTemplate-LightFocusLine": {
+    "latest": "Latest value",
+    "from": "from"
+  },
+  "StyleTemplate-DarkEditorialTrend": {
+    "growth_story": "Growth Story",
+    "cumulative_growth_from": "cumulative growth from",
+    "to": "to"
+  },
+  "StyleTemplate-LongTrendline": {
+    "peak": "Peak"
+  },
+  "StyleTemplate-AreaStackTrend": {
+    "trend": "Trend",
+    "since": "since"
+  },
+  "StyleTemplate-EditorialDataStory": {
+    "stat_label": "TREND MOMENTUM",
+    "kicker": "DATA BRIEFING"
+  },
+  "StyleTemplate-ExecutiveHorizontalBars": {
+    "leader": "Leader"
+  },
+  "StyleTemplate-CompactColumnKpi": {
+    "peak": "Peak"
+  },
+  "StyleTemplate-SlopeChangeRanking": {
+    "start": "START",
+    "end": "END"
+  },
+  "StyleTemplate-MarginSlopeComparison": {
+    "start": "START",
+    "end": "END"
+  },
+  "StyleTemplate-NestedRingShare": {
+    "share": "SHARE"
+  },
+  "StyleTemplate-BasicPieChart": {
+    "total": "TOTAL"
+  },
+  "StyleTemplate-LightMultiSlicePie": {
+    "total": "TOTAL"
+  },
+  "StyleTemplate-MultiSliceDonut": {
+    "total": "TOTAL"
+  },
+  "StyleTemplate-ProductPerformanceRadar": {
+    "score": "SCORE"
+  },
+  "StyleTemplate-RadarPerformanceProfile": {
+    "average": "avg"
+  },
+  "StyleTemplate-CorrelationHeatmapMatrix": {
+    "strongest_inverse": "strongest inverse",
+    "negative": "NEGATIVE",
+    "positive": "POSITIVE"
+  },
+  "StyleTemplate-DarkCorrelationMatrix": {
+    "signal_map": "Signal Map",
+    "strongest_inverse": "Strongest Inverse"
+  },
+  "StyleTemplate-WeeklyActivityHeatmap": {
+    "peak_activity": "Peak Activity"
+  },
+  "StyleTemplate-WideComparisonGrid": {
+    "entity": "Entity"
+  },
+  "StyleTemplate-SupplyChainSankeyFlow": {
+    "quality": "Quality 92%",
+    "on_time": "On-time 87%",
+    "cost": "Cost -8%"
+  },
+  "StyleTemplate-WaterfallProfitBridge": {
+    "total": "Total"
+  },
+  "StyleTemplate-RevenueWaterfallBridge": {
+    "total": "Total"
+  },
+  "StyleTemplate-DarkWaterfallBridge": {
+    "total": "Total"
+  },
+  "StyleTemplate-SemiGaugeProgress": {
+    "strong": "STRONG",
+    "delta_vs_target": "Delta vs Target",
+    "target": "TARGET"
+  }
+}

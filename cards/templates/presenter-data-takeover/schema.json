@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","title":"PresenterDataTakeover","type":"object","additionalProperties":false,
+  "required":["title","question","takeaway","source","metricLabel","unit","presenter","points","domain","focusIndex"],
+  "properties":{
+    "title":{"type":"string","minLength":1,"maxLength":28},"question":{"type":"string","minLength":1,"maxLength":44},"takeaway":{"type":"string","minLength":1,"maxLength":44},
+    "source":{"type":"string","minLength":1,"maxLength":85},"metricLabel":{"type":"string","minLength":1,"maxLength":22},"unit":{"type":"string","maxLength":3},
+    "presenter":{"type":"object","additionalProperties":false,"required":["src","type","label"],"properties":{"src":{"type":"string","minLength":1},"type":{"enum":["image","video"]},"label":{"type":"string","minLength":1,"maxLength":20},"durationSeconds":{"type":"number","exclusiveMinimum":0}},"allOf":[{"if":{"properties":{"type":{"const":"video"}}},"then":{"required":["durationSeconds"]}}]},
+    "points":{"type":"array","minItems":4,"maxItems":7,"items":{"type":"object","additionalProperties":false,"required":["label","value"],"properties":{"label":{"type":"string","minLength":1,"maxLength":8},"value":{"type":"number"}}}},
+    "domain":{"type":"array","prefixItems":[{"type":"number","exclusiveMaximum":0},{"type":"number","exclusiveMinimum":0}],"minItems":2,"maxItems":2},
+    "focusIndex":{"type":"integer","minimum":0,"maximum":6}
+  }
+}

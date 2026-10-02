@@ -1,0 +1,43 @@
+{
+  "title": "收入涨了，为什么还觉得钱不够？",
+  "question": "同一户家庭，收入与两项开支发生了什么变化？",
+  "takeaway": "这两项开支增幅超过收入增幅，不能只看工资涨了多少。",
+  "source": "DataMagic Cards 合成家庭数据，非真实统计；猫主持为生成素材；无声演示。",
+  "presenter": {
+    "src": "assets/character-perspective-board/cat-host.mp4",
+    "type": "video",
+    "label": "猫主持 / 家庭账本",
+    "durationSeconds": 14.375
+  },
+  "metricLabel": "较基期增长幅度",
+  "unit": "%",
+  "maximum": 40,
+  "rows": [
+    {
+      "id": "income",
+      "label": "家庭收入",
+      "value": 8,
+      "at": 3,
+      "caption": "收入增加了 8%，但这还不是故事的全部。",
+      "iconSrc": "icons/categories/finance.svg"
+    },
+    {
+      "id": "rent",
+      "label": "住房开支",
+      "value": 18,
+      "at": 5.4,
+      "caption": "住房开支涨了 18%，比收入增长更快。",
+      "iconSrc": "icons/categories/home.svg"
+    },
+    {
+      "id": "food",
+      "label": "食品开支",
+      "value": 25,
+      "at": 7.8,
+      "caption": "食品开支增加了 25%，也超过了收入增幅。",
+      "iconSrc": "icons/categories/food.svg"
+    }
+  ],
+  "conclusionAt": 10.4,
+  "tiltDegrees": -7
+}

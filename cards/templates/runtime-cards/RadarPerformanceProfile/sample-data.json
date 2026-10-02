@@ -1,0 +1,256 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "radar_chart",
+    "style_template_id": "StyleTemplate-RadarPerformanceProfile",
+    "style_template_name": "Radar Performance Profile",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-RadarPerformanceProfile",
+      "chart_type": "radar_chart",
+      "theme": "light",
+      "data_contract": "multi-axis scores",
+      "entrance_animation": "axis reveal",
+      "emphasis_animation": "profile focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "axis",
+        "series",
+        "value"
+      ],
+      "suggested_narration": "Product A has the broader performance profile.",
+      "trigger_phrase": "Product A",
+      "animation_intent": "Highlight the named radar profile.",
+      "timing": "word_aligned"
+    },
+    "title": "Radar Performance Profile",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#2563eb",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-RadarPerformanceProfile",
+      "chart_type": "radar_chart",
+      "title": "Radar Performance Profile",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "comparison_rows"
+      },
+      "rows": [
+        {
+          "label": "Product A",
+          "metrics": [
+            {
+              "name": "Speed",
+              "value": 86,
+              "display_value": "86",
+              "color": "#2dd4bf"
+            },
+            {
+              "name": "Quality",
+              "value": 74,
+              "display_value": "74",
+              "color": "#2dd4bf"
+            },
+            {
+              "name": "Cost",
+              "value": 58,
+              "display_value": "58",
+              "color": "#2dd4bf"
+            },
+            {
+              "name": "Reach",
+              "value": 92,
+              "display_value": "92",
+              "color": "#2dd4bf"
+            },
+            {
+              "name": "Loyalty",
+              "value": 68,
+              "display_value": "68",
+              "color": "#2dd4bf"
+            },
+            {
+              "name": "Growth",
+              "value": 80,
+              "display_value": "80",
+              "color": "#2dd4bf"
+            }
+          ],
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "Product B",
+          "metrics": [
+            {
+              "name": "Speed",
+              "value": 74,
+              "display_value": "74",
+              "color": "#60a5fa"
+            },
+            {
+              "name": "Quality",
+              "value": 81,
+              "display_value": "81",
+              "color": "#60a5fa"
+            },
+            {
+              "name": "Cost",
+              "value": 64,
+              "display_value": "64",
+              "color": "#60a5fa"
+            },
+            {
+              "name": "Reach",
+              "value": 70,
+              "display_value": "70",
+              "color": "#60a5fa"
+            },
+            {
+              "name": "Loyalty",
+              "value": 77,
+              "display_value": "77",
+              "color": "#60a5fa"
+            },
+            {
+              "name": "Growth",
+              "value": 62,
+              "display_value": "62",
+              "color": "#60a5fa"
+            }
+          ],
+          "iconSrc": "icons/categories/cloud.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Product A": "icons/categories/product.svg",
+      "Product B": "icons/categories/cloud.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_RadarPerformanceProfile",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-RadarPerformanceProfile"
+    },
+    "narration": [
+      {
+        "text": "Product A has the broader performance profile.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Product A"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named radar profile.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Product A",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

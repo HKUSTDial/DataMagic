@@ -1,0 +1,234 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "flow_sankey",
+    "style_template_id": "StyleTemplate-SupplyChainSankeyFlow",
+    "style_template_name": "Supply Chain Sankey Flow",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-SupplyChainSankeyFlow",
+      "chart_type": "flow_sankey",
+      "theme": "light",
+      "data_contract": "flow/funnel stages",
+      "entrance_animation": "supply flow reveal",
+      "emphasis_animation": "node focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "node",
+        "flow",
+        "value"
+      ],
+      "suggested_narration": "Distribution carries the strongest supply flow.",
+      "trigger_phrase": "Distribution",
+      "animation_intent": "Highlight the named supply node.",
+      "timing": "word_aligned"
+    },
+    "title": "Supply Chain Sankey Flow",
+    "data": [
+      {
+        "label": "Source",
+        "value": 260,
+        "display_value": "260K",
+        "color": "#2563eb"
+      },
+      {
+        "label": "Manufacturing",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#10b981"
+      },
+      {
+        "label": "Distribution",
+        "value": 194,
+        "display_value": "194K",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Retail",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#6366f1"
+      },
+      {
+        "label": "Delivered",
+        "value": 128,
+        "display_value": "128K",
+        "color": "#14b8a6"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-SupplyChainSankeyFlow",
+      "chart_type": "flow_sankey",
+      "title": "Supply Chain Flow",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "comparison_rows"
+      },
+      "rows": [
+        {
+          "label": "Suppliers",
+          "metrics": [
+            {
+              "name": "Factories",
+              "value": 920,
+              "display_value": "920t",
+              "color": "#38bdf8",
+              "iconSrc": "icons/categories/robot.svg"
+            },
+            {
+              "name": "Assemblers",
+              "value": 260,
+              "display_value": "260t",
+              "color": "#60a5fa",
+              "iconSrc": "icons/categories/product.svg"
+            },
+            {
+              "name": "Warehouses",
+              "value": 180,
+              "display_value": "180t",
+              "color": "#34d399",
+              "iconSrc": "icons/categories/store.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "Partners",
+          "metrics": [
+            {
+              "name": "Factories",
+              "value": 640,
+              "display_value": "640t",
+              "color": "#60a5fa",
+              "iconSrc": "icons/categories/robot.svg"
+            },
+            {
+              "name": "Distribution",
+              "value": 420,
+              "display_value": "420t",
+              "color": "#f59e0b",
+              "iconSrc": "icons/categories/transport.svg"
+            },
+            {
+              "name": "Retail",
+              "value": 220,
+              "display_value": "220t",
+              "color": "#22d3ee",
+              "iconSrc": "icons/categories/store.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/service.svg"
+        },
+        {
+          "label": "Imports",
+          "metrics": [
+            {
+              "name": "Distribution",
+              "value": 560,
+              "display_value": "560t",
+              "color": "#818cf8",
+              "iconSrc": "icons/categories/transport.svg"
+            },
+            {
+              "name": "Retail",
+              "value": 320,
+              "display_value": "320t",
+              "color": "#22d3ee",
+              "iconSrc": "icons/categories/store.svg"
+            },
+            {
+              "name": "Online",
+              "value": 280,
+              "display_value": "280t",
+              "color": "#a78bfa",
+              "iconSrc": "icons/categories/online.svg"
+            }
+          ],
+          "iconSrc": "icons/categories/transport.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Suppliers": "icons/categories/product.svg",
+      "Partners": "icons/categories/service.svg",
+      "Imports": "icons/categories/transport.svg",
+      "Factories": "icons/categories/robot.svg",
+      "Assemblers": "icons/categories/product.svg",
+      "Warehouses": "icons/categories/store.svg",
+      "Distribution": "icons/categories/transport.svg",
+      "Retail": "icons/categories/store.svg",
+      "Online": "icons/categories/online.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_SupplyChainSankeyFlow",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-SupplyChainSankeyFlow"
+    },
+    "narration": [
+      {
+        "text": "Distribution carries the strongest supply flow.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Distribution"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named supply node.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Distribution",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

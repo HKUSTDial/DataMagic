@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "duration": 76,
+  "frames": 2280,
+  "width": 1280,
+  "height": 720,
+  "bytes": 3017169,
+  "total": {
+    "lufs": -16.57,
+    "truePeak": -1.99
+  },
+  "mixedSpread": 1.37,
+  "segments": [
+    {
+      "id": "01-intro",
+      "voice": {
+        "lufs": -18.34,
+        "truePeak": -2
+      },
+      "mixed": {
+        "lufs": -16.25,
+        "truePeak": -2.81
+      }
+    },
+    {
+      "id": "02-gallery",
+      "voice": {
+        "lufs": -18.29,
+        "truePeak": -2
+      },
+      "mixed": {
+        "lufs": -16.05,
+        "truePeak": -2.02
+      }
+    },
+    {
+      "id": "03-data",
+      "voice": {
+        "lufs": -18.12,
+        "truePeak": -2.92
+      },
+      "mixed": {
+        "lufs": -14.88,
+        "truePeak": -2.95
+      }
+    },
+    {
+      "id": "04-brief",
+      "voice": {
+        "lufs": -18.25,
+        "truePeak": -2
+      },
+      "mixed": {
+        "lufs": -15.21,
+        "truePeak": -1.99
+      }
+    },
+    {
+      "id": "05-run",
+      "voice": {
+        "lufs": -17.97,
+        "truePeak": -2.07
+      },
+      "mixed": {
+        "lufs": -15.5,
+        "truePeak": -2.49
+      }
+    },
+    {
+      "id": "06-first",
+      "voice": {
+        "lufs": -17.99,
+        "truePeak": -2
+      },
+      "mixed": {
+        "lufs": -15.84,
+        "truePeak": -2.62
+      }
+    },
+    {
+      "id": "07-revision",
+      "voice": {
+        "lufs": -18.19,
+        "truePeak": -2.17
+      },
+      "mixed": {
+        "lufs": -15.18,
+        "truePeak": -2.11
+      }
+    },
+    {
+      "id": "08-final",
+      "voice": {
+        "lufs": -18.26,
+        "truePeak": -1.99
+      },
+      "mixed": {
+        "lufs": -15.44,
+        "truePeak": -2.05
+      }
+    },
+    {
+      "id": "09-delivery",
+      "voice": {
+        "lufs": -18.27,
+        "truePeak": -2
+      },
+      "mixed": {
+        "lufs": -14.99,
+        "truePeak": -2.02
+      }
+    }
+  ]
+}

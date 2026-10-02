@@ -1,0 +1,18 @@
+{
+  "title": "增长没有消失，只是换了一个发动机",
+  "subtitle": "主持人引导注意力，图表负责给出可核验的比较",
+  "presenterSide": "left",
+  "presenterName": "林澈",
+  "presenterRole": "商业数据观察员",
+  "activeBeat": 2,
+  "chartData": [
+    {"label": "2021", "value": 18, "context": "需求恢复带来第一轮回升"},
+    {"label": "2022", "value": 24, "context": "产品结构优化继续抬升规模"},
+    {"label": "2023", "value": 39, "context": "海外市场贡献了最明显的增量"},
+    {"label": "2024", "value": 46, "context": "增长进入更稳定的兑现阶段"}
+  ],
+  "unit": "%",
+  "takeaway": "2023 年是增速跳升的关键节点，重点应从总量增长转向海外业务的持续性。",
+  "source": "DataMagic Cards 演示数据",
+  "accentColor": "#1fb89b"
+}

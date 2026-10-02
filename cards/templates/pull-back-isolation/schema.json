@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PullBackIsolation / 拉远孤立",
+  "type": "object",
+  "required": [
+    "title",
+    "subtitle",
+    "items",
+    "focusIndex",
+    "unit",
+    "insight",
+    "source",
+    "accentColor"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "value"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        }
+      }
+    },
+    "focusIndex": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unit": {
+      "type": "string"
+    },
+    "insight": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "accentColor": {
+      "type": "string"
+    }
+  }
+}

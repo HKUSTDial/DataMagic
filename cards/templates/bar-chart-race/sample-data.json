@@ -1,0 +1,178 @@
+{
+  "title": "全球绿色创新指数竞赛",
+  "subtitle": "2018—2026 · 演示数据（非统计结论）",
+  "unit": "指数",
+  "source": "DataMagic Cards synthetic benchmark dataset",
+  "topN": 7,
+  "decimals": 0,
+  "locale": "zh-CN",
+  "entities": [
+    {
+      "id": "china",
+      "label": "中国",
+      "color": "#16a085",
+      "iconSrc": "icons/flags/CN.svg"
+    },
+    {
+      "id": "usa",
+      "label": "美国",
+      "color": "#3478c7",
+      "iconSrc": "icons/flags/US.svg"
+    },
+    {
+      "id": "germany",
+      "label": "德国",
+      "color": "#e6a323",
+      "iconSrc": "icons/flags/DE.svg"
+    },
+    {
+      "id": "japan",
+      "label": "日本",
+      "color": "#d95f59",
+      "iconSrc": "icons/flags/JP.svg"
+    },
+    {
+      "id": "korea",
+      "label": "韩国",
+      "color": "#8d6ac8",
+      "iconSrc": "icons/flags/KR.svg"
+    },
+    {
+      "id": "france",
+      "label": "法国",
+      "color": "#e66c9c",
+      "iconSrc": "icons/flags/FR.svg"
+    },
+    {
+      "id": "uk",
+      "label": "英国",
+      "color": "#4f9d69",
+      "iconSrc": "icons/flags/GB.svg"
+    },
+    {
+      "id": "india",
+      "label": "印度",
+      "color": "#d67b31",
+      "iconSrc": "icons/flags/IN.svg"
+    }
+  ],
+  "snapshots": [
+    {
+      "time": "2018",
+      "values": {
+        "china": 58,
+        "usa": 82,
+        "germany": 71,
+        "japan": 68,
+        "korea": 48,
+        "france": 55,
+        "uk": 62,
+        "india": 29
+      }
+    },
+    {
+      "time": "2019",
+      "values": {
+        "china": 65,
+        "usa": 84,
+        "germany": 74,
+        "japan": 70,
+        "korea": 53,
+        "france": 58,
+        "uk": 64,
+        "india": 34
+      }
+    },
+    {
+      "time": "2020",
+      "values": {
+        "china": 73,
+        "usa": 86,
+        "germany": 77,
+        "japan": 72,
+        "korea": 60,
+        "france": 61,
+        "uk": 67,
+        "india": 40
+      }
+    },
+    {
+      "time": "2021",
+      "values": {
+        "china": 82,
+        "usa": 88,
+        "germany": 80,
+        "japan": 74,
+        "korea": 68,
+        "france": 65,
+        "uk": 70,
+        "india": 49
+      }
+    },
+    {
+      "time": "2022",
+      "values": {
+        "china": 91,
+        "usa": 92,
+        "germany": 83,
+        "japan": 76,
+        "korea": 74,
+        "france": 69,
+        "uk": 73,
+        "india": 58
+      }
+    },
+    {
+      "time": "2023",
+      "values": {
+        "china": 102,
+        "usa": 96,
+        "germany": 87,
+        "japan": 79,
+        "korea": 81,
+        "france": 73,
+        "uk": 76,
+        "india": 68
+      }
+    },
+    {
+      "time": "2024",
+      "values": {
+        "china": 116,
+        "usa": 101,
+        "germany": 91,
+        "japan": 82,
+        "korea": 88,
+        "france": 77,
+        "uk": 80,
+        "india": 79
+      }
+    },
+    {
+      "time": "2025",
+      "values": {
+        "china": 132,
+        "usa": 108,
+        "germany": 96,
+        "japan": 86,
+        "korea": 95,
+        "france": 82,
+        "uk": 84,
+        "india": 91
+      }
+    },
+    {
+      "time": "2026",
+      "values": {
+        "china": 149,
+        "usa": 116,
+        "germany": 102,
+        "japan": 91,
+        "korea": 103,
+        "france": 87,
+        "uk": 89,
+        "india": 105
+      }
+    }
+  ]
+}

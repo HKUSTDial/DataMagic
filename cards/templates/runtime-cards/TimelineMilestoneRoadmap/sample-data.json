@@ -1,0 +1,193 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "timeline",
+    "style_template_id": "StyleTemplate-TimelineMilestoneRoadmap",
+    "style_template_name": "Timeline Milestone Roadmap",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-TimelineMilestoneRoadmap",
+      "chart_type": "timeline",
+      "theme": "light",
+      "data_contract": "events, dates, milestones",
+      "entrance_animation": "roadmap reveal",
+      "emphasis_animation": "milestone highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "event",
+        "date"
+      ],
+      "suggested_narration": "Launch anchors the roadmap sequence.",
+      "trigger_phrase": "Launch",
+      "animation_intent": "Highlight the named roadmap milestone.",
+      "timing": "word_aligned"
+    },
+    "title": "Timeline Milestone Roadmap",
+    "data": [
+      {
+        "label": "Plan",
+        "value": 1,
+        "display_value": "Jan",
+        "subtitle": "Scope approved",
+        "color": "#2563eb"
+      },
+      {
+        "label": "Build",
+        "value": 2,
+        "display_value": "Mar",
+        "subtitle": "Core workflow ready",
+        "color": "#10b981"
+      },
+      {
+        "label": "Launch",
+        "value": 3,
+        "display_value": "Jun",
+        "subtitle": "Public rollout",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Scale",
+        "value": 4,
+        "display_value": "Sep",
+        "subtitle": "Regional expansion",
+        "color": "#6366f1"
+      },
+      {
+        "label": "Review",
+        "value": 5,
+        "display_value": "Dec",
+        "subtitle": "Planning cycle closes",
+        "color": "#14b8a6"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-TimelineMilestoneRoadmap",
+      "chart_type": "timeline",
+      "title": "Timeline Milestone Roadmap",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "Plan",
+          "value": 1,
+          "display_value": "Jan",
+          "subtitle": "Scope approved",
+          "color": "#2563eb",
+          "iconSrc": "icons/categories/research.svg"
+        },
+        {
+          "label": "Build",
+          "value": 2,
+          "display_value": "Mar",
+          "subtitle": "Core workflow ready",
+          "color": "#10b981",
+          "iconSrc": "icons/categories/robot.svg"
+        },
+        {
+          "label": "Launch",
+          "value": 3,
+          "display_value": "Jun",
+          "subtitle": "Public rollout",
+          "color": "#f59e0b",
+          "iconSrc": "icons/categories/online.svg"
+        },
+        {
+          "label": "Scale",
+          "value": 4,
+          "display_value": "Sep",
+          "subtitle": "Regional expansion",
+          "color": "#6366f1",
+          "iconSrc": "icons/categories/energy.svg"
+        },
+        {
+          "label": "Review",
+          "value": 5,
+          "display_value": "Dec",
+          "subtitle": "Planning cycle closes",
+          "color": "#14b8a6",
+          "iconSrc": "icons/categories/review.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Plan": "icons/categories/research.svg",
+      "Build": "icons/categories/robot.svg",
+      "Launch": "icons/categories/online.svg",
+      "Scale": "icons/categories/energy.svg",
+      "Review": "icons/categories/review.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_TimelineMilestoneRoadmap",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-TimelineMilestoneRoadmap"
+    },
+    "narration": [
+      {
+        "text": "Launch anchors the roadmap sequence.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Launch"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named roadmap milestone.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Launch",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

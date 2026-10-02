@@ -1,0 +1,14 @@
+{
+  "title": "配送提速，到底是哪一步的功劳？",
+  "question": "把三个阶段放在同一尺度上，比较每单节省的时间。",
+  "takeaway": "路线优化节省最多时间，应优先关注这一环节。",
+  "source": "DataMagic Cards 合成物流实验，非真实业务统计；生成角色；无声演示。",
+  "presenter": {"src": "assets/character-perspective-board/cat-host.mp4", "type": "video", "label": "猫主持 / 配送解读", "durationSeconds": 14.375},
+  "metricLabel": "每单节省时间", "unit": "分钟", "maximum": 20,
+  "rows": [
+    {"id": "sorting", "label": "自动分拣", "value": 4, "at": 3, "caption": "自动分拣让每单节省了 4 分钟。"},
+    {"id": "routes", "label": "路线优化", "value": 12, "at": 5.4, "caption": "路线优化节省了 12 分钟，是最大的贡献项。"},
+    {"id": "handoff", "label": "交接简化", "value": 6, "at": 7.8, "caption": "交接简化还能节省 6 分钟，但贡献小于路线优化。"}
+  ],
+  "conclusionAt": 10.4, "tiltDegrees": -7
+}

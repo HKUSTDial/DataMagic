@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "numericValuesCheckedPerVersion": 36,
+  "dataUnchanged": true,
+  "firstLeader": "美式",
+  "finalLeader": "拿铁",
+  "finalValue": 1450,
+  "results": [
+    {
+      "version": "v1",
+      "frames": 360,
+      "duration": 12,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "version": "v2",
+      "frames": 420,
+      "duration": 14,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "finalHoldMaxMeanPixelDifference": 0.000127797,
+  "scope": "Actual source adaptation and rendering in an existing Linux environment; not a clean-machine installation or cross-agent benchmark."
+}

@@ -1,0 +1,47 @@
+{
+  "title": "哪种公共空间更受欢迎？",
+  "question": "四类空间，先揭晓第四名。",
+  "metricLabel": "空间使用强度",
+  "maximum": 100,
+  "unit": "分",
+  "source": "DataMagic Cards 合成演示数据，非真实统计。",
+  "takeaway": "社区公园领先步行街 12 分。",
+  "rows": [
+    {
+      "id": "plaza",
+      "label": "城市广场",
+      "value": 44,
+      "at": 1.6,
+      "caption": "第四名：城市广场，44 分。",
+      "iconSrc": "icons/categories/plaza.svg",
+      "color": "#2878b5"
+    },
+    {
+      "id": "waterfront",
+      "label": "滨水步道",
+      "value": 61,
+      "at": 3.1,
+      "caption": "滨水步道上升至 61 分。",
+      "iconSrc": "icons/categories/waterfront.svg",
+      "color": "#249f86"
+    },
+    {
+      "id": "street",
+      "label": "步行街",
+      "value": 74,
+      "at": 4.6,
+      "caption": "步行街暂居第二，74 分。",
+      "iconSrc": "icons/categories/street.svg",
+      "color": "#b87643"
+    },
+    {
+      "id": "park",
+      "label": "社区公园",
+      "value": 86,
+      "at": 6.1,
+      "caption": "第一名：社区公园，86 分。",
+      "iconSrc": "icons/categories/park.svg",
+      "color": "#7c3aed"
+    }
+  ]
+}

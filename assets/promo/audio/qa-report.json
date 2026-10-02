@@ -1,0 +1,108 @@
+{
+  "speech": [
+    {
+      "id": "01-opening",
+      "lufs": -17.74,
+      "truePeak": -2
+    },
+    {
+      "id": "02-presenter",
+      "lufs": -17.96,
+      "truePeak": -2
+    },
+    {
+      "id": "03-handoff",
+      "lufs": -18,
+      "truePeak": -2
+    },
+    {
+      "id": "04-ranking",
+      "lufs": -17.95,
+      "truePeak": -2
+    },
+    {
+      "id": "05-footage",
+      "lufs": -17.79,
+      "truePeak": -2
+    },
+    {
+      "id": "06-timeline",
+      "lufs": -17.97,
+      "truePeak": -2
+    },
+    {
+      "id": "07-map",
+      "lufs": -18.15,
+      "truePeak": -3.56
+    },
+    {
+      "id": "08-create",
+      "lufs": -17.59,
+      "truePeak": -2
+    }
+  ],
+  "outputs": [
+    {
+      "version": "zh-voiced",
+      "duration": 30,
+      "lufs": -16.09,
+      "truePeak": -2.03
+    },
+    {
+      "version": "zh-music",
+      "duration": 30,
+      "lufs": -21.45,
+      "truePeak": -6.34
+    },
+    {
+      "version": "en-music",
+      "duration": 30,
+      "lufs": -21.45,
+      "truePeak": -6.34
+    }
+  ],
+  "mixedSentences": [
+    {
+      "id": "01-opening",
+      "lufs": -14.79,
+      "truePeak": -2.13
+    },
+    {
+      "id": "02-presenter",
+      "lufs": -15.39,
+      "truePeak": -2.37
+    },
+    {
+      "id": "03-handoff",
+      "lufs": -15.67,
+      "truePeak": -2.52
+    },
+    {
+      "id": "04-ranking",
+      "lufs": -15.12,
+      "truePeak": -2.25
+    },
+    {
+      "id": "05-footage",
+      "lufs": -14.92,
+      "truePeak": -2.21
+    },
+    {
+      "id": "06-timeline",
+      "lufs": -15.23,
+      "truePeak": -2.03
+    },
+    {
+      "id": "07-map",
+      "lufs": -15.26,
+      "truePeak": -3.46
+    },
+    {
+      "id": "08-create",
+      "lufs": -14.7,
+      "truePeak": -2.04
+    }
+  ],
+  "speechSpreadLU": 0.56,
+  "mixedSpreadLU": 0.97
+}

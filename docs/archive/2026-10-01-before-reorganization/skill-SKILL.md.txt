@@ -1,0 +1,98 @@
+---
+name: datamagic-video
+description: Create or refine animated charts and data stories from tables, using DataMagic Cards recipes and editable templates or a custom DVSpec storyboard. Use for recipe selection, data substitution, Remotion renders, and narration-timed data videos; not general video generation or live dashboards.
+metadata:
+  tags: datamagic, data-video, dvspec, remotion, data-visualization, narration, animation, storytelling
+---
+
+# DataMagic Video
+
+Turn tabular data into animated charts and data stories. **DataMagic Cards** supplies inspectable recipes, previews and editable templates. **DVSpec** is the renderer-agnostic screenplay for custom multi-scene stories. Use the user's chosen rendering stack; Remotion is the bundled reference path.
+
+## Use
+
+- CSV / Excel / structured table -> multi-scene narrated video
+- Pasted data -> animated chart or short data story
+- Existing DVSpec / render -> refine, debug, or improve
+- Goal only, no render requested -> produce DVSpec plan
+
+Do not use for raw video editing, non-data text-to-video, or live dashboards.
+
+## Core Rules
+
+- Plan first. For template adaptation, a data mapping and beat plan suffice; use DVSpec for custom multi-scene stories or when requested.
+- Data leads story. Pick narrative pattern from data shape, not topic.
+- Narration leads viewer eye. Animation follows narration timing.
+- Read only needed rule files. Heavy details live under `rules/`.
+- Before calling work done: review `rules/self-review.md`; apply narration-specific checks only when audio is present, and use the actual aspect ratio's safe area.
+
+## Cards-first workflow
+
+For choosing a recipe, reproducing a preview, or adapting a native template, read [rules/cards-workflow.md](rules/cards-workflow.md). Locate the packaged index with the dependency-free helper:
+
+```bash
+node <skill-directory>/scripts/cards.cjs list --native --query ranking
+node <skill-directory>/scripts/cards.cjs inspect RankedReveal
+```
+
+Paths printed by this helper are absolute. If the Skill was copied without its companion `cards/` directory, use `--cards /path/to/DataMagic/cards`; explain the missing package rather than assuming internal DataMagic sources are available. Do not download or install anything silently.
+
+Honor an explicitly selected recipe. Otherwise choose a template matching the data shape and output aspect ratio. All 139 cards include executable source, schemas and sample props. Read the full recipe, schema, sample and component before modifying it; the helper returns the appropriate render Composition ID.
+
+For browser-based multitrack editing or Jianying delivery after a Cards render, read [rules/workbench-delivery.md](rules/workbench-delivery.md). The workbench ships with the companion `cards/` package and runs locally; the public gallery is not a render service.
+
+## Router
+
+| Task | Read |
+|---|---|
+| Select or adapt a Cards recipe, render its template | `rules/cards-workflow.md` |
+| Profile data, find candidate insights | `rules/data-analysis.md` |
+| Choose narrative pattern, scenes | `rules/scene-planning.md` |
+| Pick chart type, axes, scales | `rules/chart-selection.md` |
+| Author or validate DVSpec | `rules/dvspec.md` |
+| Choose visual system, tokens, motion defaults | `rules/design-system.md` |
+| Pick style pack | `rules/styles/README.md` |
+| Render DVSpec to video with Remotion | `rules/remotion-integration.md` |
+| Add TTS, audio-driven duration, subtitles | `rules/voiceover.md` |
+| Write narration script | `rules/narration.md` |
+| Refine existing output | `rules/refinement.md` |
+| Diagnose bad output | `rules/anti-patterns.md` |
+| Final quality gate | `rules/self-review.md` |
+
+## Workflows
+
+Full video:
+
+`data-analysis` -> `scene-planning` -> `chart-selection` -> `dvspec` -> `design-system` -> `styles` -> `remotion-integration` -> `voiceover` -> `narration` -> `self-review`
+
+DVSpec only:
+
+`data-analysis` -> `scene-planning` -> `chart-selection` -> `dvspec`
+
+Single animated chart:
+
+`data-analysis` -> `chart-selection` -> `cards-workflow` (native reuse when suitable) -> `self-review`
+
+Selected card:
+
+`cards-workflow` -> source/schema/data mapping -> render -> visual and data review
+
+Short story from cards:
+
+`data-analysis` -> `scene-planning` -> `cards-workflow` -> scene composition/DVSpec -> render -> `self-review`
+
+Refinement:
+
+`refinement` -> changed domain rule(s) -> `self-review`
+
+## Narrative Patterns
+
+| Pattern | Use when | Climax |
+|---|---|---|
+| `freytag_default` | One main finding builds over time | 60-75% |
+| `hook_then_evidence` | One striking number should open | first chart scene |
+| `comparison_driven` | A vs B is story spine | largest contrast |
+| `time_driven` | chronological change drives story | sharpest shift |
+| `drill_down` | total -> segment -> cause | deepest zoom |
+
+See `rules/scene-planning.md` before locking pattern.

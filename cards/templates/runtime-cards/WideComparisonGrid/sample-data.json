@@ -1,0 +1,260 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "comparison_chart",
+    "style_template_id": "StyleTemplate-WideComparisonGrid",
+    "style_template_name": "Wide Comparison Grid",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-WideComparisonGrid",
+      "chart_type": "comparison_chart",
+      "theme": "light",
+      "data_contract": "grouped comparison values",
+      "entrance_animation": "grid reveal",
+      "emphasis_animation": "group focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "group",
+        "metric",
+        "value"
+      ],
+      "suggested_narration": "Q4 carries the strongest comparison signal.",
+      "trigger_phrase": "Q4",
+      "animation_intent": "Highlight the named comparison grid group.",
+      "timing": "word_aligned"
+    },
+    "title": "Wide Comparison Grid",
+    "data": [
+      {
+        "label": "Jan",
+        "value": 120,
+        "display_value": "120K",
+        "color": "#2563eb",
+        "series": "Revenue"
+      },
+      {
+        "label": "Feb",
+        "value": 138,
+        "display_value": "138K",
+        "color": "#10b981",
+        "series": "Revenue"
+      },
+      {
+        "label": "Mar",
+        "value": 151,
+        "display_value": "151K",
+        "color": "#f59e0b",
+        "series": "Revenue"
+      },
+      {
+        "label": "Apr",
+        "value": 167,
+        "display_value": "167K",
+        "color": "#6366f1",
+        "series": "Revenue"
+      },
+      {
+        "label": "May",
+        "value": 184,
+        "display_value": "184K",
+        "color": "#ec4899",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jun",
+        "value": 205,
+        "display_value": "205K",
+        "color": "#14b8a6",
+        "series": "Revenue"
+      },
+      {
+        "label": "Jul",
+        "value": 226,
+        "display_value": "226K",
+        "color": "#f97316",
+        "series": "Revenue"
+      },
+      {
+        "label": "Aug",
+        "value": 241,
+        "display_value": "241K",
+        "color": "#8b5cf6",
+        "series": "Revenue"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-WideComparisonGrid",
+      "chart_type": "comparison_chart",
+      "title": "Wide Comparison Grid",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "comparison_rows"
+      },
+      "rows": [
+        {
+          "label": "Q1",
+          "metrics": [
+            {
+              "name": "Revenue",
+              "value": 168,
+              "display_value": "168K",
+              "color": "#2563eb"
+            },
+            {
+              "name": "Cost",
+              "value": 98,
+              "display_value": "98K",
+              "color": "#10b981"
+            },
+            {
+              "name": "Margin",
+              "value": 41.7,
+              "display_value": "41.7%",
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "label": "Q2",
+          "metrics": [
+            {
+              "name": "Revenue",
+              "value": 194,
+              "display_value": "194K",
+              "color": "#2563eb"
+            },
+            {
+              "name": "Cost",
+              "value": 112,
+              "display_value": "112K",
+              "color": "#10b981"
+            },
+            {
+              "name": "Margin",
+              "value": 42.3,
+              "display_value": "42.3%",
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "label": "Q3",
+          "metrics": [
+            {
+              "name": "Revenue",
+              "value": 226,
+              "display_value": "226K",
+              "color": "#2563eb"
+            },
+            {
+              "name": "Cost",
+              "value": 126,
+              "display_value": "126K",
+              "color": "#10b981"
+            },
+            {
+              "name": "Margin",
+              "value": 44.2,
+              "display_value": "44.2%",
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "label": "Q4",
+          "metrics": [
+            {
+              "name": "Revenue",
+              "value": 241,
+              "display_value": "241K",
+              "color": "#2563eb"
+            },
+            {
+              "name": "Cost",
+              "value": 134,
+              "display_value": "134K",
+              "color": "#10b981"
+            },
+            {
+              "name": "Margin",
+              "value": 44.4,
+              "display_value": "44.4%",
+              "color": "#f59e0b"
+            }
+          ]
+        }
+      ]
+    },
+    "style": {
+      "theme": "light",
+      "accent": "#2563eb",
+      "accent_color": "#2563eb",
+      "background_color": "#f8fafc",
+      "container_background": "#f8fafc",
+      "text_color": "#0f172a",
+      "palette": [
+        "#2563eb",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_WideComparisonGrid",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-WideComparisonGrid"
+    },
+    "narration": [
+      {
+        "text": "Q4 carries the strongest comparison signal.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Q4"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named comparison grid group.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Q4",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

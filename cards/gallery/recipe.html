@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Implementation recipe for an editable animated data visual.">
+  <title>配方卡 · DataMagic Cards</title>
+  <link rel="stylesheet" href="styles.css?v=brief-preview-20261002">
+  <link rel="stylesheet" href="fonts.css">
+</head>
+<body class="recipe-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i></span><strong>DataMagic Cards</strong><span id="brandSuffix">完整配方卡</span></a>
+      <div class="header-actions">
+        <div class="theme-switch" id="themeSwitch" aria-label="页面主题">
+          <button id="themeSystem" data-theme="system" type="button">系统</button>
+          <button id="themeLight" data-theme="light" type="button">浅色</button>
+          <button id="themeDark" data-theme="dark" type="button">深色</button>
+        </div>
+        <button class="language-button" id="language" type="button">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="recipeRoot"><p class="recipe-error">正在加载配方……</p></main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="recipe.js?v=brief-preview-20261002"></script>
+</body>
+</html>

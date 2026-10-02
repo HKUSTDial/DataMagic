@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContrastContributionStory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "question",
+    "hookLabel",
+    "hook",
+    "takeaway",
+    "source",
+    "baselineLabel",
+    "baseline",
+    "finalLabel",
+    "unit",
+    "maximum",
+    "contributions"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 28
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 44
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 44
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 85
+    },
+    "hookLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 22
+    },
+    "hook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "before",
+        "after"
+      ],
+      "properties": {
+        "before": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "after": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "baselineLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10
+    },
+    "finalLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10
+    },
+    "baseline": {
+      "type": "number",
+      "minimum": 0
+    },
+    "unit": {
+      "type": "string",
+      "maxLength": 3
+    },
+    "maximum": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "contributions": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "value",
+          "at",
+          "caption"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10
+          },
+          "value": {
+            "type": "number"
+          },
+          "at": {
+            "type": "number",
+            "minimum": 3,
+            "maximum": 8
+          },
+          "caption": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 44
+          },
+          "iconSrc": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Local public asset path or supplied image URL. Stays attached to this entity."
+          }
+        }
+      }
+    },
+    "baselineIconSrc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finalIconSrc": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "sceneContent": {
+    "quick_visual": true,
+    "fast_runtime": true,
+    "runtime_locked": true,
+    "chart_type": "bar_chart",
+    "style_template_id": "StyleTemplate-DepartmentHeadcountDarkBar",
+    "style_template_name": "Department Headcount Dark Bar",
+    "runtime_template_contract": {
+      "template_id": "StyleTemplate-DepartmentHeadcountDarkBar",
+      "chart_type": "bar_chart",
+      "theme": "dark",
+      "data_contract": "ranked items",
+      "entrance_animation": "progressive bar reveal",
+      "emphasis_animation": "row focus highlight",
+      "subtitle_safe_area": "bottom",
+      "highlight_targets": [
+        "bar",
+        "label",
+        "value"
+      ],
+      "suggested_narration": "Engineering leads headcount at 128.",
+      "trigger_phrase": "Engineering",
+      "animation_intent": "Highlight the named headcount row and value.",
+      "timing": "word_aligned"
+    },
+    "title": "Department Headcount Dark Bar",
+    "data": [
+      {
+        "label": "Engineering",
+        "value": 128,
+        "display_value": "128",
+        "color": "#b9ff66"
+      },
+      {
+        "label": "Product",
+        "value": 92,
+        "display_value": "92",
+        "color": "#55e6c1"
+      },
+      {
+        "label": "Sales",
+        "value": 76,
+        "display_value": "76",
+        "color": "#ffffff"
+      },
+      {
+        "label": "Operations",
+        "value": 58,
+        "display_value": "58",
+        "color": "#c8b6ff"
+      },
+      {
+        "label": "Support",
+        "value": 44,
+        "display_value": "44",
+        "color": "#ff7a90"
+      }
+    ],
+    "template_payload": {
+      "version": 1,
+      "template_id": "StyleTemplate-DepartmentHeadcountDarkBar",
+      "chart_type": "bar_chart",
+      "title": "Department Headcount",
+      "description": "Runtime template animation preview",
+      "contract": {
+        "payload_kind": "items"
+      },
+      "items": [
+        {
+          "label": "Engineering",
+          "value": 128,
+          "display_value": "128",
+          "color": "#b9ff66",
+          "iconSrc": "icons/categories/robot.svg"
+        },
+        {
+          "label": "Product",
+          "value": 92,
+          "display_value": "92",
+          "color": "#55e6c1",
+          "iconSrc": "icons/categories/product.svg"
+        },
+        {
+          "label": "Sales",
+          "value": 76,
+          "display_value": "76",
+          "color": "#ffffff",
+          "iconSrc": "icons/categories/finance.svg"
+        },
+        {
+          "label": "Operations",
+          "value": 58,
+          "display_value": "58",
+          "color": "#c8b6ff",
+          "iconSrc": "icons/categories/scan.svg"
+        },
+        {
+          "label": "Support",
+          "value": 44,
+          "display_value": "44",
+          "color": "#ff7a90",
+          "iconSrc": "icons/categories/service.svg"
+        }
+      ]
+    },
+    "style": {
+      "theme": "dark",
+      "accent": "#38bdf8",
+      "accent_color": "#38bdf8",
+      "background_color": "#0f172a",
+      "container_background": "#0f172a",
+      "text_color": "#f8fafc",
+      "palette": [
+        "#38bdf8",
+        "#10b981",
+        "#f59e0b",
+        "#6366f1",
+        "#ec4899",
+        "#14b8a6"
+      ]
+    },
+    "entity_icons": {
+      "Engineering": "icons/categories/robot.svg",
+      "Product": "icons/categories/product.svg",
+      "Sales": "icons/categories/finance.svg",
+      "Operations": "icons/categories/scan.svg",
+      "Support": "icons/categories/service.svg"
+    }
+  },
+  "scene": {
+    "id": "runtime_preview_DepartmentHeadcountDarkBar",
+    "type": "quick_visual",
+    "time_range": [
+      0,
+      6
+    ],
+    "renderer": {
+      "type": "runtime_template",
+      "component": "RuntimeStyleTemplateScene",
+      "style_template_id": "StyleTemplate-DepartmentHeadcountDarkBar"
+    },
+    "narration": [
+      {
+        "text": "Engineering leads headcount at 128.",
+        "time_start": 0,
+        "time_end": 6,
+        "scene_time_start": 0,
+        "scene_time_end": 6
+      }
+    ],
+    "animations": [
+      {
+        "id": "runtime_preview_entrance",
+        "type": "entrance",
+        "effect": "progressive_reveal",
+        "time_start": 0.3,
+        "duration": 2.2,
+        "description": "Preview the runtime entrance animation contract."
+      },
+      {
+        "id": "runtime_preview_emphasis",
+        "type": "emphasis",
+        "effect": "highlight",
+        "target_data": {
+          "data_filter": {
+            "label": "Engineering"
+          }
+        },
+        "style": {
+          "intensity": 0.06
+        },
+        "time_start": 3.2,
+        "duration": 1.1,
+        "description": "Highlight the named headcount row and value.",
+        "_debug_info": {
+          "word_aligned": true,
+          "keyword": "Engineering",
+          "word_time": 3.2
+        }
+      }
+    ]
+  }
+}

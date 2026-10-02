@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://datamagic.dev/shotcraft/bar-chart-race.schema.json",
+  "title": "Bar Chart Race",
+  "type": "object",
+  "required": ["title", "subtitle", "unit", "source", "topN", "entities", "snapshots"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1},
+    "subtitle": {"type": "string"},
+    "unit": {"type": "string"},
+    "source": {"type": "string", "minLength": 1},
+    "topN": {"type": "integer", "minimum": 2},
+    "decimals": {"type": "integer", "minimum": 0, "maximum": 4, "default": 0},
+    "locale": {"type": "string", "default": "zh-CN"},
+    "highlightId": {"type": "string", "minLength": 1, "description": "Emphasize one entity while retaining the other entities' colors."},
+    "fontFamily": {"type": "string", "minLength": 1},
+    "entities": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "color"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "label": {"type": "string", "minLength": 1},
+          "color": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+          "iconSrc": {"type": "string", "minLength": 1, "description": "Optional logo or icon, preferably a local file under public/."}
+        }
+      }
+    },
+    "snapshots": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["time", "values"],
+        "properties": {
+          "time": {"type": "string", "minLength": 1},
+          "values": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}}
+        }
+      }
+    }
+  }
+}

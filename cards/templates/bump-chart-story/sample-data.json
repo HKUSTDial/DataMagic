@@ -1,0 +1,63 @@
+{
+  "title": "算力市场格局正在重排",
+  "subtitle": "用名次轨迹呈现竞争关系，比逐年播放多张柱状图更容易看见超越与反转。",
+  "periods": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "series": [
+    {
+      "name": "Northstar",
+      "color": "#2f6fed",
+      "values": [
+        72,
+        76,
+        86,
+        101,
+        124
+      ],
+      "iconSrc": "icons/categories/cloud.svg"
+    },
+    {
+      "name": "Vertex",
+      "color": "#16a085",
+      "values": [
+        91,
+        88,
+        93,
+        97,
+        110
+      ],
+      "iconSrc": "icons/categories/product.svg"
+    },
+    {
+      "name": "Helio",
+      "color": "#ef8f32",
+      "values": [
+        64,
+        80,
+        89,
+        94,
+        102
+      ],
+      "iconSrc": "icons/categories/energy.svg"
+    },
+    {
+      "name": "Nova",
+      "color": "#8b5cf6",
+      "values": [
+        79,
+        83,
+        78,
+        87,
+        96
+      ],
+      "iconSrc": "icons/categories/research.svg"
+    }
+  ],
+  "takeaway": "Northstar 从第三名升至第一名；真正重要的信息是排名变化，而不只是最终数值。",
+  "source": "DataMagic Cards synthetic benchmark dataset"
+}
