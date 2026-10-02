@@ -17,9 +17,10 @@ DataMagic 提供 **139 张动态配方卡**，每张都有动画预览、可编�
 
 ## ✨ 最近更新
 
-- **2026.10.02**：统一使用 `datamagic` Skill；支持中文搜索、中文实现指令预览与复制，更新中文操作演示。
-- **2026.10.02**：为 60 张配方补充国旗、品牌 Logo 和类别插图，更新动画预览与有声宣传片。
-- **2026.09.30**：新增主持人让位、贡献拆解和持续分层模板，把单个图表组织成数据故事。
+- **[2026.10.02]** 🎉 发布 **[DataMagic 动态配方库](https://datamagic.chat/cards/)**：139 张可预览、可编辑的数据图表与故事配方，配套 **[datamagic Skill](skills/datamagic/)**，让编程智能体用你的数据制作视频。
+- **[2026.08.09]** 📄 我们的长文 **[DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://arxiv.org/abs/2609.33403)** 被 **IEEE VIS 2026** 录用。
+- **[2026.06.20]** 🚀 **[DataMagic 在线系统](https://datamagic.chat/)** 正式上线，支持从表格数据生成带旁白的数据视频。
+- **[2026.06.18]** 📄 我们的论文 **[DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)** 被 **VLDB 2026 Demo Track** 录用。
 
 <a id="showcase"></a>
 

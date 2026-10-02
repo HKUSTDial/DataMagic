@@ -17,9 +17,10 @@ DataMagic offers **139 motion recipe cards**, each with a preview, editable sour
 
 ## ✨ What's new
 
-- **2026.10.02**: Unified the Skill name as `datamagic`; added Chinese search, localized implementation briefs, and a refreshed walkthrough.
-- **2026.10.02**: Added flags, brand marks, and category illustrations to 60 recipes; refreshed motion previews and the narrated showcase.
-- **2026.09.30**: Added presenter handoffs, contribution stories, and persistent tier boards for story-led data videos.
+- **[2026.10.02]** 🎉 Released the **[DataMagic recipe library](https://datamagic.chat/cards/)**: 139 previewable, editable recipes for animated charts and data stories, with the companion **[datamagic Skill](skills/datamagic/)** to help coding agents create videos with your data.
+- **[2026.08.09]** 📄 Our full paper **[DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://arxiv.org/abs/2609.33403)** has been accepted to **IEEE VIS 2026**.
+- **[2026.06.20]** 🚀 **[DataMagic is live](https://datamagic.chat/)**! Turn tabular data into narrated data videos with the online system.
+- **[2026.06.18]** 📄 Our paper **[DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388)** has been accepted to **VLDB 2026 Demo Track**.
 
 <a id="showcase"></a>
 
