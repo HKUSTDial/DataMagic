@@ -1,6 +1,6 @@
 # Executive Horizontal Bars
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ExecutiveHorizontalBars.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ExecutiveHorizontalBars.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ExecutiveHorizontalBars`
 

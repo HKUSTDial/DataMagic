@@ -1,6 +1,6 @@
 # Hero Number Spotlight
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/HeroNumberSpotlight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../HeroNumberSpotlight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`HeroNumberSpotlight`
 

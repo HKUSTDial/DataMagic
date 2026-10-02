@@ -1,6 +1,6 @@
 # Stepped Bar Strip
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SteppedBarStrip.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SteppedBarStrip.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SteppedBarStrip`
 

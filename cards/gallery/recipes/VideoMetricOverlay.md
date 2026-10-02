@@ -1,6 +1,6 @@
 # 生成视频数据叠加
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/VideoMetricOverlay.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/VideoMetricOverlay.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`VideoMetricOverlay`
 

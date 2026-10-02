@@ -1,6 +1,6 @@
 # Conversion Funnel
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ConversionFunnelClean.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ConversionFunnelClean.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ConversionFunnelClean`
 

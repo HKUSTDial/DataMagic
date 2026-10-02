@@ -1,6 +1,6 @@
 # Narrative Context Illustrated
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NarrativeContextIllustrated.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NarrativeContextIllustrated.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NarrativeContextIllustrated`
 

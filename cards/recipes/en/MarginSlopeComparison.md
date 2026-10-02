@@ -1,6 +1,6 @@
 # Margin Shift by Channel
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/MarginSlopeComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../MarginSlopeComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`MarginSlopeComparison`
 

@@ -1,6 +1,6 @@
 # Source to Reconstruction
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SourceToReconstruction.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SourceToReconstruction.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SourceToReconstruction`
 

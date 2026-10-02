@@ -1,6 +1,6 @@
 # 长序列流向桑基图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LongFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LongFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LongFlowSankey`
 

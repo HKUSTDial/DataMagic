@@ -1,6 +1,6 @@
 # 叙事指标钩子
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeStatHook.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeStatHook.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeStatHook`
 

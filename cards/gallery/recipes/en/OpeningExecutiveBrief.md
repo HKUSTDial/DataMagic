@@ -1,6 +1,6 @@
 # Opening Executive Brief
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/OpeningExecutiveBrief.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../OpeningExecutiveBrief.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`OpeningExecutiveBrief`
 

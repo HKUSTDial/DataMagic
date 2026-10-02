@@ -1,6 +1,6 @@
 # 浅色密集散点图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LightDenseScatter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LightDenseScatter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LightDenseScatter`
 

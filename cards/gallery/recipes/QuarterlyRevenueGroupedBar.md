@@ -1,6 +1,6 @@
 # 季度营收分组条形图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/QuarterlyRevenueGroupedBar.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/QuarterlyRevenueGroupedBar.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`QuarterlyRevenueGroupedBar`
 

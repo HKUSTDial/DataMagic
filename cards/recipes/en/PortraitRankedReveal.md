@@ -1,6 +1,6 @@
 # Portrait Countdown Ranking
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/PortraitRankedReveal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../PortraitRankedReveal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`PortraitRankedReveal`
 

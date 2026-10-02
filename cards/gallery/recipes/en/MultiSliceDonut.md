@@ -1,6 +1,6 @@
 # Multi-Slice Donut
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/MultiSliceDonut.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../MultiSliceDonut.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`MultiSliceDonut`
 

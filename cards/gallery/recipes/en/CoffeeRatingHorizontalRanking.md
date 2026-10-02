@@ -1,6 +1,6 @@
 # Coffee Rating Horizontal Ranking
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CoffeeRatingHorizontalRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CoffeeRatingHorizontalRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CoffeeRatingHorizontalRanking`
 

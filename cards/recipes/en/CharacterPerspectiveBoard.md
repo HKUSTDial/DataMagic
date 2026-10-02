@@ -1,6 +1,6 @@
 # Character Presenter & Perspective Board
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CharacterPerspectiveBoard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CharacterPerspectiveBoard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CharacterPerspectiveBoard`
 

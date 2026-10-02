@@ -1,6 +1,6 @@
 # Basic Line Chart
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/BasicLineChart.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../BasicLineChart.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`BasicLineChart`
 

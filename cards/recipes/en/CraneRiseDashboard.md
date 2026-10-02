@@ -1,6 +1,6 @@
 # Crane Rise Dashboard
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CraneRiseDashboard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CraneRiseDashboard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CraneRiseDashboard`
 

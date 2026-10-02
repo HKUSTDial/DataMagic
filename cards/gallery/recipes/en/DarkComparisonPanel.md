@@ -1,6 +1,6 @@
 # Dark Comparison Panel
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DarkComparisonPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DarkComparisonPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DarkComparisonPanel`
 

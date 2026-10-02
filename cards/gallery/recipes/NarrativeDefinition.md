@@ -1,6 +1,6 @@
 # 叙事定义
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeDefinition.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeDefinition.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeDefinition`
 

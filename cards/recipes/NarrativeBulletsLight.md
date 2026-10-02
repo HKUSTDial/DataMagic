@@ -1,6 +1,6 @@
 # 叙事要点浅色
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeBulletsLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeBulletsLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeBulletsLight`
 

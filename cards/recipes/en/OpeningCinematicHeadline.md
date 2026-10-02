@@ -1,6 +1,6 @@
 # Opening Cinematic Headline
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/OpeningCinematicHeadline.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../OpeningCinematicHeadline.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`OpeningCinematicHeadline`
 

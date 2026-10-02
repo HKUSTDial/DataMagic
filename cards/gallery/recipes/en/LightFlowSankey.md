@@ -1,6 +1,6 @@
 # Light Flow Sankey
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/LightFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../LightFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`LightFlowSankey`
 

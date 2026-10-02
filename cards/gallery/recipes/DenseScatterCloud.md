@@ -1,6 +1,6 @@
 # 密集散点图云
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/DenseScatterCloud.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/DenseScatterCloud.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`DenseScatterCloud`
 

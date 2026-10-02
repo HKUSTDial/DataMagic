@@ -1,6 +1,6 @@
 # 基础指标卡片
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/BasicStatCards.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/BasicStatCards.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`BasicStatCards`
 

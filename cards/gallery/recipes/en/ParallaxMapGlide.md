@@ -1,6 +1,6 @@
 # Parallax Map Glide
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ParallaxMapGlide.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ParallaxMapGlide.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ParallaxMapGlide`
 

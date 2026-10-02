@@ -1,6 +1,6 @@
 # Wide Comparison Grid
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/WideComparisonGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../WideComparisonGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`WideComparisonGrid`
 

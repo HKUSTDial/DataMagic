@@ -1,6 +1,6 @@
 # 共享数据元素转场
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SharedDataElementTransition.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SharedDataElementTransition.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SharedDataElementTransition`
 

@@ -1,6 +1,6 @@
 # 开场数据网格
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/OpeningDataGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/OpeningDataGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`OpeningDataGrid`
 

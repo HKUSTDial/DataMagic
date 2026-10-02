@@ -1,6 +1,6 @@
 # Light Wide Comparison
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/LightWideComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../LightWideComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`LightWideComparison`
 

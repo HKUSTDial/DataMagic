@@ -1,6 +1,6 @@
 # 视频对象跟踪标注
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/TrackedVideoCallout.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/TrackedVideoCallout.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`TrackedVideoCallout`
 

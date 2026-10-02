@@ -1,6 +1,6 @@
 # Portfolio Bubble Matrix
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/PortfolioBubbleMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../PortfolioBubbleMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`PortfolioBubbleMatrix`
 

@@ -1,6 +1,6 @@
 # 双场景数据对比
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SplitContextComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SplitContextComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SplitContextComparison`
 

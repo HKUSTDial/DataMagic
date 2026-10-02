@@ -1,6 +1,6 @@
 # Narrative Context Light
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NarrativeContextLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NarrativeContextLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NarrativeContextLight`
 

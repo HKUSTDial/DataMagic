@@ -1,6 +1,6 @@
 # Persistent Tier Board
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/PersistentTierBoard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../PersistentTierBoard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`PersistentTierBoard`
 

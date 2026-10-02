@@ -1,6 +1,6 @@
 # 实景融合百分比
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SpatialPercentOverlay.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SpatialPercentOverlay.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SpatialPercentOverlay`
 

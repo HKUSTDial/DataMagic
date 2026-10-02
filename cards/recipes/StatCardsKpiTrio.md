@@ -1,6 +1,6 @@
 # 指标卡片关键指标三联
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/StatCardsKpiTrio.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/StatCardsKpiTrio.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`StatCardsKpiTrio`
 

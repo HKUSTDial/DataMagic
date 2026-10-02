@@ -1,6 +1,6 @@
 # Cyber Command Center
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CyberCommandCenter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CyberCommandCenter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CyberCommandCenter`
 

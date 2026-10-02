@@ -1,6 +1,6 @@
 # 主持人让位与数据接管
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/PresenterDataTakeover.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/PresenterDataTakeover.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`PresenterDataTakeover`
 

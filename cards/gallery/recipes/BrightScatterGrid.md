@@ -1,6 +1,6 @@
 # 明亮散点图网格
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/BrightScatterGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/BrightScatterGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`BrightScatterGrid`
 

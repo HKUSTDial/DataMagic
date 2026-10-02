@@ -1,6 +1,6 @@
 # 浅色多分块饼图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LightMultiSlicePie.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LightMultiSlicePie.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LightMultiSlicePie`
 

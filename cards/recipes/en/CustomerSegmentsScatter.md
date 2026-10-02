@@ -1,6 +1,6 @@
 # Customer Segment Map
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CustomerSegmentsScatter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CustomerSegmentsScatter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CustomerSegmentsScatter`
 

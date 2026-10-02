@@ -1,6 +1,6 @@
 # 供应流向桑基图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SupplyFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SupplyFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SupplyFlowSankey`
 

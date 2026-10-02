@@ -1,6 +1,6 @@
 # Dark Compact Bar Ranking
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DarkCompactBarRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DarkCompactBarRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DarkCompactBarRanking`
 

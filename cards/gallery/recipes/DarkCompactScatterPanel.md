@@ -1,6 +1,6 @@
 # 深色紧凑散点图面板
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/DarkCompactScatterPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/DarkCompactScatterPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`DarkCompactScatterPanel`
 

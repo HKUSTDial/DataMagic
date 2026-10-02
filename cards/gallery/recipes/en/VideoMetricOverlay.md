@@ -1,6 +1,6 @@
 # Generated Video Metric Overlay
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/VideoMetricOverlay.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../VideoMetricOverlay.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`VideoMetricOverlay`
 

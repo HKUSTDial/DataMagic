@@ -1,6 +1,6 @@
 # Nested Ring Share
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NestedRingShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NestedRingShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NestedRingShare`
 

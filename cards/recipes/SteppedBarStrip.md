@@ -1,6 +1,6 @@
 # 阶梯条形图条带
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SteppedBarStrip.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SteppedBarStrip.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SteppedBarStrip`
 

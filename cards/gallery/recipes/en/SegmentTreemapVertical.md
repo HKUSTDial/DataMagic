@@ -1,6 +1,6 @@
 # Segment Treemap Vertical
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SegmentTreemapVertical.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SegmentTreemapVertical.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SegmentTreemapVertical`
 

@@ -1,6 +1,6 @@
 # 斜率变化排名
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SlopeChangeRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SlopeChangeRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SlopeChangeRanking`
 

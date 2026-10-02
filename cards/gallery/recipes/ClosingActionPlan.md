@@ -1,6 +1,6 @@
 # 结尾行动计划
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ClosingActionPlan.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ClosingActionPlan.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ClosingActionPlan`
 

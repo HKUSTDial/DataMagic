@@ -1,6 +1,6 @@
 # 电影赛道式竞赛
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/CinematicTrackRace.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/CinematicTrackRace.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`CinematicTrackRace`
 

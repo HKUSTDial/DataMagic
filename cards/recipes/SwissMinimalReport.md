@@ -1,6 +1,6 @@
 # 瑞士极简报告
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SwissMinimalReport.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SwissMinimalReport.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SwissMinimalReport`
 

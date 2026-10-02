@@ -1,6 +1,6 @@
 # Semi Gauge Progress
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SemiGaugeProgress.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SemiGaugeProgress.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SemiGaugeProgress`
 

@@ -1,6 +1,6 @@
 # 利润率斜率对比
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/MarginSlopeComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/MarginSlopeComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`MarginSlopeComparison`
 

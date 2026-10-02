@@ -1,8 +1,9 @@
 import {posterSource} from './media-policy.js?v=entity-icons-20261002';
 import {briefPreview} from './brief-preview.js?v=recipe-languages-20261002';
 import {implementationBrief} from './implementation-brief.js?v=recipe-languages-20261002';
+const requestedLanguage = new URLSearchParams(location.search).get('lang');
 const state = {
-  lang: localStorage.getItem('dvsc-language') === 'en' ? 'en' : 'zh',
+  lang: ['zh', 'en'].includes(requestedLanguage) ? requestedLanguage : localStorage.getItem('dvsc-language') === 'en' ? 'en' : 'zh',
   theme: localStorage.getItem('dvsc-theme') || 'system',
 };
 
@@ -45,7 +46,11 @@ const recipePrompt = item => implementationBrief(item, state.lang);
 const inlineMarkdown = text => esc(text)
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>');
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, title, href) => {
+    const recipe = /^(en\/|\.\.\/)?([\w-]+)\.md$/.exec(href);
+    if (recipe) return `<a href="recipe.html?slug=${recipe[2]}&amp;lang=${recipe[1] === 'en/' ? 'en' : 'zh'}">${title}</a>`;
+    return `<a href="${href}" target="_blank" rel="noreferrer">${title}</a>`;
+  });
 
 const markdownToHtml = markdown => {
   const lines = markdown.replace(/^---[\s\S]*?---\s*/, '').split(/\r?\n/);
@@ -214,8 +219,11 @@ $('#themeSystem').textContent = t('系统', 'System');
 $('#themeLight').textContent = t('浅色', 'Light');
 $('#themeDark').textContent = t('深色', 'Dark');
 $('#language').onclick = () => {
-  localStorage.setItem('dvsc-language', state.lang === 'zh' ? 'en' : 'zh');
-  location.reload();
+  const next = state.lang === 'zh' ? 'en' : 'zh';
+  localStorage.setItem('dvsc-language', next);
+  const url = new URL(location.href);
+  url.searchParams.set('lang', next);
+  location.href = url.href;
 };
 $('#themeSwitch').onclick = event => {
   const button = event.target.closest('[data-theme]');

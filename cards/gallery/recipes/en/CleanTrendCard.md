@@ -1,6 +1,6 @@
 # Clean Trend Card
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CleanTrendCard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CleanTrendCard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CleanTrendCard`
 

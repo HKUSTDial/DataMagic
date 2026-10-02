@@ -1,6 +1,6 @@
 # 排行榜卡片网格
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LeaderboardCardGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LeaderboardCardGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LeaderboardCardGrid`
 

@@ -1,6 +1,6 @@
 # Bright Scatter Grid
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/BrightScatterGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../BrightScatterGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`BrightScatterGrid`
 

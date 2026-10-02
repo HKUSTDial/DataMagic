@@ -1,6 +1,6 @@
 # 客户分群散点图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/CustomerSegmentsScatter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/CustomerSegmentsScatter.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`CustomerSegmentsScatter`
 

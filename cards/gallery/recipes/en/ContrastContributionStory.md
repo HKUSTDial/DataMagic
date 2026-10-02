@@ -1,6 +1,6 @@
 # Contrast Hook & Contribution Story
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ContrastContributionStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ContrastContributionStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ContrastContributionStory`
 

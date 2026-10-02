@@ -1,6 +1,6 @@
 # Light Comparison Panel
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/LightComparisonPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../LightComparisonPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`LightComparisonPanel`
 

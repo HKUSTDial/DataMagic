@@ -1,6 +1,6 @@
 # 图表焦点推镜
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ChartFocusPush.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ChartFocusPush.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ChartFocusPush`
 

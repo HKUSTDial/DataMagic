@@ -1,6 +1,6 @@
 # Narrative Chapter Title Illustrated
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NarrativeChapterTitleIllustrated.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NarrativeChapterTitleIllustrated.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NarrativeChapterTitleIllustrated`
 

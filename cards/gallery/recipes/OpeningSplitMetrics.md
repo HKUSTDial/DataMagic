@@ -1,6 +1,6 @@
 # 开场分屏指标
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/OpeningSplitMetrics.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/OpeningSplitMetrics.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`OpeningSplitMetrics`
 

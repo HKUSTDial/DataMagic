@@ -1,6 +1,6 @@
 # Pull Back Isolation
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/PullBackIsolation.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../PullBackIsolation.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`PullBackIsolation`
 

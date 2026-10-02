@@ -1,6 +1,6 @@
 # Dense Scatter Cloud
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DenseScatterCloud.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DenseScatterCloud.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DenseScatterCloud`
 

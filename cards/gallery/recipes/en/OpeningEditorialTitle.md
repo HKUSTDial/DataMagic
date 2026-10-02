@@ -1,6 +1,6 @@
 # Opening Editorial Title
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/OpeningEditorialTitle.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../OpeningEditorialTitle.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`OpeningEditorialTitle`
 

@@ -1,6 +1,6 @@
 # Horizontal Bar Matrix
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/HorizontalBarMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../HorizontalBarMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`HorizontalBarMatrix`
 

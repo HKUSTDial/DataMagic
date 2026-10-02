@@ -1,6 +1,6 @@
 # Bump Chart Story
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/BumpChartStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../BumpChartStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`BumpChartStory`
 

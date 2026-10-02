@@ -1,6 +1,6 @@
 # 深色相关性矩阵
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/DarkCorrelationMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/DarkCorrelationMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`DarkCorrelationMatrix`
 

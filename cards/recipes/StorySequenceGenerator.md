@@ -1,6 +1,6 @@
 # 四镜头故事生成器
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/StorySequenceGenerator.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/StorySequenceGenerator.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`StorySequenceGenerator`
 

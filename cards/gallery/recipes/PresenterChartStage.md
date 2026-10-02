@@ -1,6 +1,6 @@
 # 主持人与图表舞台
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/PresenterChartStage.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/PresenterChartStage.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`PresenterChartStage`
 

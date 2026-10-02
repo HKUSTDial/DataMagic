@@ -1,6 +1,6 @@
 # Swiss Minimal Report
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SwissMinimalReport.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SwissMinimalReport.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SwissMinimalReport`
 

@@ -1,6 +1,6 @@
 # 商务横向条形图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ExecutiveHorizontalBars.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ExecutiveHorizontalBars.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ExecutiveHorizontalBars`
 

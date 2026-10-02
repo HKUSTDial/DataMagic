@@ -1,6 +1,6 @@
 # Tracked Video Callout
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/TrackedVideoCallout.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../TrackedVideoCallout.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`TrackedVideoCallout`
 

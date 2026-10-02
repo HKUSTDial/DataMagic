@@ -1,6 +1,6 @@
 # 带标签散点图网格
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LabeledScatterGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LabeledScatterGrid.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LabeledScatterGrid`
 

@@ -1,6 +1,6 @@
 # Basic Pie Chart
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/BasicPieChart.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../BasicPieChart.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`BasicPieChart`
 

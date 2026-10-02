@@ -1,6 +1,6 @@
 # 市场占比环形图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/MarketShareDonut.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/MarketShareDonut.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`MarketShareDonut`
 

@@ -1,6 +1,6 @@
 # Dark Compact Scatter Panel
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DarkCompactScatterPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DarkCompactScatterPanel.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DarkCompactScatterPanel`
 

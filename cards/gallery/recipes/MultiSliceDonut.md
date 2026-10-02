@@ -1,6 +1,6 @@
 # 多分块环形图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/MultiSliceDonut.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/MultiSliceDonut.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`MultiSliceDonut`
 

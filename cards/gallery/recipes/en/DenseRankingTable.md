@@ -1,6 +1,6 @@
 # Dense Ranking Table
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DenseRankingTable.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DenseRankingTable.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DenseRankingTable`
 

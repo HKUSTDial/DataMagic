@@ -1,6 +1,6 @@
 # 堆叠占比条形图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/StackedShareBar.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/StackedShareBar.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`StackedShareBar`
 

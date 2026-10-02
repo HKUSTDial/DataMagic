@@ -1,6 +1,6 @@
 # Closing Gradient Signal
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ClosingGradientSignal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ClosingGradientSignal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ClosingGradientSignal`
 

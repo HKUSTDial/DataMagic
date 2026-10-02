@@ -1,6 +1,6 @@
 # 反差设问与贡献拆解
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ContrastContributionStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ContrastContributionStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ContrastContributionStory`
 

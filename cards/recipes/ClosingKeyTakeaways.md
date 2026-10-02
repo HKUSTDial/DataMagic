@@ -1,6 +1,6 @@
 # 结尾关键结论
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ClosingKeyTakeaways.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ClosingKeyTakeaways.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ClosingKeyTakeaways`
 

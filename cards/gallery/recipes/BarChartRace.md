@@ -1,6 +1,6 @@
 # 动态柱状图竞赛
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/BarChartRace.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/BarChartRace.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`BarChartRace`
 

@@ -1,6 +1,6 @@
 # Cinematic Track Race
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CinematicTrackRace.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CinematicTrackRace.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CinematicTrackRace`
 

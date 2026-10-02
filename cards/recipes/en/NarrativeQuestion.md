@@ -1,6 +1,6 @@
 # Narrative Question
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NarrativeQuestion.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NarrativeQuestion.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NarrativeQuestion`
 

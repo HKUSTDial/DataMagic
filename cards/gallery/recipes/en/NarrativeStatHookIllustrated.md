@@ -1,6 +1,6 @@
 # Narrative Stat Hook Illustrated
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NarrativeStatHookIllustrated.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NarrativeStatHookIllustrated.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NarrativeStatHookIllustrated`
 

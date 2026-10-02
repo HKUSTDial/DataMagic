@@ -1,6 +1,6 @@
 # 转化漏斗简洁
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ConversionFunnelClean.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ConversionFunnelClean.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ConversionFunnelClean`
 

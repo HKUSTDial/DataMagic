@@ -1,6 +1,6 @@
 # 叙事提问
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeQuestion.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeQuestion.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeQuestion`
 

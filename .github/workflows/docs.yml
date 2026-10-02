@@ -8,12 +8,14 @@ on:
       - ".github/workflows/docs.yml"
       - ".markdownlint.json"
       - ".markdown-link-check.json"
+      - "scripts/check-markdown-links.cjs"
   pull_request:
     paths:
       - "**/*.md"
       - ".github/workflows/docs.yml"
       - ".markdownlint.json"
       - ".markdown-link-check.json"
+      - "scripts/check-markdown-links.cjs"
   workflow_dispatch:
 
 permissions:
@@ -87,13 +89,5 @@ jobs:
         env:
           FILES: ${{ steps.changed.outputs.files }}
         run: |
-          set -uo pipefail
-          fail=0
-          while IFS= read -r f; do
-            [ -z "$f" ] && continue
-            [ -f "$f" ] || continue
-            echo "::group::$f"
-            markdown-link-check -q -c .markdown-link-check.json "$f" || fail=1
-            echo "::endgroup::"
-          done <<< "$FILES"
-          exit $fail
+          set -euo pipefail
+          NODE_PATH="$(npm root -g)" node scripts/check-markdown-links.cjs

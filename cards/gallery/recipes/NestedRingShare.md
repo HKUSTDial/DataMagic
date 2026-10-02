@@ -1,6 +1,6 @@
 # 嵌套环图占比
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NestedRingShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NestedRingShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NestedRingShare`
 

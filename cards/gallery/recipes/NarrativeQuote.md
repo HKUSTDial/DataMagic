@@ -1,6 +1,6 @@
 # 叙事引语
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeQuote.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeQuote.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeQuote`
 

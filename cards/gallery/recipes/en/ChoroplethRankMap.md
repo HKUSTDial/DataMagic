@@ -1,6 +1,6 @@
 # Choropleth Rank Map
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ChoroplethRankMap.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ChoroplethRankMap.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ChoroplethRankMap`
 

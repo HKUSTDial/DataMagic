@@ -1,6 +1,6 @@
 # 开场编辑式标题
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/OpeningEditorialTitle.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/OpeningEditorialTitle.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`OpeningEditorialTitle`
 

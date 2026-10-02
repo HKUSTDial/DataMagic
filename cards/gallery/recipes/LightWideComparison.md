@@ -1,6 +1,6 @@
 # 浅色宽幅对比
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LightWideComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LightWideComparison.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LightWideComparison`
 

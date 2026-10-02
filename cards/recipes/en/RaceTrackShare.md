@@ -1,6 +1,6 @@
 # Race Track Share
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/RaceTrackShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../RaceTrackShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`RaceTrackShare`
 

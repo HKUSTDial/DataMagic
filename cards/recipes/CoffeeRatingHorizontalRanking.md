@@ -1,6 +1,6 @@
 # 咖啡评分横向排名
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/CoffeeRatingHorizontalRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/CoffeeRatingHorizontalRanking.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`CoffeeRatingHorizontalRanking`
 

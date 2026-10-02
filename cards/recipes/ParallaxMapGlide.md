@@ -1,6 +1,6 @@
 # 多层数据地图滑行
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ParallaxMapGlide.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ParallaxMapGlide.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ParallaxMapGlide`
 

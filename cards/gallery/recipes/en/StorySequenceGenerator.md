@@ -1,6 +1,6 @@
 # Four-shot Story Generator
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/StorySequenceGenerator.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../StorySequenceGenerator.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`StorySequenceGenerator`
 

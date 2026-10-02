@@ -78,7 +78,7 @@ function recipe(card, source, lang) {
   } : {key:'Recipe key', use:'Purpose', files:'Source and data', component:'Component', schema:'Schema', sample:'Sample data',
     setup:'Getting started', notes:'Data and authoring constraints', render:'Render', review:'Delivery review'};
   const github = 'https://github.com/HKUSTDial/DataMagic';
-  const switchLink = zh ? `[English](${github}/blob/main/cards/recipes/en/${card.slug}.md)` : `[中文](${github}/blob/main/cards/recipes/${card.slug}.md)`;
+  const switchLink = zh ? `[English](en/${card.slug}.md)` : `[中文](../${card.slug}.md)`;
   let result = `# ${name}\n\n${switchLink} · [GitHub](${github})\n\n- ${text.key}：\`${card.slug}\`\n\n## ${text.use}\n\n${card.description[lang]}\n\n## ${text.setup}\n\n`;
   result += zh
     ? `首次使用，可把 [DataMagic 仓库](${github}) 交给编程智能体，请它配置 \`datamagic\` Skill 并使用本配方；已有仓库则直接复用。附上你的数据、素材和修改要求。[完整使用与安装说明](${github}/blob/main/skills/datamagic/README.md)。下列文件路径相对于仓库的 \`cards/\` 目录。\n\n`

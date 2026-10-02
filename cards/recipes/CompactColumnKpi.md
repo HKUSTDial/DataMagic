@@ -1,6 +1,6 @@
 # 紧凑柱状图关键指标
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/CompactColumnKpi.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/CompactColumnKpi.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`CompactColumnKpi`
 

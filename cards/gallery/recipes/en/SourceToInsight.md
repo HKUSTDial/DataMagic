@@ -1,6 +1,6 @@
 # Source to Insight
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SourceToInsight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SourceToInsight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SourceToInsight`
 

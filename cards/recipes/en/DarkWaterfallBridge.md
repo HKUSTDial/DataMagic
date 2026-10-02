@@ -1,6 +1,6 @@
 # Dark Waterfall Bridge
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DarkWaterfallBridge.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DarkWaterfallBridge.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DarkWaterfallBridge`
 

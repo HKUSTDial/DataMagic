@@ -1,6 +1,6 @@
 # Supply Chain Sankey Flow
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/SupplyChainSankeyFlow.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../SupplyChainSankeyFlow.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`SupplyChainSankeyFlow`
 

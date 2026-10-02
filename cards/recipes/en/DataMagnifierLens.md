@@ -1,6 +1,6 @@
 # Data Magnifier Lens
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DataMagnifierLens.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DataMagnifierLens.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DataMagnifierLens`
 

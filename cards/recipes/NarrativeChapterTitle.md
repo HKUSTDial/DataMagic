@@ -1,6 +1,6 @@
 # 叙事章节标题
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeChapterTitle.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeChapterTitle.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeChapterTitle`
 

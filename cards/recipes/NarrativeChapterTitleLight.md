@@ -1,6 +1,6 @@
 # 叙事章节标题浅色
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/NarrativeChapterTitleLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/NarrativeChapterTitleLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`NarrativeChapterTitleLight`
 

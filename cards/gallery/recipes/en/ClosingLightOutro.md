@@ -1,6 +1,6 @@
 # Closing Light Outro
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/ClosingLightOutro.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../ClosingLightOutro.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`ClosingLightOutro`
 

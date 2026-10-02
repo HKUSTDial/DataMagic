@@ -1,6 +1,6 @@
 # 浅色密集排名条形图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LightDenseRankingBar.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LightDenseRankingBar.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LightDenseRankingBar`
 

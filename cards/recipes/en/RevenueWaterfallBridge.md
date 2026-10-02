@@ -1,6 +1,6 @@
 # Revenue Waterfall Bridge
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/RevenueWaterfallBridge.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../RevenueWaterfallBridge.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`RevenueWaterfallBridge`
 

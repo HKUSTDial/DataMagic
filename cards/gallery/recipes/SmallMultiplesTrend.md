@@ -1,6 +1,6 @@
 # 小型多图趋势
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SmallMultiplesTrend.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SmallMultiplesTrend.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SmallMultiplesTrend`
 

@@ -1,6 +1,6 @@
 # 半圆仪表进度
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SemiGaugeProgress.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SemiGaugeProgress.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SemiGaugeProgress`
 

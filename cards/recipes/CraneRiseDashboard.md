@@ -1,6 +1,6 @@
 # 吊臂拉升揭示
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/CraneRiseDashboard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/CraneRiseDashboard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`CraneRiseDashboard`
 

@@ -1,6 +1,6 @@
 # Basic Stat Cards
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/BasicStatCards.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../BasicStatCards.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`BasicStatCards`
 

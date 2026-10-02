@@ -1,6 +1,6 @@
 # Basic Bar Chart
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/BasicBarChart.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../BasicBarChart.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`BasicBarChart`
 

@@ -1,6 +1,6 @@
 # Opening Split Metrics
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/OpeningSplitMetrics.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../OpeningSplitMetrics.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`OpeningSplitMetrics`
 

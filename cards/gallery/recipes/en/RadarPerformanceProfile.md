@@ -1,6 +1,6 @@
 # Radar Performance Profile
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/RadarPerformanceProfile.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../RadarPerformanceProfile.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`RadarPerformanceProfile`
 

@@ -1,6 +1,6 @@
 # 简洁趋势卡片
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/CleanTrendCard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/CleanTrendCard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`CleanTrendCard`
 

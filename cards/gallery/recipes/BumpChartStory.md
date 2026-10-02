@@ -1,6 +1,6 @@
 # 动态排名轨迹
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/BumpChartStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/BumpChartStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`BumpChartStory`
 

@@ -1,6 +1,6 @@
 # Footage to Evidence
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/FootageEvidenceReveal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../FootageEvidenceReveal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`FootageEvidenceReveal`
 

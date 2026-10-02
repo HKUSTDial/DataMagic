@@ -1,6 +1,6 @@
 # 编辑式数据叙事
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/EditorialDataStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/EditorialDataStory.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`EditorialDataStory`
 

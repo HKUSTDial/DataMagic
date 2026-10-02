@@ -1,6 +1,6 @@
 # 区域分级着色地图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/ChoroplethRankMap.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/ChoroplethRankMap.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`ChoroplethRankMap`
 

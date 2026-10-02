@@ -1,6 +1,6 @@
 # 分群矩形树图纵向
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/SegmentTreemapVertical.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/SegmentTreemapVertical.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`SegmentTreemapVertical`
 

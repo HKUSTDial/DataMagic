@@ -1,6 +1,6 @@
 # 开场商务简报
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/OpeningExecutiveBrief.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/OpeningExecutiveBrief.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`OpeningExecutiveBrief`
 

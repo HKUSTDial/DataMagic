@@ -1,6 +1,6 @@
 # 倒序揭晓排行榜
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/RankedReveal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/RankedReveal.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`RankedReveal`
 

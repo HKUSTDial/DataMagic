@@ -1,6 +1,6 @@
 # 双系列脉冲折线图
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/DualSeriesPulseLine.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/DualSeriesPulseLine.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`DualSeriesPulseLine`
 

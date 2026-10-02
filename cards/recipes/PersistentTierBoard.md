@@ -1,6 +1,6 @@
 # 持续分层与证据更新
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/PersistentTierBoard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/PersistentTierBoard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`PersistentTierBoard`
 

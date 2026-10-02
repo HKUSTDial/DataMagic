@@ -1,6 +1,6 @@
 # Narrative Stat Hook Light
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/NarrativeStatHookLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../NarrativeStatHookLight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`NarrativeStatHookLight`
 

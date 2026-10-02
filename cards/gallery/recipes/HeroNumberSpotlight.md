@@ -1,6 +1,6 @@
 # 核心数字聚焦
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/HeroNumberSpotlight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/HeroNumberSpotlight.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`HeroNumberSpotlight`
 

@@ -1,6 +1,6 @@
 # 浅色雷达图评分卡
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/LightRadarScorecard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/LightRadarScorecard.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`LightRadarScorecard`
 

@@ -1,6 +1,6 @@
 # Dark Compact Donut Share
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/DarkCompactDonutShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../DarkCompactDonutShare.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`DarkCompactDonutShare`
 

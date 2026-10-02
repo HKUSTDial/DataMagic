@@ -1,6 +1,6 @@
 # Light Hero Number
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/LightHeroNumber.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../LightHeroNumber.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`LightHeroNumber`
 

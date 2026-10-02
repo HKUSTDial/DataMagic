@@ -1,6 +1,6 @@
 # Correlation Heatmap Matrix
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/CorrelationHeatmapMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../CorrelationHeatmapMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`CorrelationHeatmapMatrix`
 

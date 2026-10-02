@@ -1,6 +1,6 @@
 # 多实体散点图矩阵
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/MultiEntityScatterMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/MultiEntityScatterMatrix.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`MultiEntityScatterMatrix`
 

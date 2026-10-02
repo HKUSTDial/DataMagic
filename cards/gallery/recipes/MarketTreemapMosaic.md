@@ -1,6 +1,6 @@
 # 市场矩形树图拼接
 
-[English](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/en/MarketTreemapMosaic.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[English](en/MarketTreemapMosaic.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - 配方标识：`MarketTreemapMosaic`
 

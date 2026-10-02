@@ -1,6 +1,6 @@
 # Long Flow Sankey
 
-[中文](https://github.com/HKUSTDial/DataMagic/blob/main/cards/recipes/LongFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
+[中文](../LongFlowSankey.md) · [GitHub](https://github.com/HKUSTDial/DataMagic)
 
 - Recipe key：`LongFlowSankey`
 
