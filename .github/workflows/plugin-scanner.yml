@@ -17,7 +17,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: hashgraph-online/ai-plugin-scanner-action@caba2e96aa8ad2feb6cf6fca52442b52e22e779f # v1.2.635
+      - uses: hashgraph-online/ai-plugin-scanner-action@37a0b7035b989c0bcd1177dd7f6c77b49dab7c2f # v1.2.809
         with:
           plugin_dir: "."
           min_score: 80
